@@ -2,7 +2,7 @@
 tipo: tecnico
 estado: decidido
 fuente: Tablero FigJam, sección 3
-actualizado: 2026-11-22
+actualizado: 2026-11-22 19:37
 ---
 
 # Stack
@@ -12,7 +12,7 @@ Criterio: **gratis, sin royalties, ligero, buena comunidad y que un equipo peque
 ## ✅ Recomendado
 | Pieza | Elección | Por qué |
 |---|---|---|
-| 🎮 Motor | **Godot 4.4+** | Gratis, licencia MIT, sin royalties. Física Jolt integrada, partículas GPU, shaders visuales. Exporta a Windows, Linux, Mac y Web. |
+| 🎮 Motor | **Godot 4.6.3** (la que pide Cogito 1.2.0) | Gratis, licencia MIT, sin royalties. Física Jolt integrada, partículas GPU, shaders visuales. Exporta a Windows, Linux, Mac y Web. |
 | 🧠 Lenguaje | **GDScript** | Rápido de aprender y pensado para Godot. C# como opción si venís de Unity. |
 | 🧊 Modelado | **Blender 4.x** | Gratis. Exportar en glTF/GLB, que Godot importa directamente con materiales. |
 | 🎨 Texturas y materiales | **Poly Haven** (CC0), **Material Maker** o **ArmorPaint** | Para low-poly: paleta de colores plana + un shader de cocción. |
