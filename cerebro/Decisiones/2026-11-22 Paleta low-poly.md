@@ -4,7 +4,7 @@ fecha: 2026-11-22
 hora: 19:38
 estado: propuesta
 area: Arte
-actualizado: 2026-11-22 19:38
+actualizado: 2026-11-22 19:40
 ---
 
 # Paleta low-poly
@@ -29,8 +29,10 @@ actualizado: 2026-11-22 19:38
 | Hecha | `#8B4A2B` |
 | Quemada | `#2E1E17` |
 
-**Motivo:** (pendiente de confirmar)
+**Motivo:** con color plano se produce rápido en un equipo pequeño y el estilo sigue siendo coherente. Los tonos cálidos (brasa, ladrillo, atardecer) refuerzan el pilar "ambiente de patio", y la gama de cocción hace que el punto se lea por el color.
 
-**Alternativas descartadas:** (pendiente de confirmar)
+**Alternativas descartadas:**
+- Texturas PBR realistas: cuestan mucho y chocan con los assets CC0 low-poly.
+- Una paleta fría o neutra: no transmite calor ni fuego.
 
 Relacionado: [[GDD]] · [[Roadmap]] · [[Modelos 3D]]

@@ -4,7 +4,7 @@ fecha: 2026-11-22
 hora: 19:38
 estado: propuesta
 area: Diseño
-actualizado: 2026-11-22 19:38
+actualizado: 2026-11-22 19:40
 ---
 
 # GDD en borrador
@@ -16,8 +16,10 @@ actualizado: 2026-11-22 19:38
 
 Las preguntas abiertas están marcadas con ❓ en el GDD.
 
-**Motivo:** (pendiente de confirmar)
+**Motivo:** el hito de la F0 es "GDD aprobado". El borrador junta lo que ya estaba en el tablero y en la bóveda, y deja las dudas marcadas con ❓ para que el equipo las cierre.
 
-**Alternativas descartadas:** (pendiente de confirmar)
+**Alternativas descartadas:**
+- Un GDD largo por secciones: la F0 pide una página.
+- Empezar la F1 sin GDD.
 
 Relacionado: [[GDD]] · [[Roadmap]] · [[2026-11-22 Paleta low-poly]]

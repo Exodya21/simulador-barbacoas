@@ -2,7 +2,7 @@
 tipo: tecnico
 estado: decidido
 fuente: Tablero FigJam, sección 3
-actualizado: 2026-11-22 19:39
+actualizado: 2026-11-22 19:40
 ---
 
 # Stack
@@ -17,7 +17,7 @@ Criterio: **gratis, sin royalties, ligero, buena comunidad y que un equipo peque
 | 🧊 Modelado | **Blender 4.x** | Gratis. Exportar en glTF/GLB, que Godot importa directamente con materiales. |
 | 🎨 Texturas y materiales | **Poly Haven** (CC0), **Material Maker** o **ArmorPaint** | Para low-poly: paleta de colores plana + un shader de cocción. |
 | 🔊 Audio | **AudioStreamPlayer3D** + **Freesound** (CC0/CC-BY) + pack gratuito **Sonniss GDC** | Chisporroteo modulado por temperatura. |
-| 🗂️ Gestión | **Git + GitHub** (Git LFS para `.glb` y `.wav`), tareas en **GitHub Projects** | Diseño y roadmap en el [[Tablero FigJam]] y en esta bóveda. → [[Repositorio y ramas]] |
+| 🗂️ Gestión | **Git + GitHub** (Git LFS aplazado → [[2026-11-22 Sin Git LFS por ahora]]), tareas en **GitHub Projects** | Diseño y roadmap en el [[Tablero FigJam]] y en esta bóveda. → [[Repositorio y ramas]] |
 | 🚀 Publicación | Demo en **itch.io** (gratis) → **Steam** con **GodotSteam** (logros, Steam Deck) | Build web para compartir por enlace. |
 
 ## Alternativas descartadas

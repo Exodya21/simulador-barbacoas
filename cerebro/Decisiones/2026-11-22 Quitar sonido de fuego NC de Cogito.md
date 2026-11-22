@@ -4,7 +4,7 @@ fecha: 2026-11-22
 hora: 19:38
 estado: aceptada
 area: Producción
-actualizado: 2026-11-22 19:38
+actualizado: 2026-11-22 19:40
 ---
 
 # Quitar el sonido de fuego no comercial de Cogito
@@ -13,6 +13,8 @@ actualizado: 2026-11-22 19:38
 
 **Motivo:** su licencia es CC-BY-NC 4.0 (no comercial): no se puede vender en Steam.
 
-**Alternativas descartadas:** (pendiente de confirmar)
+**Alternativas descartadas:**
+- Dejarlo solo en las demos: se distribuiría igual dentro del ejecutable.
+- Pedir permiso comercial al autor: es lento e incierto, y hay sonidos CC0 de sobra.
 
 Relacionado: [[Licencias y Steam]] · [[2026-11-22 Cogito como base del proyecto]]
