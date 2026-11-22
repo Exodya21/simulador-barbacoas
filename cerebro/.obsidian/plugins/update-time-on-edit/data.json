@@ -1,0 +1,12 @@
+{
+  "dateFormat": "yyyy-MM-dd HH:mm",
+  "enableNumberProperties": false,
+  "enableCreateTime": false,
+  "headerUpdated": "actualizado",
+  "headerCreated": "creado",
+  "minMinutesBetweenSaves": 1,
+  "ignoreGlobalFolder": ["Plantillas"],
+  "ignoreCreatedFolder": [],
+  "enableExperimentalHash": false,
+  "fileHashMap": {}
+}

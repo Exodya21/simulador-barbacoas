@@ -1,6 +1,6 @@
 ---
 tipo: indice
-actualizado: 2026-11-22
+actualizado: 2026-11-22 19:12
 ---
 
 # 🔥 Simulador de Barbacoas — Cerebro
@@ -47,3 +47,7 @@ Simulador de barbacoas 3D en **primera persona**, estilo **low-poly**, hecho con
 - Todo lo que se decida se apunta en `Decisiones/` con fecha y motivo.
 - Claude lee esta nota al empezar cada sesión y deja un resumen en `Sesiones/`.
 - Esta bóveda vive en la rama `documentacion` del repo; nunca se mezcla con `main` ni `dev`.
+- **Fecha y hora automáticas:** cada nota guarda `actualizado: AAAA-MM-DD HH:MM` en sus propiedades al cambiarla.
+  - Cambios hechos en Obsidian → plugin *Update time on edit* (ya configurado; la primera vez Obsidian pide **confiar en el autor y activar los complementos**).
+  - Cambios hechos por Claude → hook `.claude/hooks/actualizar-fecha.py` (hora de Madrid).
+  - Las plantillas de `Plantillas/` no se fechan.
