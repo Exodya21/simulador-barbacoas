@@ -2,7 +2,7 @@
 tipo: produccion
 estado: definido
 fuente: Tablero FigJam, sección 6
-actualizado: 2026-11-22 19:37
+actualizado: 2026-11-22 19:56
 ---
 
 # Roadmap
@@ -25,7 +25,7 @@ actualizado: 2026-11-22 19:37
 - [ ] GDD de 1 página (público, plataforma, modos) → borrador en [[GDD]], pendiente de aprobar
 - [ ] Referencias: vídeos reales de parrilla y juegos de cocina → [[Referencias visuales]]
 - [ ] Elegir estilo visual low-poly + paleta → propuesta en [[GDD#Estilo visual ❓]], pendiente de aprobar
-- [x] Crear repo Godot 4 + importar Cogito → Godot 4.6.3 + Cogito 1.2.0 en `dev`, escena `escenas/patio_prueba.tscn`
+- [x] Crear repo Godot 4 + importar Cogito → Godot 4.7.2 + Cogito 1.2.0 en `dev` ([[2026-11-22 Godot 4.7.2 versión fija]]), escena `escenas/patio_prueba.tscn`
 - [x] Lista de assets y licencias → `CREDITS.md` en `dev` · [[Modelos 3D]], [[Licencias y Steam]]
 
 🏁 **Hito:** GDD aprobado y repo funcionando

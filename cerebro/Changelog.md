@@ -1,6 +1,6 @@
 ---
 tipo: changelog
-actualizado: 2026-11-22 19:40
+actualizado: 2026-11-22 19:56
 ---
 
 # 📜 Changelog
@@ -8,6 +8,8 @@ actualizado: 2026-11-22 19:40
 Registro de todo lo que cambia en el proyecto, de lo más reciente a lo más antiguo. Lo escribe **el Documentador**, el agente de Claude definido en `.claude/agents/documentador.md`. Cada decisión tiene además su nota en `Decisiones/`.
 
 ## 2026-11-22
+- **19:55** · Técnico · Rama `dev` (b8ba691): proyecto pasado a Godot 4.7.2, con 260 `.import` reescritos y README y `CREDITS.md` al día; la prueba de humo headless pasa → [[2026-11-22 Godot 4.7.2 versión fija]]
+- **19:55** · Decisión · La versión fija pasa de Godot 4.6.3 a 4.7.2, a petición del usuario; sustituye a [[2026-11-22 Godot 4.6.3 versión fija]] → [[2026-11-22 Godot 4.7.2 versión fija]]
 - **19:40** · Documentación · Completados los motivos y alternativas de las decisiones de paleta, GDD, sonido de fuego NC y carpetas en español; el Stack ya dice "Git LFS aplazado" en Gestión → [[2026-11-22 Paleta low-poly]] · [[2026-11-22 GDD en borrador]] · [[2026-11-22 Quitar sonido de fuego NC de Cogito]] · [[2026-11-22 Carpetas en español]] · [[Stack]]
 - **19:38** · Decisión · Propuesta del GDD: Steam Windows + Linux, Steam Deck en F4, demo en itch.io, modos Carrera y Libre, 9,99–14,99 € (pendiente de aprobar) → [[2026-11-22 GDD en borrador]]
 - **19:38** · Decisión · Propuesta de paleta low-poly de 15 colores planos, en `scripts/paleta.gd` (pendiente de aprobar) → [[2026-11-22 Paleta low-poly]]
