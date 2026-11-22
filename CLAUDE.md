@@ -1,6 +1,10 @@
 # Simulador de Barbacoas
 
-Simulador de barbacoas 3D en primera persona, low-poly, con Godot 4, para Steam. La memoria del proyecto es la bóveda de Obsidian `cerebro/`; empieza leyendo `cerebro/00 Inicio.md`.
+Simulador de barbacoas 3D en primera persona, low-poly, con Godot 4, para Steam. La memoria del proyecto es la bóveda de Obsidian `cerebro/`, que vive **solo en la rama `documentacion`**. Empieza leyendo su portada:
+- En `documentacion`: `cerebro/00 Inicio.md`.
+- En `main` o `dev`: `git fetch origin documentacion && git show "origin/documentacion:cerebro/00 Inicio.md"`.
+
+Este `CLAUDE.md` y la carpeta `.claude/` (skills, agente, hooks) son iguales en las tres ramas. Si cambias uno, cópialo a las otras dos.
 
 ## El Documentador (obligatorio)
 - Cada vez que termines un cambio en el proyecto, o que se tome, cambie o descarte una decisión, llama al subagente **`documentador`**. Pásale qué se hizo o decidió, el motivo y las alternativas descartadas.
