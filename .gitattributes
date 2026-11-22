@@ -10,3 +10,12 @@
 *.glb binary
 *.ogg binary
 *.wav binary
+*.gif binary
+*.hdr binary
+*.exr binary
+*.ttf binary
+*.otf binary
+*.res binary
+*.mo binary
+*.fbx binary
+*.mp3 binary

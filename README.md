@@ -18,6 +18,37 @@ Simulador de barbacoas 3D en primera persona, estilo low-poly, hecho con **Godot
 
 ## Stack
 
-- Motor: Godot 4 + GDScript (base: Cogito, MIT)
+- Motor: **Godot 4.6.3** + GDScript (base: Cogito 1.2.0, MIT)
 - Modelado: Blender
 - Assets: CC0 (Kenney, Quaternius, Poly Haven)
+
+## Abrir el proyecto
+
+1. Instalar **Godot 4.6.3** (versión estándar, no .NET).
+2. En Godot: *Importar* → elegir `project.godot` de este repo. La primera importación tarda un poco.
+3. F5 abre `escenas/patio_prueba.tscn`: patio gris con parrilla, mesa y una caja que se puede coger (E).
+   Las demos de Cogito siguen en `addons/cogito/DemoScenes/` (abrir `COGITO_0_MainMenu.tscn` y pulsar F6).
+
+## Estructura
+
+| Carpeta | Contenido |
+|---|---|
+| `addons/` | Cogito y sus plugins (no tocar salvo parches anotados en `CREDITS.md`) |
+| `escenas/` | Escenas del juego |
+| `scripts/` | Código propio (GDScript) |
+| `datos/` | Resources `.tres`: alimentos, parrillas, recetas… |
+| `pruebas/` | Pruebas automáticas |
+| `herramientas/` | Scripts de apoyo |
+| `licencias/` | Licencias de terceros para distribuir con el juego |
+
+## Comprobar que el proyecto funciona
+
+```bash
+GODOT=/ruta/a/godot herramientas/comprobar.sh
+```
+
+Importa el proyecto en modo headless y corre la escena principal 120 frames. Falla si hay errores de script.
+
+## Créditos
+
+Todo asset o código de terceros va en [`CREDITS.md`](CREDITS.md) con su licencia antes de entrar al repo.

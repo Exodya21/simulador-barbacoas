@@ -1,0 +1,130 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://addons/cogito/SceneManagement/cogito_scene.gd" id="1_escena"]
+[ext_resource type="PackedScene" path="res://addons/cogito/PackedScenes/cogito_player_advanced.tscn" id="2_jugador"]
+[ext_resource type="PackedScene" path="res://addons/cogito/PackedScenes/carriable_box.tscn" id="3_caja"]
+
+[sub_resource type="ProceduralSkyMaterial" id="Cielo_mat"]
+sky_top_color = Color(0.4235, 0.6078, 0.8235, 1)
+sky_horizon_color = Color(0.949, 0.6275, 0.4824, 1)
+ground_bottom_color = Color(0.17, 0.16, 0.18, 1)
+ground_horizon_color = Color(0.949, 0.6275, 0.4824, 1)
+
+[sub_resource type="Sky" id="Cielo"]
+sky_material = SubResource("Cielo_mat")
+
+[sub_resource type="Environment" id="Entorno"]
+background_mode = 2
+sky = SubResource("Cielo")
+ambient_light_source = 3
+tonemap_mode = 2
+ssao_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="Mat_cesped"]
+albedo_color = Color(0.4353, 0.6392, 0.2941, 1)
+
+[sub_resource type="StandardMaterial3D" id="Mat_ladrillo"]
+albedo_color = Color(0.7098, 0.3255, 0.2353, 1)
+
+[sub_resource type="StandardMaterial3D" id="Mat_metal"]
+albedo_color = Color(0.3529, 0.3725, 0.4, 1)
+metallic = 0.6
+roughness = 0.5
+
+[sub_resource type="StandardMaterial3D" id="Mat_brasa"]
+albedo_color = Color(0.9098, 0.4667, 0.1804, 1)
+emission_enabled = true
+emission = Color(0.9098, 0.4667, 0.1804, 1)
+emission_energy_multiplier = 1.5
+
+[sub_resource type="StandardMaterial3D" id="Mat_madera"]
+albedo_color = Color(0.5412, 0.3529, 0.2314, 1)
+
+[sub_resource type="BoxMesh" id="Malla_suelo"]
+material = SubResource("Mat_cesped")
+size = Vector3(30, 0.2, 30)
+
+[sub_resource type="BoxShape3D" id="Forma_suelo"]
+size = Vector3(30, 0.2, 30)
+
+[sub_resource type="BoxMesh" id="Malla_obra"]
+material = SubResource("Mat_ladrillo")
+size = Vector3(2, 0.8, 1)
+
+[sub_resource type="BoxShape3D" id="Forma_obra"]
+size = Vector3(2, 0.8, 1)
+
+[sub_resource type="BoxMesh" id="Malla_rejilla"]
+material = SubResource("Mat_metal")
+size = Vector3(1.6, 0.04, 0.8)
+
+[sub_resource type="BoxMesh" id="Malla_brasas"]
+material = SubResource("Mat_brasa")
+size = Vector3(1.5, 0.05, 0.7)
+
+[sub_resource type="BoxMesh" id="Malla_mesa"]
+material = SubResource("Mat_madera")
+size = Vector3(1.8, 0.08, 0.9)
+
+[sub_resource type="BoxShape3D" id="Forma_mesa"]
+size = Vector3(1.8, 0.75, 0.9)
+
+[node name="PatioPrueba" type="Node3D"]
+script = ExtResource("1_escena")
+
+[node name="Sol" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.5, -0.224144, 0.836516, 0, 0.965926, 0.258819, -0.866025, -0.12941, 0.482963, 0, 5, 0)
+light_color = Color(1, 0.9, 0.75, 1)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Entorno")
+
+[node name="Suelo" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
+
+[node name="Malla" type="MeshInstance3D" parent="Suelo"]
+mesh = SubResource("Malla_suelo")
+
+[node name="Colision" type="CollisionShape3D" parent="Suelo"]
+shape = SubResource("Forma_suelo")
+
+[node name="Parrilla" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4, -3)
+
+[node name="Obra" type="MeshInstance3D" parent="Parrilla"]
+mesh = SubResource("Malla_obra")
+
+[node name="Colision" type="CollisionShape3D" parent="Parrilla"]
+shape = SubResource("Forma_obra")
+
+[node name="Brasas" type="MeshInstance3D" parent="Parrilla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.42, 0)
+mesh = SubResource("Malla_brasas")
+
+[node name="Rejilla" type="MeshInstance3D" parent="Parrilla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0)
+mesh = SubResource("Malla_rejilla")
+
+[node name="LuzBrasas" type="OmniLight3D" parent="Parrilla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7, 0)
+light_color = Color(0.9098, 0.4667, 0.1804, 1)
+light_energy = 1.5
+omni_range = 3.0
+
+[node name="Mesa" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -2)
+
+[node name="Tablero" type="MeshInstance3D" parent="Mesa"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0)
+mesh = SubResource("Malla_mesa")
+
+[node name="Colision" type="CollisionShape3D" parent="Mesa"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.375, 0)
+shape = SubResource("Forma_mesa")
+
+[node name="CajaComida" parent="." instance=ExtResource("3_caja")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 1.1, -2)
+
+[node name="Jugador" parent="." instance=ExtResource("2_jugador")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 2)
