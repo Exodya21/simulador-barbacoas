@@ -1,6 +1,6 @@
 ---
 tipo: changelog
-actualizado: 2026-11-22 22:02
+actualizado: 2026-11-22 22:25
 ---
 
 # 📜 Changelog
@@ -8,6 +8,14 @@ actualizado: 2026-11-22 22:02
 Registro de todo lo que cambia en el proyecto, de lo más reciente a lo más antiguo. Lo escribe **el Documentador**, el agente de Claude definido en `.claude/agents/documentador.md`. Cada decisión tiene además su nota en `Decisiones/`.
 
 ## 2026-11-22
+- **22:24** · Documentación · Roadmap y 00 Inicio: F1 en curso; rejilla, hamburguesa y depuración hechas; pinzas y vídeos de YouTube en parte → [[Roadmap]] · [[00 Inicio]]
+- **22:24** · Decisión · La depuración se ve por defecto en las versiones de desarrollo, y F3 la alterna → [[2026-11-22 Depuración visible en desarrollo]]
+- **22:24** · Decisión · La colisión de la hamburguesa es un prisma convexo de 12 lados, porque Jolt falla con cilindros finos → [[2026-11-22 Colisión de la hamburguesa como prisma de 12 lados]]
+- **22:24** · Decisión · Dar la vuelta con una interacción propia (tecla F) sobre Cogito → [[2026-11-22 Dar la vuelta con interacción propia]]
+- **22:24** · Decisión · Rejilla de calor por celdas (8×4) con brasas por celda → [[2026-11-22 Rejilla de calor por celdas]]
+- **22:24** · Decisión · Cocción por caras con temperatura de superficie e interior → [[2026-11-22 Cocción por caras con superficie e interior]]
+- **22:24** · Técnico · Rama `dev` (0a44ab6): empieza la F1 con rejilla de calor, hamburguesa con cocción por caras, voltear con F, depuración con F3 y pruebas `test_coccion` y `test_parrilla` (pasan con 4.7.2) → [[Roadmap]]
+- **22:24** · Documentación · Guardado el vídeo de referencia elegido por el usuario, sin revisar porque YouTube no es accesible desde el entorno cloud → [[Referencias de parrilla y juegos]]
 - **22:02** · Documentación · Roadmap corregido: el paso 2 de "Próximos pasos esta semana" ya dice que Cogito está probado en el editor con Godot 4.7.2 → [[Roadmap]]
 - **22:01** · Producción · Las tareas sueltas de la F0 (vídeos de YouTube, tipo de violencia y licencia de las banderas de Freepik) pasan a la F1 → [[Roadmap]]
 - **22:01** · Decisión · F0 cerrada: se cumple el hito "GDD aprobado y repo funcionando"; la siguiente fase es la F1 → [[2026-11-22 F0 cerrada]]

@@ -1,6 +1,6 @@
 ---
 tipo: referencia
-actualizado: 2026-11-22 22:01
+actualizado: 2026-11-22 22:25
 ---
 
 # Referencias de parrilla real y juegos de cocina
@@ -53,6 +53,8 @@ Cuántos segundos aguantas la mano sobre la rejilla ([Turismo de Buenos Aires](h
 Otros proyectos de referencia y por qué no se reutilizan: [[Juegos de referencia]].
 
 ## 📺 Vídeos para buscar en YouTube
+**Referencia elegida por el usuario:** https://www.youtube.com/watch?v=D5F9SFzMw3A (contenido sin revisar: YouTube no es accesible desde el entorno cloud)
+
 La búsqueda no devolvió enlaces directos a vídeos, solo artículos. Búsquedas que conviene hacer a mano y guardar aquí:
 - "brasero parrilla argentina" y "cómo hacer brasas para asado"
 - Canales de parrilleros argentinos, por ejemplo la **Escuela Argentina de Parrilleros**. ([Vía País](https://viapais.com.ar/rumbos/el-chorizo-no-se-pincha-y-otras-nuevas-verdades-sobre-el-asado-que-pueden-cambiarlo-todo))

@@ -2,7 +2,7 @@
 tipo: tecnico
 estado: definido
 fuente: Tablero FigJam, sección 2
-actualizado: 2026-11-22
+actualizado: 2026-11-22 22:25
 ---
 
 # Arquitectura
@@ -24,12 +24,12 @@ flowchart TD
 
 ### 🔥 Sistema de Fuego
 - Combustible: carbón, leña, gas
-- Temperatura por zonas (rejilla de celdas de calor)
+- Temperatura por zonas (rejilla de celdas de calor) → hecho en la F1: `RejillaCalor`, 8×4 celdas ([[2026-11-22 Rejilla de calor por celdas]])
 - Encendido, apagado, viento
 - Llamaradas cuando gotea grasa
 
 ### 🥩 Sistema de Cocción
-- Cada alimento: temperatura interna y superficie por cara
+- Cada alimento: temperatura interna y superficie por cara → hecho en la F1: `EstadoCoccion` y `TipoAlimento` ([[2026-11-22 Cocción por caras con superficie e interior]])
 - Estados: crudo → sellado → al punto → pasado → quemado
 - Shader que mezcla texturas según cocción
 - Tablas de cocción por tipo de carne

@@ -1,6 +1,6 @@
 ---
 tipo: indice
-actualizado: 2026-11-22 22:01
+actualizado: 2026-11-22 22:25
 ---
 
 # 🔥 Simulador de Barbacoas — Cerebro
@@ -14,7 +14,7 @@ Simulador de barbacoas 3D en **primera persona**, estilo **low-poly**, hecho con
 - [x] Contenido completo del tablero FigJam volcado → [[Tablero FigJam]]
 - [x] Core loop definido → [[Core loop]]
 - [x] **F0 · Preproducción**, cerrada el 22-11-2026: repo Godot + Cogito, créditos, [[GDD]] aprobado y [[Referencias de parrilla y juegos]] → [[Roadmap#F0 · Preproducción — semanas 1–2]]
-- [ ] **F1 · Prototipo gris** (semanas 3–6): ¿es divertido girar una hamburguesa? → [[Roadmap#F1 · Prototipo gris — semanas 3–6]]
+- [ ] **F1 · Prototipo gris** (semanas 3–6), 🚧 **en curso** desde el 22-11-2026: rejilla de calor, hamburguesa con cocción por caras y depuración hechas. ¿Es divertido girar una hamburguesa? → [[Roadmap#F1 · Prototipo gris — semanas 3–6]]
 - [ ] Próximos pasos de esta semana → [[Roadmap#👉 Próximos pasos esta semana]]
 
 ## Mapa

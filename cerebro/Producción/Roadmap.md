@@ -2,7 +2,7 @@
 tipo: produccion
 estado: definido
 fuente: Tablero FigJam, sección 6
-actualizado: 2026-11-22 22:02
+actualizado: 2026-11-22 22:25
 ---
 
 # Roadmap
@@ -33,14 +33,15 @@ actualizado: 2026-11-22 22:02
 - [x] Repo funcionando → Godot 4.7.2 + Cogito en `dev`, probado en el editor por el usuario
 
 ## F1 · Prototipo gris — semanas 3–6
-- [ ] Parrilla con rejilla de zonas de calor
-- [ ] 1 alimento (hamburguesa) con cocción por caras
-- [ ] Pinzas: coger, girar, mover
-- [ ] Termómetro y valores de depuración
+🚧 **En curso** desde el 22-11-2026 (commit `0a44ab6` en `dev`).
+- [x] Parrilla con rejilla de zonas de calor → `RejillaCalor`, 8×4 celdas ([[2026-11-22 Rejilla de calor por celdas]])
+- [x] 1 alimento (hamburguesa) con cocción por caras → [[2026-11-22 Cocción por caras con superficie e interior]]
+- [ ] Pinzas: coger, girar, mover → **en parte**: se coge, se mueve y se da la vuelta con las manos (E y F, [[2026-11-22 Dar la vuelta con interacción propia]]); faltan las pinzas como utensilio
+- [x] Termómetro y valores de depuración → versión de depuración con F3 ([[2026-11-22 Depuración visible en desarrollo]]); el termómetro como utensilio queda para más adelante
 - [ ] Playtest interno
 
 Arrastrado de la F0 (no bloquea el hito) → [[2026-11-22 F0 cerrada]]:
-- [ ] Guardar vídeos de YouTube de parrilla y gameplay (búsquedas en [[Referencias de parrilla y juegos]])
+- [ ] Guardar vídeos de YouTube de parrilla y gameplay (búsquedas en [[Referencias de parrilla y juegos]]) → **en parte**: guardado el vídeo elegido por el usuario, sin revisar
 - [ ] Concretar el tipo de violencia (clasificación) → [[2026-11-22 GDD aprobado]]
 - [ ] Revisar la licencia de las banderas de Freepik de Cogito → [[2026-11-22 Riesgo de licencia en las banderas de Cogito]]
 
@@ -87,7 +88,7 @@ Arrastrado de la F0 (no bloquea el hito) → [[2026-11-22 F0 cerrada]]:
 - [x] 2. Clonar Cogito y probar su demo (importado y probado en modo headless; probado en el editor con Godot 4.7.2)
 - [ ] 3. Descargar Kenney Food Kit
 - [x] 4. Escribir el GDD de 1 página (aprobado → [[GDD]])
-- [ ] 5. Prototipar la rejilla de calor con cubos
+- [x] 5. Prototipar la rejilla de calor con cubos (hecho en la F1 → [[2026-11-22 Rejilla de calor por celdas]])
 
 ## Ya hecho (fuera del plan)
 - [x] Demo web del concepto → [[Demo jardín con parrilla]]
