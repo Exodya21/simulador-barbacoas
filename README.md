@@ -18,13 +18,13 @@ Simulador de barbacoas 3D en primera persona, estilo low-poly, hecho con **Godot
 
 ## Stack
 
-- Motor: **Godot 4.6.3** + GDScript (base: Cogito 1.2.0, MIT)
+- Motor: **Godot 4.7.2** + GDScript (base: Cogito 1.2.0, MIT, pensado para 4.6.3)
 - Modelado: Blender
 - Assets: CC0 (Kenney, Quaternius, Poly Haven)
 
 ## Abrir el proyecto
 
-1. Instalar **Godot 4.6.3** (versión estándar, no .NET).
+1. Instalar **Godot 4.7.2** (versión estándar, no .NET). Todo el equipo con la misma versión: otra versión reescribe los `.import`.
 2. En Godot: *Importar* → elegir `project.godot` de este repo. La primera importación tarda un poco.
 3. F5 abre `escenas/patio_prueba.tscn`: patio gris con parrilla, mesa y una caja que se puede coger (E).
    Las demos de Cogito siguen en `addons/cogito/DemoScenes/` (abrir `COGITO_0_MainMenu.tscn` y pulsar F6).

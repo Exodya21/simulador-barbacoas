@@ -9,7 +9,7 @@ Leyenda: **CC0** = libre sin créditos · **CC-BY** = crédito obligatorio en el
 
 | Qué | Autor | Versión | Licencia | Dónde | Notas |
 |---|---|---|---|---|---|
-| Godot Engine | Juan Linietsky, Ariel Manzur y contribuidores | 4.6.3 | MIT | — | Incluir su aviso de copyright y el de sus librerías (`Engine.get_copyright_info()`) en la pantalla de créditos o junto al ejecutable. |
+| Godot Engine | Juan Linietsky, Ariel Manzur y contribuidores | 4.7.2 | MIT | — | Incluir su aviso de copyright y el de sus librerías (`Engine.get_copyright_info()`) en la pantalla de créditos o junto al ejecutable. |
 | COGITO | Philip Drobar (Phazorknight) y contribuidores | 1.2.0 (commit `a2d7afa`, 14-11-2026) | MIT | `addons/cogito/` | codeberg.org/Phazorknight/Cogito · licencia en `licencias/cogito-MIT.txt` |
 | Godot State Charts | Jan Thomä (derkork) y contribuidores | incluida en Cogito 1.2.0 | MIT | `addons/godot_state_charts/` | `licencias/godot_state_charts-MIT.txt` |
 | Input Helper | Nathan Hoad | incluida en Cogito 1.2.0 | MIT | `addons/input_helper/` | `licencias/input_helper-MIT.txt` |
