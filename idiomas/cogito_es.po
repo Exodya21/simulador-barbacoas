@@ -1,0 +1,1160 @@
+# Spanish translation for Cogito for the following files:
+# res://addons/cogito/DemoScenes/DemoPrefabs/note_welcome.tscn
+# res://addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+# res://addons/cogito/InventoryPD/Items/Cogito_Battery.tres
+#
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Cogito\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.10\n"
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "TAB_GAMEPLAY"
+msgstr "Jugabilidad"
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "LAB_LANGUAGE"
+msgstr "Idioma"
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "English"
+msgstr ""
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "LAB_HEADBOB"
+msgstr "Balanceo de cámara"
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "LAB_MOUSE_SENS"
+msgstr "Sensibilidad del ratón"
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "BTN_INVERT_Y"
+msgstr "Invertir eje Y"
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "Inverts looking up and down direction."
+msgstr "Invierte la dirección al mirar arriba y abajo."
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "BTN_TOGGLE_CROUCH"
+msgstr "Agacharse (alternar)"
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "LAB_GAMEPAD_SETTINGS"
+msgstr "Ajustes del mando"
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "LAB_LOOK_SENSITIVITY"
+msgstr "Sensibilidad de la vista"
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "TAB_GRAPHICS"
+msgstr "Gráficos"
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "LAB_RESOLUTION"
+msgstr "Resolución"
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "100% - 1920x1080"
+msgstr ""
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "LAB_FULLSCREEN_MODE"
+msgstr "Pantalla completa"
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "LAB_2D_Anti_Aliasing"
+msgstr "Antialiasing 2D"
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "Smooth out edges of 2D objects"
+msgstr "Suaviza los bordes de los objetos 2D"
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "Off"
+msgstr "No"
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "2x"
+msgstr ""
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "4x"
+msgstr ""
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "8x"
+msgstr ""
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "LAB_3D_Anti_Aliasing"
+msgstr "Antialiasing 3D"
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "Smooths out edges of 3D objects"
+msgstr "Suaviza los bordes de los objetos 3D"
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "LAB_UI_SCALE"
+msgstr "Escala de la interfaz"
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "1"
+msgstr ""
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "BTN_VSYNC"
+msgstr "Sincronización vertical"
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "Syncs Games Frame Rate with Displays Refresh Rate"
+msgstr "Sincroniza los FPS del juego con la frecuencia de la pantalla"
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "TAB_AUDIO"
+msgstr "Audio"
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "Master Volume"
+msgstr "Volumen general"
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "0 %"
+msgstr ""
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "SFX Volume"
+msgstr "Volumen de efectos"
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "Music Volume"
+msgstr "Volumen de la música"
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "TAB_BINDINGS"
+msgstr "Controles"
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "Restore Defaults"
+msgstr "Restablecer"
+
+#: addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn
+msgid "BTN_APPLY_CHANGES"
+msgstr "Aplicar cambios"
+
+#: addons/cogito/EasyMenus/Scenes/PauseMenu.tscn
+msgid "LAB_PauseMenu"
+msgstr "Pausa"
+
+#: addons/cogito/EasyMenus/Scenes/PauseMenu.tscn
+msgid "BTN_Resume"
+msgstr "Continuar"
+
+#: addons/cogito/EasyMenus/Scenes/PauseMenu.tscn
+msgid "LAB_Last_save"
+msgstr "Última partida guardada"
+
+#: addons/cogito/EasyMenus/Scenes/PauseMenu.tscn
+msgid "LAB_Current Slot"
+msgstr "Ranura actual"
+
+#: addons/cogito/EasyMenus/Scenes/PauseMenu.tscn
+msgid "BTN_QuickLoad"
+msgstr "Carga rápida"
+
+#: addons/cogito/EasyMenus/Scenes/PauseMenu.tscn
+msgid "BTN_Save"
+msgstr "Guardar"
+
+#: addons/cogito/EasyMenus/Scenes/PauseMenu.tscn
+msgid "BTN_Load"
+msgstr "Cargar"
+
+#: addons/cogito/EasyMenus/Scenes/PauseMenu.tscn
+msgid "BTN_Options"
+msgstr "Opciones"
+
+#: addons/cogito/EasyMenus/Scenes/PauseMenu.tscn
+msgid "BTN_Back_to_Menu"
+msgstr "Volver al menú principal"
+
+#: addons/cogito/EasyMenus/Scenes/PauseMenu.tscn
+msgid "BTN_Quit"
+msgstr "Salir"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_keybindings.tres
+msgid "INPUT_move_forward"
+msgstr "Avanzar"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_keybindings.tres
+msgid "INPUT_move_backward"
+msgstr "Retroceder"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_keybindings.tres
+msgid "INPUT_move_left"
+msgstr "Izquierda"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_keybindings.tres
+msgid "INPUT_move_right"
+msgstr "Derecha"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_keybindings.tres
+msgid "INPUT_jump"
+msgstr "Saltar"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_keybindings.tres
+msgid "INPUT_crouch"
+msgstr "Agacharse"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_keybindings.tres
+msgid "INPUT_primary_action"
+msgstr "Acción principal"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_keybindings.tres
+msgid "INPUT_secondary_action"
+msgstr "Acción secundaria"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_keybindings.tres
+msgid "INPUT_interact_1"
+msgstr "Interactuar 1"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_keybindings.tres
+msgid "INPUT_interact_2"
+msgstr "Interactuar 2"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_keybindings.tres
+msgid "INPUT_reload"
+msgstr "Recargar"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_keybindings.tres
+msgid "INPUT_quickslot_1"
+msgstr "Acceso rápido 1"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_keybindings.tres
+msgid "INPUT_quickslot_2"
+msgstr "Acceso rápido 2"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_keybindings.tres
+msgid "INPUT_quickslot_3"
+msgstr "Acceso rápido 3"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_keybindings.tres
+msgid "INPUT_quickslot_4"
+msgstr "Acceso rápido 4"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_keybindings.tres
+msgid "INPUT_quickslot_prev"
+msgstr "Acceso rápido anterior"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_keybindings.tres
+msgid "INPUT_quickslot_next"
+msgstr "Acceso rápido siguiente"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_keybindings.tres
+msgid "INPUT_pause"
+msgstr "Menú de pausa"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_keybindings.tres
+msgid "INPUT_inventory"
+msgstr "Inventario"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_keybindings.tres
+msgid "INPUT_item_quick_drop"
+msgstr "Soltar objeto"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_keybindings.tres
+msgid "INPUT_item_move"
+msgstr "Mover objeto"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_keybindings.tres
+msgid "INPUT_item_use"
+msgstr "Usar objeto"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_keybindings.tres
+msgid "SEPARATOR_MOVEMENT"
+msgstr "MOVIMIENTO"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_keybindings.tres
+msgid "SEPARATOR_ACTIONS"
+msgstr "ACCIONES"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_keybindings.tres
+msgid "SEPARATOR_MENUES"
+msgstr "MENÚS"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_keybindings.tres
+msgid "INPUT_item_rotate"
+msgstr "Girar objeto"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_keybindings.tres
+msgid "INPUT_change_ammo_type"
+msgstr "Cambiar munición"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Components/Interactions/CarryableComponent.tscn
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_common_interactions.tres
+msgid "INTERACT_carry"
+msgstr "Llevar"
+
+#: addons/cogito/Components/Interactions/PickupComponent.tscn
+msgid "INTERACT_Pick_up"
+msgstr "Coger"
+
+#: addons/cogito/Components/Interactions/BackpackComponent.tscn
+msgid "INTERACT_Extend_Inventory"
+msgstr "Ampliar inventario"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_attributes.tres
+msgid "ATTR_health"
+msgstr "Salud"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_attributes.tres
+msgid "ATTR_stamina"
+msgstr "Aguante"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_attributes.tres
+msgid "ATTR_strength"
+msgstr "Fuerza"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_attributes.tres
+msgid "ATTR_sanity"
+msgstr "Cordura"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_attributes.tres
+msgid "ATTR_visibility"
+msgstr "Visibilidad"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_attributes.tres
+msgid "ATTR_oxygen"
+msgstr "Oxígeno"
+
+#: addons/cogito/PackedScenes/Player_HUD.tscn
+msgid "00"
+msgstr ""
+
+#: addons/cogito/PackedScenes/Player_HUD.tscn
+msgid "TAB_player_inventory"
+msgstr "Inventario"
+
+#: addons/cogito/PackedScenes/Player_HUD.tscn
+msgid "TAB_quests"
+msgstr "Misiones"
+
+#: addons/cogito/PackedScenes/Player_HUD.tscn
+msgid "LAB_quests"
+msgstr "Misiones"
+
+#: addons/cogito/PackedScenes/Player_HUD.tscn
+msgid "QUESTS_active"
+msgstr "Activas"
+
+#: addons/cogito/PackedScenes/Player_HUD.tscn
+msgid "QUESTS_completed"
+msgstr "Completadas"
+
+#: addons/cogito/PackedScenes/Player_HUD.tscn
+msgid "QUESTS_failed"
+msgstr "Fallidas"
+
+#: addons/cogito/PackedScenes/Player_HUD.tscn
+msgid "TAB_stats"
+msgstr "Estadísticas"
+
+#: addons/cogito/PackedScenes/Player_HUD.tscn
+msgid "LAB_stats"
+msgstr "Estadísticas"
+
+#: addons/cogito/PackedScenes/Player_HUD.tscn
+msgid "Attributes"
+msgstr "Atributos"
+
+#: addons/cogito/PackedScenes/Player_HUD.tscn
+msgid "IGNORE_ItemName"
+msgstr ""
+
+#: addons/cogito/PackedScenes/Player_HUD.tscn
+msgid ""
+"IGNORE_Item description going over to lines. Testing overflow as well to "
+"make sure the panel container extends as needed."
+msgstr ""
+
+#: addons/cogito/PackedScenes/Player_HUD.tscn
+msgid "INTERFACE_Use"
+msgstr "Usar"
+
+#: addons/cogito/PackedScenes/Player_HUD.tscn
+msgid "INTERFACE_Move"
+msgstr "Mover"
+
+#: addons/cogito/PackedScenes/Player_HUD.tscn
+msgid "INTERFACE_Drop"
+msgstr "Soltar"
+
+#: addons/cogito/PackedScenes/Player_HUD.tscn
+msgid "INTERFACE_AssignQuickslot"
+msgstr "Asignar acceso rápido"
+
+#: addons/cogito/PackedScenes/death_screen.tscn
+msgid "LAB_you_died"
+msgstr "Has muerto"
+
+#: addons/cogito/PackedScenes/death_screen.tscn
+msgid "LAB_current_slot"
+msgstr "Ranura de guardado"
+
+#: addons/cogito/PackedScenes/death_screen.tscn
+msgid "LAB_last_save"
+msgstr "Última partida guardada"
+
+#: addons/cogito/PackedScenes/death_screen.tscn
+msgid "BTN_Reload"
+msgstr "Recargar"
+
+#: addons/cogito/PackedScenes/death_screen.tscn
+msgid "BTN_back_to_menu"
+msgstr "Volver al menú principal"
+
+#: addons/cogito/PackedScenes/death_screen.tscn
+msgid "BTN_quit"
+msgstr "Salir"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_common_interactions.tres
+msgid "DOOR_Unlock"
+msgstr "Abrir con llave"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_common_interactions.tres
+msgid "DOOR_Lock"
+msgstr "Cerrar con llave"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_common_interactions.tres
+msgid "DOOR_Open"
+msgstr "Abrir"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_common_interactions.tres
+msgid "DOOR_Close"
+msgstr "Cerrar"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_common_interactions.tres
+msgid "DOOR_locked_hint"
+msgstr "No puedo abrirla."
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_common_interactions.tres
+msgid "SEAT_Stand_Up"
+msgstr "Levantarse"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_common_interactions.tres
+msgid "SEAT_Sit"
+msgstr "Sentarse"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_common_interactions.tres
+msgid "SWITCH_off"
+msgstr "Apagar"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_common_interactions.tres
+msgid "SWITCH_on"
+msgstr "Encender"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_common_interactions.tres
+msgid "INTERACT_Read"
+msgstr "Leer"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_common_interactions.tres
+msgid "INTERACT_drop"
+msgstr "Soltar"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_common_interactions.tres
+msgid "INTERACT_rotate"
+msgstr "Girar"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_common_interactions.tres
+msgid "INTERACT_hold_joiner"
+msgstr " | (MANTENER) "
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_common_interactions.tres
+msgid "INTERACT_place"
+msgstr "Colocar"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_common_interactions.tres
+msgid "INTERACT_remove"
+msgstr "Quitar"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_common_interactions.tres
+msgid "INVENTORY_add_item"
+msgstr "añadido al inventario."
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_common_interactions.tres
+msgid "INVENTORY_cant_pick_up"
+msgstr "no se puede coger."
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_common_interactions.tres
+msgid "KEYPAD_enter_code"
+msgstr "Introduce el código."
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_common_interactions.tres
+msgid "KEYPAD_access_granted"
+msgstr "Acceso concedido."
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_common_interactions.tres
+msgid "UI_BTN_take_all"
+msgstr "Cogerlo todo"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_common_interactions.tres
+msgid "INTERACT_pick_lock"
+msgstr "Forzar cerradura"
+
+#. TRANSLATORS: item name
+#: addons/cogito/InventoryPD/Items/Cogito_Battery.tres
+msgid "Battery"
+msgstr "Pila"
+
+#. TRANSLATORS: item description
+#: addons/cogito/InventoryPD/Items/Cogito_Battery.tres
+msgid "Can be combined with the Flashlight. Non-rechargeable."
+msgstr "Se puede combinar con la linterna. No es recargable."
+
+#. TRANSLATORS: item hint on use
+#: addons/cogito/InventoryPD/Items/Cogito_Battery.tres
+msgid "Can't use this by itself."
+msgstr "No se puede usar sola."
+
+#. TRANSLATORS: item name
+#: addons/cogito/InventoryPD/Items/Cogito_Coins.tres
+msgid "Coins (5)"
+msgstr "Monedas (5)"
+
+#. TRANSLATORS: item description
+#: addons/cogito/InventoryPD/Items/Cogito_Coins.tres
+msgid "It's spare change but can add up."
+msgstr "Es calderilla, pero suma."
+
+#. TRANSLATORS: item hint on use
+#: addons/cogito/InventoryPD/Items/Cogito_Coins.tres
+msgid "Added 5 credits to wallet."
+msgstr "Has añadido 5 créditos a la cartera."
+
+#. TRANSLATORS: item name
+#: addons/cogito/InventoryPD/Items/Cogito_DiamondKey_A.tres
+msgid "Diamond Half A"
+msgstr "Mitad de diamante A"
+
+#. TRANSLATORS: item description
+#: addons/cogito/InventoryPD/Items/Cogito_DiamondKey_A.tres
+msgid "Looks like it's only half of some kind of shape."
+msgstr "Parece la mitad de alguna forma."
+
+#. TRANSLATORS: item hint on use
+#: addons/cogito/InventoryPD/Items/Cogito_DiamondKey_A.tres
+#: addons/cogito/InventoryPD/Items/Cogito_DiamondKey_B.tres
+#: addons/cogito/InventoryPD/Items/Cogito_FoamBullets.tres
+msgid "Can't be used by itself."
+msgstr "No se puede usar sola."
+
+#. TRANSLATORS: item name
+#: addons/cogito/InventoryPD/Items/Cogito_DiamondKey_B.tres
+msgid "Diamond Half B"
+msgstr "Mitad de diamante B"
+
+#. TRANSLATORS: item description
+#: addons/cogito/InventoryPD/Items/Cogito_DiamondKey_B.tres
+msgid "Looks incomplete. Maybe I can find the rest of it?"
+msgstr "Parece incompleta. ¿Encontraré el resto?"
+
+#. TRANSLATORS: item name
+#: addons/cogito/InventoryPD/Items/Cogito_DiamondKey_Combine.tres
+msgid "Diamond Key"
+msgstr "Llave de diamante"
+
+#. TRANSLATORS: item description
+#: addons/cogito/InventoryPD/Items/Cogito_DiamondKey_Combine.tres
+msgid "This looks like it could fit into something."
+msgstr "Parece que encaja en algo."
+
+#. TRANSLATORS: item hint on use
+#: addons/cogito/InventoryPD/Items/Cogito_DiamondKey_Combine.tres
+msgid "Now where does this fit?"
+msgstr "¿Y dónde encaja esto?"
+
+#. TRANSLATORS: item name
+#: addons/cogito/InventoryPD/Items/Cogito_FoamBullets.tres
+msgid "Foam Bullets"
+msgstr "Balas de espuma"
+
+#. TRANSLATORS: item description
+#: addons/cogito/InventoryPD/Items/Cogito_FoamBullets.tres
+msgid "Very visible but not very dangerous. Have a tendency to vanish."
+msgstr "Se ven mucho pero no hacen mucho daño. Suelen perderse."
+
+#. TRANSLATORS: item name
+#: addons/cogito/InventoryPD/Items/Cogito_HealthPotion.tres
+msgid "Health Potion"
+msgstr "Poción de salud"
+
+#. TRANSLATORS: item description
+#: addons/cogito/InventoryPD/Items/Cogito_HealthPotion.tres
+#: addons/cogito/InventoryPD/Items/Cogito_StaminaExtPotion.tres
+msgid "Tastes better than it looks."
+msgstr "Sabe mejor de lo que parece."
+
+#. TRANSLATORS: item hint on use
+#: addons/cogito/InventoryPD/Items/Cogito_HealthPotion.tres
+msgid "You've gained 10 health."
+msgstr "Has ganado 10 de salud."
+
+#. TRANSLATORS: item name
+#: addons/cogito/InventoryPD/Items/Cogito_Key.tres
+msgid "Key"
+msgstr "Llave"
+
+#. TRANSLATORS: item description
+#: addons/cogito/InventoryPD/Items/Cogito_Key.tres
+msgid "Opens a locked door."
+msgstr "Abre una puerta cerrada."
+
+#. TRANSLATORS: item hint on use
+#: addons/cogito/InventoryPD/Items/Cogito_Key.tres
+msgid "This should fit a door around here."
+msgstr "Debería abrir alguna puerta por aquí."
+
+#. TRANSLATORS: item name
+#: addons/cogito/InventoryPD/Items/Cogito_Laptop.tres
+msgid "Laptop"
+msgstr "Portátil"
+
+#. TRANSLATORS: item description
+#: addons/cogito/InventoryPD/Items/Cogito_Laptop.tres
+msgid ""
+"Feels light and doesn't turn on.\n"
+"Does that matter?"
+msgstr "Pesa poco y no se enciende.\n¿Importa?"
+
+#. TRANSLATORS: item hint on use
+#: addons/cogito/InventoryPD/Items/Cogito_Laptop.tres
+msgid "I was supposed to do something with this."
+msgstr "Tenía que hacer algo con esto."
+
+#. TRANSLATORS: item name
+#: addons/cogito/InventoryPD/Items/Cogito_LaptopReal.tres
+msgid "CEOs Laptop"
+msgstr "Portátil del director"
+
+#. TRANSLATORS: item description
+#: addons/cogito/InventoryPD/Items/Cogito_LaptopReal.tres
+msgid "The CEO's laptop. There's probably a lot of valuable data on here."
+msgstr "El portátil del director. Seguro que tiene datos valiosos."
+
+#. TRANSLATORS: item hint on use
+#: addons/cogito/InventoryPD/Items/Cogito_LaptopReal.tres
+msgid "I was supposed to do somoething with this."
+msgstr "Tenía que hacer algo con esto."
+
+#. TRANSLATORS: item name
+#: addons/cogito/InventoryPD/Items/Cogito_LaserAmmo.tres
+msgid "Laser Ammo"
+msgstr "Munición láser"
+
+#. TRANSLATORS: item description
+#: addons/cogito/InventoryPD/Items/Cogito_LaserAmmo.tres
+msgid "Tends to get hot. One clip has a charge of 50."
+msgstr "Se calienta. Cada cargador tiene 50 de carga."
+
+#. TRANSLATORS: item name
+#: addons/cogito/InventoryPD/Items/Cogito_PageCombined.tres
+msgid "Combined Page"
+msgstr "Página unida"
+
+#. TRANSLATORS: item description
+#: addons/cogito/InventoryPD/Items/Cogito_PageCombined.tres
+msgid ""
+"Reassembled page from the ripped pieces. It says \"New code is 0451\" on it."
+msgstr "Página rehecha con los trozos rotos. Pone \"El nuevo código es 0451\"."
+
+#. TRANSLATORS: item hint on use
+#: addons/cogito/InventoryPD/Items/Cogito_PageCombined.tres
+msgid "I should probably read this."
+msgstr "Debería leer esto."
+
+#. TRANSLATORS: item name
+#: addons/cogito/InventoryPD/Items/Cogito_RippedPage_A.tres
+msgid "Ripped Page A"
+msgstr "Página rota A"
+
+#. TRANSLATORS: item description
+#: addons/cogito/InventoryPD/Items/Cogito_RippedPage_A.tres
+#: addons/cogito/InventoryPD/Items/Cogito_RippedPage_B.tres
+msgid ""
+"A piece of paper ripped in half. It has some numbers on it but parts are "
+"missing."
+msgstr "Un papel roto por la mitad. Tiene números, pero faltan partes."
+
+#. TRANSLATORS: item hint on use
+#: addons/cogito/InventoryPD/Items/Cogito_RippedPage_A.tres
+#: addons/cogito/InventoryPD/Items/Cogito_RippedPage_B.tres
+msgid "I need the other half."
+msgstr "Necesito la otra mitad."
+
+#. TRANSLATORS: item name
+#: addons/cogito/InventoryPD/Items/Cogito_RippedPage_B.tres
+msgid "Ripped Page B"
+msgstr "Página rota B"
+
+#. TRANSLATORS: item name
+#: addons/cogito/InventoryPD/Items/Cogito_StaminaExtPotion.tres
+msgid "Stamina Extension"
+msgstr "Mejora de aguante"
+
+#. TRANSLATORS: item hint on use
+#: addons/cogito/InventoryPD/Items/Cogito_StaminaExtPotion.tres
+msgid "Your max stamina has increased by 15."
+msgstr "Tu aguante máximo ha subido 15."
+
+#. TRANSLATORS: item name
+#: addons/cogito/InventoryPD/Items/Cogito_StrengthPotion.tres
+msgid "Strength Potion"
+msgstr "Poción de fuerza"
+
+#. TRANSLATORS: item description
+#: addons/cogito/InventoryPD/Items/Cogito_StrengthPotion.tres
+msgid "Raw eggs, protein powder, spinach and eleven herbs and spices."
+msgstr "Huevos crudos, proteína en polvo, espinacas y once hierbas y especias."
+
+#. TRANSLATORS: item hint on use
+#: addons/cogito/InventoryPD/Items/Cogito_StrengthPotion.tres
+msgid "Your strength improved!"
+msgstr "¡Tu fuerza ha mejorado!"
+
+#. TRANSLATORS: item name
+#: addons/cogito/InventoryPD/Items/Cogito_UselessItem.tres
+msgid "Useless"
+msgstr "Objeto inútil"
+
+#. TRANSLATORS: item description
+#: addons/cogito/InventoryPD/Items/Cogito_UselessItem.tres
+msgid "This item has no use function."
+msgstr "Este objeto no sirve para nada."
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_quest_system.tres
+msgid "QUEST_start"
+msgstr "Misión empezada"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_quest_system.tres
+msgid "QUEST_complete"
+msgstr "Misión completada"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_quest_system.tres
+msgid "QUEST_fail"
+msgstr "Misión fallida"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_quest_system.tres
+msgid "QUEST_update"
+msgstr "Misión actualizada"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_comon_hints.tres
+msgid "HINT_cant_carry"
+msgstr "No puedes llevar cosas con un objeto en la mano."
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_comon_hints.tres
+msgid "HINT_cant_pick_up"
+msgstr "no se puede coger."
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_comon_hints.tres
+msgid "HINT_ZONE_sanity_drain"
+msgstr "¡Te estás volviendo loco!"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_comon_hints.tres
+msgid "HINT_ZONE_stamina_drain"
+msgstr "¡Te estás agotando!"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_comon_hints.tres
+msgid "HINT_ZONE_heal"
+msgstr "Te estás curando."
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_comon_hints.tres
+msgid "HINT_ZONE_damage"
+msgstr "¡Estás recibiendo daño!"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_comon_hints.tres
+msgid "HINT_SWITCH_item_used"
+msgstr " usado."
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_comon_hints.tres
+msgid "HINT_SWITCH_battery"
+msgstr "Parece que necesita una pila."
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_comon_hints.tres
+msgid "HINT_item_required"
+msgstr "necesario"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_comon_hints.tres
+msgid "HINT_item_broke"
+msgstr "se ha roto"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_comon_hints.tres
+msgid "HINT_lockpick_success"
+msgstr "Cerradura forzada."
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_comon_hints.tres
+msgid "HINT_no_other_ammo_type"
+msgstr "No hay otra munición."
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_comon_hints.tres
+msgid "HINT_changed_ammo_type"
+msgstr "Munición cambiada a"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_keys_comon_hints.tres
+msgid "HINT_ammo_change_blocked"
+msgstr "Ahora no puedes cambiar de munición."
+
+#: addons/cogito/EasyMenus/Scenes/main_menu.tscn
+msgid "Continue\n"
+msgstr "Continuar\n"
+
+#: addons/cogito/EasyMenus/Scenes/main_menu.tscn
+msgid "New Game"
+msgstr "Nueva partida"
+
+#: addons/cogito/EasyMenus/Scenes/main_menu.tscn
+msgid "Load"
+msgstr "Cargar"
+
+#: addons/cogito/EasyMenus/Scenes/main_menu.tscn
+msgid "Options"
+msgstr "Opciones"
+
+#: addons/cogito/EasyMenus/Scenes/main_menu.tscn
+msgid "Credits"
+msgstr "Créditos"
+
+#: addons/cogito/EasyMenus/Scenes/main_menu.tscn
+msgid "Quit"
+msgstr "Salir"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_menus_and_options.tres
+msgid "TXT_NEW_GAME"
+msgstr "NUEVA PARTIDA"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_menus_and_options.tres
+msgid "TXT_SLOT"
+msgstr "RANURA"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_menus_and_options.tres
+msgid "TXT_EMPTY_SLOT"
+msgstr "RANURA VACÍA"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_menus_and_options.tres
+msgid "TXT_CURRENT_SLOT"
+msgstr "Ranura"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_menus_and_options.tres
+msgid "SAVE_CONFIRMATION_DIALOG_TITLE"
+msgstr "Sobrescribir partida"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_menus_and_options.tres
+msgid "SAVE_CONFIRMATION_DIALOG_TEXT"
+msgstr "No se puede deshacer. ¿Seguro que quieres sobrescribir la partida?"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_menus_and_options.tres
+msgid "LOAD_CONFIRMATION_DIALOG_TITLE"
+msgstr "Cargar una partida anterior"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_menus_and_options.tres
+msgid "LOAD_CONFIRMATION_DIALOG_TEXT"
+msgstr "Perderás el progreso actual. ¿Seguro que quieres cargar una partida anterior?"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_menus_and_options.tres
+msgid "REMOVE_CONFIRMATION_DIALOG_TITLE"
+msgstr "Borrar partida"
+
+#. TRANSLATORS: translation_key_dict entry
+#: addons/cogito/Localization/translation_keys_resources/loc_menus_and_options.tres
+msgid "REMOVE_CONFIRMATION_DIALOG_TEXT"
+msgstr "No se puede deshacer. ¿Seguro que quieres borrar la partida?"
+
+#. TRANSLATORS: item name
+#: addons/cogito/InventoryPD/Items/Cogito_LockpickItem.tres
+msgid "Lockpick"
+msgstr "Ganzúa"
+
+#. TRANSLATORS: item description
+#: addons/cogito/InventoryPD/Items/Cogito_LockpickItem.tres
+msgid "Breaks easily but can come in handy."
+msgstr "Se rompe fácil, pero viene bien."
+
+#. TRANSLATORS: quest objective description
+#: addons/cogito/QuestSystem/Quests/DemoSceneObjectives/Demo_AccessArchiveObj.tres
+msgid "CQO_EnterArchive"
+msgstr "Encuentra la forma de entrar en el archivo."
+
+#. TRANSLATORS: quest objective description
+#: addons/cogito/QuestSystem/Quests/DemoSceneObjectives/Demo_StealLaptopObj1.tres
+msgid "Find and steal the CEOs laptop."
+msgstr "Roba el portátil del director"
+
+#. TRANSLATORS: quest objective description
+#: addons/cogito/QuestSystem/Quests/DemoSceneObjectives/Demo_StealLaptopObj2.tres
+msgid "Deliver the laptop to the hidden compartment in the fridge."
+msgstr "Deja el portátil en el compartimento secreto de la nevera."
+
+#. TRANSLATORS: quest objective description
+#: addons/cogito/QuestSystem/Quests/DemoSceneObjectives/Demo_TargetPracticeObj.tres
+msgid "Destroy 5 targets."
+msgstr "Destruye 5 dianas."
+
+#. TRANSLATORS: quest title
+#: addons/cogito/QuestSystem/Quests/DemoSceneQuests/Demo_AccessArchive.tres
+msgid "Gain access to the archive."
+msgstr "Entra en el archivo."
+
+#. TRANSLATORS: quest description active
+#: addons/cogito/QuestSystem/Quests/DemoSceneQuests/Demo_AccessArchive.tres
+msgid "You won't be able to just walk in, but we're sure you'll find away."
+msgstr "No podrás entrar sin más, pero seguro que encuentras la forma."
+
+#. TRANSLATORS: quest description completed
+#: addons/cogito/QuestSystem/Quests/DemoSceneQuests/Demo_AccessArchive.tres
+msgid "You're in!"
+msgstr "¡Estás dentro!"
+
+#. TRANSLATORS: quest description failed
+#: addons/cogito/QuestSystem/Quests/DemoSceneQuests/Demo_AccessArchive.tres
+msgid "You should've not been able to fail this."
+msgstr "No deberías haber podido fallar esto."
+
+#. TRANSLATORS: quest title
+#: addons/cogito/QuestSystem/Quests/DemoSceneQuests/Demo_StealLaptop.tres
+msgid "Steal the CEO's laptop"
+msgstr "Roba el portátil del director"
+
+#. TRANSLATORS: quest description active
+#: addons/cogito/QuestSystem/Quests/DemoSceneQuests/Demo_StealLaptop.tres
+msgid ""
+"We need the data on that laptop. As soon as you have it in your possession, "
+"we'll let you know the next steps."
+msgstr "Necesitamos los datos de ese portátil. En cuanto lo tengas, te diremos los siguientes pasos."
+
+#. TRANSLATORS: quest description completed
+#: addons/cogito/QuestSystem/Quests/DemoSceneQuests/Demo_StealLaptop.tres
+msgid ""
+"You managed to find the laptop and deliver the data we needed. Great work!"
+msgstr "Encontraste el portátil y entregaste los datos. ¡Buen trabajo!"
+
+#. TRANSLATORS: quest description failed
+#: addons/cogito/QuestSystem/Quests/DemoSceneQuests/Demo_StealLaptop.tres
+msgid "The laptop you delivered was fake! Do not contact us again."
+msgstr "¡El portátil era falso! No vuelvas a contactarnos."
+
+#. TRANSLATORS: quest title
+#: addons/cogito/QuestSystem/Quests/DemoSceneQuests/Demo_TargetPractice.tres
+msgid "Target Practice"
+msgstr "Prácticas de tiro"
+
+#. TRANSLATORS: quest description active
+#: addons/cogito/QuestSystem/Quests/DemoSceneQuests/Demo_TargetPractice.tres
+msgid ""
+"Time to show off your skills with a weapon! Pick one up and give it a go!"
+msgstr "¡A lucirse con un arma! Coge una y prueba."
+
+#. TRANSLATORS: quest description completed
+#: addons/cogito/QuestSystem/Quests/DemoSceneQuests/Demo_TargetPractice.tres
+msgid "You showed those targets who's boss."
+msgstr "Les has enseñado a esas dianas quién manda."
+
+#. TRANSLATORS: quest description failed
+#: addons/cogito/QuestSystem/Quests/DemoSceneQuests/Demo_TargetPractice.tres
+msgid "You should not be able to fail this."
+msgstr "No deberías poder fallar esto."
+
+msgid "Cogito"
+msgstr "Cogito"
+
+#~ msgid "Find a way into the archive."
+#~ msgstr "Gain access to the archive."
+
+#~ msgid "Deliver the CEO's laptop"
+#~ msgstr "Deliver the CEO's laptop"
+
+#~ msgid ""
+#~ "We have a hidden compartment in the fridge, so drop the laptop in there "
+#~ "and we can retriefe it."
+#~ msgstr ""
+#~ "We have a hidden compartment in the fridge, so drop the laptop in there "
+#~ "and we can retrieve it."
+
+#~ msgid "You found the laptop."
+#~ msgstr "You found the laptop."
+
+#~ msgid "You failed this quest."
+#~ msgstr "You failed this quest."
+
+#~ msgid "BTN_load"
+#~ msgstr "Load"
+
+#~ msgid "Dart"
+#~ msgstr "Dart"
+
+#~ msgid "A simple foam dart. Squishy."
+#~ msgstr "A simple foam dart. Squishy."
+
+#~ msgid "Fire Dart"
+#~ msgstr "Fire Dart"
+
+#~ msgid "Who needs matches if you got these."
+#~ msgstr "Who needs matches if you got these."
+
+#~ msgid "Water Dart"
+#~ msgstr "Water Dart"
+
+#~ msgid "Perpetually dripping water."
+#~ msgstr "Perpetually dripping water."
+
+#~ msgid "Flashlight"
+#~ msgstr "Flashlight"
+
+#~ msgid "Eats batteries like it's its job."
+#~ msgstr "Eats batteries like it's its job."
+
+#~ msgid "Out of battery."
+#~ msgstr "Out of battery"
+
+#~ msgid "Health Extension"
+#~ msgstr "Health Extension"
+
+#~ msgid "Better than red bull."
+#~ msgstr "Better than red bull."
+
+#~ msgid "Laser Rifle"
+#~ msgstr "Laser Rifle"
+
+#~ msgid "Goes pew pew pew. Needs Laser Ammo to reload."
+#~ msgstr "Goes pew pew pew. Needs Laser Ammo to reload."
+
+#~ msgid "Out of ammo."
+#~ msgstr "Out of ammo."
+
+#~ msgid "Pickaxe"
+#~ msgstr "Pickaxe"
+
+#~ msgid "Don't go digging for diamonds now."
+#~ msgstr "Don't go digging for diamonds now."
+
+#~ msgid "Foam Pistol"
+#~ msgstr "Foam Pistol"
+
+#~ msgid "There's a reason it looks like a toy. Shoots foam bullets."
+#~ msgstr "There's a reason it looks like a toy. Shoots foam bullets."
+
+#~ msgid "Out of bullets."
+#~ msgstr "Out of ammo."
+
+#~ msgid "LAB_RENDER_SCALE"
+#~ msgstr "Render Scale"
+
+#~ msgid "quest_START"
+#~ msgstr "Quest started"
+
+#~ msgid "quest_COMPLETE"
+#~ msgstr "Quest completed"
+
+#~ msgid "quest_FAIL"
+#~ msgstr "Quest failed"
+
+#~ msgid "quest_UPDATE"
+#~ msgstr "Quest updated"
+
+#, fuzzy
+#~| msgid "INPUT_inventory"
+#~ msgid "Inventory"
+#~ msgstr "Inventory Menu"

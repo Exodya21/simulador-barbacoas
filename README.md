@@ -37,6 +37,8 @@ Simulador de barbacoas 3D en primera persona, estilo low-poly, hecho con **Godot
 | `escenas/` | Escenas del juego |
 | `scripts/` | Código propio (GDScript) |
 | `datos/` | Resources `.tres`: alimentos, parrillas, recetas… |
+| `idiomas/` | Traducciones (`.po`). El juego arranca en español; el idioma se cambia en Opciones |
+| `arte/` | Imágenes y modelos propios |
 | `pruebas/` | Pruebas automáticas |
 | `herramientas/` | Scripts de apoyo |
 | `licencias/` | Licencias de terceros para distribuir con el juego |
@@ -47,7 +49,7 @@ Simulador de barbacoas 3D en primera persona, estilo low-poly, hecho con **Godot
 GODOT=/ruta/a/godot herramientas/comprobar.sh
 ```
 
-Importa el proyecto en modo headless y corre la escena principal 120 frames. Falla si hay errores de script.
+Importa el proyecto en modo headless, corre la escena principal 120 frames y comprueba el español y que la caja se puede coger. Falla si hay errores de script.
 
 ## Créditos
 

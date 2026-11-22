@@ -39,6 +39,14 @@ Código que Cogito adapta (todo MIT o equivalente, según su wiki): First Person
 > [!warning] Quitado del repo
 > `641848_newlocknew_fireburn.ogg` (crepitar de fuego, freesound 641848) es **CC-BY-NC 4.0** (no comercial): **no se puede vender en Steam**. Se ha borrado y se ha quitado su referencia en `addons/cogito/Components/Properties/CogitoProperties.tscn` (`audio_burning` queda vacío). El sonido de fuego del juego será propio o CC0.
 
+> [!note] Parches a Cogito
+> - `Components/Properties/CogitoProperties.tscn`: quitada la referencia al sonido NC (arriba).
+> - `Localization/scripts/language_select.gd`: añadido el español (primero de la lista) con la bandera propia `arte/iconos/bandera_es.png`.
+> Si se actualiza Cogito, hay que volver a aplicarlos.
+
+> [!warning] Por revisar
+> Las banderas `Assets/Graphics/Flags/freepik_flag_*.png` parecen de Freepik, que pide atribución, y la wiki de Cogito no las acredita. Antes de publicar: confirmar su licencia o sustituirlas por banderas propias como la española.
+
 Los assets CC-BY de Cogito solo los usan sus escenas de demo. Si el juego final no los usa, se borran antes de publicar y se quitan de esta tabla.
 
 ## Assets propios del juego
@@ -46,6 +54,8 @@ Los assets CC-BY de Cogito solo los usan sus escenas de demo. Si el juego final 
 | Qué | Autor | Licencia | Dónde |
 |---|---|---|---|
 | Escena de prueba `escenas/patio_prueba.tscn` (cajas grises) | Equipo | Propia | `escenas/` |
+| Traducción al español de los textos de Cogito | Equipo | Propia (sobre los textos MIT de Cogito) | `idiomas/cogito_es.po` |
+| Bandera de España del selector de idioma | Equipo | Propia | `arte/iconos/bandera_es.png` |
 
 ## Pendiente de añadir (F0 → F1)
 
