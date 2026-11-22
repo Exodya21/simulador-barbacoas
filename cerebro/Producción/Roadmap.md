@@ -2,7 +2,7 @@
 tipo: produccion
 estado: definido
 fuente: Tablero FigJam, sección 6
-actualizado: 2026-11-22 22:01
+actualizado: 2026-11-22 22:02
 ---
 
 # Roadmap
@@ -28,7 +28,7 @@ actualizado: 2026-11-22 22:01
 - [x] Crear repo Godot 4 + importar Cogito → Godot 4.7.2 + Cogito 1.2.0 en `dev` ([[2026-11-22 Godot 4.7.2 versión fija]]), escena `escenas/patio_prueba.tscn`
 - [x] Lista de assets y licencias → `CREDITS.md` en `dev` · [[Modelos 3D]], [[Licencias y Steam]]
 
-🏁 **Hito:** GDD aprobado y repo funcionando → ✅ **F0 cerrada el 22-11-2026**
+🏁 **Hito:** GDD aprobado y repo funcionando → ✅ **F0 cerrada el 22-11-2026** → [[2026-11-22 F0 cerrada]]
 - [x] GDD aprobado → [[2026-11-22 GDD aprobado]]
 - [x] Repo funcionando → Godot 4.7.2 + Cogito en `dev`, probado en el editor por el usuario
 
@@ -38,6 +38,11 @@ actualizado: 2026-11-22 22:01
 - [ ] Pinzas: coger, girar, mover
 - [ ] Termómetro y valores de depuración
 - [ ] Playtest interno
+
+Arrastrado de la F0 (no bloquea el hito) → [[2026-11-22 F0 cerrada]]:
+- [ ] Guardar vídeos de YouTube de parrilla y gameplay (búsquedas en [[Referencias de parrilla y juegos]])
+- [ ] Concretar el tipo de violencia (clasificación) → [[2026-11-22 GDD aprobado]]
+- [ ] Revisar la licencia de las banderas de Freepik de Cogito → [[2026-11-22 Riesgo de licencia en las banderas de Cogito]]
 
 🏁 **Hito:** ¿es divertido girar una hamburguesa?
 

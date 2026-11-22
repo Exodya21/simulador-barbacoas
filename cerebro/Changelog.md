@@ -1,6 +1,6 @@
 ---
 tipo: changelog
-actualizado: 2026-11-22 21:44
+actualizado: 2026-11-22 22:02
 ---
 
 # 📜 Changelog
@@ -8,6 +8,9 @@ actualizado: 2026-11-22 21:44
 Registro de todo lo que cambia en el proyecto, de lo más reciente a lo más antiguo. Lo escribe **el Documentador**, el agente de Claude definido en `.claude/agents/documentador.md`. Cada decisión tiene además su nota en `Decisiones/`.
 
 ## 2026-11-22
+- **22:01** · Producción · Las tareas sueltas de la F0 (vídeos de YouTube, tipo de violencia y licencia de las banderas de Freepik) pasan a la F1 → [[Roadmap]]
+- **22:01** · Decisión · F0 cerrada: se cumple el hito "GDD aprobado y repo funcionando"; la siguiente fase es la F1 → [[2026-11-22 F0 cerrada]]
+- **22:01** · Documentación · Nueva nota de referencias: parrilla real y juegos de barbacoa de Steam; Roadmap y 00 Inicio con la F0 cerrada (commit `5f9339e`) → [[Referencias de parrilla y juegos]] · [[Roadmap]] · [[00 Inicio]]
 - **21:43** · Documentación · Roadmap (F0: GDD y estilo visual hechos, hito "GDD aprobado"), 00 Inicio y Licencias y Steam (encuesta de contenido para adultos y compras dentro del juego) al día → [[Roadmap]] · [[00 Inicio]] · [[Licencias y Steam]]
 - **21:43** · Diseño · GDD aprobado: cerradas sus 5 preguntas abiertas, sin ❓ → [[GDD]]
 - **21:43** · Decisión · La paleta low-poly pasa de propuesta a aceptada, aprobada en el GDD → [[2026-11-22 Paleta low-poly]]
