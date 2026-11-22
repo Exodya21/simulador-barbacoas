@@ -84,7 +84,7 @@ Arrastrado de la F0 (no bloquea el hito) → [[2026-11-22 F0 cerrada]]:
 
 ## 👉 Próximos pasos esta semana
 - [ ] 1. Instalar Godot 4 y Blender
-- [x] 2. Clonar Cogito y probar su demo (importado y probado en modo headless; falta abrirlo en el editor)
+- [x] 2. Clonar Cogito y probar su demo (importado y probado en modo headless; probado en el editor con Godot 4.7.2)
 - [ ] 3. Descargar Kenney Food Kit
 - [x] 4. Escribir el GDD de 1 página (aprobado → [[GDD]])
 - [ ] 5. Prototipar la rejilla de calor con cubos

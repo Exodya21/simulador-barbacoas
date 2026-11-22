@@ -8,6 +8,7 @@ actualizado: 2026-11-22 22:02
 Registro de todo lo que cambia en el proyecto, de lo más reciente a lo más antiguo. Lo escribe **el Documentador**, el agente de Claude definido en `.claude/agents/documentador.md`. Cada decisión tiene además su nota en `Decisiones/`.
 
 ## 2026-11-22
+- **22:02** · Documentación · Roadmap corregido: el paso 2 de "Próximos pasos esta semana" ya dice que Cogito está probado en el editor con Godot 4.7.2 → [[Roadmap]]
 - **22:01** · Producción · Las tareas sueltas de la F0 (vídeos de YouTube, tipo de violencia y licencia de las banderas de Freepik) pasan a la F1 → [[Roadmap]]
 - **22:01** · Decisión · F0 cerrada: se cumple el hito "GDD aprobado y repo funcionando"; la siguiente fase es la F1 → [[2026-11-22 F0 cerrada]]
 - **22:01** · Documentación · Nueva nota de referencias: parrilla real y juegos de barbacoa de Steam; Roadmap y 00 Inicio con la F0 cerrada (commit `5f9339e`) → [[Referencias de parrilla y juegos]] · [[Roadmap]] · [[00 Inicio]]
