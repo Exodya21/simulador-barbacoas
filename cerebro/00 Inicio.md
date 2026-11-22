@@ -1,6 +1,6 @@
 ---
 tipo: indice
-actualizado: 2026-11-22 19:37
+actualizado: 2026-11-22 21:43
 ---
 
 # 🔥 Simulador de Barbacoas — Cerebro
@@ -13,7 +13,7 @@ Simulador de barbacoas 3D en **primera persona**, estilo **low-poly**, hecho con
 - [x] Demo web de referencia del ambiente y las mecánicas → [[Demo jardín con parrilla]]
 - [x] Contenido completo del tablero FigJam volcado → [[Tablero FigJam]]
 - [x] Core loop definido → [[Core loop]]
-- [ ] **F0 · Preproducción** (semanas 1–2), en curso: repo Godot + Cogito ✅, créditos ✅, [[GDD]] en borrador → [[Roadmap#F0 · Preproducción — semanas 1–2]]
+- [ ] **F0 · Preproducción** (semanas 1–2), en curso: repo Godot + Cogito ✅, créditos ✅, [[GDD]] aprobado ✅ ([[2026-11-22 GDD aprobado]]); falta buscar referencias de vídeo → [[Roadmap#F0 · Preproducción — semanas 1–2]]
 - [ ] Próximos pasos de esta semana → [[Roadmap#👉 Próximos pasos esta semana]]
 
 ## Mapa

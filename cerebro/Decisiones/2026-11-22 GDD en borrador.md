@@ -2,9 +2,9 @@
 tipo: decision
 fecha: 2026-11-22
 hora: 19:38
-estado: propuesta
+estado: sustituida
 area: Diseño
-actualizado: 2026-11-22 19:40
+actualizado: 2026-11-22 21:43
 ---
 
 # GDD en borrador
@@ -21,5 +21,7 @@ Las preguntas abiertas están marcadas con ❓ en el GDD.
 **Alternativas descartadas:**
 - Un GDD largo por secciones: la F0 pide una página.
 - Empezar la F1 sin GDD.
+
+**Sustituida por:** [[2026-11-22 GDD aprobado]]
 
 Relacionado: [[GDD]] · [[Roadmap]] · [[2026-11-22 Paleta low-poly]]

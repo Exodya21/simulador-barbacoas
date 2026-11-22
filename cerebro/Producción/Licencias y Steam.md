@@ -2,7 +2,7 @@
 tipo: produccion
 estado: definido
 fuente: Tablero FigJam, sección 7
-actualizado: 2026-11-22 20:16
+actualizado: 2026-11-22 21:43
 ---
 
 # ¿Qué podemos usar legalmente para vender en Steam?
@@ -46,6 +46,8 @@ Comprobado en noviembre de 2026 en los repositorios y páginas oficiales. **No e
 - [ ] 2. Pantalla de créditos en el juego (CC-BY + MIT)
 - [ ] 3. Archivo de licencias de terceros junto al ejecutable
 - [ ] 4. Declarar en Steamworks si se usa contenido generado con IA
+- [ ] Rellenar en Steamworks la encuesta de contenido para adultos (alcohol, palabrotas y violencia) → [[2026-11-22 GDD aprobado]]
+- [ ] Compras dentro del juego: configurar las compras de Steamworks (microtransacciones) y declarar el descriptor de compras en la clasificación → [[2026-11-22 GDD aprobado]]
 - [ ] 5. Ante la duda, no usar el asset o pedir permiso por escrito al autor
 
 ![[figjam-7-licencias-steam.webp]]

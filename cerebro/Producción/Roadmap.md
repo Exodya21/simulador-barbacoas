@@ -2,7 +2,7 @@
 tipo: produccion
 estado: definido
 fuente: Tablero FigJam, sección 6
-actualizado: 2026-11-22 19:56
+actualizado: 2026-11-22 21:43
 ---
 
 # Roadmap
@@ -22,13 +22,15 @@ actualizado: 2026-11-22 19:56
 | F5 · Lanzamiento | 26–30 | 1.0 publicada 🎉 |
 
 ## F0 · Preproducción — semanas 1–2
-- [ ] GDD de 1 página (público, plataforma, modos) → borrador en [[GDD]], pendiente de aprobar
-- [ ] Referencias: vídeos reales de parrilla y juegos de cocina → [[Referencias visuales]]
-- [ ] Elegir estilo visual low-poly + paleta → propuesta en [[GDD#Estilo visual ❓]], pendiente de aprobar
+- [x] GDD de 1 página (público, plataforma, modos) → [[GDD]] aprobado ([[2026-11-22 GDD aprobado]])
+- [ ] Referencias: vídeos reales de parrilla y juegos de cocina → [[Referencias visuales]] (falta buscar los vídeos)
+- [x] Elegir estilo visual low-poly + paleta → [[GDD#Estilo visual]], aprobado ([[2026-11-22 Paleta low-poly]])
 - [x] Crear repo Godot 4 + importar Cogito → Godot 4.7.2 + Cogito 1.2.0 en `dev` ([[2026-11-22 Godot 4.7.2 versión fija]]), escena `escenas/patio_prueba.tscn`
 - [x] Lista de assets y licencias → `CREDITS.md` en `dev` · [[Modelos 3D]], [[Licencias y Steam]]
 
 🏁 **Hito:** GDD aprobado y repo funcionando
+- [x] GDD aprobado → [[2026-11-22 GDD aprobado]]
+- [x] Repo funcionando → Godot 4.7.2 + Cogito en `dev`, probado en el editor por el usuario
 
 ## F1 · Prototipo gris — semanas 3–6
 - [ ] Parrilla con rejilla de zonas de calor
@@ -79,7 +81,7 @@ actualizado: 2026-11-22 19:56
 - [ ] 1. Instalar Godot 4 y Blender
 - [x] 2. Clonar Cogito y probar su demo (importado y probado en modo headless; falta abrirlo en el editor)
 - [ ] 3. Descargar Kenney Food Kit
-- [x] 4. Escribir el GDD de 1 página (borrador → [[GDD]])
+- [x] 4. Escribir el GDD de 1 página (aprobado → [[GDD]])
 - [ ] 5. Prototipar la rejilla de calor con cubos
 
 ## Ya hecho (fuera del plan)

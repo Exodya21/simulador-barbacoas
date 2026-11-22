@@ -2,14 +2,14 @@
 tipo: decision
 fecha: 2026-11-22
 hora: 19:38
-estado: propuesta
+estado: aceptada
 area: Arte
-actualizado: 2026-11-22 19:40
+actualizado: 2026-11-22 21:43
 ---
 
 # Paleta low-poly
 
-**Decisión:** paleta propuesta, pendiente de aprobar en el [[GDD]]. Color plano sin texturas; la cocción es la excepción (shader). Está en el código como `scripts/paleta.gd` (clase `Paleta`, rama `dev`).
+**Decisión:** paleta aprobada en el [[GDD]] → [[2026-11-22 GDD aprobado]]. Color plano sin texturas; la cocción es la excepción (shader). Está en el código como `scripts/paleta.gd` (clase `Paleta`, rama `dev`).
 
 | Color | Hex |
 |---|---|
@@ -35,4 +35,4 @@ actualizado: 2026-11-22 19:40
 - Texturas PBR realistas: cuestan mucho y chocan con los assets CC0 low-poly.
 - Una paleta fría o neutra: no transmite calor ni fuego.
 
-Relacionado: [[GDD]] · [[Roadmap]] · [[Modelos 3D]]
+Relacionado: [[GDD]] · [[2026-11-22 GDD aprobado]] · [[Roadmap]] · [[Modelos 3D]]
