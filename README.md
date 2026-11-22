@@ -26,7 +26,17 @@ Simulador de barbacoas 3D en primera persona, estilo low-poly, hecho con **Godot
 
 1. Instalar **Godot 4.7.2** (versión estándar, no .NET). Todo el equipo con la misma versión: otra versión reescribe los `.import`.
 2. En Godot: *Importar* → elegir `project.godot` de este repo. La primera importación tarda un poco.
-3. F5 abre `escenas/patio_prueba.tscn`: patio gris con parrilla, mesa y una caja que se puede coger (E).
+3. F5 abre `escenas/patio_prueba.tscn`: patio gris con la parrilla y tres hamburguesas en la mesa.
+
+### Controles del prototipo (F1)
+
+| Tecla | Acción |
+|---|---|
+| E | Coger / soltar (llevar) una hamburguesa |
+| F | Dar la vuelta a la hamburguesa que miras |
+| F3 | Mostrar u ocultar la depuración: rejilla de calor (azul frío → rojo caliente) y termómetro de cada pieza |
+
+La parrilla tiene **zona directa** a la izquierda (~260 °C), transición en el centro e **indirecta** a la derecha (~100 °C, no dora pero sigue haciendo el interior).
    Las demos de Cogito siguen en `addons/cogito/DemoScenes/` (abrir `COGITO_0_MainMenu.tscn` y pulsar F6).
 
 ## Estructura
@@ -35,7 +45,8 @@ Simulador de barbacoas 3D en primera persona, estilo low-poly, hecho con **Godot
 |---|---|
 | `addons/` | Cogito y sus plugins (no tocar salvo parches anotados en `CREDITS.md`) |
 | `escenas/` | Escenas del juego |
-| `scripts/` | Código propio (GDScript) |
+| `scripts/` | Código propio (GDScript): `fuego/` (rejilla de calor), `coccion/` (cocción por caras) |
+| `shaders/` | Shaders propios (cocción crudo → quemado) |
 | `datos/` | Resources `.tres`: alimentos, parrillas, recetas… |
 | `idiomas/` | Traducciones (`.po`). El juego arranca en español; el idioma se cambia en Opciones |
 | `arte/` | Imágenes y modelos propios |
@@ -49,7 +60,9 @@ Simulador de barbacoas 3D en primera persona, estilo low-poly, hecho con **Godot
 GODOT=/ruta/a/godot herramientas/comprobar.sh
 ```
 
-Importa el proyecto en modo headless, corre la escena principal 120 frames y comprueba el español y que la caja se puede coger. Falla si hay errores de script.
+Importa el proyecto en modo headless, pasa la prueba de humo y todas las pruebas `pruebas/test_*.gd` (cocción, rejilla de calor y una hamburguesa real sobre la parrilla). Falla si alguna prueba falla o hay errores de script.
+
+`herramientas/captura.gd` saca una captura de la parrilla (necesita pantalla o `xvfb-run`).
 
 ## Créditos
 

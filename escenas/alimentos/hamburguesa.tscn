@@ -1,0 +1,51 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://addons/cogito/CogitoObjects/cogito_object.gd" id="1_objeto"]
+[ext_resource type="Shader" path="res://shaders/coccion.gdshader" id="2_shader"]
+[ext_resource type="PackedScene" path="res://addons/cogito/Components/Interactions/CarryableComponent.tscn" id="3_llevar"]
+[ext_resource type="Script" path="res://scripts/coccion/voltear_interaccion.gd" id="4_voltear"]
+[ext_resource type="Script" path="res://scripts/coccion/coccion_componente.gd" id="5_coccion"]
+[ext_resource type="Resource" path="res://datos/alimentos/hamburguesa.tres" id="6_tipo"]
+
+[sub_resource type="ShaderMaterial" id="Material_coccion"]
+render_priority = 0
+shader = ExtResource("2_shader")
+
+[sub_resource type="CylinderMesh" id="Malla_hamburguesa"]
+material = SubResource("Material_coccion")
+top_radius = 0.06
+bottom_radius = 0.06
+height = 0.025
+radial_segments = 12
+rings = 1
+
+[sub_resource type="ConvexPolygonShape3D" id="Forma_hamburguesa"]
+points = PackedVector3Array(0.06, 0.0125, 0.0, 0.05196, 0.0125, 0.03, 0.03, 0.0125, 0.05196, 0.0, 0.0125, 0.06, -0.03, 0.0125, 0.05196, -0.05196, 0.0125, 0.03, -0.06, 0.0125, 0.0, -0.05196, 0.0125, -0.03, -0.03, 0.0125, -0.05196, -0.0, 0.0125, -0.06, 0.03, 0.0125, -0.05196, 0.05196, 0.0125, -0.03, 0.06, -0.0125, 0.0, 0.05196, -0.0125, 0.03, 0.03, -0.0125, 0.05196, 0.0, -0.0125, 0.06, -0.03, -0.0125, 0.05196, -0.05196, -0.0125, 0.03, -0.06, -0.0125, 0.0, -0.05196, -0.0125, -0.03, -0.03, -0.0125, -0.05196, -0.0, -0.0125, -0.06, 0.03, -0.0125, -0.05196, 0.05196, -0.0125, -0.03)
+
+[node name="Hamburguesa" type="RigidBody3D"]
+collision_layer = 3
+mass = 0.15
+continuous_cd = true
+script = ExtResource("1_objeto")
+cogito_name = "hamburguesa"
+display_name = "ALIMENTO_hamburguesa"
+
+[node name="Malla" type="MeshInstance3D" parent="."]
+mesh = SubResource("Malla_hamburguesa")
+
+[node name="Colision" type="CollisionShape3D" parent="."]
+shape = SubResource("Forma_hamburguesa")
+
+[node name="Llevar" parent="." instance=ExtResource("3_llevar")]
+lock_rotation_when_carried = true
+drop_distance = 0.8
+
+[node name="Voltear" type="Node3D" parent="."]
+script = ExtResource("4_voltear")
+input_map_action = "interact"
+interaction_text = "INTERACT_voltear"
+
+[node name="Coccion" type="Node3D" parent="." node_paths=PackedStringArray("malla")]
+script = ExtResource("5_coccion")
+tipo = ExtResource("6_tipo")
+malla = NodePath("../Malla")
