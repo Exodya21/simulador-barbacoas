@@ -1,6 +1,6 @@
 ---
 tipo: indice
-actualizado: 2026-11-22 19:12
+actualizado: 2026-11-22 19:15
 ---
 
 # 🔥 Simulador de Barbacoas — Cerebro
@@ -39,6 +39,7 @@ Simulador de barbacoas 3D en **primera persona**, estilo **low-poly**, hecho con
 - [[Tablero FigJam]]
 
 **Registro**
+- 📜 [[Changelog]]: todo lo que cambia, con fecha y hora. Lo escribe **el Documentador**.
 - Decisiones → carpeta `Decisiones/` (una nota por decisión, plantilla [[Plantilla decisión]])
 - Sesiones de trabajo → carpeta `Sesiones/` (plantilla [[Plantilla sesión]])
 - Ideas sueltas → carpeta `Ideas/` (plantilla [[Plantilla idea]])
