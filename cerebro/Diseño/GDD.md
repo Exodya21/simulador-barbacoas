@@ -1,7 +1,7 @@
 ---
 tipo: diseño
 estado: borrador
-actualizado: 2026-11-22 19:37
+actualizado: 2026-11-22 19:39
 ---
 
 # GDD · Simulador de Barbacoas
@@ -47,7 +47,7 @@ Preparar el fuego → recibir pedidos → colocar la comida → gestionar → re
 - Modelos de comida de Kenney y Quaternius (CC0); parrillas y utensilios propios en Blender → [[Modelos 3D]].
 
 ### Paleta (propuesta)
-Está en el código del juego como `scripts/paleta.gd` (rama `dev`).
+Está en el código del juego como `scripts/paleta.gd` (rama `dev`). Decisión: [[2026-11-22 Paleta low-poly]] · GDD: [[2026-11-22 GDD en borrador]].
 
 | Grupo | Color | Hex |
 |---|---|---|

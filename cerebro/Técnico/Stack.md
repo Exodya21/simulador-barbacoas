@@ -2,7 +2,7 @@
 tipo: tecnico
 estado: decidido
 fuente: Tablero FigJam, sección 3
-actualizado: 2026-11-22 19:37
+actualizado: 2026-11-22 19:39
 ---
 
 # Stack
@@ -28,5 +28,7 @@ Criterio: **gratis, sin royalties, ligero, buena comunidad y que un equipo peque
 | 🎬 Unreal Engine 5 | Carne fotorrealista y Nanite/Lumen, pero curva alta y demasiado para un equipo pequeño. |
 
 Licencias de cada pieza: [[Licencias y Steam]]. Decisión: [[2026-11-22 Stack Godot 4 y Steam]].
+
+Más decisiones: [[2026-11-22 Godot 4.6.3 versión fija]] · [[2026-11-22 Cogito como base del proyecto]] · [[2026-11-22 Sin Git LFS por ahora]] (Git LFS queda aplazado hasta que entren `.glb` y audio propios).
 
 ![[figjam-3-stack.webp]]
