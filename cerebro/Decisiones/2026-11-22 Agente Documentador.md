@@ -4,7 +4,7 @@ fecha: 2026-11-22
 hora: 19:15
 estado: aceptada
 area: Herramientas
-actualizado: 2026-11-22 19:15
+actualizado: 2026-11-22 19:21
 ---
 
 # Agente «el Documentador»
@@ -14,5 +14,7 @@ actualizado: 2026-11-22 19:15
 **Motivo:** tener un registro fiable y ordenado de qué se ha hecho y por qué, sin tener que acordarse de apuntarlo.
 
 **Alternativas descartadas:** apuntarlo a mano, que con el tiempo se olvida.
+
+**Ampliada por:** [[2026-11-22 Documentador sube solo a documentacion]]
 
 Relacionado: [[Changelog]] · [[00 Inicio]]
