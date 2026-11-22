@@ -1,0 +1,23 @@
+# Godot 4
+.godot/
+.import/
+export/
+export_presets.cfg
+*.translation
+mono_crash.*.json
+.mono/
+data_*/
+
+# Blender
+*.blend1
+*.blend2
+
+# Sistema
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Obsidian (configuración local de cada equipo)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.trash/
