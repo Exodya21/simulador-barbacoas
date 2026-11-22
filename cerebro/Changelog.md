@@ -1,6 +1,6 @@
 ---
 tipo: changelog
-actualizado: 2026-11-22 19:21
+actualizado: 2026-11-22 19:26
 ---
 
 # 📜 Changelog
@@ -8,6 +8,7 @@ actualizado: 2026-11-22 19:21
 Registro de todo lo que cambia en el proyecto, de lo más reciente a lo más antiguo. Lo escribe **el Documentador**, el agente de Claude definido en `.claude/agents/documentador.md`. Cada decisión tiene además su nota en `Decisiones/`.
 
 ## 2026-11-22
+- **19:26** · Decisión · La configuración de Claude (`.claude/` y `CLAUDE.md`) es igual en `main`, `dev` y `documentacion`; la bóveda sigue solo en `documentacion` → [[2026-11-22 Configuración de Claude en las tres ramas]]
 - **19:21** · Decisión · El Documentador hace él mismo commit y push de `cerebro/`, solo en la rama `documentacion` (con `git worktree` si se trabaja en otra rama) → [[2026-11-22 Documentador sube solo a documentacion]]
 - **19:15** · Decisión · Se crea **el Documentador**, el agente que lleva este Changelog y apunta cada decisión → [[2026-11-22 Agente Documentador]]
 - **19:12** · Decisión · Cada nota guarda fecha y hora de su último cambio, tanto en Obsidian como desde Claude → [[2026-11-22 Fecha y hora automáticas]]

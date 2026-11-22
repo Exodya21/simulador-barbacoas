@@ -2,7 +2,7 @@
 tipo: tecnico
 estado: definido
 fuente: Tablero FigJam, sección 8
-actualizado: 2026-11-22
+actualizado: 2026-11-22 19:27
 ---
 
 # Skills de Claude para el proyecto
@@ -10,7 +10,7 @@ actualizado: 2026-11-22
 Pack elegido: **gamedev-skills/awesome-gamedev-agent-skills** (~10K ⭐ en GitHub · Apache-2.0 · Godot 4.7), más `godot-gdscript-patterns` de **wshobson/agents** (MIT).
 
 > [!info] Dónde están instaladas
-> Las 26 skills que usamos están **dentro del repo**, en `.claude/skills/` (rama `documentacion`, 22-11-2026). Al estar en git, Claude las carga automáticamente en cualquier sesión y ordenador que abra el proyecto. Las 80 del pack que se instalaron antes en `~/.claude/skills` se perdían al cerrar la sesión en la nube.
+> Las 26 skills que usamos están **dentro del repo**, en `.claude/skills/`, en las tres ramas (`main`, `dev` y `documentacion`, 22-11-2026) → [[2026-11-22 Configuración de Claude en las tres ramas]]. Al estar en git, Claude las carga automáticamente en cualquier sesión y ordenador que abra el proyecto. Las 80 del pack que se instalaron antes en `~/.claude/skills` se perdían al cerrar la sesión en la nube.
 > Versiones copiadas: awesome-gamedev-agent-skills `c6ca6c4` · wshobson/agents `12bcec7`. Licencias en `.claude/skills/LICENSE-*`.
 
 > [!tip] Cómo se usan
