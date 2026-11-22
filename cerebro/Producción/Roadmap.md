@@ -2,7 +2,7 @@
 tipo: produccion
 estado: definido
 fuente: Tablero FigJam, sección 6
-actualizado: 2026-11-22 21:43
+actualizado: 2026-11-22 22:01
 ---
 
 # Roadmap
@@ -14,7 +14,7 @@ actualizado: 2026-11-22 21:43
 
 | Fase | Semanas | Hito |
 |---|---|---|
-| F0 · Preproducción | 1–2 | GDD aprobado y repo funcionando |
+| F0 · Preproducción ✅ | 1–2 | GDD aprobado y repo funcionando |
 | F1 · Prototipo gris | 3–6 | ¿Es divertido girar una hamburguesa? |
 | F2 · Vertical slice | 7–12 | 1 nivel completo y bonito de 10 min |
 | F3 · Producción de contenido | 13–20 | Alpha con todo el contenido |
@@ -23,12 +23,12 @@ actualizado: 2026-11-22 21:43
 
 ## F0 · Preproducción — semanas 1–2
 - [x] GDD de 1 página (público, plataforma, modos) → [[GDD]] aprobado ([[2026-11-22 GDD aprobado]])
-- [ ] Referencias: vídeos reales de parrilla y juegos de cocina → [[Referencias visuales]] (falta buscar los vídeos)
+- [x] Referencias: parrilla real y juegos de cocina → [[Referencias de parrilla y juegos]] · [[Referencias visuales]] (quedan vídeos concretos de YouTube por guardar a mano)
 - [x] Elegir estilo visual low-poly + paleta → [[GDD#Estilo visual]], aprobado ([[2026-11-22 Paleta low-poly]])
 - [x] Crear repo Godot 4 + importar Cogito → Godot 4.7.2 + Cogito 1.2.0 en `dev` ([[2026-11-22 Godot 4.7.2 versión fija]]), escena `escenas/patio_prueba.tscn`
 - [x] Lista de assets y licencias → `CREDITS.md` en `dev` · [[Modelos 3D]], [[Licencias y Steam]]
 
-🏁 **Hito:** GDD aprobado y repo funcionando
+🏁 **Hito:** GDD aprobado y repo funcionando → ✅ **F0 cerrada el 22-11-2026**
 - [x] GDD aprobado → [[2026-11-22 GDD aprobado]]
 - [x] Repo funcionando → Godot 4.7.2 + Cogito en `dev`, probado en el editor por el usuario
 
