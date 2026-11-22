@@ -4,6 +4,7 @@ fecha: 2026-11-22
 hora: 19:21
 estado: aceptada
 area: Herramientas
+actualizado: 2026-11-22 19:21
 ---
 
 # El Documentador sube solo a la rama `documentacion`

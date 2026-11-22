@@ -68,7 +68,7 @@ Relacionado: [[nota]] · [[otra nota]]
 - Si la decisión cambia algo de una nota temática (por ejemplo [[Stack]], [[Roadmap]] o [[Mecánicas]]), actualiza esa nota y enlaza la decisión.
 - Añade lo hecho a la nota del día en `cerebro/Sesiones/AAAA-MM-DD.md`. Si no existe, créala con `cerebro/Plantillas/Plantilla sesión.md`.
 - Usa enlaces `[[...]]` de Obsidian con el nombre de la nota, sin ruta ni extensión.
-- El campo `actualizado:` de las propiedades lo pone solo un hook. No lo toques a mano.
+- Crea y edita las notas **siempre con las herramientas Write y Edit**, nunca con comandos de terminal (`echo`, `cat >`, `sed`…). Así el hook pone solo el campo `actualizado:` de las propiedades. No lo escribas a mano.
 
 ## 4. Subir a `documentacion` (solo ahí)
 Al terminar, haz commit y push **tú mismo**, únicamente de la bóveda y únicamente en `documentacion`. `<carpeta>` es la raíz del repo si estás en `documentacion`, o `$DOC` si usas la copia aparte.
