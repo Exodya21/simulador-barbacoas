@@ -8,6 +8,7 @@ actualizado: 2026-11-22 20:16
 Registro de todo lo que cambia en el proyecto, de lo más reciente a lo más antiguo. Lo escribe **el Documentador**, el agente de Claude definido en `.claude/agents/documentador.md`. Cada decisión tiene además su nota en `Decisiones/`.
 
 ## 2026-11-22
+- **20:16** · Documentación · Completadas las alternativas descartadas del riesgo de licencia de las banderas de Cogito → [[2026-11-22 Riesgo de licencia en las banderas de Cogito]]
 - **20:15** · Decisión · Riesgo de licencia: las banderas de Cogito parecen de Freepik (pide atribución); confirmar o sustituir antes de publicar → [[2026-11-22 Riesgo de licencia en las banderas de Cogito]]
 - **20:15** · Decisión · Las traducciones propias van en `idiomas/`, fuera de `addons/` → [[2026-11-22 Traducciones propias en idiomas]]
 - **20:15** · Decisión · El español es el idioma por defecto del juego; inglés y alemán siguen disponibles → [[2026-11-22 Español idioma por defecto]]
