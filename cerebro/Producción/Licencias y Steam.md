@@ -2,7 +2,7 @@
 tipo: produccion
 estado: definido
 fuente: Tablero FigJam, sección 7
-actualizado: 2026-11-22 19:39
+actualizado: 2026-11-22 20:16
 ---
 
 # ¿Qué podemos usar legalmente para vender en Steam?
@@ -13,7 +13,7 @@ Comprobado en noviembre de 2026 en los repositorios y páginas oficiales. **No e
 | Qué | Licencia | Condiciones |
 |---|---|---|
 | Godot Engine | MIT | Incluir el aviso de copyright de Godot (y de sus librerías: FreeType, ENet, mbedTLS…) en los créditos o en un archivo de licencias. Sin royalties. |
-| Cogito (codeberg.org/Phazorknight/Cogito) | MIT | Incluir su licencia MIT y dar crédito. Revisar los assets incluidos: algunos son CC-BY. El sonido de fuego CC-BY-NC ya se quitó → [[2026-11-22 Quitar sonido de fuego NC de Cogito]] |
+| Cogito (codeberg.org/Phazorknight/Cogito) | MIT | Incluir su licencia MIT y dar crédito. Revisar los assets incluidos: algunos son CC-BY. El sonido de fuego CC-BY-NC ya se quitó → [[2026-11-22 Quitar sonido de fuego NC de Cogito]]. ⚠️ Sus banderas (`freepik_flag_*.png`) parecen de Freepik, que pide atribución, y Cogito no las acredita: confirmar la licencia o sustituirlas antes de publicar → [[2026-11-22 Riesgo de licencia en las banderas de Cogito]] |
 | Godot Demo Projects | MIT | Se puede copiar código. Revisar los assets sueltos de cada demo. |
 | GodotSteam (movido a Codeberg) | MIT | Para logros, Steam Deck y Steamworks. |
 | Kenney | CC0 | Sin créditos obligatorios. No usar el logo de Kenney. |

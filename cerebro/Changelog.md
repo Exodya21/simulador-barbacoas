@@ -1,6 +1,6 @@
 ---
 tipo: changelog
-actualizado: 2026-11-22 19:56
+actualizado: 2026-11-22 20:16
 ---
 
 # 📜 Changelog
@@ -8,6 +8,10 @@ actualizado: 2026-11-22 19:56
 Registro de todo lo que cambia en el proyecto, de lo más reciente a lo más antiguo. Lo escribe **el Documentador**, el agente de Claude definido en `.claude/agents/documentador.md`. Cada decisión tiene además su nota en `Decisiones/`.
 
 ## 2026-11-22
+- **20:15** · Decisión · Riesgo de licencia: las banderas de Cogito parecen de Freepik (pide atribución); confirmar o sustituir antes de publicar → [[2026-11-22 Riesgo de licencia en las banderas de Cogito]]
+- **20:15** · Decisión · Las traducciones propias van en `idiomas/`, fuera de `addons/` → [[2026-11-22 Traducciones propias en idiomas]]
+- **20:15** · Decisión · El español es el idioma por defecto del juego; inglés y alemán siguen disponibles → [[2026-11-22 Español idioma por defecto]]
+- **20:15** · Técnico · Rama `dev` (ce445c7): español por defecto (autoload `Idioma`, `idiomas/cogito_es.po`, parche del selector de idioma) y la caja del patio se puede coger sin el atributo "fuerza"; la prueba de humo pasa → [[2026-11-22 Español idioma por defecto]]
 - **19:55** · Técnico · Rama `dev` (b8ba691): proyecto pasado a Godot 4.7.2, con 260 `.import` reescritos y README y `CREDITS.md` al día; la prueba de humo headless pasa → [[2026-11-22 Godot 4.7.2 versión fija]]
 - **19:55** · Decisión · La versión fija pasa de Godot 4.6.3 a 4.7.2, a petición del usuario; sustituye a [[2026-11-22 Godot 4.6.3 versión fija]] → [[2026-11-22 Godot 4.7.2 versión fija]]
 - **19:40** · Documentación · Completados los motivos y alternativas de las decisiones de paleta, GDD, sonido de fuego NC y carpetas en español; el Stack ya dice "Git LFS aplazado" en Gestión → [[2026-11-22 Paleta low-poly]] · [[2026-11-22 GDD en borrador]] · [[2026-11-22 Quitar sonido de fuego NC de Cogito]] · [[2026-11-22 Carpetas en español]] · [[Stack]]
