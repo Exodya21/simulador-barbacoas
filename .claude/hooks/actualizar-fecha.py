@@ -12,8 +12,10 @@ from zoneinfo import ZoneInfo
 try:
     data = json.load(sys.stdin)
     ruta = Path(data.get("tool_input", {}).get("file_path", "")).resolve()
-    cerebro = (Path(__file__).resolve().parent.parent.parent / "cerebro").resolve()
-    if ruta.suffix != ".md" or cerebro not in ruta.parents:
+    # La bóveda es la carpeta 'cerebro' más cercana (vale también para la
+    # copia aparte de la rama documentacion creada con git worktree).
+    cerebro = next((p for p in ruta.parents if p.name == "cerebro"), None)
+    if ruta.suffix != ".md" or cerebro is None:
         sys.exit(0)
     partes = ruta.relative_to(cerebro).parts
     if "Plantillas" in partes or ".obsidian" in partes:
