@@ -11,9 +11,10 @@ Simulador de barbacoas 3D en **primera persona**, estilo **low-poly**, hecho con
 - [x] Proyecto decidido y stack elegido → [[Stack]]
 - [x] Repositorio en GitHub con ramas `main` / `dev` / `documentacion` → [[Repositorio y ramas]]
 - [x] Demo web de referencia del ambiente y las mecánicas → [[Demo jardín con parrilla]]
-- [ ] Volcar aquí el contenido completo del tablero FigJam → [[Tablero FigJam]]
-- [ ] Definir el core loop en detalle → [[Core loop]]
-- [ ] Primer prototipo jugable en Godot → [[Roadmap]]
+- [x] Contenido completo del tablero FigJam volcado → [[Tablero FigJam]]
+- [x] Core loop definido → [[Core loop]]
+- [ ] **F0 · Preproducción** (semanas 1–2) → [[Roadmap#F0 · Preproducción — semanas 1–2]]
+- [ ] Próximos pasos de esta semana → [[Roadmap#👉 Próximos pasos esta semana]]
 
 ## Mapa
 **Diseño**
@@ -26,6 +27,7 @@ Simulador de barbacoas 3D en **primera persona**, estilo **low-poly**, hecho con
 - [[Stack]]
 - [[Arquitectura]]
 - [[Repositorio y ramas]]
+- [[Skills de Claude]]
 
 **Producción**
 - [[Roadmap]]

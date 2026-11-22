@@ -1,19 +1,30 @@
 ---
 tipo: diseño
-estado: borrador
+estado: definido
+fuente: Tablero FigJam, sección 4
+actualizado: 2026-11-22
 ---
 
-# Juegos de referencia
+# Juegos y plantillas de referencia
 
-> [!todo] Pendiente
-> La lista completa está en la sección 4 del [[Tablero FigJam]].
+No existe un simulador de barbacoa open source listo para usar. **Estrategia:** usar Cogito como "esqueleto" (jugador en primera persona + interacción con objetos) y construir encima nuestros sistemas de fuego y cocción, tomando ideas de los proyectos de cocina.
 
-## Base técnica
-- **Cogito** (Godot 4, licencia MIT) — plantilla de primera persona con interacción. Se puede usar como base de código. → [[Stack]]
+## Cogito
+⭐ **BASE RECOMENDADA**: Godot 4, licencia MIT.
+Plantilla de immersive-sim en primera persona: controlador FPS, coger/soltar/lanzar objetos con física, interacciones, inventario, puertas, guardado y menús.
+Reusamos el jugador y las interacciones, y metemos la parrilla en su mundo.
+github.com/Phazorknight/Cogito (ahora en codeberg.org/Phazorknight/Cogito)
 
-## Solo inspiración (NO usar su código ni sus assets)
-- Kitchen of the Damned
-- Kitchen Chaos
-- Cooking Time
+## Se puede copiar
+- 🧪 **Godot Demo Projects** (MIT, oficial): demos de física 3D, partículas, materiales e iluminación para copiar sistemas sueltos (humo, fuego, rigid bodies). github.com/godotengine/godot-demo-projects
 
-Ver por qué en [[Licencias y Steam]].
+## Solo inspiración — ❌ no reutilizar
+| Proyecto | Motivo |
+|---|---|
+| 🍳 Kitchen of the Damned (Godot) | El repo **no tiene licencia** (todos los derechos reservados) y usa sonidos sacados de YouTube. No copiar código ni assets. |
+| 🍔 Kitchen Chaos — port a Godot 4.3 | Solo para aprender: sin licencia declarada y basado en assets del curso de Code Monkey. |
+| 🥘 Cooking Time (itch.io, Godot) | Solo como referencia de UX: sin licencia declarada y el repo enlazado ya no existe. |
+
+Más detalle: [[Licencias y Steam]].
+
+![[figjam-4-juegos-base.webp]]

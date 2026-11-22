@@ -6,22 +6,21 @@ actualizado: 2026-11-22
 # Tablero FigJam
 
 Enlace: https://www.figma.com/board/UreaRKG4OmhtobCBxe9dH0 (equipo de Figma "BBQ")
-Título del tablero: **🔥 Simulador de Barbacoas — Esquema y Hoja de Ruta**
+Título: **🔥 Simulador de Barbacoas — Esquema y Hoja de Ruta**
 
-Captura completa (22-11-2026):
-![[tablero-figjam-2026-11-22.webp]]
+Todo el contenido del tablero está volcado en esta bóveda (22-11-2026). Si se cambia el tablero, actualizar también la nota correspondiente.
 
-| # | Sección (título en el tablero) | Nota aquí | Volcado |
+| # | Sección | Nota | Captura |
 |---|---|---|---|
-| 1 | Bucle principal de juego (core loop) | [[Core loop]] | 🟨 estructura (6 pasos + vuelta) |
-| 2 | Esquema técnico del juego (sistemas) | [[Arquitectura]] | 🟨 6 sistemas, sin detalle |
-| 3 | Tecnologías recomendadas | [[Stack]] | 🟨 resumen |
-| 4 | Juegos y plantillas open source para no empezar de 0 | [[Juegos de referencia]] | 🟨 resumen |
-| 5 | Modelos 3D y assets gratuitos | [[Modelos 3D]] | ⬜ |
-| 6 | Hoja de ruta (~30 semanas, equipo de 2–3 personas) | [[Roadmap]] | 🟨 fases y semanas |
-| 7 | ¿Qué podemos usar legalmente para vender en Steam? | [[Licencias y Steam]] | 🟨 resumen |
-| 8 | Skills de Claude para el proyecto | — | ⬜ |
+| 1 | Bucle principal de juego (core loop) | [[Core loop]] | `figjam-1-core-loop.webp` |
+| 2 | Esquema técnico del juego (sistemas) | [[Arquitectura]] | `figjam-2-arquitectura.webp` |
+| 3 | Tecnologías recomendadas | [[Stack]] | `figjam-3-stack.webp` |
+| 4 | Juegos y plantillas open source para no empezar de 0 | [[Juegos de referencia]] | `figjam-4-juegos-base.webp` |
+| 5 | Modelos 3D y assets gratuitos | [[Modelos 3D]] | `figjam-5-modelos-3d.webp` |
+| 6 | Hoja de ruta (~30 semanas, equipo de 2–3 personas) | [[Roadmap]] | `figjam-6-hoja-de-ruta.webp` |
+| 7 | ¿Qué podemos usar legalmente para vender en Steam? | [[Licencias y Steam]] | `figjam-7-licencias-steam.webp` |
+| 8 | Skills de Claude para el proyecto | [[Skills de Claude]] | `figjam-8-skills-claude.webp` |
 
-> [!warning] Falta el texto de las tarjetas
-> La captura es de 541×2000 px: se leen títulos y estructura, pero no el texto pequeño de las tarjetas.
-> Para completarlo, exportar desde FigJam cada sección como PNG a 2x (seleccionar la sección → panel derecho → *Export*), y guardarlas en `Referencias/Imágenes/`.
+Capturas en `Referencias/Imágenes/FigJam/`.
+
+![[figjam-tablero-completo.webp]]

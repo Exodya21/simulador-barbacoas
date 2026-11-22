@@ -1,19 +1,32 @@
 ---
 tipo: tecnico
 estado: decidido
-fecha: 2026-11-22
+fuente: Tablero FigJam, sección 3
+actualizado: 2026-11-22
 ---
 
 # Stack
 
-| Pieza | Elección | Licencia |
-|---|---|---|
-| Motor | **Godot 4** | MIT |
-| Lenguaje | **GDScript** | — |
-| Base de primera persona | **Cogito** | MIT |
-| Modelado | **Blender** | GPL (los modelos son nuestros) |
-| Assets | **Kenney, Quaternius, Poly Haven** | CC0 |
-| Repositorio | GitHub privado → [[Repositorio y ramas]] | — |
-| Documentación | Obsidian (esta bóveda) | — |
+Criterio: **gratis, sin royalties, ligero, buena comunidad y que un equipo pequeño pueda sacar el juego adelante.**
 
-Detalle original: sección 3 del [[Tablero FigJam]]. Licencias: [[Licencias y Steam]].
+## ✅ Recomendado
+| Pieza | Elección | Por qué |
+|---|---|---|
+| 🎮 Motor | **Godot 4.4+** | Gratis, licencia MIT, sin royalties. Física Jolt integrada, partículas GPU, shaders visuales. Exporta a Windows, Linux, Mac y Web. |
+| 🧠 Lenguaje | **GDScript** | Rápido de aprender y pensado para Godot. C# como opción si venís de Unity. |
+| 🧊 Modelado | **Blender 4.x** | Gratis. Exportar en glTF/GLB, que Godot importa directamente con materiales. |
+| 🎨 Texturas y materiales | **Poly Haven** (CC0), **Material Maker** o **ArmorPaint** | Para low-poly: paleta de colores plana + un shader de cocción. |
+| 🔊 Audio | **AudioStreamPlayer3D** + **Freesound** (CC0/CC-BY) + pack gratuito **Sonniss GDC** | Chisporroteo modulado por temperatura. |
+| 🗂️ Gestión | **Git + GitHub** (Git LFS para `.glb` y `.wav`), tareas en **GitHub Projects** | Diseño y roadmap en el [[Tablero FigJam]] y en esta bóveda. → [[Repositorio y ramas]] |
+| 🚀 Publicación | Demo en **itch.io** (gratis) → **Steam** con **GodotSteam** (logros, Steam Deck) | Build web para compartir por enlace. |
+
+## Alternativas descartadas
+| Opción | Motivo |
+|---|---|
+| 🌐 Three.js + React Three Fiber + Rapier | 100% navegador y compartible por URL, pero sin editor visual: más código. (La [[Demo jardín con parrilla]] está hecha con Three.js.) |
+| 🧱 Unity 6 | Más assets y tutoriales de "cooking sim" en la Asset Store, pero motor propietario y más pesado. |
+| 🎬 Unreal Engine 5 | Carne fotorrealista y Nanite/Lumen, pero curva alta y demasiado para un equipo pequeño. |
+
+Licencias de cada pieza: [[Licencias y Steam]]. Decisión: [[2026-11-22 Stack Godot 4 y Steam]].
+
+![[figjam-3-stack.webp]]

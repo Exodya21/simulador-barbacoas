@@ -31,9 +31,19 @@ Lista de mecánicas, sacada de la [[Demo jardín con parrilla]]. Cada una se pue
 ## Controles (primera persona)
 Ratón mirar · WASD caminar · Mayús correr · Clic o E usar · 1–5 cambiar módulo · R/F manivela · P pala · Esc menú.
 
+## Del core loop y la arquitectura (tablero)
+- Combustibles: carbón, leña, gas. Zonas de calor directa (fuerte) e indirecta (suave).
+- Acciones sobre la comida: girar, mover, salar, tapar, controlar llamaradas (la grasa que gotea las provoca).
+- Saber el punto: termómetro, color, sonido; reposo al retirar.
+- Cocción por cara: crudo → sellado → al punto → pasado → quemado.
+- Invitados con pedido, punto deseado y paciencia; propinas, estrellas, desbloqueos.
+- Utensilios: pinzas, espátula, salero, tapa.
+→ [[Core loop]], [[Arquitectura]]
+
 ## Ideas por explorar
-- [ ] Puntos de cocción por alimento (crudo → perfecto → quemado).
-- [ ] Comensales con pedidos.
-- [ ] Clima (viento, lluvia) que afecte al fuego.
+- [x] Puntos de cocción por alimento → definido en [[Arquitectura#🥩 Sistema de Cocción]].
+- [x] Comensales con pedidos → [[Arquitectura#🧑‍🤝‍🧑 Invitados y Pedidos]].
+- [ ] Clima: el viento ya está en el sistema de fuego; ¿lluvia?
+- [ ] ¿Cómo encajan la manivela y los módulos de la demo con el core loop del tablero?
 
 Relacionado: [[Core loop]]

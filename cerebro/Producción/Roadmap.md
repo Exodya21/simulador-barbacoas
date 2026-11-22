@@ -1,34 +1,89 @@
 ---
 tipo: produccion
-estado: borrador
+estado: definido
+fuente: Tablero FigJam, sección 6
 actualizado: 2026-11-22
 ---
 
 # Roadmap
 
-Fuente: sección 6 del [[Tablero FigJam]]: **~30 semanas, equipo de 2–3 personas**. Las semanas son orientativas.
+**~30 semanas, equipo de 2–3 personas.** Las semanas son orientativas.
 
-## Fases
-Las semanas están leídas de las barras del diagrama de Gantt; confirmarlas con una exportación en alta resolución.
+> [!important] Regla de oro
+> No pasar de fase sin cumplir el hito. Si el prototipo gris no divierte, se itera ahí antes de producir arte.
 
-| Fase | Nombre | Semanas | Tareas | Hito |
-|---|---|---|---|---|
-| P0 | Preproducción | 1–2 | ⬜ | ⬜ |
-| P1 | Prototipo gris | 3–6 | ⬜ | ⬜ |
-| P2 | Vertical slice | 7–12 | ⬜ | ⬜ |
-| P3 | Producción de contenido | 13–20 | ⬜ | ⬜ |
-| P4 | Pulido y QA | 21–25 | ⬜ | ⬜ |
-| P5 | Lanzamiento | 26–30 | ⬜ | ⬜ |
+| Fase | Semanas | Hito |
+|---|---|---|
+| F0 · Preproducción | 1–2 | GDD aprobado y repo funcionando |
+| F1 · Prototipo gris | 3–6 | ¿Es divertido girar una hamburguesa? |
+| F2 · Vertical slice | 7–12 | 1 nivel completo y bonito de 10 min |
+| F3 · Producción de contenido | 13–20 | Alpha con todo el contenido |
+| F4 · Pulido y QA | 21–25 | Beta estable |
+| F5 · Lanzamiento | 26–30 | 1.0 publicada 🎉 |
 
-## Próximos pasos esta semana (recuadro negro del tablero)
-Se lee a medias; confirmar:
-1. Instalar Godot 4 y Blender
-2. Clonar Cogito y probar su demo
-3. Descargar el Food Kit de Kenney
-4. Escribir el GDD de 1 página
-5. Prototipar la rejilla de calor con cubos
+## F0 · Preproducción — semanas 1–2
+- [ ] GDD de 1 página (público, plataforma, modos)
+- [ ] Referencias: vídeos reales de parrilla y juegos de cocina → [[Referencias visuales]]
+- [ ] Elegir estilo visual low-poly + paleta
+- [ ] Crear repo Godot 4 + importar Cogito
+- [ ] Lista de assets y licencias → [[Modelos 3D]], [[Licencias y Steam]]
 
-## Hecho
-- [x] Idea y stack → [[Stack]]
+🏁 **Hito:** GDD aprobado y repo funcionando
+
+## F1 · Prototipo gris — semanas 3–6
+- [ ] Parrilla con rejilla de zonas de calor
+- [ ] 1 alimento (hamburguesa) con cocción por caras
+- [ ] Pinzas: coger, girar, mover
+- [ ] Termómetro y valores de depuración
+- [ ] Playtest interno
+
+🏁 **Hito:** ¿es divertido girar una hamburguesa?
+
+## F2 · Vertical slice — semanas 7–12
+- [ ] Encendido de carbón y brasas
+- [ ] 5 alimentos (filete, chorizo, pollo, maíz, pimiento)
+- [ ] Shader crudo → hecho → quemado
+- [ ] Humo, llamas, chispas + audio
+- [ ] 3 invitados con pedidos y puntuación
+
+🏁 **Hito:** 1 nivel completo y bonito de 10 min
+
+## F3 · Producción de contenido — semanas 13–20
+- [ ] 15–20 alimentos y recetas (marinados, salsas)
+- [ ] 3 parrillas: carbón, gas, kamado/ahumador
+- [ ] 3 escenarios (patio, playa, camping)
+- [ ] Modo carrera + modo libre
+- [ ] Tienda de mejoras y desbloqueos
+
+🏁 **Hito:** Alpha con todo el contenido
+
+## F4 · Pulido y QA — semanas 21–25
+- [ ] Tutorial y onboarding
+- [ ] UI/HUD final y accesibilidad
+- [ ] Optimización (Steam Deck / PCs modestos)
+- [ ] Playtests externos y balanceo
+- [ ] Corrección de bugs
+
+🏁 **Hito:** Beta estable
+
+## F5 · Lanzamiento — semanas 26–30
+- [ ] Página de Steam y wishlists
+- [ ] Demo en itch.io / Steam Next Fest
+- [ ] Tráiler y capturas
+- [ ] Lanzamiento 1.0
+- [ ] Parches y feedback de la comunidad
+
+🏁 **Hito:** 1.0 publicada 🎉
+
+## 👉 Próximos pasos esta semana
+- [ ] 1. Instalar Godot 4 y Blender
+- [ ] 2. Clonar Cogito y probar su demo
+- [ ] 3. Descargar Kenney Food Kit
+- [ ] 4. Escribir el GDD de 1 página
+- [ ] 5. Prototipar la rejilla de calor con cubos
+
+## Ya hecho (fuera del plan)
 - [x] Demo web del concepto → [[Demo jardín con parrilla]]
 - [x] Repositorio y documentación → [[Repositorio y ramas]]
+
+![[figjam-6-hoja-de-ruta.webp]]

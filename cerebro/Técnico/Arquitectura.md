@@ -1,35 +1,64 @@
 ---
 tipo: tecnico
-estado: borrador
+estado: definido
+fuente: Tablero FigJam, sección 2
 actualizado: 2026-11-22
 ---
 
 # Arquitectura
 
-Fuente: sección 2 del [[Tablero FigJam]] ("Esquema técnico del juego (sistemas)").
+Cada sistema es una **escena/nodo independiente** en Godot que se comunica por **señales**. Los datos (alimentos, parrillas, recetas) viven en **Resources editables** sin tocar código.
 
-> [!info] Idea principal
-> Cada sistema es independiente y se comunica con los demás por señales; los datos (alimentos, parrillas, etc.) van en recursos editables. *(El subtítulo se lee a medias; confirmar.)*
-
-## Esquema
-```
-Motor: Godot 4 + GDScript   (caja negra; la línea 2 no se lee)
-        │
-Gestor central (autoload)   (caja azul: estado global de la partida)
-        │
- ┌──────┬──────────┬────────────┬──────────────┬────────────────────────┬──────────────┐
- Fuego  Cocción   Interacción  ¿? y Pedidos   Puntuación y Progresión  Presentación
+```mermaid
+flowchart TD
+  M["Motor: Godot 4.x · GDScript (+ C# opcional)<br/>Física Jolt · Renderer Forward+ · Export PC / Web"] --> G["GameManager (autoload)<br/>Estado de partida, ronda, reloj, eventos globales"]
+  G --> F[🔥 Fuego]
+  G --> C[🥩 Cocción]
+  G --> I[✋ Física e Interacción]
+  G --> P[🧑‍🤝‍🧑 Invitados y Pedidos]
+  G --> S[⭐ Puntuación y Progresión]
+  G --> V[✨ Presentación]
 ```
 
-| Sistema | Color | Detalle |
-|---|---|---|
-| 🔥 Sistema de fuego | naranja | ⬜ no se lee |
-| 🥩 Sistema de cocción | rojo | ⬜ no se lee |
-| ✋ Interacción | morado | ⬜ no se lee |
-| 🧾 … y Pedidos *(¿Clientes?)* | amarillo | ⬜ no se lee |
-| ⭐ Puntuación y Progresión | verde | ⬜ no se lee |
-| ✨ Presentación | turquesa | ⬜ no se lee |
+## Sistemas
 
-Debajo hay una franja común a todos los sistemas, seguramente los datos compartidos (alimentos, parrillas…). No se lee.
+### 🔥 Sistema de Fuego
+- Combustible: carbón, leña, gas
+- Temperatura por zonas (rejilla de celdas de calor)
+- Encendido, apagado, viento
+- Llamaradas cuando gotea grasa
 
-Relacionado: [[Stack]], [[Mecánicas]]
+### 🥩 Sistema de Cocción
+- Cada alimento: temperatura interna y superficie por cara
+- Estados: crudo → sellado → al punto → pasado → quemado
+- Shader que mezcla texturas según cocción
+- Tablas de cocción por tipo de carne
+
+### ✋ Física e Interacción
+- Primera persona (plantilla [[Juegos de referencia#Cogito|Cogito]])
+- Pinzas, espátula, salero, tapa
+- RigidBody + Jolt para coger, girar, tirar
+- Raycast para apuntar
+
+### 🧑‍🤝‍🧑 Invitados y Pedidos
+- Cola de pedidos con punto deseado
+- Paciencia / humor de cada invitado
+- NPCs low-poly con animaciones simples
+
+### ⭐ Puntuación y Progresión
+- Nota por punto, tiempo y presentación
+- Dinero → nuevas parrillas, utensilios, recetas
+- Modo carrera + modo libre (sandbox)
+
+### ✨ Presentación
+- VFX: GPUParticles3D (humo, brasas, chispas)
+- Audio: chisporroteo según temperatura
+- HUD: termómetro, pedidos, tutorial
+
+## Capa de datos
+- 📦 **Datos** (Resources `.tres`): alimentos, parrillas, combustibles, recetas, niveles
+- 💾 **Guardado**: JSON / ConfigFile
+
+Relacionado: [[Stack]], [[Core loop]], [[Skills de Claude]]
+
+![[figjam-2-arquitectura.webp]]

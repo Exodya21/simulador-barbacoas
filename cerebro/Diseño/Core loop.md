@@ -1,22 +1,31 @@
 ---
 tipo: diseño
-estado: borrador
+estado: definido
+fuente: Tablero FigJam, sección 1
+actualizado: 2026-11-22
 ---
 
 # Core loop
 
-> [!todo] Pendiente
-> El detalle está en la sección 1 del [[Tablero FigJam]]. Completar cuando se pueda leer o exportar.
+Lo que el jugador hace una y otra vez. **Si este bucle es divertido con cubos grises, el juego funciona.**
 
-## Estructura en el tablero
-Seis pasos en cadena (naranja → amarillo → rojo → rosa → verde → azul). Del último sale una flecha que **vuelve al paso 2**: el bucle se repite en cada ronda sin volver a empezar desde el paso 1. El texto de cada paso no se lee en la captura.
+```mermaid
+flowchart LR
+  A[1. Preparar el fuego] --> B[2. Recibir pedidos] --> C[3. Colocar la comida] --> D[4. Gestionar] --> E[5. Retirar en su punto] --> F[6. Servir y puntuar]
+  F -- siguiente ronda --> B
+```
 
-## Borrador (a partir de la [[Demo jardín con parrilla]])
-1. **Encender y mantener el fuego** — leña en el brasero, avivar.
-2. **Gestionar las brasas** — pasarlas con la pala bajo la parrilla.
-3. **Controlar el calor** — subir/bajar la parrilla con la manivela.
-4. **Cocinar** — poner comida, darle la vuelta en el punto justo.
-5. **Servir** — llevar la comida a la mesa.
-6. *(¿Progresión?)* — desbloquear módulos, parrillas, recetas… → ver [[Mecánicas]]
+| # | Paso | Qué hace el jugador |
+|---|---|---|
+| 1 | 🔥 **Preparar el fuego** | Carbón / leña / gas, encender, esperar a que se haga brasa |
+| 2 | 🧾 **Recibir pedidos** | Los invitados piden: chuletón al punto, chorizo, verduras… |
+| 3 | 🥩 **Colocar la comida** | Elegir zona: directa (fuerte) o indirecta (suave) |
+| 4 | 🍳 **Gestionar** | Girar, mover, salar, tapar, controlar llamaradas |
+| 5 | 🌡️ **Retirar en su punto** | Termómetro, color, sonido; reposo |
+| 6 | ⭐ **Servir y puntuar** | Propinas, estrellas, desbloqueos |
 
-Relacionado: [[Mecánicas]], [[Juegos de referencia]]
+El fuego se prepara una vez. Luego se repite el bucle **2 → 6** en cada ronda.
+
+Sistemas que lo hacen posible: [[Arquitectura]]. Detalle de cada acción: [[Mecánicas]].
+
+![[figjam-1-core-loop.webp]]
