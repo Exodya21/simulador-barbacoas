@@ -11,7 +11,7 @@ func _ejecutar() -> void:
 	await process_frame
 	var escena := current_scene
 	# Sin tipos de clase propios: este script se compila antes de que existan
-	# los autoloads de Cogito, y CoccionComponente/VoltearInteraccion dependen de ellos.
+	# los autoloads de Cogito, y CoccionComponente depende de clases que los usan.
 	var rejilla: Node3D = escena.get_node("Parrilla/RejillaCalor")
 	var hamburguesa := escena.get_node("Hamburguesa1") as RigidBody3D
 	var coccion: Node = hamburguesa.get_node("Coccion")
@@ -30,8 +30,7 @@ func _ejecutar() -> void:
 	comprobar(coccion.estado.temperatura_superficie[C.ABAJO] > 150.0, "la cara de abajo se calienta (%.0f °C)" % coccion.estado.temperatura_superficie[C.ABAJO])
 	comprobar(hamburguesa.global_position.y > rejilla.global_position.y, "la hamburguesa no atraviesa la rejilla")
 
-	var voltear: Node = hamburguesa.get_node("Voltear")
-	voltear.voltear(hamburguesa, Vector3.RIGHT)
+	Voltear.voltear(hamburguesa, Vector3.RIGHT)
 	await _esperar_fisica(1.5)
 	comprobar(coccion.cara_apoyada == C.ARRIBA, "tras dar la vuelta, toca la que era la cara de arriba (cara %d)" % coccion.cara_apoyada)
 

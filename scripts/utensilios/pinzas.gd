@@ -2,21 +2,27 @@ class_name Pinzas
 extends Node3D
 ## Pinzas de barbacoa en la mano del jugador.
 ##
-## - Clic izquierdo (action_primary): coger el alimento al que apuntas, o
-##   soltar el que tienes cogido.
-## - Clic derecho (action_secondary): dar la vuelta al alimento cogido, o al
-##   que apuntas si no tienes ninguno.
+## - Apuntas a una comida y **mantienes el clic izquierdo**: las pinzas la
+##   cogen y la aprietan mientras sigas apretando. Al soltar el clic, la sueltas.
+## - Con la comida cogida, **un clic derecho** abre el minijuego de dar la
+##   vuelta: una línea sube y baja por una barra. **Al soltar el clic
+##   izquierdo** se para la línea:
+##   - PERFECTO: la comida da la vuelta perfecta.
+##   - BIEN: se te cae de las pinzas; puede caer del lado bueno o no
+##     (más probable cuanto más cerca del perfecto).
+##   - MAL: se te cae al suelo.
 ## Al empezar se cuelgan de la cámara del jugador. No hacen nada mientras el
 ## jugador lleva algo en la mano con E (Cogito usa el clic para lanzarlo).
 
 signal cogido(cuerpo: RigidBody3D)
 signal soltado(cuerpo: RigidBody3D)
+signal vuelta_terminada(cuerpo: RigidBody3D, resultado: MinijuegoVuelta.Resultado, dada_la_vuelta: bool)
 
 const GRUPO := "pinzas"
 ## Capa de física de los objetos con los que se interactúa (Cogito: capa 2).
 const CAPA_INTERACTUABLES := 1 << 1
 
-## Distancia máxima (m) desde la cámara para coger o voltear.
+## Distancia máxima (m) desde la cámara para coger.
 @export var alcance := 1.8
 ## Posición de las pinzas respecto a la cámara (abajo a la derecha).
 @export var posicion_en_camara := Vector3(0.14, -0.16, -0.10)
@@ -26,18 +32,25 @@ const CAPA_INTERACTUABLES := 1 << 1
 ## Ángulo (grados) de cada brazo abierto y cerrado.
 @export var apertura_abierta := 7.0
 @export var apertura_cerrada := 0.7
+## Velocidad (m/s) con la que sale despedida la comida al fallar el minijuego.
+@export var impulso_fallo := 2.6
 
 var sostenido: RigidBody3D
+var minijuego: MinijuegoVuelta
+var rng := RandomNumberGenerator.new()
+
 var _capa_original := 0
 var _camara: Camera3D
 
 @onready var _punta: Marker3D = $Punta
 @onready var _brazo_arriba: Node3D = $Modelo/Pinzas/BrazoArriba
 @onready var _brazo_abajo: Node3D = $Modelo/Pinzas/BrazoAbajo
+@onready var _barra: BarraMinijuego = $Interfaz/BarraMinijuego
 
 
 func _ready() -> void:
 	add_to_group(GRUPO)
+	rng.randomize()
 	_poner_apertura(apertura_abierta)
 	_montar_en_camara.call_deferred()
 
@@ -52,26 +65,28 @@ func _montar_en_camara() -> void:
 
 
 func _physics_process(delta: float) -> void:
+	if sostenido and not is_instance_valid(sostenido):
+		_olvidar_sostenido()
 	if not _jugador_lleva_algo():
-		if Input.is_action_just_pressed("action_primary"):
-			if sostenido:
-				soltar()
-			else:
-				intentar_coger()
-		if Input.is_action_just_pressed("action_secondary"):
-			if sostenido:
-				voltear_sostenido()
-			else:
-				var objetivo := alimento_apuntado()
-				if objetivo:
-					Voltear.voltear(objetivo, Voltear.eje_horizontal(_camara))
+		_leer_controles()
+	if minijuego:
+		minijuego.avanzar(delta)
 	if sostenido:
-		if not is_instance_valid(sostenido):
-			sostenido = null
-			_poner_apertura(apertura_abierta)
-			return
 		var mezcla := 1.0 - exp(-seguimiento * delta)
 		sostenido.global_position = sostenido.global_position.lerp(_punta.global_position, mezcla)
+
+
+func _leer_controles() -> void:
+	var apretando := Input.is_action_pressed("action_primary")
+	if Input.is_action_just_pressed("action_primary") and sostenido == null:
+		intentar_coger()
+	if sostenido and Input.is_action_just_pressed("action_secondary") and minijuego == null:
+		abrir_minijuego()
+	if sostenido and not apretando:
+		if minijuego:
+			terminar_minijuego()
+		else:
+			soltar()
 
 
 ## Alimento (cuerpo con cocción) bajo la mira, o null.
@@ -108,23 +123,89 @@ func coger(cuerpo: RigidBody3D) -> void:
 	cogido.emit(cuerpo)
 
 
-func soltar() -> void:
-	if sostenido == null:
-		return
+## Suelta la comida tal cual, sin dar la vuelta.
+func soltar() -> RigidBody3D:
 	var cuerpo := sostenido
-	sostenido = null
-	if is_instance_valid(cuerpo):
+	_cerrar_minijuego()
+	_olvidar_sostenido()
+	if cuerpo and is_instance_valid(cuerpo):
 		cuerpo.collision_layer = _capa_original
 		cuerpo.freeze = false
 		cuerpo.linear_velocity = Vector3.ZERO
 		cuerpo.angular_velocity = Vector3.ZERO
+		soltado.emit(cuerpo)
+	return cuerpo
+
+
+func abrir_minijuego() -> void:
+	if sostenido == null:
+		return
+	minijuego = MinijuegoVuelta.new(rng)
+	if _barra:
+		_barra.abrir(minijuego)
+
+
+## Para la línea donde esté y aplica el resultado. Devuelve el resultado.
+func terminar_minijuego() -> MinijuegoVuelta.Resultado:
+	var juego := minijuego
+	var resultado := juego.resultado()
+	var dada_la_vuelta := false
+	var eje := Voltear.eje_horizontal(_camara)
+	var cuerpo := soltar()
+	if cuerpo == null:
+		return resultado
+	match resultado:
+		MinijuegoVuelta.Resultado.PERFECTO:
+			Voltear.voltear(cuerpo, eje, 0.0)
+			dada_la_vuelta = true
+		MinijuegoVuelta.Resultado.BIEN:
+			dada_la_vuelta = juego.sale_dada_la_vuelta()
+			if dada_la_vuelta:
+				Voltear.voltear(cuerpo, eje, 0.0)
+			# Se escurre de las pinzas: un pequeño bamboleo al caer.
+			cuerpo.angular_velocity = eje * rng.randf_range(-3.0, 3.0)
+		MinijuegoVuelta.Resultado.MAL:
+			_lanzar_al_suelo(cuerpo, eje)
+	_avisar(resultado, dada_la_vuelta)
+	vuelta_terminada.emit(cuerpo, resultado, dada_la_vuelta)
+	return resultado
+
+
+## La comida sale despedida hacia un lado y cae al suelo.
+func _lanzar_al_suelo(cuerpo: RigidBody3D, eje: Vector3) -> void:
+	var lado := eje if rng.randf() < 0.5 else -eje
+	var hacia_jugador := Vector3.ZERO
+	if _camara:
+		hacia_jugador = _camara.global_basis.z
+		hacia_jugador.y = 0.0
+		hacia_jugador = hacia_jugador.normalized()
+	cuerpo.linear_velocity = (lado + hacia_jugador * 0.6).normalized() * impulso_fallo + Vector3.UP * 1.2
+	cuerpo.angular_velocity = Vector3(rng.randf_range(-12, 12), rng.randf_range(-6, 6), rng.randf_range(-12, 12))
+
+
+func _avisar(resultado: MinijuegoVuelta.Resultado, dada_la_vuelta: bool) -> void:
+	if _barra == null:
+		return
+	match resultado:
+		MinijuegoVuelta.Resultado.PERFECTO:
+			_barra.mostrar_resultado(tr("MINIJUEGO_perfecto"), BarraMinijuego.COLOR_PERFECTO)
+		MinijuegoVuelta.Resultado.BIEN:
+			var clave := "MINIJUEGO_bien_vuelta" if dada_la_vuelta else "MINIJUEGO_bien_sin_vuelta"
+			_barra.mostrar_resultado(tr(clave), BarraMinijuego.COLOR_BIEN)
+		MinijuegoVuelta.Resultado.MAL:
+			_barra.mostrar_resultado(tr("MINIJUEGO_mal"), Color(1.0, 0.35, 0.3))
+
+
+func _cerrar_minijuego() -> void:
+	minijuego = null
+	if _barra:
+		_barra.cerrar()
+
+
+func _olvidar_sostenido() -> void:
+	sostenido = null
+	_cerrar_minijuego()
 	_poner_apertura(apertura_abierta)
-	soltado.emit(cuerpo)
-
-
-func voltear_sostenido() -> void:
-	if sostenido:
-		sostenido.global_rotate(Voltear.eje_horizontal(_camara), PI)
 
 
 func _poner_apertura(grados: float) -> void:

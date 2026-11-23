@@ -6,8 +6,20 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "INTERACT_voltear"
-msgstr "Dar la vuelta"
-
 msgid "ALIMENTO_hamburguesa"
 msgstr "Hamburguesa"
+
+msgid "MINIJUEGO_aviso"
+msgstr "Suelta el clic izquierdo para dar la vuelta"
+
+msgid "MINIJUEGO_perfecto"
+msgstr "¡Vuelta perfecta!"
+
+msgid "MINIJUEGO_bien_vuelta"
+msgstr "Se te escurre… ¡pero cae del lado bueno!"
+
+msgid "MINIJUEGO_bien_sin_vuelta"
+msgstr "Se te escurre y cae del mismo lado"
+
+msgid "MINIJUEGO_mal"
+msgstr "¡Al suelo!"

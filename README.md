@@ -32,11 +32,15 @@ Simulador de barbacoas 3D en primera persona, estilo low-poly, hecho con **Godot
 
 | Tecla | Acción |
 |---|---|
-| E | Coger / soltar (llevar) una hamburguesa |
-| F | Dar la vuelta a la hamburguesa que miras (con la mano) |
-| Clic izquierdo | **Pinzas:** coger la hamburguesa a la que apuntas / soltarla |
-| Clic derecho | **Pinzas:** dar la vuelta a la que tienes cogida (o a la que apuntas) |
+| E | Coger / soltar (llevar) una hamburguesa con la mano |
+| Clic izquierdo **mantenido** | **Pinzas:** coger la hamburguesa a la que apuntas y apretarla; al soltar el clic, la sueltas |
+| Clic derecho (con la hamburguesa cogida) | Abre el **minijuego de dar la vuelta**: una línea sube y baja por una barra. **Suelta el clic izquierdo** para pararla |
 | F3 | Mostrar u ocultar la depuración: rejilla de calor (azul frío → rojo caliente) y termómetro de cada pieza |
+
+Resultado del minijuego, según dónde pares la línea (la zona verde cambia de sitio cada vez):
+- **Perfecto** (zona verde): vuelta perfecta.
+- **Bien** (zona amarilla): se te escurre de las pinzas; cae del lado bueno con un 80 % de probabilidad junto a la zona verde y un 30 % en el borde.
+- **Mal** (fuera): sale despedida al suelo.
 
 La parrilla tiene **zona directa** a la izquierda (~260 °C), transición en el centro e **indirecta** a la derecha (~100 °C, no dora pero sigue haciendo el interior).
    Las demos de Cogito siguen en `addons/cogito/DemoScenes/` (abrir `COGITO_0_MainMenu.tscn` y pulsar F6).

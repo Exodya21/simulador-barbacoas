@@ -1,7 +1,7 @@
 class_name Voltear
 extends RefCounted
 ## Dar la vuelta a una pieza: la levanta un poco y la gira 180° sobre un eje
-## horizontal. Lo usan la tecla F (VoltearInteraccion) y las pinzas.
+## horizontal. Lo usa el minijuego de las pinzas al acertar.
 
 
 static func voltear(cuerpo: RigidBody3D, eje: Vector3, elevacion := 0.03) -> void:

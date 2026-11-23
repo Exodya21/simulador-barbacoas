@@ -6,8 +6,20 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "INTERACT_voltear"
-msgstr "Umdrehen"
-
 msgid "ALIMENTO_hamburguesa"
 msgstr "Burger"
+
+msgid "MINIJUEGO_aviso"
+msgstr "Linke Maustaste loslassen zum Wenden"
+
+msgid "MINIJUEGO_perfecto"
+msgstr "Perfekt gewendet!"
+
+msgid "MINIJUEGO_bien_vuelta"
+msgstr "Rutscht weg… landet aber richtig!"
+
+msgid "MINIJUEGO_bien_sin_vuelta"
+msgstr "Rutscht weg und landet auf derselben Seite"
+
+msgid "MINIJUEGO_mal"
+msgstr "Auf dem Boden!"
