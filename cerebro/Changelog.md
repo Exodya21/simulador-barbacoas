@@ -1,6 +1,6 @@
 ---
 tipo: changelog
-actualizado: 2026-11-23 23:49
+actualizado: 2026-11-23 23:50
 ---
 
 # 📜 Changelog
@@ -8,6 +8,7 @@ actualizado: 2026-11-23 23:49
 Registro de todo lo que cambia en el proyecto, de lo más reciente a lo más antiguo. Lo escribe **el Documentador**, el agente de Claude definido en `.claude/agents/documentador.md`. Cada decisión tiene además su nota en `Decisiones/`.
 
 ## 2026-11-23
+- **23:49** · Documentación · Completadas las alternativas descartadas de que solo manche la comida que ha pasado por la parrilla → [[2026-11-23 Solo mancha la comida que ha pasado por la parrilla]]
 - **23:48** · Documentación · Mecánicas, Modelos 3D (carne de hamburguesa ✅) y Roadmap (primera ronda de playtest) al día → [[Mecánicas]] · [[Modelos 3D]] · [[Roadmap]]
 - **23:48** · Decisión · El idioma se guarda en `idioma.cfg` y se ignora el `language.cfg` viejo de Cogito; ajusta a [[2026-11-22 Español idioma por defecto]] → [[2026-11-23 Idioma guardado en idioma.cfg]]
 - **23:48** · Decisión · Solo mancha el suelo la comida que ha pasado por la parrilla encendida; ajusta a [[2026-11-23 Comida caída al suelo sucia, mancha y basura]] → [[2026-11-23 Solo mancha la comida que ha pasado por la parrilla]]

@@ -4,7 +4,7 @@ fecha: 2026-11-23
 hora: 23:48
 estado: aceptada
 area: Diseño
-actualizado: 2026-11-23 23:48
+actualizado: 2026-11-23 23:50
 ---
 
 # Solo mancha la comida que ha pasado por la parrilla encendida
@@ -15,6 +15,8 @@ actualizado: 2026-11-23 23:48
 
 **Motivo:** lo pidió el usuario en el playtest: "Las comidas que no han pasado por la barbacoa encendida, si se caen al suelo, no deben mancharlo."
 
-**Alternativas descartadas:** (pendiente de confirmar)
+**Alternativas descartadas:**
+- Que toda la comida que cae manche: la carne cruda casi no suelta grasa, así que no es creíble, y llenaría el suelo de manchas desde el primer minuto.
+- Que la mancha dependa del grado de cocción (cuanto más hecha, más grasa): es más fino, pero de momento no hace falta. Queda como posible ajuste.
 
 Relacionado: [[Mecánicas]] · [[2026-11-22 Rejilla de calor por celdas]]
