@@ -2,7 +2,7 @@
 tipo: produccion
 estado: definido
 fuente: Tablero FigJam, sección 6
-actualizado: 2026-11-23 23:15
+actualizado: 2026-11-23 23:49
 ---
 
 # Roadmap
@@ -38,7 +38,7 @@ actualizado: 2026-11-23 23:15
 - [x] 1 alimento (hamburguesa) con cocción por caras → [[2026-11-22 Cocción por caras con superficie e interior]]
 - [x] Pinzas: coger, girar, mover → pinzas modeladas en Blender: mantener el clic izquierdo coge y soltarlo suelta ([[2026-11-23 Coger con clic mantenido]]); la vuelta se da con un minijuego de precisión ([[2026-11-23 Minijuego de dar la vuelta]])
 - [x] Termómetro y valores de depuración → versión de depuración con F3 ([[2026-11-22 Depuración visible en desarrollo]]); el termómetro como utensilio queda para más adelante
-- [ ] Playtest interno
+- [ ] Playtest interno → primera ronda del usuario el 23-11-2026, con seis comentarios ya arreglados (commit `0eb562b` en `dev`)
 
 Arrastrado de la F0 (no bloquea el hito) → [[2026-11-22 F0 cerrada]]:
 - [ ] Guardar vídeos de YouTube de parrilla y gameplay (búsquedas en [[Referencias de parrilla y juegos]]) → **en parte**: guardado el vídeo elegido por el usuario, sin revisar

@@ -4,7 +4,7 @@ fecha: 2026-11-22
 hora: 20:15
 estado: aceptada
 area: Diseño
-actualizado: 2026-11-22 20:15
+actualizado: 2026-11-23 23:49
 ---
 
 # El español es el idioma por defecto del juego
@@ -14,5 +14,7 @@ actualizado: 2026-11-22 20:15
 **Motivo:** lo pidió el usuario, y tanto el equipo como el público principal hablan español.
 
 **Alternativas descartadas:** seguir la detección del sistema que trae Cogito: con Windows en inglés, el juego arrancaría en inglés.
+
+**Ajustada por:** [[2026-11-23 Idioma guardado en idioma.cfg]]. En el primer playtest salía en inglés por un `language.cfg` viejo de Cogito.
 
 Relacionado: [[2026-11-22 Traducciones propias en idiomas]] · [[2026-11-22 Cogito como base del proyecto]] · [[GDD]]

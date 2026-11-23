@@ -1,6 +1,6 @@
 ---
 tipo: changelog
-actualizado: 2026-11-23 23:16
+actualizado: 2026-11-23 23:49
 ---
 
 # 📜 Changelog
@@ -8,6 +8,13 @@ actualizado: 2026-11-23 23:16
 Registro de todo lo que cambia en el proyecto, de lo más reciente a lo más antiguo. Lo escribe **el Documentador**, el agente de Claude definido en `.claude/agents/documentador.md`. Cada decisión tiene además su nota en `Decisiones/`.
 
 ## 2026-11-23
+- **23:48** · Documentación · Mecánicas, Modelos 3D (carne de hamburguesa ✅) y Roadmap (primera ronda de playtest) al día → [[Mecánicas]] · [[Modelos 3D]] · [[Roadmap]]
+- **23:48** · Decisión · El idioma se guarda en `idioma.cfg` y se ignora el `language.cfg` viejo de Cogito; ajusta a [[2026-11-22 Español idioma por defecto]] → [[2026-11-23 Idioma guardado en idioma.cfg]]
+- **23:48** · Decisión · Solo mancha el suelo la comida que ha pasado por la parrilla encendida; ajusta a [[2026-11-23 Comida caída al suelo sucia, mancha y basura]] → [[2026-11-23 Solo mancha la comida que ha pasado por la parrilla]]
+- **23:48** · Decisión · Animación de salto con dos vueltas al dar la vuelta; completa a [[2026-11-23 Minijuego de dar la vuelta]] → [[2026-11-23 Animación de salto al dar la vuelta]]
+- **23:48** · Decisión · Las pinzas colocan la comida donde apuntas; completa a [[2026-11-23 Coger con clic mantenido]] → [[2026-11-23 Las pinzas colocan la comida donde apuntas]]
+- **23:48** · Arte · Rama `dev` (0eb562b): hamburguesa nueva de 152 caras con `herramientas/blender/hamburguesa.py` y shader de cocción con cantos que se doran, grano de carne y marcas de parrilla → [[Modelos 3D]]
+- **23:48** · Técnico · Rama `dev` (0eb562b): arreglos del primer playtest del usuario (idioma, manchas, pinzas que colocan donde apuntas, sin disparo, animación de salto); `test_pinzas` (69) y `test_limpieza` (24) pasan → [[2026-11-23 Las pinzas colocan la comida donde apuntas]]
 - **23:16** · Documentación · Completado el porqué de la idea del cubo de basura realista con bolsa → [[Cubo de basura realista con bolsa]]
 - **23:15** · Diseño · Ideas nuevas para el futuro: ruta de mejora de la limpieza (cepillo y mocho con balde) y cubo de basura realista con bolsa; Mecánicas, Modelos 3D, Roadmap y Arquitectura al día → [[Ruta de mejora de la limpieza]] · [[Cubo de basura realista con bolsa]]
 - **23:15** · Decisión · Trapo viejo como utensilio de limpieza por defecto (4 s por mancha); completa a [[2026-11-23 Limpiar manchas manteniendo F]] → [[2026-11-23 Trapo viejo como utensilio de limpieza]]

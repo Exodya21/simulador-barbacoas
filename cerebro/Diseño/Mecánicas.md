@@ -1,7 +1,7 @@
 ---
 tipo: diseño
 estado: borrador
-actualizado: 2026-11-23 23:15
+actualizado: 2026-11-23 23:49
 ---
 
 # Mecánicas
@@ -25,8 +25,10 @@ Lista de mecánicas, sacada de la [[Demo jardín con parrilla]]. Cada una se pue
   - Perfecto: vuelta perfecta en el sitio.
   - Bien: se escurre de las pinzas y cae del lado bueno con una probabilidad del 80 % junto a la zona perfecta al 30 % en el borde.
   - Mal: sale despedida y **la comida cae al suelo**.
+  - Al soltar, la comida da un **salto con dos vueltas** (0,65 s) y cae según el resultado → [[2026-11-23 Animación de salto al dar la vuelta]]
   - → [[2026-11-23 Minijuego de dar la vuelta]] · [[2026-11-23 Coger con clic mantenido]]
-- Comida caída al suelo (hecho en la F1): queda **sucia** y hay que tirarla al **cubo de basura**. Deja en el suelo una **mancha de grasa resbaladiza** que no desaparece hasta que se limpia manteniendo F con el **trapo viejo**, 4 s por mancha ([[2026-11-23 Trapo viejo como utensilio de limpieza]]) → [[2026-11-23 Comida caída al suelo sucia, mancha y basura]] · [[2026-11-23 Limpiar manchas manteniendo F]] · [[2026-11-23 Resbalar bajando el agarre de Cogito]]
+- Mover con las pinzas: la comida va al punto al que apuntas (hasta 1,8 m) y se queda ahí al soltar → [[2026-11-23 Las pinzas colocan la comida donde apuntas]]
+- Comida caída al suelo (hecho en la F1): queda **sucia** y hay que tirarla al **cubo de basura**. Si ha pasado por la parrilla encendida, deja en el suelo una **mancha de grasa resbaladiza** ([[2026-11-23 Solo mancha la comida que ha pasado por la parrilla]]) que no desaparece hasta que se limpia manteniendo F con el **trapo viejo**, 4 s por mancha ([[2026-11-23 Trapo viejo como utensilio de limpieza]]) → [[2026-11-23 Comida caída al suelo sucia, mancha y basura]] · [[2026-11-23 Limpiar manchas manteniendo F]] · [[2026-11-23 Resbalar bajando el agarre de Cogito]]
 - Servir a la mesa.
 
 ## Ambiente

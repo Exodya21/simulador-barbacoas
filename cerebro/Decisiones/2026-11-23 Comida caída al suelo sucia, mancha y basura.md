@@ -4,7 +4,7 @@ fecha: 2026-11-23
 hora: 23:02
 estado: aceptada
 area: Diseño
-actualizado: 2026-11-23 23:02
+actualizado: 2026-11-23 23:49
 ---
 
 # Comida caída al suelo: sucia, mancha resbaladiza y basura
@@ -21,5 +21,7 @@ actualizado: 2026-11-23 23:02
 **Alternativas descartadas:**
 - Que la comida del suelo se pudiera seguir usando.
 - Que las manchas desaparecieran solas.
+
+**Ajustada por:** [[2026-11-23 Solo mancha la comida que ha pasado por la parrilla]]. La comida cruda se ensucia, pero no deja mancha.
 
 Relacionado: [[Mecánicas]] · [[Comida en el suelo y dificultad del minijuego]] · [[Perro callejero]] · [[Modelos 3D]]

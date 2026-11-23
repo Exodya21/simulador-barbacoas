@@ -4,7 +4,7 @@ fecha: 2026-11-23
 hora: 22:45
 estado: aceptada
 area: Diseño
-actualizado: 2026-11-23 22:45
+actualizado: 2026-11-23 23:49
 ---
 
 # Minijuego de dar la vuelta
@@ -36,5 +36,7 @@ actualizado: 2026-11-23 22:45
 **Alternativas descartadas:**
 - La vuelta instantánea.
 - Una probabilidad fija del 50 % o del 70 % con "bien": el usuario eligió la que depende de la distancia.
+
+**Completada por:** [[2026-11-23 Animación de salto al dar la vuelta]]
 
 Relacionado: [[Mecánicas]] · [[Roadmap]] · [[2026-11-23 Coger con clic mantenido]] · [[Comida en el suelo y dificultad del minijuego]]
