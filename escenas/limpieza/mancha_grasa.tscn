@@ -46,5 +46,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
 shape = SubResource("Forma_resbaladiza")
 
 [node name="Limpiar" parent="." instance=ExtResource("3_mantener")]
-interaction_text = "INTERACT_limpiar"
-hold_time = 2.0
+interaction_text = "INTERACT_limpiar_trapo"
+hold_time = 4.0

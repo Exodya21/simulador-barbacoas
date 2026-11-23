@@ -35,3 +35,9 @@ msgstr "Binned!"
 
 msgid "COMIDA_sucia"
 msgstr "DIRTY · bin it"
+
+msgid "INTERACT_limpiar_trapo"
+msgstr "Wipe with the rag"
+
+msgid "UTENSILIO_trapo"
+msgstr "Old rag"

@@ -40,8 +40,37 @@ func _ejecutar() -> void:
 	await _esperar_fisica(0.3)
 	comprobar(is_equal_approx(jugador.LERP_SPEED, agarre), "fuera de la mancha recupera el agarre")
 
-	# Se limpia (lo que hace la interacción de mantener pulsado al terminar).
+	# Por defecto se limpia con el trapo viejo: lento (4 s).
 	comprobar(mancha.has_node("Limpiar"), "la mancha tiene la interacción de limpiar")
+	var limpiar: Node = mancha.get_node("Limpiar")
+	comprobar(mancha.utensilio != null and mancha.utensilio.nombre == "UTENSILIO_trapo", "el utensilio por defecto es el trapo")
+	comprobar(is_equal_approx(limpiar.hold_time, 4.0), "con el trapo hay que mantener 4 s (%.1f)" % limpiar.hold_time)
+	comprobar(limpiar.interaction_text == "INTERACT_limpiar_trapo", "el aviso dice que se limpia con el trapo")
+
+	# Mientras se mantiene, el trapo frota y la mancha se desvanece.
+	var trapo: Node3D = mancha.get_node("Utensilio")
+	comprobar(not trapo.visible, "sin limpiar, el trapo no se ve")
+	var posiciones: Array[Vector3] = []
+	for i in 30:
+		limpiar.is_being_held.emit(4.0 - i * 0.05, 1.0 / 60.0)
+		posiciones.append(trapo.position)
+		await process_frame
+	comprobar(trapo.visible, "al mantener, el trapo aparece frotando")
+	comprobar(posiciones[0].distance_to(posiciones[15]) > 0.03, "el trapo se mueve en círculos")
+	comprobar(mancha.get_node("Malla").material_override.albedo_color.a < 0.9, "la mancha se va desvaneciendo")
+	await _esperar_fisica(0.3)
+	comprobar(not trapo.visible and is_equal_approx(mancha.get_node("Malla").material_override.albedo_color.a, 1.0), "si se suelta antes de tiempo, la mancha vuelve entera")
+
+	# Ruta de mejora: un utensilio mejor (p. ej. un mocho) limpia más rápido.
+	var mocho := UtensilioLimpieza.new()
+	mocho.nombre = "UTENSILIO_prueba"
+	mocho.segundos_por_mancha = 1.0
+	var equipo := root.get_node("Equipo")
+	equipo.poner_limpieza(mocho)
+	comprobar(is_equal_approx(limpiar.hold_time, 1.0), "al cambiar de utensilio cambia el tiempo de limpieza")
+	equipo.poner_limpieza(equipo.TRAPO)
+
+	# Al terminar, la mancha desaparece (lo que hace la HoldInteraction al acabar).
 	jugador.global_position = mancha.global_position + Vector3.UP * 0.1
 	await _esperar_fisica(0.3)
 	mancha.interact(null)

@@ -35,3 +35,9 @@ msgstr "¡A la basura!"
 
 msgid "COMIDA_sucia"
 msgstr "SUCIA · a la basura"
+
+msgid "INTERACT_limpiar_trapo"
+msgstr "Limpiar con el trapo"
+
+msgid "UTENSILIO_trapo"
+msgstr "Trapo viejo"

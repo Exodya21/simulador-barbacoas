@@ -35,3 +35,9 @@ msgstr "Weggeworfen!"
 
 msgid "COMIDA_sucia"
 msgstr "SCHMUTZIG · wegwerfen"
+
+msgid "INTERACT_limpiar_trapo"
+msgstr "Mit dem Lappen wischen"
+
+msgid "UTENSILIO_trapo"
+msgstr "Alter Lappen"

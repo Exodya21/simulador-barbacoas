@@ -33,6 +33,7 @@ MenuTemplateManager="*uid://dru131jwwih1y"
 InputRouter="*uid://byboexsy6hrjq"
 Idioma="*res://scripts/idioma.gd"
 Depuracion="*res://scripts/depuracion.gd"
+Equipo="*res://scripts/equipo.gd"
 
 [display]
 
