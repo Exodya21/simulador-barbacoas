@@ -1,6 +1,6 @@
 ---
 tipo: changelog
-actualizado: 2026-11-23 22:25
+actualizado: 2026-11-23 22:46
 ---
 
 # 📜 Changelog
@@ -8,6 +8,10 @@ actualizado: 2026-11-23 22:25
 Registro de todo lo que cambia en el proyecto, de lo más reciente a lo más antiguo. Lo escribe **el Documentador**, el agente de Claude definido en `.claude/agents/documentador.md`. Cada decisión tiene además su nota en `Decisiones/`.
 
 ## 2026-11-23
+- **22:45** · Diseño · Mecánicas al día: dar la vuelta es un minijuego y la comida puede caer al suelo; nueva idea sobre la comida en el suelo y la dificultad del minijuego → [[Mecánicas]] · [[Comida en el suelo y dificultad del minijuego]]
+- **22:45** · Decisión · Coger con clic mantenido y soltar al soltar el clic; sustituye a [[2026-11-23 Controles de las pinzas]] → [[2026-11-23 Coger con clic mantenido]]
+- **22:45** · Decisión · Dar la vuelta es un minijuego de precisión con zona perfecta aleatoria; sustituye a [[2026-11-22 Dar la vuelta con interacción propia]] (fuera la tecla F) → [[2026-11-23 Minijuego de dar la vuelta]]
+- **22:45** · Técnico · Rama `dev` (3dfc4cf): pinzas con clic mantenido, `MinijuegoVuelta` y `BarraMinijuego`, fuera la tecla F, textos en tres idiomas y pruebas `test_minijuego` (62) y `test_pinzas` (63); todas pasan → [[2026-11-23 Minijuego de dar la vuelta]]
 - **22:25** · Documentación · Roadmap (pinzas ✅ en la F1) y Modelos 3D (pinzas hechas; espátula, salero, tapa y pala pendientes) al día → [[Roadmap]] · [[Modelos 3D]]
 - **22:25** · Decisión · Controles de las pinzas: clic izquierdo coge o suelta, clic derecho da la vuelta → [[2026-11-23 Controles de las pinzas]]
 - **22:25** · Decisión · Godot usa el `.glb` exportado y no importa `.blend` → [[2026-11-23 Godot usa glb y no importa blend]]

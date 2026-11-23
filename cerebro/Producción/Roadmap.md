@@ -2,7 +2,7 @@
 tipo: produccion
 estado: definido
 fuente: Tablero FigJam, sección 6
-actualizado: 2026-11-23 22:25
+actualizado: 2026-11-23 22:46
 ---
 
 # Roadmap
@@ -36,7 +36,7 @@ actualizado: 2026-11-23 22:25
 🚧 **En curso** desde el 22-11-2026 (commit `0a44ab6` en `dev`).
 - [x] Parrilla con rejilla de zonas de calor → `RejillaCalor`, 8×4 celdas ([[2026-11-22 Rejilla de calor por celdas]])
 - [x] 1 alimento (hamburguesa) con cocción por caras → [[2026-11-22 Cocción por caras con superficie e interior]]
-- [x] Pinzas: coger, girar, mover → pinzas modeladas en Blender: clic izquierdo coge o suelta, clic derecho da la vuelta ([[2026-11-23 Controles de las pinzas]]); con las manos, E y F ([[2026-11-22 Dar la vuelta con interacción propia]])
+- [x] Pinzas: coger, girar, mover → pinzas modeladas en Blender: mantener el clic izquierdo coge y soltarlo suelta ([[2026-11-23 Coger con clic mantenido]]); la vuelta se da con un minijuego de precisión ([[2026-11-23 Minijuego de dar la vuelta]])
 - [x] Termómetro y valores de depuración → versión de depuración con F3 ([[2026-11-22 Depuración visible en desarrollo]]); el termómetro como utensilio queda para más adelante
 - [ ] Playtest interno
 

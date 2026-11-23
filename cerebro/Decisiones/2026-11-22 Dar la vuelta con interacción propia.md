@@ -2,12 +2,14 @@
 tipo: decision
 fecha: 2026-11-22
 hora: 22:24
-estado: aceptada
+estado: sustituida
 area: Técnico
-actualizado: 2026-11-22 22:24
+actualizado: 2026-11-23 22:46
 ---
 
 # Dar la vuelta con una interacción propia (tecla F) sobre Cogito
+
+**Sustituida por:** [[2026-11-23 Minijuego de dar la vuelta]]. La tecla F y `voltear_interaccion.gd` se quitan: ahora la vuelta se da solo con las pinzas y el minijuego.
 
 **Decisión:** la hamburguesa se coge y se lleva con E, usando Cogito, y con F se le da la vuelta mediante `VoltearInteraccion`, una interacción propia que va sobre Cogito. Commit `0a44ab6` en `dev`.
 

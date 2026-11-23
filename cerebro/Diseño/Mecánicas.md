@@ -1,6 +1,7 @@
 ---
 tipo: diseño
 estado: borrador
+actualizado: 2026-11-23 22:46
 ---
 
 # Mecánicas
@@ -20,7 +21,11 @@ Lista de mecánicas, sacada de la [[Demo jardín con parrilla]]. Cada una se pue
 
 ## Comida
 - Añadir comida.
-- Dar la vuelta.
+- Dar la vuelta → **minijuego de precisión** con las pinzas (hecho en la F1). Con la comida cogida (clic izquierdo mantenido), el clic derecho abre una barra con una línea que sube y baja, y una zona perfecta aleatoria. Al soltar el clic izquierdo, la línea se para:
+  - Perfecto: vuelta perfecta en el sitio.
+  - Bien: se escurre de las pinzas y cae del lado bueno con una probabilidad del 80 % junto a la zona perfecta al 30 % en el borde.
+  - Mal: sale despedida y **la comida cae al suelo**.
+  - → [[2026-11-23 Minijuego de dar la vuelta]] · [[2026-11-23 Coger con clic mantenido]]
 - Servir a la mesa.
 
 ## Ambiente
@@ -45,5 +50,7 @@ Ratón mirar · WASD caminar · Mayús correr · Clic o E usar · 1–5 cambiar 
 - [x] Comensales con pedidos → [[Arquitectura#🧑‍🤝‍🧑 Invitados y Pedidos]].
 - [ ] Clima: el viento ya está en el sistema de fuego; ¿lluvia?
 - [ ] ¿Cómo encajan la manivela y los módulos de la demo con el core loop del tablero?
+- [ ] ¿Qué pasa con la comida que cae al suelo (sucia, se tira, penaliza la nota)? → [[Comida en el suelo y dificultad del minijuego]]
+- [ ] ¿La velocidad de la línea del minijuego sube con la dificultad o con el tipo de comida? → [[Comida en el suelo y dificultad del minijuego]]
 
 Relacionado: [[Core loop]]

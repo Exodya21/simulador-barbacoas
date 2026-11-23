@@ -2,12 +2,14 @@
 tipo: decision
 fecha: 2026-11-23
 hora: 22:25
-estado: aceptada
+estado: sustituida
 area: Diseño
-actualizado: 2026-11-23 22:25
+actualizado: 2026-11-23 22:46
 ---
 
 # Controles de las pinzas: clic izquierdo coger o soltar, clic derecho dar la vuelta
+
+**Sustituida por:** [[2026-11-23 Coger con clic mantenido]] (coger y soltar) · [[2026-11-23 Minijuego de dar la vuelta]] (dar la vuelta)
 
 **Decisión:** las pinzas (`scripts/utensilios/pinzas.gd`, `escenas/utensilios/pinzas.tscn`) van colgadas de la cámara.
 - Clic izquierdo coge o suelta la hamburguesa a la que apuntas, hasta 1,8 m. Mientras se sostiene es cinemática y no tiene capa de colisión, para no empujar al jugador.
