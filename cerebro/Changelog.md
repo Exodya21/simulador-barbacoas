@@ -1,6 +1,6 @@
 ---
 tipo: changelog
-actualizado: 2026-11-23 23:03
+actualizado: 2026-11-23 23:04
 ---
 
 # 📜 Changelog
@@ -8,6 +8,7 @@ actualizado: 2026-11-23 23:03
 Registro de todo lo que cambia en el proyecto, de lo más reciente a lo más antiguo. Lo escribe **el Documentador**, el agente de Claude definido en `.claude/agents/documentador.md`. Cada decisión tiene además su nota en `Decisiones/`.
 
 ## 2026-11-23
+- **23:03** · Documentación · Completadas las alternativas de limpiar manchas con F y el porqué de las ideas del perro callejero y del utensilio para limpiar → [[2026-11-23 Limpiar manchas manteniendo F]] · [[Perro callejero]] · [[Utensilio para limpiar manchas]]
 - **23:02** · Diseño · Ideas nuevas: perro callejero (para más adelante) y utensilio para limpiar manchas; resuelta la parte de la comida en el suelo; Mecánicas, Modelos 3D y Arquitectura al día → [[Perro callejero]] · [[Utensilio para limpiar manchas]] · [[Comida en el suelo y dificultad del minijuego]]
 - **23:02** · Decisión · Resbalar bajando el agarre de Cogito, sin parchear su código → [[2026-11-23 Resbalar bajando el agarre de Cogito]]
 - **23:02** · Decisión · Las manchas se limpian manteniendo F, sin utensilio por ahora → [[2026-11-23 Limpiar manchas manteniendo F]]
