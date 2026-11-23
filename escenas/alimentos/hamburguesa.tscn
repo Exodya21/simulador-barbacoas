@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" path="res://addons/cogito/Components/Interactions/CarryableComponent.tscn" id="3_llevar"]
 [ext_resource type="Script" path="res://scripts/coccion/coccion_componente.gd" id="5_coccion"]
 [ext_resource type="Resource" path="res://datos/alimentos/hamburguesa.tres" id="6_tipo"]
+[ext_resource type="Script" path="res://scripts/limpieza/suciedad_componente.gd" id="7_suciedad"]
 
 [sub_resource type="ShaderMaterial" id="Material_coccion"]
 render_priority = 0
@@ -25,6 +26,8 @@ points = PackedVector3Array(0.06, 0.0125, 0.0, 0.05196, 0.0125, 0.03, 0.03, 0.01
 collision_layer = 3
 mass = 0.15
 continuous_cd = true
+contact_monitor = true
+max_contacts_reported = 4
 script = ExtResource("1_objeto")
 cogito_name = "hamburguesa"
 display_name = "ALIMENTO_hamburguesa"
@@ -42,4 +45,8 @@ drop_distance = 0.8
 [node name="Coccion" type="Node3D" parent="." node_paths=PackedStringArray("malla")]
 script = ExtResource("5_coccion")
 tipo = ExtResource("6_tipo")
+malla = NodePath("../Malla")
+
+[node name="Suciedad" type="Node" parent="." node_paths=PackedStringArray("malla")]
+script = ExtResource("7_suciedad")
 malla = NodePath("../Malla")

@@ -23,3 +23,15 @@ msgstr "Se te escurre y cae del mismo lado"
 
 msgid "MINIJUEGO_mal"
 msgstr "¡Al suelo!"
+
+msgid "INTERACT_limpiar"
+msgstr "Limpiar"
+
+msgid "MANCHA_grasa"
+msgstr "Mancha de grasa"
+
+msgid "BASURA_tirada"
+msgstr "¡A la basura!"
+
+msgid "COMIDA_sucia"
+msgstr "SUCIA · a la basura"

@@ -23,3 +23,15 @@ msgstr "Rutscht weg und landet auf derselben Seite"
 
 msgid "MINIJUEGO_mal"
 msgstr "Auf dem Boden!"
+
+msgid "INTERACT_limpiar"
+msgstr "Putzen"
+
+msgid "MANCHA_grasa"
+msgstr "Fettfleck"
+
+msgid "BASURA_tirada"
+msgstr "Weggeworfen!"
+
+msgid "COMIDA_sucia"
+msgstr "SCHMUTZIG · wegwerfen"

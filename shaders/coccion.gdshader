@@ -14,11 +14,16 @@ uniform vec4 color_quemado : source_color = vec4(0.180, 0.118, 0.090, 1.0);  // 
 instance uniform float grado_arriba = 0.0;
 instance uniform float grado_abajo = 0.0;
 instance uniform float grado_lados = 0.0;
+// 0 limpia · 1 sucia (ha caído al suelo): motas de tierra y ceniza.
+instance uniform float suciedad = 0.0;
+uniform vec4 color_suciedad : source_color = vec4(0.30, 0.27, 0.22, 1.0);
 
 varying vec3 normal_local;
+varying vec3 posicion_local;
 
 void vertex() {
 	normal_local = NORMAL;
+	posicion_local = VERTEX;
 }
 
 vec3 color_por_grado(float g) {
@@ -36,6 +41,13 @@ void fragment() {
 	} else if (normal_local.y < -0.5) {
 		g = grado_abajo;
 	}
-	ALBEDO = color_por_grado(g);
+	vec3 color = color_por_grado(g);
+	// Motas de suciedad: ruido por celdas de 1 cm sobre la pieza.
+	vec3 celda = floor(posicion_local * 100.0);
+	float ruido = fract(sin(dot(celda, vec3(12.9898, 78.233, 37.719))) * 43758.5453);
+	float mota = step(0.55, ruido) * suciedad;
+	color = mix(color, color_suciedad.rgb, mota * 0.85);
+	color = mix(color, color * vec3(0.75, 0.72, 0.68), suciedad * 0.5);
+	ALBEDO = color;
 	ROUGHNESS = mix(0.75, 0.95, clamp(g / 4.0, 0.0, 1.0));
 }

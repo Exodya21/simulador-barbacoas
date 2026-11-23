@@ -35,7 +35,13 @@ def limpiar_escena():
     bpy.ops.wm.read_factory_settings(use_empty=True)
 
 
+def lineal(c):
+    """La paleta está en sRGB; Blender trabaja en espacio lineal."""
+    return c / 12.92 if c <= 0.04045 else ((c + 0.055) / 1.055) ** 2.4
+
+
 def material(nombre, color, metalico, rugosidad):
+    color = tuple(lineal(v) for v in color[:3]) + (color[3],)
     mat = bpy.data.materials.new(nombre)
     mat.use_nodes = True
     bsdf = mat.node_tree.nodes["Principled BSDF"]

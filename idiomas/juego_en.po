@@ -23,3 +23,15 @@ msgstr "It slips and lands the same side"
 
 msgid "MINIJUEGO_mal"
 msgstr "On the floor!"
+
+msgid "INTERACT_limpiar"
+msgstr "Clean"
+
+msgid "MANCHA_grasa"
+msgstr "Grease stain"
+
+msgid "BASURA_tirada"
+msgstr "Binned!"
+
+msgid "COMIDA_sucia"
+msgstr "DIRTY · bin it"

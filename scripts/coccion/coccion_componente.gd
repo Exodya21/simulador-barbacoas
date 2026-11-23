@@ -63,6 +63,9 @@ func texto_depuracion() -> String:
 		estado.estado_cara(EstadoCoccion.Cara.ABAJO), estado.grado[EstadoCoccion.Cara.ABAJO]])
 	if cara_apoyada >= 0:
 		lineas.append("rejilla %.0f °C" % temperatura_contacto)
+	var suciedad := _cuerpo.get_node_or_null("Suciedad")
+	if suciedad and suciedad.sucia:
+		lineas.append(tr("COMIDA_sucia"))
 	return "\n".join(lineas)
 
 

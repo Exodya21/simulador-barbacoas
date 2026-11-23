@@ -1,0 +1,38 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/limpieza/basura.gd" id="1_basura"]
+[ext_resource type="PackedScene" path="res://arte/modelos/basura.glb" id="2_modelo"]
+
+[sub_resource type="CylinderShape3D" id="Forma_cubo"]
+height = 0.62
+radius = 0.22
+
+[sub_resource type="CylinderShape3D" id="Forma_boca"]
+height = 0.5
+radius = 0.26
+
+[node name="Basura" type="StaticBody3D"]
+script = ExtResource("1_basura")
+
+[node name="Modelo" parent="." instance=ExtResource("2_modelo")]
+
+[node name="Colision" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.31, 0)
+shape = SubResource("Forma_cubo")
+
+[node name="Boca" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 3
+
+[node name="Forma" type="CollisionShape3D" parent="Boca"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.82, 0)
+shape = SubResource("Forma_boca")
+
+[node name="Aviso" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 0)
+billboard = 1
+no_depth_test = true
+fixed_size = true
+pixel_size = 0.001
+font_size = 40
+outline_size = 10
