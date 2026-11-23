@@ -56,6 +56,7 @@ Los assets CC-BY de Cogito solo los usan sus escenas de demo. Si el juego final 
 | Traducción al español de los textos de Cogito | Equipo | Propia (sobre los textos MIT de Cogito) | `idiomas/cogito_es.po` |
 | Pinzas de barbacoa (modelo low-poly) | Equipo (script de Blender `herramientas/blender/pinzas.py`) | Propia | `arte/modelos/pinzas.glb` |
 | Cubo de basura (modelo low-poly) | Equipo (script de Blender `herramientas/blender/basura.py`) | Propia | `arte/modelos/basura.glb` |
+| Carne de hamburguesa (modelo low-poly) | Equipo (script de Blender `herramientas/blender/hamburguesa.py`) | Propia | `arte/modelos/hamburguesa.obj` |
 | Trapo viejo de limpiar (modelo low-poly) | Equipo (script de Blender `herramientas/blender/trapo.py`) | Propia | `arte/modelos/trapo.glb` |
 | Textura de mancha de grasa | Equipo (script `herramientas/textura_mancha.py`) | Propia | `arte/texturas/mancha_grasa.png` |
 | Banderas del selector de idioma (España, EE. UU., Alemania) | Equipo (dibujadas con código) | Propia | `arte/iconos/bandera_*.png` |

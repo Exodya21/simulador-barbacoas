@@ -13,10 +13,15 @@ extends Node3D
 ## Distancia máxima (m) del centro del alimento a la rejilla para contar como apoyado.
 @export var margen_contacto := 0.05
 @export var temperatura_ambiente := 20.0
+## Temperatura (°C) de rejilla a partir de la que cuenta como "parrilla encendida".
+@export var temperatura_parrilla_encendida := 80.0
 
 var estado: EstadoCoccion
 var cara_apoyada := -1
 var temperatura_contacto := 0.0
+## True cuando ha estado apoyado en una parrilla encendida: ya suelta grasa
+## y, si cae al suelo, lo mancha (SuciedadComponente).
+var paso_por_parrilla := false
 
 var _cuerpo: Node3D
 var _etiqueta: Label3D
@@ -33,6 +38,8 @@ func _physics_process(delta: float) -> void:
 	if rejilla:
 		cara_apoyada = cara_hacia_abajo()
 		temperatura_contacto = rejilla.temperatura_en(_cuerpo.global_position)
+		if temperatura_contacto >= temperatura_parrilla_encendida:
+			paso_por_parrilla = true
 	else:
 		cara_apoyada = -1
 		temperatura_contacto = temperatura_ambiente
@@ -53,6 +60,13 @@ func cara_hacia_abajo() -> int:
 			mejor_alineacion = alineacion
 			mejor = i
 	return mejor
+
+
+## Grado de cocción que corresponde a la temperatura del interior:
+## 0 a la temperatura inicial, 2 (dorado) cuando el interior está hecho.
+func grado_interior() -> float:
+	var t := inverse_lerp(tipo.temperatura_inicial, tipo.punto_hecho, estado.temperatura_interna)
+	return clampf(t, 0.0, 1.2) * 2.0
 
 
 func texto_depuracion() -> String:
@@ -83,6 +97,7 @@ func _actualizar_malla() -> void:
 	malla.set_instance_shader_parameter("grado_arriba", estado.grado[EstadoCoccion.Cara.ARRIBA])
 	malla.set_instance_shader_parameter("grado_abajo", estado.grado[EstadoCoccion.Cara.ABAJO])
 	malla.set_instance_shader_parameter("grado_lados", estado.grado_lados())
+	malla.set_instance_shader_parameter("grado_interior", grado_interior())
 
 
 func _crear_etiqueta() -> void:

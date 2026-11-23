@@ -39,6 +39,8 @@ func _comprobar(condicion: bool, mensaje: String) -> void:
 
 
 func _comprobar_idioma() -> void:
+	# Arranca en español aunque quede el language.cfg viejo de Cogito con "en".
+	_comprobar(TranslationServer.get_locale().begins_with("es") or FileAccess.get_file_as_string("user://idioma.cfg").strip_edges() != "es", "el juego no arranca en español (%s)" % TranslationServer.get_locale())
 	# El autoload Idioma pone español si no hay idioma guardado.
 	TranslationServer.set_locale("es")
 	_comprobar(TranslationServer.translate("BTN_Resume") == "Continuar", "falta la traducción al español (BTN_Resume)")

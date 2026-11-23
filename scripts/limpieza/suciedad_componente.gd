@@ -1,6 +1,8 @@
 class_name SuciedadComponente
 extends Node
-## Ensucia la comida cuando cae al suelo y deja una mancha de grasa donde cae.
+## Ensucia la comida cuando cae al suelo. Si la comida ya ha pasado por la
+## parrilla encendida (suelta grasa), además deja una mancha de grasa donde cae;
+## la comida cruda que se cae no mancha el suelo.
 ## Va como hijo del RigidBody3D del alimento (que necesita contact_monitor).
 ##
 ## La comida sucia no se limpia: hay que tirarla a la basura.
@@ -42,6 +44,9 @@ func ensuciar() -> void:
 
 
 func _dejar_mancha() -> void:
+	var coccion := _cuerpo.get_node_or_null("Coccion")
+	if coccion == null or not coccion.paso_por_parrilla:
+		return  # cruda: se ensucia, pero no suelta grasa
 	var punto := _cuerpo.global_position
 	var espacio := _cuerpo.get_world_3d().direct_space_state
 	var consulta := PhysicsRayQueryParameters3D.create(punto + Vector3.UP * 0.2, punto + Vector3.DOWN * 1.0)

@@ -68,7 +68,7 @@ func apply_language(language: Dictionary) -> void:
 		return
 	TranslationServer.set_locale(language_code)
 	save_language(language_code)
-	print("Language changed to:", language["text"], "(", language_code, ") and saved to user://language.cfg")
+	print("Language changed to:", language["text"], "(", language_code, ") and saved to user://idioma.cfg")
  
  
 # Signal handler for when a language is selected from the dropdown
@@ -80,15 +80,15 @@ func _on_language_selected(index: int) -> void:
  
 # Function to save the selected language
 func save_language(code: String) -> void:
-	var file: FileAccess = FileAccess.open("user://language.cfg", FileAccess.WRITE)
+	var file: FileAccess = FileAccess.open("user://idioma.cfg", FileAccess.WRITE)
 	file.store_line(code)
 	file.close()
  
  
 # Function to load the saved language
 func load_language() -> String:
-	if FileAccess.file_exists("user://language.cfg"):
-		var file: FileAccess = FileAccess.open("user://language.cfg", FileAccess.READ)
+	if FileAccess.file_exists("user://idioma.cfg"):
+		var file: FileAccess = FileAccess.open("user://idioma.cfg", FileAccess.READ)
 		var code: String = file.get_line().strip_edges()  # Remove any extra whitespace or newlines
 		file.close()
 		return code

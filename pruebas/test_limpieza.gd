@@ -14,8 +14,20 @@ func _ejecutar() -> void:
 	var mesa := current_scene.get_node("Hamburguesa3") as RigidBody3D
 	comprobar(not mesa.get_node("Suciedad").sucia, "en la mesa la comida está limpia")
 
-	# Cae al suelo: se ensucia y deja una mancha.
+	# Cruda (sin pasar por la parrilla) se ensucia, pero no mancha el suelo.
+	var cruda := current_scene.get_node("Hamburguesa2") as RigidBody3D
+	cruda.global_position = Vector3(-2.0, 0.6, -1.0)
+	await _esperar_fisica(1.5)
+	comprobar(cruda.get_node("Suciedad").sucia, "la comida cruda que cae al suelo se ensucia")
+	comprobar(get_nodes_in_group("mancha_grasa").is_empty(), "la comida cruda que cae no mancha el suelo")
+	cruda.global_position = Vector3(6, 0.5, 6)
+
+	# Pasa por la parrilla encendida, cae al suelo: se ensucia y deja una mancha.
 	var h := current_scene.get_node("Hamburguesa1") as RigidBody3D
+	var rejilla: Node3D = current_scene.get_node("Parrilla/RejillaCalor")
+	h.global_position = rejilla.to_global(Vector3(-0.6, 0.03, 0))
+	await _esperar_fisica(1.0)
+	comprobar(h.get_node("Coccion").paso_por_parrilla, "al apoyarla en la parrilla encendida queda marcada")
 	h.global_position = Vector3(-2.0, 0.6, 1.0)
 	await _esperar_fisica(1.5)
 	comprobar(h.get_node("Suciedad").sucia, "al caer al suelo la comida se ensucia")
