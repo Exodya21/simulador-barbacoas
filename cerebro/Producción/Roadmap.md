@@ -2,7 +2,7 @@
 tipo: produccion
 estado: definido
 fuente: Tablero FigJam, sección 6
-actualizado: 2026-11-23 23:49
+actualizado: 2026-11-24 00:13
 ---
 
 # Roadmap
@@ -15,8 +15,8 @@ actualizado: 2026-11-23 23:49
 | Fase | Semanas | Hito |
 |---|---|---|
 | F0 · Preproducción ✅ | 1–2 | GDD aprobado y repo funcionando |
-| F1 · Prototipo gris | 3–6 | ¿Es divertido girar una hamburguesa? |
-| F2 · Vertical slice | 7–12 | 1 nivel completo y bonito de 10 min |
+| F1 · Prototipo gris ✅ | 3–6 | ¿Es divertido girar una hamburguesa? |
+| F2 · Vertical slice 👉 siguiente | 7–12 | 1 nivel completo y bonito de 10 min |
 | F3 · Producción de contenido | 13–20 | Alpha con todo el contenido |
 | F4 · Pulido y QA | 21–25 | Beta estable |
 | F5 · Lanzamiento | 26–30 | 1.0 publicada 🎉 |
@@ -33,26 +33,31 @@ actualizado: 2026-11-23 23:49
 - [x] Repo funcionando → Godot 4.7.2 + Cogito en `dev`, probado en el editor por el usuario
 
 ## F1 · Prototipo gris — semanas 3–6
-🚧 **En curso** desde el 22-11-2026 (commit `0a44ab6` en `dev`).
+Empezada el 22-11-2026 (commit `0a44ab6` en `dev`) y ✅ **cerrada el 24-11-2026** → [[2026-11-24 F1 cerrada]]
 - [x] Parrilla con rejilla de zonas de calor → `RejillaCalor`, 8×4 celdas ([[2026-11-22 Rejilla de calor por celdas]])
 - [x] 1 alimento (hamburguesa) con cocción por caras → [[2026-11-22 Cocción por caras con superficie e interior]]
 - [x] Pinzas: coger, girar, mover → pinzas modeladas en Blender: mantener el clic izquierdo coge y soltarlo suelta ([[2026-11-23 Coger con clic mantenido]]); la vuelta se da con un minijuego de precisión ([[2026-11-23 Minijuego de dar la vuelta]])
 - [x] Termómetro y valores de depuración → versión de depuración con F3 ([[2026-11-22 Depuración visible en desarrollo]]); el termómetro como utensilio queda para más adelante
-- [ ] Playtest interno → primera ronda del usuario el 23-11-2026, con seis comentarios ya arreglados (commit `0eb562b` en `dev`)
+- [x] Playtest interno → dos rondas de comentarios del usuario, todos arreglados (último arreglo: commit `7893a8f` en `dev`)
 
 Arrastrado de la F0 (no bloquea el hito) → [[2026-11-22 F0 cerrada]]:
-- [ ] Guardar vídeos de YouTube de parrilla y gameplay (búsquedas en [[Referencias de parrilla y juegos]]) → **en parte**: guardado el vídeo elegido por el usuario, sin revisar
-- [ ] Concretar el tipo de violencia (clasificación) → [[2026-11-22 GDD aprobado]]
+- [ ] Guardar vídeos de YouTube de parrilla y gameplay → pasa a la F2
+- [ ] Concretar el tipo de violencia (clasificación) → pasa a la F2
 - [x] ~~Revisar la licencia de las banderas de Freepik de Cogito~~ → sustituidas por banderas propias ([[2026-11-23 Banderas propias]])
 
-🏁 **Hito:** ¿es divertido girar una hamburguesa?
+🏁 **Hito:** ¿es divertido girar una hamburguesa? → ✅ **sí, según el playtest del usuario. F1 cerrada el 24-11-2026** → [[2026-11-24 F1 cerrada]]
 
 ## F2 · Vertical slice — semanas 7–12
+👉 **Siguiente fase.**
 - [ ] Encendido de carbón y brasas
 - [ ] 5 alimentos (filete, chorizo, pollo, maíz, pimiento)
 - [ ] Shader crudo → hecho → quemado
 - [ ] Humo, llamas, chispas + audio
 - [ ] 3 invitados con pedidos y puntuación
+
+Arrastrado de la F0 y la F1 (no bloquea el hito) → [[2026-11-24 F1 cerrada]]:
+- [ ] Guardar vídeos de YouTube de parrilla y gameplay (búsquedas en [[Referencias de parrilla y juegos]]) → **en parte**: guardado el vídeo elegido por el usuario, sin revisar
+- [ ] Concretar el tipo de violencia (clasificación) → [[2026-11-22 GDD aprobado]]
 
 🏁 **Hito:** 1 nivel completo y bonito de 10 min
 

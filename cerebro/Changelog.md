@@ -1,6 +1,6 @@
 ---
 tipo: changelog
-actualizado: 2026-11-24 00:09
+actualizado: 2026-11-24 00:13
 ---
 
 # 📜 Changelog
@@ -8,6 +8,8 @@ actualizado: 2026-11-24 00:09
 Registro de todo lo que cambia en el proyecto, de lo más reciente a lo más antiguo. Lo escribe **el Documentador**, el agente de Claude definido en `.claude/agents/documentador.md`. Cada decisión tiene además su nota en `Decisiones/`.
 
 ## 2026-11-24
+- **00:13** · Producción · Roadmap y 00 Inicio: F1 ✅ con todas sus tareas, F2 como siguiente y lo arrastrado (vídeos de YouTube y tipo de violencia) pasa a la F2 → [[Roadmap]] · [[00 Inicio]]
+- **00:13** · Decisión · F1 cerrada: el usuario da por cumplido el hito "¿Es divertido girar una hamburguesa?" tras su playtest; la siguiente fase es la F2 → [[2026-11-24 F1 cerrada]]
 - **00:09** · Decisión · La comida llevada con las pinzas sigue chocando y empuja a las vecinas; sustituye en parte a [[2026-11-23 Las pinzas colocan la comida donde apuntas]] → [[2026-11-24 La comida llevada con las pinzas sigue chocando]]
 - **00:09** · Técnico · Rama `dev` (7893a8f): coger la hamburguesa de abajo de una pila ya no atraviesa la de arriba; prueba nueva `test_pila`, pasan las 8 pruebas → [[2026-11-24 La comida llevada con las pinzas sigue chocando]]
 - **00:00** · Decisión · La comida no choca con el jugador: pasa a la capa 2 y sigue chocando con el entorno y con otra comida → [[2026-11-24 La comida no choca con el jugador]]
