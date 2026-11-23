@@ -22,6 +22,7 @@ func _initialize() -> void:
 
 	_comprobar_idioma()
 	_comprobar_caja()
+	_comprobar_menu_opciones()
 
 	if fallos > 0:
 		printerr("HUMO FALLA: %d comprobaciones fallidas" % fallos)
@@ -49,3 +50,10 @@ func _comprobar_caja() -> void:
 	_comprobar(caja != null, "no se encuentra CajaComida/CarryableComponent")
 	if caja:
 		_comprobar(caja.attribute_check == 0, "la caja sigue pidiendo fuerza para cogerla")
+
+
+func _comprobar_menu_opciones() -> void:
+	# El menú de opciones de Cogito usa nuestras banderas (sin las de Freepik).
+	_comprobar(load("res://addons/cogito/EasyMenus/Scenes/OptionsTabMenu.tscn") != null, "el menú de opciones no carga")
+	for codigo in ["es", "us", "de"]:
+		_comprobar(load("res://arte/iconos/bandera_%s.png" % codigo) != null, "falta la bandera %s" % codigo)

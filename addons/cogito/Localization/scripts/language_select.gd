@@ -3,8 +3,8 @@ extends OptionButton
 # Define available languages and their properties
 var languages: Array[Dictionary] = [
 	{"code": "es", "icon": preload("res://arte/iconos/bandera_es.png"), "text": "  Español"},
-	{"code": "en", "icon": preload("res://addons/cogito/Assets/Graphics/Flags/freepik_flag_us.png"), "text": "  English"},
-	{"code": "de", "icon": preload("res://addons/cogito/Assets/Graphics/Flags/freepik_flag_de.png"), "text": "  Deutsch"},
+	{"code": "en", "icon": preload("res://arte/iconos/bandera_us.png"), "text": "  English"},
+	{"code": "de", "icon": preload("res://arte/iconos/bandera_de.png"), "text": "  Deutsch"},
 ]
  
 var current_language_index: int = 0

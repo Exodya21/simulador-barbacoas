@@ -41,11 +41,10 @@ Código que Cogito adapta (todo MIT o equivalente, según su wiki): First Person
 
 > [!note] Parches a Cogito
 > - `Components/Properties/CogitoProperties.tscn`: quitada la referencia al sonido NC (arriba).
-> - `Localization/scripts/language_select.gd`: añadido el español (primero de la lista) con la bandera propia `arte/iconos/bandera_es.png`.
+> - `Localization/scripts/language_select.gd`: añadido el español (primero de la lista) y las tres banderas son propias (`arte/iconos/bandera_es.png`, `bandera_us.png`, `bandera_de.png`).
+> - `EasyMenus/Scenes/OptionsTabMenu.tscn`: el icono por defecto del selector de idioma apunta a `arte/iconos/bandera_us.png`.
+> - Borradas las banderas `Assets/Graphics/Flags/freepik_flag_us.png` y `freepik_flag_de.png` (parecían de Freepik, que pide atribución, y Cogito no las acreditaba).
 > Si se actualiza Cogito, hay que volver a aplicarlos.
-
-> [!warning] Por revisar
-> Las banderas `Assets/Graphics/Flags/freepik_flag_*.png` parecen de Freepik, que pide atribución, y la wiki de Cogito no las acredita. Antes de publicar: confirmar su licencia o sustituirlas por banderas propias como la española.
 
 Los assets CC-BY de Cogito solo los usan sus escenas de demo. Si el juego final no los usa, se borran antes de publicar y se quitan de esta tabla.
 
@@ -55,7 +54,7 @@ Los assets CC-BY de Cogito solo los usan sus escenas de demo. Si el juego final 
 |---|---|---|---|
 | Escena de prueba `escenas/patio_prueba.tscn` (cajas grises) | Equipo | Propia | `escenas/` |
 | Traducción al español de los textos de Cogito | Equipo | Propia (sobre los textos MIT de Cogito) | `idiomas/cogito_es.po` |
-| Bandera de España del selector de idioma | Equipo | Propia | `arte/iconos/bandera_es.png` |
+| Banderas del selector de idioma (España, EE. UU., Alemania) | Equipo (dibujadas con código) | Propia | `arte/iconos/bandera_*.png` |
 
 ## Pendiente de añadir (F0 → F1)
 

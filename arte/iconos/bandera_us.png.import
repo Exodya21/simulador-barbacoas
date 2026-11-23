@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0elenwi4hkl0"
-path="res://.godot/imported/freepik_flag_de.png-a780217120b1908cb9d27371574bff6e.ctex"
+uid="uid://cv8fkw8vpeoc"
+path="res://.godot/imported/bandera_us.png-836c8c164060ec6c56f3a70e7bcbaebd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/cogito/Assets/Graphics/Flags/freepik_flag_de.png"
-dest_files=["res://.godot/imported/freepik_flag_de.png-a780217120b1908cb9d27371574bff6e.ctex"]
+source_file="res://arte/iconos/bandera_us.png"
+dest_files=["res://.godot/imported/bandera_us.png-836c8c164060ec6c56f3a70e7bcbaebd.ctex"]
 
 [params]
 
