@@ -1,6 +1,6 @@
 ---
 tipo: changelog
-actualizado: 2026-11-24 00:01
+actualizado: 2026-11-24 00:09
 ---
 
 # 📜 Changelog
@@ -8,6 +8,8 @@ actualizado: 2026-11-24 00:01
 Registro de todo lo que cambia en el proyecto, de lo más reciente a lo más antiguo. Lo escribe **el Documentador**, el agente de Claude definido en `.claude/agents/documentador.md`. Cada decisión tiene además su nota en `Decisiones/`.
 
 ## 2026-11-24
+- **00:09** · Decisión · La comida llevada con las pinzas sigue chocando y empuja a las vecinas; sustituye en parte a [[2026-11-23 Las pinzas colocan la comida donde apuntas]] → [[2026-11-24 La comida llevada con las pinzas sigue chocando]]
+- **00:09** · Técnico · Rama `dev` (7893a8f): coger la hamburguesa de abajo de una pila ya no atraviesa la de arriba; prueba nueva `test_pila`, pasan las 8 pruebas → [[2026-11-24 La comida llevada con las pinzas sigue chocando]]
 - **00:00** · Decisión · La comida no choca con el jugador: pasa a la capa 2 y sigue chocando con el entorno y con otra comida → [[2026-11-24 La comida no choca con el jugador]]
 - **00:00** · Técnico · Rama `dev` (48e1e8f): el jugador ya no empuja la comida (antes la lanzaba a más de 6 m); prueba nueva `test_jugador_comida`, todas pasan → [[2026-11-24 La comida no choca con el jugador]]
 

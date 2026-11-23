@@ -4,7 +4,7 @@ fecha: 2026-11-23
 hora: 23:48
 estado: aceptada
 area: Diseño
-actualizado: 2026-11-23 23:48
+actualizado: 2026-11-24 00:09
 ---
 
 # Las pinzas colocan la comida donde apuntas
@@ -18,6 +18,8 @@ actualizado: 2026-11-23 23:48
 **Causa del disparo:** al cogerla, la comida saltaba a la punta de las pinzas, a 40 cm de la cámara, y se metía en la cápsula del jugador. Al soltarla, la física la expulsaba.
 
 **Completa a:** [[2026-11-23 Coger con clic mantenido]]
+
+**Sustituida en parte por:** [[2026-11-24 La comida llevada con las pinzas sigue chocando]]. Ya no es cierto que la comida no choque con nada mientras se lleva: ahora conserva sus colisiones. El resto de esta decisión sigue vigente.
 
 **Motivo:** con la comida en la punta de las pinzas solo se llegaba al borde de la parrilla, y además salía disparada.
 
