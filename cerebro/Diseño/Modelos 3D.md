@@ -2,7 +2,7 @@
 tipo: diseño
 estado: definido
 fuente: Tablero FigJam, sección 5
-actualizado: 2026-11-23 22:25
+actualizado: 2026-11-23 23:03
 ---
 
 # Modelos 3D y assets gratuitos
@@ -36,6 +36,7 @@ Basada en las [[Referencias visuales]].
 | Módulos: parrilla, disco/wok, espetos, plancha, sartenes | modulos-parrilla | ⬜ |
 | Utensilios: pinzas | — | ✅ generadas con `herramientas/blender/pinzas.py` → `arte/modelos/pinzas.glb` ([[2026-11-23 Modelos propios con scripts de Blender]]) |
 | Utensilios: espátula, salero, tapa, pala | — | ⬜ |
+| Cubo de basura (de pedal, sin tapa) | — | ✅ generado con `herramientas/blender/basura.py`, 78 caras ([[2026-11-23 Comida caída al suelo sucia, mancha y basura]]) |
 | Kamado / ahumador | parrilla-exterior-ahumador | ⬜ |
 
 Para modelar con Claude: ver [[Skills de Claude#Para más adelante]].

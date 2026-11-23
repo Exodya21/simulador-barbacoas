@@ -1,6 +1,6 @@
 ---
 tipo: changelog
-actualizado: 2026-11-23 22:46
+actualizado: 2026-11-23 23:03
 ---
 
 # 📜 Changelog
@@ -8,6 +8,12 @@ actualizado: 2026-11-23 22:46
 Registro de todo lo que cambia en el proyecto, de lo más reciente a lo más antiguo. Lo escribe **el Documentador**, el agente de Claude definido en `.claude/agents/documentador.md`. Cada decisión tiene además su nota en `Decisiones/`.
 
 ## 2026-11-23
+- **23:02** · Diseño · Ideas nuevas: perro callejero (para más adelante) y utensilio para limpiar manchas; resuelta la parte de la comida en el suelo; Mecánicas, Modelos 3D y Arquitectura al día → [[Perro callejero]] · [[Utensilio para limpiar manchas]] · [[Comida en el suelo y dificultad del minijuego]]
+- **23:02** · Decisión · Resbalar bajando el agarre de Cogito, sin parchear su código → [[2026-11-23 Resbalar bajando el agarre de Cogito]]
+- **23:02** · Decisión · Las manchas se limpian manteniendo F, sin utensilio por ahora → [[2026-11-23 Limpiar manchas manteniendo F]]
+- **23:02** · Decisión · La comida caída al suelo queda sucia, deja una mancha de grasa resbaladiza y va a la basura → [[2026-11-23 Comida caída al suelo sucia, mancha y basura]]
+- **23:02** · Arte · Rama `dev` (5ab9c91): cubo de basura de 78 caras generado con `herramientas/blender/basura.py`; los scripts de Blender pasan la paleta a espacio lineal y las pinzas están reexportadas → [[Modelos 3D]]
+- **23:02** · Técnico · Rama `dev` (5ab9c91): comida sucia, manchas de grasa resbaladizas que se limpian, cubo de basura y prueba `test_limpieza` (12); todas pasan → [[2026-11-23 Comida caída al suelo sucia, mancha y basura]]
 - **22:45** · Diseño · Mecánicas al día: dar la vuelta es un minijuego y la comida puede caer al suelo; nueva idea sobre la comida en el suelo y la dificultad del minijuego → [[Mecánicas]] · [[Comida en el suelo y dificultad del minijuego]]
 - **22:45** · Decisión · Coger con clic mantenido y soltar al soltar el clic; sustituye a [[2026-11-23 Controles de las pinzas]] → [[2026-11-23 Coger con clic mantenido]]
 - **22:45** · Decisión · Dar la vuelta es un minijuego de precisión con zona perfecta aleatoria; sustituye a [[2026-11-22 Dar la vuelta con interacción propia]] (fuera la tecla F) → [[2026-11-23 Minijuego de dar la vuelta]]

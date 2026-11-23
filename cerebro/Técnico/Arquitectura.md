@@ -2,7 +2,7 @@
 tipo: tecnico
 estado: definido
 fuente: Tablero FigJam, sección 2
-actualizado: 2026-11-22 22:25
+actualizado: 2026-11-23 23:03
 ---
 
 # Arquitectura
@@ -44,6 +44,7 @@ flowchart TD
 - Cola de pedidos con punto deseado
 - Paciencia / humor de cada invitado
 - NPCs low-poly con animaciones simples
+- Idea para más adelante: un perro callejero como NPC → [[Perro callejero]]
 
 ### ⭐ Puntuación y Progresión
 - Nota por punto, tiempo y presentación
