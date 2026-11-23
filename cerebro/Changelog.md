@@ -1,6 +1,6 @@
 ---
 tipo: changelog
-actualizado: 2026-11-23 22:13
+actualizado: 2026-11-23 22:25
 ---
 
 # 📜 Changelog
@@ -8,6 +8,12 @@ actualizado: 2026-11-23 22:13
 Registro de todo lo que cambia en el proyecto, de lo más reciente a lo más antiguo. Lo escribe **el Documentador**, el agente de Claude definido en `.claude/agents/documentador.md`. Cada decisión tiene además su nota en `Decisiones/`.
 
 ## 2026-11-23
+- **22:25** · Documentación · Roadmap (pinzas ✅ en la F1) y Modelos 3D (pinzas hechas; espátula, salero, tapa y pala pendientes) al día → [[Roadmap]] · [[Modelos 3D]]
+- **22:25** · Decisión · Controles de las pinzas: clic izquierdo coge o suelta, clic derecho da la vuelta → [[2026-11-23 Controles de las pinzas]]
+- **22:25** · Decisión · Godot usa el `.glb` exportado y no importa `.blend` → [[2026-11-23 Godot usa glb y no importa blend]]
+- **22:25** · Decisión · Los modelos propios se generan con scripts de Blender (`bpy`) dentro del repo → [[2026-11-23 Modelos propios con scripts de Blender]]
+- **22:25** · Arte · Rama `dev` (9e14346): pinzas low-poly de 124 caras generadas con `herramientas/blender/pinzas.py` y exportadas a `arte/modelos/pinzas.glb` → [[Modelos 3D]]
+- **22:25** · Técnico · Rama `dev` (9e14346): pinzas en el juego (coger, soltar y dar la vuelta), lógica común `Voltear`, importación de `.blend` desactivada y prueba `test_pinzas`; todas las pruebas pasan → [[2026-11-23 Controles de las pinzas]]
 - **22:13** · Documentación · Licencias y Steam, Roadmap y la sesión del 22-11 al día: el riesgo de las banderas de Freepik queda resuelto → [[Licencias y Steam]] · [[Roadmap]]
 - **22:13** · Decisión · Banderas propias en el selector de idioma; sustituye a [[2026-11-22 Riesgo de licencia en las banderas de Cogito]] → [[2026-11-23 Banderas propias]]
 - **22:13** · Arte · Rama `dev` (b540a60): banderas propias de EE. UU. y Alemania dibujadas con código, dos parches a Cogito y borradas las banderas de Freepik; las pruebas pasan → [[2026-11-23 Banderas propias]]

@@ -2,7 +2,7 @@
 tipo: diseño
 estado: definido
 fuente: Tablero FigJam, sección 5
-actualizado: 2026-11-22
+actualizado: 2026-11-23 22:25
 ---
 
 # Modelos 3D y assets gratuitos
@@ -34,7 +34,8 @@ Basada en las [[Referencias visuales]].
 | Brasero / canasto de leña | brasero-cadenas, brasero-avivando-fuego | ⬜ |
 | Parrilla con cadenas y manivela | parrilla-manivela-canasto | ⬜ |
 | Módulos: parrilla, disco/wok, espetos, plancha, sartenes | modulos-parrilla | ⬜ |
-| Utensilios: pinzas, espátula, salero, tapa, pala | — | ⬜ |
+| Utensilios: pinzas | — | ✅ generadas con `herramientas/blender/pinzas.py` → `arte/modelos/pinzas.glb` ([[2026-11-23 Modelos propios con scripts de Blender]]) |
+| Utensilios: espátula, salero, tapa, pala | — | ⬜ |
 | Kamado / ahumador | parrilla-exterior-ahumador | ⬜ |
 
 Para modelar con Claude: ver [[Skills de Claude#Para más adelante]].
