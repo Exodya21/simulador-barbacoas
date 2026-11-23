@@ -26,6 +26,9 @@ const GRUPO := "pinzas"
 ## Capas de física (Cogito): 1 entorno, 2 objetos con los que se interactúa.
 const CAPA_ENTORNO := 1 << 0
 const CAPA_INTERACTUABLES := 1 << 1
+const GRUPO_COMIDA := "comida"
+## Distancia horizontal (m) para considerar que una pieza está apilada sobre otra.
+const RADIO_PILA := 0.1
 
 ## Distancia máxima (m) desde la cámara para coger y para colocar.
 @export var alcance := 1.8
@@ -52,7 +55,6 @@ var rng := RandomNumberGenerator.new()
 ## Cuerpos que están dando la vuelta en el aire (animación en curso).
 var en_el_aire: Array[RigidBody3D] = []
 
-var _capas_originales := {}
 var _camara: Camera3D
 
 @onready var _punta: Marker3D = $Punta
@@ -123,10 +125,27 @@ func punto_de_colocacion() -> Vector3:
 	var excluir: Array[RID] = []
 	if sostenido:
 		excluir.append(sostenido.get_rid())
+		# Lo que va apilado encima no cuenta como suelo: si no, la pieza de
+		# abajo intentaría subir a través de la de arriba.
+		for encima in apiladas_encima(sostenido):
+			excluir.append(encima.get_rid())
 	var golpe := _rayo_mira(CAPA_ENTORNO | CAPA_INTERACTUABLES, excluir)
 	if not golpe.is_empty():
 		return golpe.position + Vector3.UP * altura_sobre_superficie
 	return _punta.global_position
+
+
+## Piezas de comida apoyadas encima de `cuerpo` (en su vertical y más arriba).
+func apiladas_encima(cuerpo: RigidBody3D) -> Array[RigidBody3D]:
+	var resultado: Array[RigidBody3D] = []
+	for nodo in get_tree().get_nodes_in_group(GRUPO_COMIDA):
+		var otro := nodo as RigidBody3D
+		if otro == null or otro == cuerpo:
+			continue
+		var d := otro.global_position - cuerpo.global_position
+		if Vector2(d.x, d.z).length() < RADIO_PILA and d.y > -0.005:
+			resultado.append(otro)
+	return resultado
 
 
 func _rayo_mira(mascara: int, excluir: Array[RID]) -> Dictionary:
@@ -151,7 +170,7 @@ func coger(cuerpo: RigidBody3D) -> void:
 	if sostenido:
 		soltar()
 	sostenido = cuerpo
-	_quitar_colisiones(cuerpo)
+	_congelar(cuerpo)
 	_poner_apertura(apertura_cerrada)
 	cogido.emit(cuerpo)
 
@@ -252,23 +271,16 @@ func _lanzar_al_suelo(cuerpo: RigidBody3D, eje: Vector3) -> void:
 	cuerpo.angular_velocity = Vector3(rng.randf_range(-12, 12), rng.randf_range(-6, 6), rng.randf_range(-12, 12))
 
 
-## Mientras se lleva o vuela, la comida no choca con nada (ni empuja al
-## jugador ni a otras piezas) y no tiene física.
-func _quitar_colisiones(cuerpo: RigidBody3D) -> void:
-	if not _capas_originales.has(cuerpo):
-		_capas_originales[cuerpo] = Vector2i(cuerpo.collision_layer, cuerpo.collision_mask)
-	cuerpo.collision_layer = 0
-	cuerpo.collision_mask = 0
+## Mientras se lleva o vuela, la comida no tiene física propia (la mueven las
+## pinzas), pero sigue chocando: empuja a la comida que toca en vez de
+## atravesarla. Con el jugador no choca nunca (capas distintas).
+func _congelar(cuerpo: RigidBody3D) -> void:
 	cuerpo.freeze_mode = RigidBody3D.FREEZE_MODE_KINEMATIC
 	cuerpo.freeze = true
 
 
-## Devuelve la física y las colisiones, sin velocidad (no sale disparada).
+## Devuelve la física, sin velocidad (no sale disparada).
 func _liberar(cuerpo: RigidBody3D) -> void:
-	var capas: Vector2i = _capas_originales.get(cuerpo, Vector2i(2, 3))
-	_capas_originales.erase(cuerpo)
-	cuerpo.collision_layer = capas.x
-	cuerpo.collision_mask = capas.y
 	cuerpo.freeze = false
 	cuerpo.linear_velocity = Vector3.ZERO
 	cuerpo.angular_velocity = Vector3.ZERO
