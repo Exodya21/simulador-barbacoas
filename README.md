@@ -33,7 +33,9 @@ Simulador de barbacoas 3D en primera persona, estilo low-poly, hecho con **Godot
 | Tecla | Acción |
 |---|---|
 | E | Coger / soltar (llevar) una hamburguesa |
-| F | Dar la vuelta a la hamburguesa que miras |
+| F | Dar la vuelta a la hamburguesa que miras (con la mano) |
+| Clic izquierdo | **Pinzas:** coger la hamburguesa a la que apuntas / soltarla |
+| Clic derecho | **Pinzas:** dar la vuelta a la que tienes cogida (o a la que apuntas) |
 | F3 | Mostrar u ocultar la depuración: rejilla de calor (azul frío → rojo caliente) y termómetro de cada pieza |
 
 La parrilla tiene **zona directa** a la izquierda (~260 °C), transición en el centro e **indirecta** a la derecha (~100 °C, no dora pero sigue haciendo el interior).
@@ -63,6 +65,16 @@ GODOT=/ruta/a/godot herramientas/comprobar.sh
 Importa el proyecto en modo headless, pasa la prueba de humo y todas las pruebas `pruebas/test_*.gd` (cocción, rejilla de calor y una hamburguesa real sobre la parrilla). Falla si alguna prueba falla o hay errores de script.
 
 `herramientas/captura.gd` saca una captura de la parrilla (necesita pantalla o `xvfb-run`).
+
+## Modelos 3D
+
+Los modelos propios se generan con scripts de Blender en `herramientas/blender/`, así se pueden rehacer y retocar. Se exportan a `arte/modelos/*.glb` (lo que usa Godot) y se guarda también el `.blend`. Godot no importa los `.blend` (desactivado en el proyecto).
+
+```bash
+blender --background --python herramientas/blender/pinzas.py
+```
+
+Sin Blender instalado vale el módulo de PyPI: `pip install bpy==5.3.0` (Python 3.13) y `python herramientas/blender/pinzas.py`.
 
 ## Créditos
 

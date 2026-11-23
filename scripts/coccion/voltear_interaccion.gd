@@ -17,16 +17,8 @@ func interact(player_interaction_component: PlayerInteractionComponent) -> void:
 
 
 func voltear(cuerpo: RigidBody3D, eje: Vector3) -> void:
-	cuerpo.linear_velocity = Vector3.ZERO
-	cuerpo.angular_velocity = Vector3.ZERO
-	cuerpo.global_position += Vector3.UP * elevacion
-	cuerpo.global_rotate(eje.normalized(), PI)
+	Voltear.voltear(cuerpo, eje, elevacion)
 
 
 func _eje_del_jugador(pic: Node3D) -> Vector3:
-	if pic:
-		var derecha := pic.global_basis.x
-		derecha.y = 0.0
-		if derecha.length() > 0.01:
-			return derecha.normalized()
-	return Vector3.RIGHT
+	return Voltear.eje_horizontal(pic)
