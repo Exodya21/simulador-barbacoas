@@ -1,0 +1,77 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/utensilios/pinzas.gd" id="1_pinzas"]
+[ext_resource type="PackedScene" path="res://arte/modelos/pinzas.glb" id="2_modelo"]
+[ext_resource type="Script" path="res://scripts/utensilios/barra_minijuego.gd" id="3_barra"]
+
+[node name="Pinzas" type="Node3D"]
+script = ExtResource("1_pinzas")
+
+[node name="Modelo" parent="." instance=ExtResource("2_modelo")]
+
+[node name="Punta" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.41)
+
+[node name="Interfaz" type="CanvasLayer" parent="."]
+layer = 5
+
+[node name="BarraMinijuego" type="Control" parent="Interfaz"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("3_barra")
+
+[node name="Barra" type="Control" parent="Interfaz/BarraMinijuego"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -260.0
+offset_top = -200.0
+offset_right = -212.0
+offset_bottom = 200.0
+grow_horizontal = 0
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Aviso" type="Label" parent="Interfaz/BarraMinijuego"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -420.0
+offset_top = 215.0
+offset_right = -52.0
+offset_bottom = 290.0
+grow_horizontal = 0
+mouse_filter = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 22
+text = "MINIJUEGO_aviso"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Resultado" type="Label" parent="Interfaz/BarraMinijuego"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -400.0
+offset_top = 140.0
+offset_right = 400.0
+offset_bottom = 220.0
+grow_horizontal = 2
+mouse_filter = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 44
+horizontal_alignment = 1

@@ -1,0 +1,43 @@
+# Textos propios del Simulador de Barbacoas (de).
+msgid ""
+msgstr ""
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "ALIMENTO_hamburguesa"
+msgstr "Burger"
+
+msgid "MINIJUEGO_aviso"
+msgstr "Linke Maustaste loslassen zum Wenden"
+
+msgid "MINIJUEGO_perfecto"
+msgstr "Perfekt gewendet!"
+
+msgid "MINIJUEGO_bien_vuelta"
+msgstr "Rutscht weg… landet aber richtig!"
+
+msgid "MINIJUEGO_bien_sin_vuelta"
+msgstr "Rutscht weg und landet auf derselben Seite"
+
+msgid "MINIJUEGO_mal"
+msgstr "Auf dem Boden!"
+
+msgid "INTERACT_limpiar"
+msgstr "Putzen"
+
+msgid "MANCHA_grasa"
+msgstr "Fettfleck"
+
+msgid "BASURA_tirada"
+msgstr "Weggeworfen!"
+
+msgid "COMIDA_sucia"
+msgstr "SCHMUTZIG · wegwerfen"
+
+msgid "INTERACT_limpiar_trapo"
+msgstr "Mit dem Lappen wischen"
+
+msgid "UTENSILIO_trapo"
+msgstr "Alter Lappen"

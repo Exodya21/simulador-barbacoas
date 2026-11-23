@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="UtensilioLimpieza" format=3]
+
+[ext_resource type="Script" path="res://scripts/limpieza/utensilio_limpieza.gd" id="1_utensilio"]
+[ext_resource type="PackedScene" path="res://arte/modelos/trapo.glb" id="2_modelo"]
+
+[resource]
+script = ExtResource("1_utensilio")
+nombre = "UTENSILIO_trapo"
+texto_interaccion = "INTERACT_limpiar_trapo"
+segundos_por_mancha = 4.0
+modelo = ExtResource("2_modelo")
+radio_frotado = 0.08

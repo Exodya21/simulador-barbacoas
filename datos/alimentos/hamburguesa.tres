@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="TipoAlimento" format=3]
+
+[ext_resource type="Script" path="res://scripts/coccion/tipo_alimento.gd" id="1_tipo"]
+
+[resource]
+script = ExtResource("1_tipo")
+nombre = "ALIMENTO_hamburguesa"
+temperatura_dorado = 110.0
+temperatura_referencia = 220.0
+segundos_por_grado = 25.0
+calentamiento = 0.5
+enfriamiento = 0.15
+temperatura_inicial = 5.0
+conduccion = 0.008
+peso_caras = PackedFloat32Array(0.45, 0.45, 0.025, 0.025, 0.025, 0.025)
+punto_poco_hecho = 52.0
+punto_al_punto = 60.0
+punto_hecho = 70.0
+punto_pasado = 77.0

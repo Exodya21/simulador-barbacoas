@@ -1,0 +1,43 @@
+# Textos propios del Simulador de Barbacoas (es).
+msgid ""
+msgstr ""
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "ALIMENTO_hamburguesa"
+msgstr "Hamburguesa"
+
+msgid "MINIJUEGO_aviso"
+msgstr "Suelta el clic izquierdo para dar la vuelta"
+
+msgid "MINIJUEGO_perfecto"
+msgstr "¡Vuelta perfecta!"
+
+msgid "MINIJUEGO_bien_vuelta"
+msgstr "Se te escurre… ¡pero cae del lado bueno!"
+
+msgid "MINIJUEGO_bien_sin_vuelta"
+msgstr "Se te escurre y cae del mismo lado"
+
+msgid "MINIJUEGO_mal"
+msgstr "¡Al suelo!"
+
+msgid "INTERACT_limpiar"
+msgstr "Limpiar"
+
+msgid "MANCHA_grasa"
+msgstr "Mancha de grasa"
+
+msgid "BASURA_tirada"
+msgstr "¡A la basura!"
+
+msgid "COMIDA_sucia"
+msgstr "SUCIA · a la basura"
+
+msgid "INTERACT_limpiar_trapo"
+msgstr "Limpiar con el trapo"
+
+msgid "UTENSILIO_trapo"
+msgstr "Trapo viejo"
