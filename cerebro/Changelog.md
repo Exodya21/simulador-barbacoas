@@ -1,11 +1,16 @@
 ---
 tipo: changelog
-actualizado: 2026-11-22 22:25
+actualizado: 2026-11-23 22:13
 ---
 
 # 📜 Changelog
 
 Registro de todo lo que cambia en el proyecto, de lo más reciente a lo más antiguo. Lo escribe **el Documentador**, el agente de Claude definido en `.claude/agents/documentador.md`. Cada decisión tiene además su nota en `Decisiones/`.
+
+## 2026-11-23
+- **22:13** · Documentación · Licencias y Steam, Roadmap y la sesión del 22-11 al día: el riesgo de las banderas de Freepik queda resuelto → [[Licencias y Steam]] · [[Roadmap]]
+- **22:13** · Decisión · Banderas propias en el selector de idioma; sustituye a [[2026-11-22 Riesgo de licencia en las banderas de Cogito]] → [[2026-11-23 Banderas propias]]
+- **22:13** · Arte · Rama `dev` (b540a60): banderas propias de EE. UU. y Alemania dibujadas con código, dos parches a Cogito y borradas las banderas de Freepik; las pruebas pasan → [[2026-11-23 Banderas propias]]
 
 ## 2026-11-22
 - **22:24** · Documentación · Roadmap y 00 Inicio: F1 en curso; rejilla, hamburguesa y depuración hechas; pinzas y vídeos de YouTube en parte → [[Roadmap]] · [[00 Inicio]]

@@ -2,7 +2,7 @@
 tipo: produccion
 estado: definido
 fuente: Tablero FigJam, sección 6
-actualizado: 2026-11-22 22:25
+actualizado: 2026-11-23 22:13
 ---
 
 # Roadmap
@@ -43,7 +43,7 @@ actualizado: 2026-11-22 22:25
 Arrastrado de la F0 (no bloquea el hito) → [[2026-11-22 F0 cerrada]]:
 - [ ] Guardar vídeos de YouTube de parrilla y gameplay (búsquedas en [[Referencias de parrilla y juegos]]) → **en parte**: guardado el vídeo elegido por el usuario, sin revisar
 - [ ] Concretar el tipo de violencia (clasificación) → [[2026-11-22 GDD aprobado]]
-- [ ] Revisar la licencia de las banderas de Freepik de Cogito → [[2026-11-22 Riesgo de licencia en las banderas de Cogito]]
+- [x] ~~Revisar la licencia de las banderas de Freepik de Cogito~~ → sustituidas por banderas propias ([[2026-11-23 Banderas propias]])
 
 🏁 **Hito:** ¿es divertido girar una hamburguesa?
 

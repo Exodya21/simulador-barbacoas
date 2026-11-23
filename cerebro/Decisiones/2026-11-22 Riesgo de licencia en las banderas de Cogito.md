@@ -2,12 +2,14 @@
 tipo: decision
 fecha: 2026-11-22
 hora: 20:15
-estado: aceptada
+estado: sustituida
 area: Producción
-actualizado: 2026-11-22 20:16
+actualizado: 2026-11-23 22:13
 ---
 
 # Riesgo de licencia en las banderas de Cogito
+
+**Sustituida por:** [[2026-11-23 Banderas propias]]. El riesgo queda **resuelto** el 23-11-2026: las banderas de Freepik se borraron y el selector usa banderas propias.
 
 **Decisión:** queda anotado como riesgo que las banderas de Cogito (`freepik_flag_*.png`) parecen de Freepik. Antes de publicar hay que confirmar su licencia o sustituirlas por banderas propias. La bandera de España ya es nuestra: `arte/iconos/bandera_es.png`.
 
