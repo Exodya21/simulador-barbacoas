@@ -2,7 +2,7 @@
 tipo: idea
 fecha: 2026-11-23
 estado: cruda
-actualizado: 2026-11-23 23:03
+actualizado: 2026-11-23 23:04
 ---
 
 # Comida en el suelo y dificultad del minijuego
@@ -11,8 +11,8 @@ actualizado: 2026-11-23 23:03
 - [x] ¿Qué pasa con la comida que cae al suelo? ¿Queda sucia, hay que tirarla, penaliza la nota? → **resuelto** el 23-11-2026: se ensucia, deja una mancha de grasa resbaladiza y hay que tirarla a la basura → [[2026-11-23 Comida caída al suelo sucia, mancha y basura]]
 - [ ] ¿La velocidad de la línea sube con la dificultad o con el tipo de comida? (sigue abierta)
 
-**Por qué molaría:** (pendiente de confirmar)
+**Por qué molaría:** si la línea va más rápida con algunas comidas (el pescado frágil, las piezas grandes) o al subir de nivel, el minijuego no se vuelve repetitivo y cada alimento se siente distinto.
 
-**Cómo encaja con el [[Core loop]]:** (pendiente de confirmar)
+**Cómo encaja con el [[Core loop]]:** está en el paso 4, "Gestionar". Dar la vuelta es la acción que más se repite, así que su dificultad marca el ritmo de cada ronda.
 
 Relacionado: [[Mecánicas]]
