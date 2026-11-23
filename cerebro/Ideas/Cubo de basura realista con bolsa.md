@@ -2,7 +2,7 @@
 tipo: idea
 fecha: 2026-11-23
 estado: cruda
-actualizado: 2026-11-23 23:15
+actualizado: 2026-11-23 23:16
 ---
 
 # Cubo de basura realista con bolsa
@@ -15,7 +15,11 @@ actualizado: 2026-11-23 23:15
 - La bolsa se va llenando. Cuando está llena, hay que sacarla y llevarla a un contenedor de la calle.
 - Hará falta modelar la bolsa de basura y el contenedor → [[Modelos 3D]].
 
-**Por qué molaría:** (pendiente de confirmar)
+**Por qué molaría:**
+- Convierte la basura en una tarea de mantenimiento con sus propias decisiones: cuándo vaciar el cubo, y dejar la parrilla un momento para ir al contenedor.
+- Da consecuencias a fallar el [[2026-11-23 Minijuego de dar la vuelta|minijuego]]: cuanta más comida se tira, antes se llena la bolsa.
+- Mete el humor de lo cotidiano, como olvidarse de poner la bolsa.
+- Es una excusa para salir a la calle, el sitio natural para que aparezca el [[Perro callejero]].
 
 **Cómo encaja con el [[Core loop]]:** en el paso 4, "Gestionar", como tarea de mantenimiento.
 
