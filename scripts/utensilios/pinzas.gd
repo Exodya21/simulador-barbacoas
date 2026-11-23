@@ -265,7 +265,7 @@ func _quitar_colisiones(cuerpo: RigidBody3D) -> void:
 
 ## Devuelve la física y las colisiones, sin velocidad (no sale disparada).
 func _liberar(cuerpo: RigidBody3D) -> void:
-	var capas: Vector2i = _capas_originales.get(cuerpo, Vector2i(3, 1))
+	var capas: Vector2i = _capas_originales.get(cuerpo, Vector2i(2, 3))
 	_capas_originales.erase(cuerpo)
 	cuerpo.collision_layer = capas.x
 	cuerpo.collision_mask = capas.y
