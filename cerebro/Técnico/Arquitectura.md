@@ -2,7 +2,7 @@
 tipo: tecnico
 estado: definido
 fuente: Tablero FigJam, sección 2
-actualizado: 2026-11-23 23:03
+actualizado: 2026-11-23 23:15
 ---
 
 # Arquitectura
@@ -48,7 +48,7 @@ flowchart TD
 
 ### ⭐ Puntuación y Progresión
 - Nota por punto, tiempo y presentación
-- Dinero → nuevas parrillas, utensilios, recetas
+- Dinero → nuevas parrillas, utensilios, recetas (idea: [[Ruta de mejora de la limpieza]], trapo → cepillo → mocho)
 - Modo carrera + modo libre (sandbox)
 
 ### ✨ Presentación

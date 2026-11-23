@@ -1,7 +1,7 @@
 ---
 tipo: diseño
 estado: borrador
-actualizado: 2026-11-23 23:03
+actualizado: 2026-11-23 23:15
 ---
 
 # Mecánicas
@@ -26,7 +26,7 @@ Lista de mecánicas, sacada de la [[Demo jardín con parrilla]]. Cada una se pue
   - Bien: se escurre de las pinzas y cae del lado bueno con una probabilidad del 80 % junto a la zona perfecta al 30 % en el borde.
   - Mal: sale despedida y **la comida cae al suelo**.
   - → [[2026-11-23 Minijuego de dar la vuelta]] · [[2026-11-23 Coger con clic mantenido]]
-- Comida caída al suelo (hecho en la F1): queda **sucia** y hay que tirarla al **cubo de basura**. Deja en el suelo una **mancha de grasa resbaladiza** que no desaparece hasta que se limpia manteniendo F → [[2026-11-23 Comida caída al suelo sucia, mancha y basura]] · [[2026-11-23 Limpiar manchas manteniendo F]] · [[2026-11-23 Resbalar bajando el agarre de Cogito]]
+- Comida caída al suelo (hecho en la F1): queda **sucia** y hay que tirarla al **cubo de basura**. Deja en el suelo una **mancha de grasa resbaladiza** que no desaparece hasta que se limpia manteniendo F con el **trapo viejo**, 4 s por mancha ([[2026-11-23 Trapo viejo como utensilio de limpieza]]) → [[2026-11-23 Comida caída al suelo sucia, mancha y basura]] · [[2026-11-23 Limpiar manchas manteniendo F]] · [[2026-11-23 Resbalar bajando el agarre de Cogito]]
 - Servir a la mesa.
 
 ## Ambiente
@@ -54,6 +54,8 @@ Ratón mirar · WASD caminar · Mayús correr · Clic o E usar · 1–5 cambiar 
 - [x] ¿Qué pasa con la comida que cae al suelo (sucia, se tira, penaliza la nota)? → resuelto: [[2026-11-23 Comida caída al suelo sucia, mancha y basura]]
 - [ ] ¿La velocidad de la línea del minijuego sube con la dificultad o con el tipo de comida? → [[Comida en el suelo y dificultad del minijuego]]
 - [ ] Perro callejero que se pasea, pilla comida al vuelo y roba si no le das (para más adelante) → [[Perro callejero]]
-- [ ] Fregona o trapo para limpiar las manchas → [[Utensilio para limpiar manchas]]
+- [x] Trapo para limpiar las manchas → hecho: [[2026-11-23 Trapo viejo como utensilio de limpieza]]
+- [ ] Comprar cepillo y mocho con balde, cada uno más rápido (para el futuro) → [[Ruta de mejora de la limpieza]]
+- [ ] Cubo de basura realista que necesita bolsa, y sacar la bolsa llena al contenedor de la calle (para más adelante) → [[Cubo de basura realista con bolsa]]
 
 Relacionado: [[Core loop]]

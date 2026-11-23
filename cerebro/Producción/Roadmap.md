@@ -2,7 +2,7 @@
 tipo: produccion
 estado: definido
 fuente: Tablero FigJam, sección 6
-actualizado: 2026-11-23 22:46
+actualizado: 2026-11-23 23:15
 ---
 
 # Roadmap
@@ -61,7 +61,7 @@ Arrastrado de la F0 (no bloquea el hito) → [[2026-11-22 F0 cerrada]]:
 - [ ] 3 parrillas: carbón, gas, kamado/ahumador
 - [ ] 3 escenarios (patio, playa, camping)
 - [ ] Modo carrera + modo libre
-- [ ] Tienda de mejoras y desbloqueos
+- [ ] Tienda de mejoras y desbloqueos (idea: [[Ruta de mejora de la limpieza]])
 
 🏁 **Hito:** Alpha con todo el contenido
 

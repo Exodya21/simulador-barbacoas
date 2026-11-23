@@ -1,6 +1,6 @@
 ---
 tipo: changelog
-actualizado: 2026-11-23 23:04
+actualizado: 2026-11-23 23:15
 ---
 
 # 📜 Changelog
@@ -8,6 +8,10 @@ actualizado: 2026-11-23 23:04
 Registro de todo lo que cambia en el proyecto, de lo más reciente a lo más antiguo. Lo escribe **el Documentador**, el agente de Claude definido en `.claude/agents/documentador.md`. Cada decisión tiene además su nota en `Decisiones/`.
 
 ## 2026-11-23
+- **23:15** · Diseño · Ideas nuevas para el futuro: ruta de mejora de la limpieza (cepillo y mocho con balde) y cubo de basura realista con bolsa; Mecánicas, Modelos 3D, Roadmap y Arquitectura al día → [[Ruta de mejora de la limpieza]] · [[Cubo de basura realista con bolsa]]
+- **23:15** · Decisión · Trapo viejo como utensilio de limpieza por defecto (4 s por mancha); completa a [[2026-11-23 Limpiar manchas manteniendo F]] → [[2026-11-23 Trapo viejo como utensilio de limpieza]]
+- **23:15** · Arte · Rama `dev` (5a8d947): trapo viejo de 130 caras generado con `herramientas/blender/trapo.py` → [[Modelos 3D]]
+- **23:15** · Técnico · Rama `dev` (5a8d947): `UtensilioLimpieza`, `datos/limpieza/trapo.tres`, autoload `Equipo` y animación de frotar; `test_limpieza` a 21 comprobaciones, todas pasan → [[2026-11-23 Trapo viejo como utensilio de limpieza]]
 - **23:04** · Documentación · Completados el porqué y el encaje en el core loop de la idea de la dificultad del minijuego → [[Comida en el suelo y dificultad del minijuego]]
 - **23:03** · Documentación · Completadas las alternativas de limpiar manchas con F y el porqué de las ideas del perro callejero y del utensilio para limpiar → [[2026-11-23 Limpiar manchas manteniendo F]] · [[Perro callejero]] · [[Utensilio para limpiar manchas]]
 - **23:02** · Diseño · Ideas nuevas: perro callejero (para más adelante) y utensilio para limpiar manchas; resuelta la parte de la comida en el suelo; Mecánicas, Modelos 3D y Arquitectura al día → [[Perro callejero]] · [[Utensilio para limpiar manchas]] · [[Comida en el suelo y dificultad del minijuego]]
