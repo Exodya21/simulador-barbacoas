@@ -23,6 +23,7 @@ func _ejecutar() -> void:
 		return
 	camara = root.get_viewport().get_camera_3d()
 	rejilla = current_scene.get_node("Parrilla/RejillaCalor")
+	rejilla.encender_dos_zonas()  # el patio empieza frío
 	comprobar(pinzas.get_parent() == camara, "las pinzas van colgadas de la cámara del jugador")
 	comprobar(pinzas.get_node_or_null("Modelo/Pinzas/BrazoArriba") != null, "el modelo de Blender tiene los dos brazos")
 
@@ -172,7 +173,7 @@ func _vuelta_mal() -> void:
 	var horizontal := Vector2(h.linear_velocity.x, h.linear_velocity.z).length()
 	comprobar(horizontal > 1.5, "con mal sale despedida (%.1f m/s)" % horizontal)
 	await _esperar_fisica(2.0)
-	comprobar(h.global_position.y < 0.3, "con mal acaba en el suelo (y = %.2f)" % h.global_position.y)
+	comprobar(h.global_position.y < 0.3, "con mal acaba en el suelo (cae en %s)" % h.global_position)
 
 
 func _esperar_fisica(segundos: float) -> void:

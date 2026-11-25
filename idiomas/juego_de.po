@@ -41,3 +41,54 @@ msgstr "Mit dem Lappen wischen"
 
 msgid "UTENSILIO_trapo"
 msgstr "Alter Lappen"
+
+msgid "CHIMENEA_nombre"
+msgstr "Anzündkamin"
+
+msgid "CHIMENEA_llenar"
+msgstr "Mit Holzkohle füllen"
+
+msgid "CHIMENEA_encender"
+msgstr "Anzünden"
+
+msgid "CHIMENEA_esperar"
+msgstr "Glüht an…"
+
+msgid "CHIMENEA_volcar"
+msgstr "Auf den Grill schütten"
+
+msgid "CHIMENEA_falta_saco"
+msgstr "Stell ihn neben den Kohlesack, um ihn zu füllen"
+
+msgid "CHIMENEA_ayuda_llenar"
+msgstr "Bring ihn zum Kohlesack und drück F zum Füllen"
+
+msgid "CHIMENEA_encendida"
+msgstr "Kamin brennt: warte, bis die Kohle glüht"
+
+msgid "CHIMENEA_prendiendo"
+msgstr "Glüht noch nicht, warte noch etwas"
+
+msgid "CHIMENEA_lista"
+msgstr "Die Kohle glüht! Bring sie zum Grill und schütte sie mit F aus"
+
+msgid "CHIMENEA_lleva_parrilla"
+msgstr "Halte ihn über den Grill und drück F, um die Glut auszuschütten"
+
+msgid "CHIMENEA_volcada"
+msgstr "Glut auf dem Grill!"
+
+msgid "SACO_nombre"
+msgstr "Holzkohlesack"
+
+msgid "SACO_llenar"
+msgstr "Kamin füllen"
+
+msgid "SACO_trae_chimenea"
+msgstr "Bring den leeren Kamin hierher, um ihn zu füllen"
+
+msgid "ABANICO_nombre"
+msgstr "Fächer"
+
+msgid "ABANICO_ayuda"
+msgstr "Halte F über der Glut, um sie anzufachen"

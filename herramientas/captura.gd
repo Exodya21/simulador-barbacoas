@@ -9,6 +9,7 @@ func _initialize() -> void:
 	await process_frame
 	await process_frame
 	var r: Node3D = current_scene.get_node("Parrilla/RejillaCalor")
+	r.encender_dos_zonas()  # el patio empieza frío
 	var hs := ["Hamburguesa1", "Hamburguesa2", "Hamburguesa3"]
 	var xs := [-0.6, -0.1, 0.55]
 	for i in 3:

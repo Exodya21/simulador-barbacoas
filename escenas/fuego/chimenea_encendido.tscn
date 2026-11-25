@@ -1,0 +1,98 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/fuego/chimenea_encendido.gd" id="1_chimenea"]
+[ext_resource type="PackedScene" path="res://addons/cogito/Components/Interactions/BasicInteraction.tscn" id="2_accion"]
+[ext_resource type="PackedScene" path="res://addons/cogito/Components/Interactions/CarryableComponent.tscn" id="3_llevar"]
+
+[sub_resource type="StandardMaterial3D" id="Mat_chapa"]
+cull_mode = 2
+albedo_color = Color(0.3529, 0.3725, 0.4, 1)
+metallic = 0.5
+roughness = 0.6
+
+[sub_resource type="StandardMaterial3D" id="Mat_mango"]
+albedo_color = Color(0.5412, 0.3529, 0.2314, 1)
+
+[sub_resource type="StandardMaterial3D" id="Mat_carbon"]
+albedo_color = Color(0.1686, 0.1647, 0.1804, 1)
+roughness = 0.95
+emission_enabled = true
+emission = Color(0.9098, 0.4667, 0.1804, 1)
+emission_energy_multiplier = 0.0
+
+[sub_resource type="CylinderMesh" id="Malla_cuerpo"]
+material = SubResource("Mat_chapa")
+top_radius = 0.09
+bottom_radius = 0.09
+height = 0.3
+radial_segments = 8
+rings = 1
+cap_top = false
+
+[sub_resource type="CylinderMesh" id="Malla_carbon"]
+material = SubResource("Mat_carbon")
+top_radius = 0.085
+bottom_radius = 0.085
+height = 0.03
+radial_segments = 8
+rings = 1
+
+[sub_resource type="BoxMesh" id="Malla_soporte"]
+material = SubResource("Mat_chapa")
+size = Vector3(0.06, 0.02, 0.02)
+
+[sub_resource type="BoxMesh" id="Malla_mango"]
+material = SubResource("Mat_mango")
+size = Vector3(0.025, 0.14, 0.03)
+
+[sub_resource type="CylinderShape3D" id="Forma_cuerpo"]
+height = 0.3
+radius = 0.095
+
+[node name="ChimeneaEncendido" type="RigidBody3D"]
+collision_layer = 3
+mass = 3.0
+contact_monitor = true
+max_contacts_reported = 4
+script = ExtResource("1_chimenea")
+cogito_name = "chimenea_encendido"
+display_name = "CHIMENEA_nombre"
+
+[node name="Cuerpo" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 0)
+mesh = SubResource("Malla_cuerpo")
+
+[node name="Carbon" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.26, 0)
+mesh = SubResource("Malla_carbon")
+
+[node name="SoporteArriba" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.115, 0.24, 0)
+mesh = SubResource("Malla_soporte")
+
+[node name="SoporteAbajo" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.115, 0.1, 0)
+mesh = SubResource("Malla_soporte")
+
+[node name="Mango" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.15, 0.17, 0)
+mesh = SubResource("Malla_mango")
+
+[node name="Colision" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 0)
+shape = SubResource("Forma_cuerpo")
+
+[node name="Luz" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.36, 0)
+visible = false
+light_color = Color(0.9098, 0.4667, 0.1804, 1)
+light_energy = 0.0
+omni_range = 1.5
+
+[node name="Accion" parent="." instance=ExtResource("2_accion")]
+interaction_text = "CHIMENEA_llenar"
+
+[node name="CarryableComponent" parent="." instance=ExtResource("3_llevar")]
+carry_distance_offset = -0.9
+enable_manual_rotating = false
+drop_distance = 1.0

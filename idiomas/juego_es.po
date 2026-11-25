@@ -41,3 +41,54 @@ msgstr "Limpiar con el trapo"
 
 msgid "UTENSILIO_trapo"
 msgstr "Trapo viejo"
+
+msgid "CHIMENEA_nombre"
+msgstr "Chimenea de encendido"
+
+msgid "CHIMENEA_llenar"
+msgstr "Llenar de carbón"
+
+msgid "CHIMENEA_encender"
+msgstr "Encender"
+
+msgid "CHIMENEA_esperar"
+msgstr "Prendiendo…"
+
+msgid "CHIMENEA_volcar"
+msgstr "Volcar en la parrilla"
+
+msgid "CHIMENEA_falta_saco"
+msgstr "Acércala al saco de carbón para llenarla"
+
+msgid "CHIMENEA_ayuda_llenar"
+msgstr "Llévala al saco de carbón y pulsa F para llenarla"
+
+msgid "CHIMENEA_encendida"
+msgstr "Chimenea encendida: espera a que el carbón esté al rojo"
+
+msgid "CHIMENEA_prendiendo"
+msgstr "Todavía no está al rojo, espera un poco"
+
+msgid "CHIMENEA_lista"
+msgstr "¡Carbón al rojo! Llévala a la parrilla y vuélcalo con F"
+
+msgid "CHIMENEA_lleva_parrilla"
+msgstr "Ponla sobre la parrilla y pulsa F para volcar las brasas"
+
+msgid "CHIMENEA_volcada"
+msgstr "¡Brasas en la parrilla!"
+
+msgid "SACO_nombre"
+msgstr "Saco de carbón"
+
+msgid "SACO_llenar"
+msgstr "Llenar la chimenea"
+
+msgid "SACO_trae_chimenea"
+msgstr "Trae aquí la chimenea vacía para llenarla"
+
+msgid "ABANICO_nombre"
+msgstr "Abanico"
+
+msgid "ABANICO_ayuda"
+msgstr "Mantén F sobre las brasas para avivarlas"

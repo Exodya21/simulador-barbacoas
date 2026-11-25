@@ -7,6 +7,9 @@
 [ext_resource type="PackedScene" path="res://escenas/alimentos/hamburguesa.tscn" id="5_hamburguesa"]
 [ext_resource type="PackedScene" path="res://escenas/utensilios/pinzas.tscn" id="6_pinzas"]
 [ext_resource type="PackedScene" path="res://escenas/limpieza/basura.tscn" id="7_basura"]
+[ext_resource type="PackedScene" path="res://escenas/fuego/chimenea_encendido.tscn" id="8_chimenea"]
+[ext_resource type="PackedScene" path="res://escenas/fuego/saco_carbon.tscn" id="9_saco"]
+[ext_resource type="PackedScene" path="res://escenas/fuego/abanico.tscn" id="10_abanico"]
 
 [sub_resource type="ProceduralSkyMaterial" id="Cielo_mat"]
 sky_top_color = Color(0.4235, 0.6078, 0.8235, 1)
@@ -35,12 +38,6 @@ albedo_color = Color(0.3529, 0.3725, 0.4, 1)
 metallic = 0.6
 roughness = 0.5
 
-[sub_resource type="StandardMaterial3D" id="Mat_brasa"]
-albedo_color = Color(0.9098, 0.4667, 0.1804, 1)
-emission_enabled = true
-emission = Color(0.9098, 0.4667, 0.1804, 1)
-emission_energy_multiplier = 1.5
-
 [sub_resource type="StandardMaterial3D" id="Mat_madera"]
 albedo_color = Color(0.5412, 0.3529, 0.2314, 1)
 
@@ -60,14 +57,6 @@ size = Vector3(1.6, 0.04, 0.8)
 
 [sub_resource type="BoxShape3D" id="Forma_obra"]
 size = Vector3(2, 0.8, 1)
-
-[sub_resource type="BoxMesh" id="Malla_rejilla"]
-material = SubResource("Mat_metal")
-size = Vector3(1.6, 0.04, 0.8)
-
-[sub_resource type="BoxMesh" id="Malla_brasas"]
-material = SubResource("Mat_brasa")
-size = Vector3(1.5, 0.05, 0.7)
 
 [sub_resource type="BoxMesh" id="Malla_mesa"]
 material = SubResource("Mat_madera")
@@ -105,27 +94,22 @@ mesh = SubResource("Malla_obra")
 [node name="Colision" type="CollisionShape3D" parent="Parrilla"]
 shape = SubResource("Forma_obra")
 
-[node name="Brasas" type="MeshInstance3D" parent="Parrilla"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.42, 0)
-mesh = SubResource("Malla_brasas")
-
-[node name="Rejilla" type="MeshInstance3D" parent="Parrilla"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0)
-mesh = SubResource("Malla_rejilla")
-
 [node name="LuzBrasas" type="OmniLight3D" parent="Parrilla"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7, 0)
 light_color = Color(0.9098, 0.4667, 0.1804, 1)
-light_energy = 1.5
+light_energy = 0.0
 omni_range = 3.0
 
 [node name="ColisionRejilla" type="CollisionShape3D" parent="Parrilla"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0)
 shape = SubResource("Forma_rejilla")
 
-[node name="RejillaCalor" type="Node3D" parent="Parrilla"]
+[node name="RejillaCalor" type="Node3D" parent="Parrilla" node_paths=PackedStringArray("luz")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.62, 0)
 script = ExtResource("4_rejilla")
+empezar_encendida = false
+luz = NodePath("../LuzBrasas")
+crear_barras = true
 
 [node name="Mesa" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -2)
@@ -157,6 +141,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.4, 0.81, -2)
 
 [node name="Basura" parent="." instance=ExtResource("7_basura")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4, 0, -2.6)
+
+[node name="SacoCarbon" parent="." instance=ExtResource("9_saco")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6, 0, -2.4)
+
+[node name="ChimeneaEncendido" parent="." instance=ExtResource("8_chimenea")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6, 0.01, -1.8)
+
+[node name="Abanico" parent="." instance=ExtResource("10_abanico")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3, 0.82, -1.75)
 
 [node name="CarryableComponent" parent="CajaComida"]
 attribute_check = 0

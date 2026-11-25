@@ -25,6 +25,7 @@ func _ejecutar() -> void:
 	# Pasa por la parrilla encendida, cae al suelo: se ensucia y deja una mancha.
 	var h := current_scene.get_node("Hamburguesa1") as RigidBody3D
 	var rejilla: Node3D = current_scene.get_node("Parrilla/RejillaCalor")
+	rejilla.encender_dos_zonas()  # el patio empieza frío
 	h.global_position = rejilla.to_global(Vector3(-0.6, 0.03, 0))
 	await _esperar_fisica(1.0)
 	comprobar(h.get_node("Coccion").paso_por_parrilla, "al apoyarla en la parrilla encendida queda marcada")

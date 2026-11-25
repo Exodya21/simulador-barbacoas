@@ -11,6 +11,7 @@ func _ejecutar() -> void:
 	var pinzas: Node3D = get_first_node_in_group("pinzas")
 	var camara := root.get_viewport().get_camera_3d()
 	var rejilla: Node3D = current_scene.get_node("Parrilla/RejillaCalor")
+	rejilla.encender_dos_zonas()  # el patio empieza frío
 	var abajo := current_scene.get_node("Hamburguesa1") as RigidBody3D
 	var arriba := current_scene.get_node("Hamburguesa2") as RigidBody3D
 

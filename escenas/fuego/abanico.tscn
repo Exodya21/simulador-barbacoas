@@ -1,0 +1,53 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/fuego/abanico.gd" id="1_abanico"]
+[ext_resource type="PackedScene" path="res://addons/cogito/Components/Interactions/CarryableComponent.tscn" id="2_llevar"]
+
+[sub_resource type="StandardMaterial3D" id="Mat_mango"]
+albedo_color = Color(0.5412, 0.3529, 0.2314, 1)
+
+[sub_resource type="StandardMaterial3D" id="Mat_hoja"]
+cull_mode = 2
+albedo_color = Color(0.7098, 0.3255, 0.2353, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="Malla_mango"]
+material = SubResource("Mat_mango")
+size = Vector3(0.025, 0.012, 0.14)
+
+[sub_resource type="CylinderMesh" id="Malla_hoja"]
+material = SubResource("Mat_hoja")
+top_radius = 0.1
+bottom_radius = 0.1
+height = 0.006
+radial_segments = 6
+rings = 1
+
+[sub_resource type="BoxShape3D" id="Forma_abanico"]
+size = Vector3(0.2, 0.03, 0.34)
+
+[node name="Abanico" type="RigidBody3D"]
+collision_layer = 3
+mass = 0.2
+script = ExtResource("1_abanico")
+cogito_name = "abanico"
+display_name = "ABANICO_nombre"
+
+[node name="Modelo" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.16)
+
+[node name="Mango" type="MeshInstance3D" parent="Modelo"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.07)
+mesh = SubResource("Malla_mango")
+
+[node name="Hoja" type="MeshInstance3D" parent="Modelo"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.23)
+mesh = SubResource("Malla_hoja")
+
+[node name="Colision" type="CollisionShape3D" parent="."]
+shape = SubResource("Forma_abanico")
+
+[node name="CarryableComponent" parent="." instance=ExtResource("2_llevar")]
+carry_distance_offset = -0.9
+enable_manual_rotating = false
+drop_distance = 1.0

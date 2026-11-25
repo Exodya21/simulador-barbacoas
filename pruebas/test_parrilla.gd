@@ -13,6 +13,7 @@ func _ejecutar() -> void:
 	# Sin tipos de clase propios: este script se compila antes de que existan
 	# los autoloads de Cogito, y CoccionComponente depende de clases que los usan.
 	var rejilla: Node3D = escena.get_node("Parrilla/RejillaCalor")
+	rejilla.encender_dos_zonas()  # el patio empieza frío
 	var hamburguesa := escena.get_node("Hamburguesa1") as RigidBody3D
 	var coccion: Node = hamburguesa.get_node("Coccion")
 	comprobar(rejilla != null and coccion != null, "la escena tiene rejilla y hamburguesa con cocción")

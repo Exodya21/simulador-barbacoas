@@ -1,0 +1,57 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/fuego/saco_carbon.gd" id="1_saco"]
+[ext_resource type="PackedScene" path="res://addons/cogito/Components/Interactions/BasicInteraction.tscn" id="2_accion"]
+
+[sub_resource type="StandardMaterial3D" id="Mat_papel"]
+albedo_color = Color(0.7, 0.56, 0.38, 1)
+roughness = 0.9
+
+[sub_resource type="StandardMaterial3D" id="Mat_franja"]
+albedo_color = Color(0.1686, 0.1647, 0.1804, 1)
+
+[sub_resource type="StandardMaterial3D" id="Mat_carbon"]
+albedo_color = Color(0.1686, 0.1647, 0.1804, 1)
+roughness = 0.95
+
+[sub_resource type="BoxMesh" id="Malla_saco"]
+material = SubResource("Mat_papel")
+size = Vector3(0.4, 0.5, 0.24)
+
+[sub_resource type="BoxMesh" id="Malla_franja"]
+material = SubResource("Mat_franja")
+size = Vector3(0.41, 0.1, 0.25)
+
+[sub_resource type="SphereMesh" id="Malla_monton"]
+material = SubResource("Mat_carbon")
+radius = 0.16
+height = 0.12
+radial_segments = 6
+rings = 2
+
+[sub_resource type="BoxShape3D" id="Forma_saco"]
+size = Vector3(0.4, 0.56, 0.24)
+
+[node name="SacoCarbon" type="StaticBody3D"]
+script = ExtResource("1_saco")
+cogito_name = "saco_carbon"
+display_name = "SACO_nombre"
+
+[node name="Saco" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+mesh = SubResource("Malla_saco")
+
+[node name="Franja" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
+mesh = SubResource("Malla_franja")
+
+[node name="Monton" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+mesh = SubResource("Malla_monton")
+
+[node name="Colision" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.28, 0)
+shape = SubResource("Forma_saco")
+
+[node name="Accion" parent="." instance=ExtResource("2_accion")]
+interaction_text = "SACO_llenar"
