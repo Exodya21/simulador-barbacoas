@@ -8,6 +8,9 @@ actualizado: 2026-11-24 00:18
 Registro de todo lo que cambia en el proyecto, de lo más reciente a lo más antiguo. Lo escribe **el Documentador**, el agente de Claude definido en `.claude/agents/documentador.md`. Cada decisión tiene además su nota en `Decisiones/`.
 
 ## 2026-11-25
+- **22:31** · Técnico · `test_pinzas` falla 1 de cada 20 pasadas en "con mal acaba en el suelo" también en `7893a8f`, sin el carbón: es un fallo que ya existía (dirección de lanzamiento aleatoria); queda pendiente aparte, sin arreglar → [[2026-11-25]] · [[2026-11-23 Minijuego de dar la vuelta]]
+- **22:31** · Documentación · Completado el motivo de descartar un utensilio fijo en la mano para la chimenea y el abanico → [[2026-11-25 Chimenea y abanico leen F mientras se llevan]]
+- **22:31** · Técnico · Rama `dev` (cba34da, en local, sin subir a origin): commit del encendido de carbón con chimenea, saco y abanico, y brasas vivas, hecho a petición del usuario sin probarlo antes; sigue pendiente su playtest en el editor → [[2026-11-25 Encendido con chimenea y abanico]] · [[Roadmap]]
 - **22:25** · Documentación · Roadmap, 00 Inicio, Mecánicas, Arquitectura y Modelos 3D al día: F2 en curso y su primer bloque hecho a falta del playtest; la decisión de la rejilla de calor anota la ampliación → [[Roadmap]] · [[00 Inicio]] · [[2026-11-22 Rejilla de calor por celdas]]
 - **22:25** · Técnico · Rama `dev` (sin commit, pendiente del playtest del usuario): brasas vivas en `RejillaCalor` con shader `brasas.gdshader`, chimenea de encendido, saco de carbón y abanico; el patio empieza frío; textos en es/en/de; prueba nueva `test_fuego` (29), pasan las 9 pruebas → [[2026-11-25 Encendido con chimenea y abanico]]
 - **22:25** · Decisión · La chimenea y el abanico leen F ellos mismos mientras se llevan, porque Cogito no pasa la F al objeto en la mano → [[2026-11-25 Chimenea y abanico leen F mientras se llevan]]

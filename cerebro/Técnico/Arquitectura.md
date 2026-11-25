@@ -25,7 +25,7 @@ flowchart TD
 ### 🔥 Sistema de Fuego
 - Combustible: carbón, leña, gas
 - Temperatura por zonas (rejilla de celdas de calor) → hecho en la F1: `RejillaCalor`, 8×4 celdas ([[2026-11-22 Rejilla de calor por celdas]])
-- Brasas vivas (F2, en `dev` sin commit): cada celda tiene `carbon` y `fuego`; calor = fuego × min(1, carbón × 2). Funciones `echar_carbon`, `avivar`, `encender_dos_zonas`, `carbon_total` y `calor_medio`; export `empezar_encendida`. Brasas visibles con un MultiMesh y el shader `shaders/brasas.gdshader`; la rejilla se dibuja con barras (`crear_barras`) → [[2026-11-25 Encendido con chimenea y abanico]]
+- Brasas vivas (F2, commit `cba34da` en `dev`): cada celda tiene `carbon` y `fuego`; calor = fuego × min(1, carbón × 2). Funciones `echar_carbon`, `avivar`, `encender_dos_zonas`, `carbon_total` y `calor_medio`; export `empezar_encendida`. Brasas visibles con un MultiMesh y el shader `shaders/brasas.gdshader`; la rejilla se dibuja con barras (`crear_barras`) → [[2026-11-25 Encendido con chimenea y abanico]]
 - Objetos de encendido: `chimenea_encendido`, `saco_carbon` y `abanico` (escenas en `escenas/fuego/`, scripts en `scripts/fuego/`); leen F ellos mismos mientras se llevan → [[2026-11-25 Chimenea y abanico leen F mientras se llevan]]
 - Encendido, apagado, viento
 - Llamaradas cuando gotea grasa

@@ -49,7 +49,7 @@ Arrastrado de la F0 (no bloquea el hito) → [[2026-11-22 F0 cerrada]]:
 
 ## F2 · Vertical slice — semanas 7–12
 👉 **En curso**, empezada el 25-11-2026 por el encendido de carbón → [[2026-11-25 F2 empieza por el encendido de carbón]]
-- [ ] Encendido de carbón y brasas → **hecho en `dev`, sin commit, a falta del playtest del usuario**: brasas vivas en la `RejillaCalor`, chimenea de encendido, saco de carbón y abanico; prueba nueva `test_fuego` (29 comprobaciones) → [[2026-11-25 Encendido con chimenea y abanico]]
+- [ ] Encendido de carbón y brasas → **hecho en `dev` (commit `cba34da`, aún sin subir a origin), a falta del playtest del usuario**: brasas vivas en la `RejillaCalor`, chimenea de encendido, saco de carbón y abanico; prueba nueva `test_fuego` (29 comprobaciones) → [[2026-11-25 Encendido con chimenea y abanico]]
 - [ ] 5 alimentos (filete, chorizo, pollo, maíz, pimiento)
 - [ ] Shader crudo → hecho → quemado
 - [ ] Humo, llamas, chispas + audio

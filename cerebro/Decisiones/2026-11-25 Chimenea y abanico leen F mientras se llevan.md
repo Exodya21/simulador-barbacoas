@@ -14,6 +14,6 @@ area: Técnico
 
 **Alternativas descartadas:**
 - Usar el clic: Cogito lo usa para lanzar lo que llevas.
-- Un utensilio fijo en la mano, como las pinzas (motivo: pendiente de confirmar).
+- Un utensilio fijo en la mano, como las pinzas: las pinzas ya ocupan la mano y el clic, y el [[GDD]] aún no tiene cambio de utensilio. Coger objetos con E es como ya funcionan los objetos de Cogito.
 
 Relacionado: [[2026-11-25 Encendido con chimenea y abanico]] · [[Arquitectura]] · [[2026-11-23 Controles de las pinzas]]
