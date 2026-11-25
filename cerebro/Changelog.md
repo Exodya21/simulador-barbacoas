@@ -7,6 +7,13 @@ actualizado: 2026-11-24 00:18
 
 Registro de todo lo que cambia en el proyecto, de lo más reciente a lo más antiguo. Lo escribe **el Documentador**, el agente de Claude definido en `.claude/agents/documentador.md`. Cada decisión tiene además su nota en `Decisiones/`.
 
+## 2026-11-25
+- **22:25** · Documentación · Roadmap, 00 Inicio, Mecánicas, Arquitectura y Modelos 3D al día: F2 en curso y su primer bloque hecho a falta del playtest; la decisión de la rejilla de calor anota la ampliación → [[Roadmap]] · [[00 Inicio]] · [[2026-11-22 Rejilla de calor por celdas]]
+- **22:25** · Técnico · Rama `dev` (sin commit, pendiente del playtest del usuario): brasas vivas en `RejillaCalor` con shader `brasas.gdshader`, chimenea de encendido, saco de carbón y abanico; el patio empieza frío; textos en es/en/de; prueba nueva `test_fuego` (29), pasan las 9 pruebas → [[2026-11-25 Encendido con chimenea y abanico]]
+- **22:25** · Decisión · La chimenea y el abanico leen F ellos mismos mientras se llevan, porque Cogito no pasa la F al objeto en la mano → [[2026-11-25 Chimenea y abanico leen F mientras se llevan]]
+- **22:25** · Decisión · El carbón se enciende con la chimenea de encendido (volcándola donde quieras) y un abanico aviva las brasas que se apagan; amplía a [[2026-11-22 Rejilla de calor por celdas]] → [[2026-11-25 Encendido con chimenea y abanico]]
+- **22:25** · Decisión · La F2 · Vertical slice empieza el 25-11-2026 por el bloque "Encendido de carbón y brasas" → [[2026-11-25 F2 empieza por el encendido de carbón]]
+
 ## 2026-11-24
 - **00:17** · Técnico · Primer merge de `dev` a `main` (commit `5da5ba1`, `--no-ff`, sin conflictos) con la F0 y la F1; `main` igual a `dev`, sin `cerebro/`, y las 8 pruebas pasan → [[Repositorio y ramas]] · [[2026-11-24 F1 cerrada]]
 - **00:13** · Producción · Roadmap y 00 Inicio: F1 ✅ con todas sus tareas, F2 como siguiente y lo arrastrado (vídeos de YouTube y tipo de violencia) pasa a la F2 → [[Roadmap]] · [[00 Inicio]]

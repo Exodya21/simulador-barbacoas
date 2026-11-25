@@ -16,7 +16,7 @@ actualizado: 2026-11-24 00:13
 |---|---|---|
 | F0 · Preproducción ✅ | 1–2 | GDD aprobado y repo funcionando |
 | F1 · Prototipo gris ✅ | 3–6 | ¿Es divertido girar una hamburguesa? |
-| F2 · Vertical slice 👉 siguiente | 7–12 | 1 nivel completo y bonito de 10 min |
+| F2 · Vertical slice 👉 en curso | 7–12 | 1 nivel completo y bonito de 10 min |
 | F3 · Producción de contenido | 13–20 | Alpha con todo el contenido |
 | F4 · Pulido y QA | 21–25 | Beta estable |
 | F5 · Lanzamiento | 26–30 | 1.0 publicada 🎉 |
@@ -48,8 +48,8 @@ Arrastrado de la F0 (no bloquea el hito) → [[2026-11-22 F0 cerrada]]:
 🏁 **Hito:** ¿es divertido girar una hamburguesa? → ✅ **sí, según el playtest del usuario. F1 cerrada el 24-11-2026** → [[2026-11-24 F1 cerrada]]
 
 ## F2 · Vertical slice — semanas 7–12
-👉 **Siguiente fase.**
-- [ ] Encendido de carbón y brasas
+👉 **En curso**, empezada el 25-11-2026 por el encendido de carbón → [[2026-11-25 F2 empieza por el encendido de carbón]]
+- [ ] Encendido de carbón y brasas → **hecho en `dev`, sin commit, a falta del playtest del usuario**: brasas vivas en la `RejillaCalor`, chimenea de encendido, saco de carbón y abanico; prueba nueva `test_fuego` (29 comprobaciones) → [[2026-11-25 Encendido con chimenea y abanico]]
 - [ ] 5 alimentos (filete, chorizo, pollo, maíz, pimiento)
 - [ ] Shader crudo → hecho → quemado
 - [ ] Humo, llamas, chispas + audio

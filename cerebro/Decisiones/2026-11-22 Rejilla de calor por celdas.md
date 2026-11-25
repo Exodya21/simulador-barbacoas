@@ -22,4 +22,6 @@ Commit `0a44ab6` en `dev`.
 - Dos zonas fijas: no deja repartir las brasas.
 - Simular las partículas de las brasas: es demasiado para la F1.
 
+**Ampliada el 25-11-2026:** las brasas pasan a estar vivas (carbón que se gasta, fuego que baja y se propaga) y se ponen con la chimenea de encendido en vez de la pala; las dos zonas fijas del patio desaparecen → [[2026-11-25 Encendido con chimenea y abanico]]
+
 Relacionado: [[Arquitectura]] · [[Mecánicas]] · [[Roadmap]] · [[2026-11-22 Cocción por caras con superficie e interior]]

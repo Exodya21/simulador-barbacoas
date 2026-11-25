@@ -14,6 +14,9 @@ Lista de mecánicas, sacada de la [[Demo jardín con parrilla]]. Cada una se pue
 - **Brasas** que caen bajo el brasero.
 - **Pala**: pasar brasas del brasero a la zona de la parrilla.
 - **Calor en la parrilla** según brasas y altura.
+- **Encendido con chimenea** (F2, en `dev` a falta de playtest): llenar la chimenea junto al saco de carbón, encenderla, esperar 45 s a que esté al rojo y volcarla donde quieras de la parrilla. Todo con F, mirándola o llevándola (se coge con E) → [[2026-11-25 Encendido con chimenea y abanico]]
+- **Abanico** (F2): manteniendo F sobre la parrilla aviva las brasas que se van apagando, a cambio de gastar el carbón más rápido.
+- **Brasas vivas** (F2): el carbón se gasta, el fuego baja a un reposo si no se aviva, se pasa a las celdas vecinas con carbón, el carbón crudo enfría las brasas y al acabarse se apaga.
 
 ## Parrilla
 - **Altura regulable** con manivela (clic + ratón, rueda, o R / F).

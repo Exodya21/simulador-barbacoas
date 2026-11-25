@@ -39,6 +39,7 @@ Basada en las [[Referencias visuales]].
 | Cubo de basura (de pedal, sin tapa) | — | ✅ generado con `herramientas/blender/basura.py`, 78 caras ([[2026-11-23 Comida caída al suelo sucia, mancha y basura]]); versión más realista pendiente → [[Cubo de basura realista con bolsa]] |
 | Trapo viejo | — | ✅ generado con `herramientas/blender/trapo.py`, 130 caras ([[2026-11-23 Trapo viejo como utensilio de limpieza]]) |
 | Carne de hamburguesa | — | ✅ generada con `herramientas/blender/hamburguesa.py`, 152 caras, exportada como `.obj`: borde irregular, cantos biselados y centro abombado. La hamburguesa ya no usa modelos del Food Kit. |
+| Chimenea de encendido, saco de carbón, abanico y trozos de carbón | — | 🟨 de momento con primitivas low-poly en la escena, sin Blender; el pulido va con "Humo, llamas, chispas + audio" y el nivel bonito de la F2 ([[2026-11-25 Encendido con chimenea y abanico]]) |
 | Cepillo y mocho con balde | — | ⬜ para el futuro → [[Ruta de mejora de la limpieza]] |
 | Bolsa de basura y contenedor de la calle | — | ⬜ para más adelante → [[Cubo de basura realista con bolsa]] |
 | Kamado / ahumador | parrilla-exterior-ahumador | ⬜ |
