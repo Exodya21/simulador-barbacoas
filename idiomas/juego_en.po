@@ -118,7 +118,7 @@ msgid "CHIMENEA_llena"
 msgstr "Starter full: click to light it"
 
 msgid "CHIMENEA_ayuda_encender"
-msgstr "Starter full: click to light it"
+msgstr "Starter full: drop it with G and light it with the lighter"
 
 msgid "SACO_sin_chimenea"
 msgstr "You have no chimney starter"
@@ -211,3 +211,45 @@ msgstr "To my grandchild, with love:\n\nIf you're reading this, the ranch is you
 
 msgid "CARTA_cerrar"
 msgstr "Press F to start"
+
+msgid "CHIMENEA_falta_magiclick"
+msgstr "You need the lighter: drop the starter with G and light it"
+
+msgid "CINTURON_pala"
+msgstr "Shovel"
+
+msgid "CINTURON_magiclick"
+msgstr "Lighter"
+
+msgid "CINTURON_lleno"
+msgstr "Your belt is full: drop something with G"
+
+msgid "UTENSILIO_recoger"
+msgstr "Put on belt"
+
+msgid "MAGICLICK_ayuda"
+msgstr "Hold click for a flame; aim at the full starter to light it"
+
+msgid "MAGICLICK_apunta_chimenea"
+msgstr "Aim at the full starter, on the ground or the table"
+
+msgid "MAGICLICK_chimenea_vacia"
+msgstr "The starter is empty: fill it at the charcoal bag"
+
+msgid "MAGICLICK_ya_encendida"
+msgstr "The starter is already lit"
+
+msgid "PALA_ayuda"
+msgstr "Click the grill to scoop embers, again to drop them; click the bag for charcoal"
+
+msgid "PALA_carbon_crudo"
+msgstr "Shovel full of fresh charcoal"
+
+msgid "PALA_sin_carbon"
+msgstr "There is no charcoal there"
+
+msgid "PALA_apunta"
+msgstr "Aim at the grill or the charcoal bag"
+
+msgid "PALA_lleva_parrilla"
+msgstr "Aim at the grill to drop the charcoal"

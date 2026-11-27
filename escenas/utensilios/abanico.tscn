@@ -27,6 +27,8 @@ script = ExtResource("1_abanico")
 id = &"abanico"
 posicion_en_camara = Vector3(0.2, -0.2, -0.3)
 giro_en_camara = Vector3(-20, 15, 70)
+punto_agarre = Vector3(0, 0, -0.03)
+eje_agarre = Vector3(0, 0, -1)
 
 [node name="Modelo" type="Node3D" parent="."]
 

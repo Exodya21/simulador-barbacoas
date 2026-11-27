@@ -48,6 +48,7 @@ script = ExtResource("1_chimenea")
 id = &"chimenea"
 posicion_en_camara = Vector3(0.34, -0.42, -0.75)
 giro_en_camara = Vector3(12, 0, 0)
+punto_agarre = Vector3(0.15, 0.02, 0)
 
 [node name="Modelo" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.15, 0)

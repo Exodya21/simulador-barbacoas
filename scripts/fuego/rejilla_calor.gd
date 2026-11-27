@@ -198,6 +198,31 @@ func echar_carbon(posicion_global: Vector3, cantidad: float, fuego_nuevo: float,
 	return cabido
 
 
+## Saca hasta `cantidad` de carbón alrededor de un punto (para la pala).
+## Devuelve {"carbon": lo sacado, "fuego": fuego medio de lo sacado}.
+func sacar_carbon(posicion_global: Vector3, cantidad: float, radio := 0.2) -> Dictionary:
+	_asegurar_datos()
+	var pesos := _pesos_circulo(posicion_global, radio)
+	var disponible := 0.0
+	for i: int in pesos:
+		disponible += carbon[i] * pesos[i]
+	if disponible <= 0.0:
+		return {"carbon": 0.0, "fuego": 0.0}
+	var parte := minf(1.0, cantidad / disponible)
+	var sacado := 0.0
+	var fuego_sacado := 0.0
+	for i: int in pesos:
+		var quitado: float = carbon[i] * pesos[i] * parte
+		carbon[i] -= quitado
+		sacado += quitado
+		fuego_sacado += fuego[i] * quitado
+		if carbon[i] <= 0.001:
+			carbon[i] = 0.0
+			fuego[i] = 0.0
+	_calcular_brasas()
+	return {"carbon": sacado, "fuego": fuego_sacado / sacado if sacado > 0.0 else 0.0}
+
+
 ## Aviva las brasas alrededor de un punto durante `delta` segundos: sube el
 ## fuego de las celdas con carbón que ya tienen algo de fuego (o una vecina
 ## encendida), y lo gasta antes.

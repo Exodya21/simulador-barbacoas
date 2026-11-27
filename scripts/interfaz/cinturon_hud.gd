@@ -13,6 +13,8 @@ const NOMBRES := {
 	&"abanico": "CINTURON_abanico",
 	&"trapo": "CINTURON_trapo",
 	&"chimenea": "CINTURON_chimenea",
+	&"pala": "CINTURON_pala",
+	&"magiclick": "CINTURON_magiclick",
 }
 
 var _huecos: Array[PanelContainer] = []

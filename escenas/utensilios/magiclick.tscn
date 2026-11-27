@@ -1,0 +1,76 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/fuego/magiclick.gd" id="1_magiclick"]
+
+[sub_resource type="StandardMaterial3D" id="Mat_cuerpo"]
+albedo_color = Color(0.91, 0.467, 0.18, 1)
+roughness = 0.6
+
+[sub_resource type="StandardMaterial3D" id="Mat_gatillo"]
+albedo_color = Color(0.1686, 0.1647, 0.1804, 1)
+
+[sub_resource type="StandardMaterial3D" id="Mat_metal"]
+albedo_color = Color(0.3529, 0.3725, 0.4, 1)
+metallic = 0.7
+roughness = 0.4
+
+[sub_resource type="StandardMaterial3D" id="Mat_llama"]
+shading_mode = 0
+albedo_color = Color(0.96, 0.75, 0.29, 1)
+
+[sub_resource type="BoxMesh" id="Malla_cuerpo"]
+material = SubResource("Mat_cuerpo")
+size = Vector3(0.028, 0.034, 0.13)
+
+[sub_resource type="BoxMesh" id="Malla_gatillo"]
+material = SubResource("Mat_gatillo")
+size = Vector3(0.01, 0.02, 0.018)
+
+[sub_resource type="CylinderMesh" id="Malla_canon"]
+material = SubResource("Mat_metal")
+top_radius = 0.0055
+bottom_radius = 0.0055
+height = 0.16
+radial_segments = 6
+rings = 1
+
+[sub_resource type="CylinderMesh" id="Malla_llama"]
+material = SubResource("Mat_llama")
+top_radius = 0.0
+bottom_radius = 0.008
+height = 0.032
+radial_segments = 6
+rings = 1
+
+[node name="Magiclick" type="Node3D"]
+script = ExtResource("1_magiclick")
+id = &"magiclick"
+posicion_en_camara = Vector3(0.2, -0.22, -0.38)
+giro_en_camara = Vector3(5, 8, 0)
+punto_agarre = Vector3(0, 0, 0.03)
+eje_agarre = Vector3(0, 0, -1)
+
+[node name="Modelo" type="Node3D" parent="."]
+
+[node name="Cuerpo" type="MeshInstance3D" parent="Modelo"]
+mesh = SubResource("Malla_cuerpo")
+
+[node name="Gatillo" type="MeshInstance3D" parent="Modelo"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.025, -0.03)
+mesh = SubResource("Malla_gatillo")
+
+[node name="Canon" type="MeshInstance3D" parent="Modelo"]
+transform = Transform3D(1, 0, 0, 0, 0, -1, 0, 1, 0, 0, 0.008, -0.145)
+mesh = SubResource("Malla_canon")
+
+[node name="Llama" type="Node3D" parent="Modelo"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.008, -0.228)
+
+[node name="Fuego" type="MeshInstance3D" parent="Modelo/Llama"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.014, 0)
+mesh = SubResource("Malla_llama")
+
+[node name="Luz" type="OmniLight3D" parent="Modelo/Llama"]
+light_color = Color(0.96, 0.75, 0.29, 1)
+light_energy = 0.8
+omni_range = 0.6

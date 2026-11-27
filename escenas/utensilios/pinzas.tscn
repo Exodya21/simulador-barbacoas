@@ -6,6 +6,8 @@
 
 [node name="Pinzas" type="Node3D"]
 script = ExtResource("1_pinzas")
+punto_agarre = Vector3(0, 0, -0.13)
+eje_agarre = Vector3(0, 0.25, -1)
 
 [node name="Modelo" parent="." instance=ExtResource("2_modelo")]
 

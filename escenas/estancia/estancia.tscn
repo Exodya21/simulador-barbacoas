@@ -17,6 +17,9 @@
 [ext_resource type="PackedScene" path="res://escenas/estancia/conservadora.tscn" id="13_conservadora"]
 [ext_resource type="PackedScene" path="res://escenas/estancia/bandeja_venta.tscn" id="14_bandeja"]
 [ext_resource type="Script" path="res://scripts/estancia/hud_estancia.gd" id="15_hud"]
+[ext_resource type="PackedScene" path="res://escenas/jugador/manos.tscn" id="20_manos"]
+[ext_resource type="PackedScene" path="res://escenas/utensilios/pala_mano.tscn" id="21_pala"]
+[ext_resource type="PackedScene" path="res://escenas/utensilios/magiclick.tscn" id="22_magiclick"]
 
 [sub_resource type="ProceduralSkyMaterial" id="Cielo_mat"]
 sky_top_color = Color(0.33, 0.38, 0.6, 1)
@@ -143,6 +146,16 @@ inventory_data = SubResource("Inventario")
 [node name="Abanico" parent="." instance=ExtResource("10_abanico")]
 
 [node name="Trapo" parent="." instance=ExtResource("11_trapo")]
+
+[node name="Manos" parent="." instance=ExtResource("20_manos")]
+
+[node name="PalaMano" parent="." instance=ExtResource("21_pala")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.5, 0.45, -16.9)
+empezar_suelto = true
+
+[node name="Magiclick" parent="." instance=ExtResource("22_magiclick")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.5, 0.45, -17.9)
+empezar_suelto = true
 
 [node name="CinturonHud" parent="." instance=ExtResource("12_cinturon")]
 

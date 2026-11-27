@@ -48,10 +48,13 @@ func _comprobar_idioma() -> void:
 
 
 func _comprobar_caja() -> void:
-	var caja := current_scene.get_node_or_null("CajaComida/CarryableComponent")
-	_comprobar(caja != null, "no se encuentra CajaComida/CarryableComponent")
+	# La caja está en el patio de prueba (la escena principal es la estancia).
+	var patio: Node = load("res://escenas/patio_prueba.tscn").instantiate()
+	var caja := patio.get_node_or_null("CajaComida/CarryableComponent")
+	_comprobar(caja != null, "no se encuentra CajaComida/CarryableComponent en el patio")
 	if caja:
 		_comprobar(caja.attribute_check == 0, "la caja sigue pidiendo fuerza para cogerla")
+	patio.free()
 
 
 func _comprobar_menu_opciones() -> void:

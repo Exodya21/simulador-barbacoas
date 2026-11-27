@@ -8,6 +8,7 @@ script = ExtResource("1_utensilio")
 id = &"trapo"
 posicion_en_camara = Vector3(0.24, -0.24, -0.45)
 giro_en_camara = Vector3(35, 25, 0)
+punto_agarre = Vector3(0, 0, 0.02)
 
 [node name="Modelo" parent="." instance=ExtResource("2_modelo")]
 transform = Transform3D(0.55, 0, 0, 0, 0.55, 0, 0, 0, 0.55, 0, 0, 0)

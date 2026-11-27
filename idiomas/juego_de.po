@@ -118,7 +118,7 @@ msgid "CHIMENEA_llena"
 msgstr "Kamin voll: klick zum Anzünden"
 
 msgid "CHIMENEA_ayuda_encender"
-msgstr "Kamin voll: klick zum Anzünden"
+msgstr "Kamin voll: mit G abstellen und mit dem Stabfeuerzeug anzünden"
 
 msgid "SACO_sin_chimenea"
 msgstr "Du hast keinen Anzündkamin"
@@ -211,3 +211,45 @@ msgstr "An mein Enkelkind, in Liebe:\n\nWenn du das liest, gehört die Estancia 
 
 msgid "CARTA_cerrar"
 msgstr "Drücke F, um zu beginnen"
+
+msgid "CHIMENEA_falta_magiclick"
+msgstr "Du brauchst das Stabfeuerzeug: Kamin mit G abstellen und anzünden"
+
+msgid "CINTURON_pala"
+msgstr "Schaufel"
+
+msgid "CINTURON_magiclick"
+msgstr "Stabfeuerzeug"
+
+msgid "CINTURON_lleno"
+msgstr "Dein Gürtel ist voll: leg etwas mit G ab"
+
+msgid "UTENSILIO_recoger"
+msgstr "An den Gürtel hängen"
+
+msgid "MAGICLICK_ayuda"
+msgstr "Klick halten für eine Flamme; ziel auf den vollen Kamin zum Anzünden"
+
+msgid "MAGICLICK_apunta_chimenea"
+msgstr "Ziel auf den vollen Kamin, am Boden oder auf dem Tisch"
+
+msgid "MAGICLICK_chimenea_vacia"
+msgstr "Der Kamin ist leer: füll ihn am Kohlesack"
+
+msgid "MAGICLICK_ya_encendida"
+msgstr "Der Kamin brennt schon"
+
+msgid "PALA_ayuda"
+msgstr "Klick auf den Grill zum Aufnehmen, nochmal zum Abladen; am Sack gibt es Kohle"
+
+msgid "PALA_carbon_crudo"
+msgstr "Schaufel voll frischer Kohle"
+
+msgid "PALA_sin_carbon"
+msgstr "Da ist keine Kohle"
+
+msgid "PALA_apunta"
+msgstr "Ziel auf den Grill oder den Kohlesack"
+
+msgid "PALA_lleva_parrilla"
+msgstr "Ziel auf den Grill, um die Kohle abzuladen"

@@ -5,7 +5,8 @@ extends UtensilioMano
 ##
 ## Con la chimenea en la mano, el **clic izquierdo** hace la acción:
 ## 1. **Vacía** → junto al saco de carbón, se llena (también con F en el saco).
-## 2. **Llena** → se enciende.
+## 2. **Llena** → hay que prenderla con el **magiclick**: se suelta en el
+##    suelo o en la mesa (G), se saca el magiclick y se hace clic apuntándole.
 ## 3. **Prendiendo** → hay que esperar a que el carbón se ponga al rojo. Sigue
 ##    prendiendo aunque la guardes en el cinturón.
 ## 4. **Lista** → apuntando a la parrilla, vuelca las brasas donde apuntas y
@@ -84,7 +85,7 @@ func usar(punto := Vector3.INF) -> void:
 			else:
 				llenar()
 		Estado.LLENA:
-			encender()
+			avisar("CHIMENEA_falta_magiclick")
 		Estado.PRENDIENDO:
 			avisar("CHIMENEA_prendiendo")
 		Estado.LISTA:
@@ -106,6 +107,7 @@ func llenar() -> bool:
 	return true
 
 
+## La prende el magiclick (Magiclick.prender).
 func encender() -> bool:
 	if estado != Estado.LLENA:
 		return false

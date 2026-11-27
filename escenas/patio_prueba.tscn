@@ -14,6 +14,9 @@
 [ext_resource type="PackedScene" path="res://escenas/utensilios/abanico.tscn" id="10_abanico"]
 [ext_resource type="PackedScene" path="res://escenas/utensilios/trapo.tscn" id="11_trapo"]
 [ext_resource type="PackedScene" path="res://escenas/interfaz/cinturon_hud.tscn" id="12_cinturon"]
+[ext_resource type="PackedScene" path="res://escenas/jugador/manos.tscn" id="20_manos"]
+[ext_resource type="PackedScene" path="res://escenas/utensilios/pala_mano.tscn" id="21_pala"]
+[ext_resource type="PackedScene" path="res://escenas/utensilios/magiclick.tscn" id="22_magiclick"]
 
 [sub_resource type="ProceduralSkyMaterial" id="Cielo_mat"]
 sky_top_color = Color(0.4235, 0.6078, 0.8235, 1)
@@ -160,6 +163,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6, 0, -2.4)
 [node name="Abanico" parent="." unique_id=1120451937 instance=ExtResource("10_abanico")]
 
 [node name="Trapo" parent="." instance=ExtResource("11_trapo")]
+
+[node name="Manos" parent="." instance=ExtResource("20_manos")]
+
+[node name="PalaMano" parent="." instance=ExtResource("21_pala")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75, 0.95, -2)
+empezar_suelto = true
+
+[node name="Magiclick" parent="." instance=ExtResource("22_magiclick")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.25, 0.95, -2)
+empezar_suelto = true
 
 [node name="CinturonHud" parent="." instance=ExtResource("12_cinturon")]
 

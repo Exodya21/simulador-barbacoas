@@ -118,7 +118,7 @@ msgid "CHIMENEA_llena"
 msgstr "Chimenea llena: haz clic para encenderla"
 
 msgid "CHIMENEA_ayuda_encender"
-msgstr "Chimenea llena: haz clic para encenderla"
+msgstr "Chimenea llena: suéltala con G y préndela con el magiclick"
 
 msgid "SACO_sin_chimenea"
 msgstr "No tienes chimenea de encendido"
@@ -211,3 +211,45 @@ msgstr "A mi nieto o nieta, con cariño:\n\nSi estás leyendo esto, la estancia 
 
 msgid "CARTA_cerrar"
 msgstr "Pulsa F para empezar"
+
+msgid "CHIMENEA_falta_magiclick"
+msgstr "Hace falta el magiclick: suelta la chimenea con G y préndela con él"
+
+msgid "CINTURON_pala"
+msgstr "Pala"
+
+msgid "CINTURON_magiclick"
+msgstr "Magiclick"
+
+msgid "CINTURON_lleno"
+msgstr "El cinturón está lleno: suelta algo con G"
+
+msgid "UTENSILIO_recoger"
+msgstr "Guardar en el cinturón"
+
+msgid "MAGICLICK_ayuda"
+msgstr "Mantén el clic para sacar llama; apunta a la chimenea llena para prenderla"
+
+msgid "MAGICLICK_apunta_chimenea"
+msgstr "Apunta a la chimenea llena, suelta en el suelo o en la mesa"
+
+msgid "MAGICLICK_chimenea_vacia"
+msgstr "La chimenea está vacía: llénala en el saco de carbón"
+
+msgid "MAGICLICK_ya_encendida"
+msgstr "La chimenea ya está encendida"
+
+msgid "PALA_ayuda"
+msgstr "Clic en la parrilla para coger brasas y otra vez para echarlas; en el saco coge carbón"
+
+msgid "PALA_carbon_crudo"
+msgstr "Pala llena de carbón crudo"
+
+msgid "PALA_sin_carbon"
+msgstr "Ahí no hay carbón"
+
+msgid "PALA_apunta"
+msgstr "Apunta a la parrilla o al saco de carbón"
+
+msgid "PALA_lleva_parrilla"
+msgstr "Apunta a la parrilla para echar el carbón"

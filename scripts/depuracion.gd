@@ -1,10 +1,11 @@
 extends Node
 ## Autoload Depuracion: activa o desactiva los valores de depuración con F3.
-## En las versiones de desarrollo empieza activada (prototipo de la F1).
+## Empieza apagada: los números (temperaturas, caras de la comida, rejilla)
+## solo se ven al pulsar F3.
 
 signal cambiado(activa: bool)
 
-var activa: bool = OS.is_debug_build()
+var activa := false
 
 
 func _unhandled_input(evento: InputEvent) -> void:
