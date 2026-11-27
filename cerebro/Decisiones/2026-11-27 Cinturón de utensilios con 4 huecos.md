@@ -16,7 +16,7 @@ area: Diseño
 - El **trapo** también va al cinturón: las manchas solo se limpian con el trapo en la mano (se sigue manteniendo F). Sin él, la mancha no ofrece limpiar y su nombre dice "Mancha de grasa · saca el trapo (3)". Mientras frota, el trapo de la mano se esconde.
 - El orden de los huecos (de más a menos usado) lo eligió Claude, no el usuario.
 
-Técnico: autoload nuevo `Cinturon` (`scripts/utensilios/cinturon.gd`), barra `scripts/interfaz/cinturon_hud.gd` y base nueva `UtensilioMano` (`scripts/utensilios/utensilio_mano.gd`): los cuatro utensilios cuelgan de la cámara y solo funcionan en la mano. Las pinzas heredan de ella. Prueba nueva `test_cinturon` (29 comprobaciones). Hecho en `dev`, **sin commit**, pendiente de que el usuario lo pruebe.
+Técnico: autoload nuevo `Cinturon` (`scripts/utensilios/cinturon.gd`), barra `scripts/interfaz/cinturon_hud.gd` y base nueva `UtensilioMano` (`scripts/utensilios/utensilio_mano.gd`): los cuatro utensilios cuelgan de la cámara y solo funcionan en la mano. Las pinzas heredan de ella. Prueba nueva `test_cinturon` (29 comprobaciones). Hecho en `dev`: commit `d172f22` ("F2: cinturón de utensilios y texto de la comida solo al mirarla"), subido a `origin/dev` el 27-11-2026 a petición del usuario para probarlo. **Pendiente:** su prueba en el editor.
 
 **Motivo:** lo pidió el usuario en el primer playtest del encendido: "Que el personaje tenga un cinturón y que la pinza y el abanico los pueda guardar en ese cinturón, que de manera inicial tengamos una interfaz con 4 espacios y que inicialmente tengamos el abanico, la pinza, el trapo y la chimenea de encendido."
 

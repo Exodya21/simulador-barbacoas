@@ -16,7 +16,7 @@ area: Diseño
 - Las escenas pasan a `escenas/utensilios/`. Se quitan los textos de la interacción con F de la chimenea.
 - `test_fuego` reescrita para la chimenea y el abanico del cinturón (30 comprobaciones).
 
-Hecho en `dev`, **sin commit**, pendiente de que el usuario lo pruebe. Decidido por Claude al hacer el cinturón que pidió el usuario.
+Hecho en `dev`: commit `d172f22`, subido a `origin/dev` el 27-11-2026. **Pendiente:** la prueba del usuario en el editor. Decidido por Claude al hacer el cinturón que pidió el usuario.
 
 **Motivo:** así todo lo que va en la mano se usa igual.
 

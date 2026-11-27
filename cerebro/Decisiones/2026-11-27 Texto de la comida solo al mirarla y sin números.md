@@ -14,7 +14,7 @@ area: Diseño
 - Con la depuración (F3) sigue saliendo el texto completo con números, pero también solo al mirar. Antes, con F3, salía siempre sobre todas las piezas.
 - También se quita la temperatura de la rejilla del texto del jugador; sale solo con F3. Esto no lo pidió el usuario: lo decidió Claude al hacer el cambio.
 
-Hecho en `dev`, **sin commit**, pendiente de que el usuario lo pruebe.
+Hecho en `dev`: commit `d172f22`, subido a `origin/dev` el 27-11-2026. **Pendiente:** la prueba del usuario en el editor.
 
 **Motivo:** lo pidió el usuario en el primer playtest del encendido: "Que el texto de la carne solo se muestre al pasar por encima. Que no se vea la temperatura del interior pero sí en qué término está, y que tampoco se vean los números de cómo están hechas las caras."
 

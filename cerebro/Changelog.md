@@ -8,6 +8,7 @@ actualizado: 2026-11-27 22:33
 Registro de todo lo que cambia en el proyecto, de lo más reciente a lo más antiguo. Lo escribe **el Documentador**, el agente de Claude definido en `.claude/agents/documentador.md`. Cada decisión tiene además su nota en `Decisiones/`.
 
 ## 2026-11-27
+- **22:04** · Técnico · Subido a `origin/dev` el commit `d172f22` (`cba34da..d172f22`), "F2: cinturón de utensilios y texto de la comida solo al mirarla", a petición del usuario para probarlo; el bloque del encendido sigue sin marcar como hecho hasta su prueba → [[2026-11-27 Cinturón de utensilios con 4 huecos]] · [[Roadmap]]
 - **22:33** · Diseño · 2 fotos más de referencia (servir con pinzas en el plato y decoración futbolera de asador argentino), con ideas → [[Referencias visuales]]
 - **22:32** · Diseño · 5 fotos más de referencia (servir en mesa y por tandas, embutidos, cocción lenta, entrantes con lámparas de calor), con ideas; 6 ideas nuevas en [[Mecánicas]] → [[Referencias visuales]]
 - **22:29** · Diseño · 5 fotos de referencia de comida, emplatado y salsas, con ideas para el juego; 5 ideas nuevas en [[Mecánicas]] → [[Referencias visuales]]
