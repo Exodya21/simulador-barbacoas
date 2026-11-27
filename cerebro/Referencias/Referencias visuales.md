@@ -1,6 +1,6 @@
 ---
 tipo: referencia
-actualizado: 2026-11-27 22:31
+actualizado: 2026-11-27 22:33
 ---
 
 # Referencias visuales
@@ -64,6 +64,11 @@ Bandeja de carnes que se reparte **poco a poco**: el parrillero vuelve a la mesa
 - 💡 **Servir por tandas:** los invitados prefieren la carne recién salida. Llevar tandas pequeñas puntúa mejor que servirlo todo al final, ya frío.
 - 💡 Así el jugador está siempre yendo y viniendo entre la parrilla y la mesa, en un ritmo de ida y vuelta.
 
+De cerca: las pinzas pasan un trozo de la bandeja (sobre su tabla de madera) al plato blanco del comensal, donde ya hay varios cortes con las marcas de la parrilla.
+![[servir-pinzas-en-plato.png]]
+- 💡 **Plano en primera persona del gesto de servir:** pinzas en primer plano, bandeja detrás y plato delante. Es justo la cámara del juego y sirve de referencia para la animación y el encuadre.
+- 💡 El plato **se va llenando** pieza a pieza: el invitado puede pedir "una más" o decir "ya basta".
+
 ## Embutidos
 Bandejas de **morcilla** y **chorizo** a la parrilla.
 ![[bandejas-morcilla-chorizo.webp]]
@@ -87,5 +92,12 @@ Mesa de entrantes con **lámparas de calor** encima: patatas fritas, aros de ceb
 ![[buffet-entrantes-lamparas-calor.png]]
 - 💡 **La comida se enfría:** lo ya hecho pierde calidad si no se sirve. Una zona templada de la parrilla (lejos de las brasas), o una lámpara o bandeja tapada, lo mantiene caliente.
 - 💡 **Entrantes** (patatas, aros de cebolla, pan, pizza a la parrilla) para tener a los invitados contentos mientras esperan la carne.
+
+## Ambiente y decoración
+Pared de un asador de carnes argentinas decorada con figuras de cartón a tamaño real de futbolistas de la selección argentina.
+![[decoracion-futbol-argentino.png]]
+- 💡 **Decoración temática** de un escenario o de un DLC gratuito: un patio "parrilla argentina" con camisetas, banderines, bufandas y una tele con el partido de fondo.
+- 💡 Encaja con el ambiente: la barbacoa del domingo con el fútbol puesto, y los invitados que celebran o se quejan según el resultado.
+- ⚠️ **Nada de personas, equipos ni marcas reales.** Las caras y nombres de jugadores reales, los escudos oficiales y los logos de marcas deportivas tienen derechos de imagen y de marca: no pueden aparecer en el juego ni en Steam. Usar jugadores inventados, camisetas genéricas (rayas celestes y blancas sin escudo ni marca) y un número 10 sin nombre. Ver [[Licencias y Steam]].
 
 Relacionado: [[Modelos 3D]], [[Mecánicas]], [[Referencias de parrilla y juegos]]

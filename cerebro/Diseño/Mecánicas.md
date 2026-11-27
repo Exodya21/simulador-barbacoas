@@ -1,7 +1,7 @@
 ---
 tipo: diseño
 estado: borrador
-actualizado: 2026-11-27 22:32
+actualizado: 2026-11-27 22:33
 ---
 
 # Mecánicas
@@ -73,5 +73,7 @@ Ratón mirar · WASD caminar · Mayús correr · Clic o E usar · 1–5 cambiar 
 - [ ] Pieza de cocción larga en el kamado o el ahumador (pernil a baja temperatura) que se vigila durante la partida → [[Referencias visuales]]
 - [ ] La comida hecha se enfría si no se sirve; una zona templada o una lámpara de calor la mantiene → [[Referencias visuales]]
 - [ ] Entrantes (patatas, aros de cebolla, pan, pizza a la parrilla) mientras se espera la carne → [[Referencias visuales]]
+- [ ] El plato del invitado se llena pieza a pieza: pide "una más" o dice "ya basta" → [[Referencias visuales]]
+- [ ] Escenario o DLC gratuito de parrilla argentina con fútbol en la tele e invitados que reaccionan al partido; sin jugadores, escudos ni marcas reales → [[Referencias visuales]]
 
 Relacionado: [[Core loop]]
