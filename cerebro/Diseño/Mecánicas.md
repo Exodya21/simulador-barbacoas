@@ -1,7 +1,7 @@
 ---
 tipo: diseño
 estado: borrador
-actualizado: 2026-11-27 22:29
+actualizado: 2026-11-27 22:32
 ---
 
 # Mecánicas
@@ -67,5 +67,11 @@ Ratón mirar · WASD caminar · Mayús correr · Clic o E usar · 1–5 cambiar 
 - [ ] Bandeja para llevar varias piezas a la mesa (pedido para compartir frente a plato individual) → [[Referencias visuales]]
 - [ ] Guarniciones: patatas, ensalada, pimientos asados en la parrilla → [[Referencias visuales]]
 - [ ] Mesa de acompañamientos y salsas en el patio, que el jugador repone (sencilla: el GDD deja fuera la gestión de restaurante) → [[Referencias visuales]]
+- [ ] Servir en la mesa con las pinzas, pieza a pieza, con reacción del invitado → [[Referencias visuales]]
+- [ ] Servir por tandas: la carne recién salida de la parrilla puntúa más → [[Referencias visuales]]
+- [ ] Embutidos (chorizo, morcilla) que sueltan grasa y provocan llamaradas; la morcilla revienta si se pasa → [[Referencias visuales]]
+- [ ] Pieza de cocción larga en el kamado o el ahumador (pernil a baja temperatura) que se vigila durante la partida → [[Referencias visuales]]
+- [ ] La comida hecha se enfría si no se sirve; una zona templada o una lámpara de calor la mantiene → [[Referencias visuales]]
+- [ ] Entrantes (patatas, aros de cebolla, pan, pizza a la parrilla) mientras se espera la carne → [[Referencias visuales]]
 
 Relacionado: [[Core loop]]

@@ -1,6 +1,6 @@
 ---
 tipo: referencia
-actualizado: 2026-11-27 22:28
+actualizado: 2026-11-27 22:31
 ---
 
 # Referencias visuales
@@ -54,11 +54,38 @@ Plato completo: carne a la parrilla, patatas fritas, zanahoria rallada y pimient
 - 💡 **Guarniciones:** patatas, ensalada o pimientos asados en la parrilla completan el plato y suben la puntuación del pedido.
 - 💡 El pimiento entero se puede **asar en la propia parrilla** como un alimento más.
 
+El parrillero lleva la bandeja sobre una tabla de madera a la mesa y sirve con pinzas en el plato del comensal, que la recibe con un "perfecto, muchas gracias".
+![[servir-en-mesa-tabla.png]]
+- 💡 **Servir en la mesa:** el jugador va hasta el invitado y le pone las piezas en el plato con las pinzas.
+- 💡 **Reacción del invitado** al recibir la comida (frase, gesto o puntuación) según el punto y lo que había pedido. Es el *feedback* del paso "servir y puntuar".
+
+Bandeja de carnes que se reparte **poco a poco**: el parrillero vuelve a la mesa con cada tanda recién hecha.
+![[bandeja-servir-poco-a-poco.png]]
+- 💡 **Servir por tandas:** los invitados prefieren la carne recién salida. Llevar tandas pequeñas puntúa mejor que servirlo todo al final, ya frío.
+- 💡 Así el jugador está siempre yendo y viniendo entre la parrilla y la mesa, en un ritmo de ida y vuelta.
+
+## Embutidos
+Bandejas de **morcilla** y **chorizo** a la parrilla.
+![[bandejas-morcilla-chorizo.webp]]
+- 💡 **Embutidos como alimentos propios:** se hacen rápido y sueltan grasa, lo que provoca **llamaradas** si caen sobre las brasas. La morcilla puede **reventarse** si se pasa.
+- 💡 Buenos para empezar la barbacoa: es lo que sale primero mientras se hace la carne grande.
+
+## Cocción lenta
+**Pernil asado 6 horas a baja temperatura** en cazuela de barro, con zanahoria, pimiento rojo y romero.
+![[pernil-baja-temperatura.png]]
+- 💡 **Pieza de cocción larga** para el **kamado/ahumador** del GDD: dura toda la partida y hay que vigilar la temperatura de vez en cuando mientras se hace lo demás.
+- 💡 Una cazuela o bandeja de horno como **módulo** del ahumador, con verduras debajo.
+
 ## Salsas y acompañamientos
 Barra de salsas y ensaladas de un restaurante de Barcelona: salsas en cuencos, ensaladas, encurtidos, guindillas y aceitunas.
 ![[buffet-salsas-y-ensaladas.webp]]
 - 💡 **Mesa de acompañamientos** en el patio, donde los invitados se sirven solos. El jugador la repone entre tandas.
 - 💡 Las **salsas** del contenido de la 1.0 ([[GDD#Contenido de la 1.0]]) podrían prepararse aquí.
 - ⚠️ Montar una barra tipo restaurante choca con *Restaurante o gestión de local*, que está fuera de alcance en el GDD. En la 1.0, mejor como mesa de patio sencilla.
+
+Mesa de entrantes con **lámparas de calor** encima: patatas fritas, aros de cebolla, croquetas, pizza al corte y carne ya hecha.
+![[buffet-entrantes-lamparas-calor.png]]
+- 💡 **La comida se enfría:** lo ya hecho pierde calidad si no se sirve. Una zona templada de la parrilla (lejos de las brasas), o una lámpara o bandeja tapada, lo mantiene caliente.
+- 💡 **Entrantes** (patatas, aros de cebolla, pan, pizza a la parrilla) para tener a los invitados contentos mientras esperan la carne.
 
 Relacionado: [[Modelos 3D]], [[Mecánicas]], [[Referencias de parrilla y juegos]]
