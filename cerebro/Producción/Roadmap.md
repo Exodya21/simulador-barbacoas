@@ -50,6 +50,7 @@ Arrastrado de la F0 (no bloquea el hito) → [[2026-11-22 F0 cerrada]]:
 ## F2 · Vertical slice — semanas 7–12
 👉 **En curso**, empezada el 25-11-2026 por el encendido de carbón → [[2026-11-25 F2 empieza por el encendido de carbón]]
 - [ ] Encendido de carbón y brasas → **hecho en `dev` (commit `cba34da`, subido a `origin/dev` el 27-11-2026), a falta del playtest del usuario**, que dirá qué hay que acabar y mejorar: brasas vivas en la `RejillaCalor`, chimenea de encendido, saco de carbón y abanico; prueba nueva `test_fuego` (29 comprobaciones) → [[2026-11-25 Encendido con chimenea y abanico]]
+  - Primer playtest del usuario (27-11-2026): nada en contra del encendido. Hechos sus comentarios en `dev`, **sin commit**, pendientes de que los pruebe: cinturón de 4 utensilios (pinzas, abanico, trapo, chimenea) que se usan con el clic izquierdo y texto de la comida solo al mirarla y sin números; 10 pruebas en verde → [[2026-11-27 Cinturón de utensilios con 4 huecos]] · [[2026-11-27 Los utensilios de la mano se usan con el clic izquierdo]] · [[2026-11-27 Texto de la comida solo al mirarla y sin números]]
 - [ ] 5 alimentos (filete, chorizo, pollo, maíz, pimiento)
 - [ ] Shader crudo → hecho → quemado
 - [ ] Humo, llamas, chispas + audio

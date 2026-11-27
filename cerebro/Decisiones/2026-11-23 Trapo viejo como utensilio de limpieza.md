@@ -20,6 +20,8 @@ actualizado: 2026-11-23 23:15
 
 **Completa a:** [[2026-11-23 Limpiar manchas manteniendo F]] (se sigue limpiando con F). Resuelve la parte del trapo de la idea [[Utensilio para limpiar manchas]].
 
+**Ajustada el 27-11-2026:** el trapo va al hueco 3 del cinturón y solo se limpia con él en la mano (sigue siendo mantener F) → [[2026-11-27 Cinturón de utensilios con 4 huecos]]
+
 **Motivo:** lo pidió el usuario. Empezar con una herramienta mala hace que las mejoras de la tienda se noten → [[Ruta de mejora de la limpieza]].
 
 **Alternativas descartadas:** limpiar sin utensilio, que era como estaba, con F durante 2 s.

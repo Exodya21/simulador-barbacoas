@@ -2,11 +2,13 @@
 tipo: decision
 fecha: 2026-11-25
 hora: 22:25
-estado: aceptada
+estado: sustituida
 area: Técnico
 ---
 
 # La chimenea y el abanico leen F mientras se llevan
+
+**Sustituida por:** [[2026-11-27 Los utensilios de la mano se usan con el clic izquierdo]] (la chimenea y el abanico van al cinturón y se usan con el clic izquierdo)
 
 **Decisión:** la chimenea de encendido y el abanico se cogen con E (objetos de Cogito) y, mientras se llevan en la mano, leen ellos mismos la tecla F para hacer su acción (llenar, encender, volcar, avivar). También responden a F si solo se les mira.
 

@@ -14,7 +14,7 @@ area: Diseño
 
 Las brasas pasan a estar **vivas** en la `RejillaCalor`: cada celda tiene carbón (se gasta al arder) y fuego; sin avivar, el fuego baja a un reposo; pasa a las celdas vecinas con carbón; el carbón crudo echado encima las enfría; y al acabarse el carbón se apaga. El patio de prueba empieza frío y sin carbón.
 
-Hecho en la rama `dev` (copia aparte `BARBACOA-dev`): commit `cba34da`, "F2: encendido de carbón con chimenea, saco y abanico, y brasas vivas". El usuario pidió hacer el commit sin probarlo antes. El 27-11-2026 se subió a `origin/dev` (`7893a8f..cba34da`), también a petición del usuario. **Pendiente:** el playtest del usuario en el editor, que dirá qué hay que acabar y mejorar.
+Hecho en la rama `dev` (copia aparte `BARBACOA-dev`): commit `cba34da`, "F2: encendido de carbón con chimenea, saco y abanico, y brasas vivas". El usuario pidió hacer el commit sin probarlo antes. El 27-11-2026 se subió a `origin/dev` (`7893a8f..cba34da`), también a petición del usuario. **Primer playtest del usuario (27-11-2026):** no dijo nada en contra del encendido en sí. Sus comentarios llevaron al cinturón y al texto de la comida, y cambian cómo se usan la chimenea y el abanico. Siguen las dos maneras de encender, pero ahora son utensilios del cinturón que se usan con el clic izquierdo, y la chimenea vuelca las brasas donde apuntas → [[2026-11-27 Cinturón de utensilios con 4 huecos]] · [[2026-11-27 Los utensilios de la mano se usan con el clic izquierdo]]. **Pendiente:** que el usuario pruebe estos cambios.
 
 **Motivo:** la chimenea es como se hace en la vida real y deja al jugador decidir dónde va el calor; el abanico da algo que hacer cuando las brasas bajan.
 

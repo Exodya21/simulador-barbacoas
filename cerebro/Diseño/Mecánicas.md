@@ -14,8 +14,8 @@ Lista de mecánicas, sacada de la [[Demo jardín con parrilla]]. Cada una se pue
 - **Brasas** que caen bajo el brasero.
 - **Pala**: pasar brasas del brasero a la zona de la parrilla.
 - **Calor en la parrilla** según brasas y altura.
-- **Encendido con chimenea** (F2, en `dev` a falta de playtest): llenar la chimenea junto al saco de carbón, encenderla, esperar 45 s a que esté al rojo y volcarla donde quieras de la parrilla. Todo con F, mirándola o llevándola (se coge con E) → [[2026-11-25 Encendido con chimenea y abanico]]
-- **Abanico** (F2): manteniendo F sobre la parrilla aviva las brasas que se van apagando, a cambio de gastar el carbón más rápido.
+- **Encendido con chimenea** (F2): llenar la chimenea junto al saco de carbón, encenderla, esperar 45 s a que esté al rojo y volcar las brasas donde apuntas en la parrilla. Desde el 27-11-2026 es un utensilio del cinturón (tecla 4) que se usa con el clic izquierdo; sigue prendiendo aunque se guarde (antes se cogía con E y se usaba con F) → [[2026-11-25 Encendido con chimenea y abanico]] · [[2026-11-27 Los utensilios de la mano se usan con el clic izquierdo]]
+- **Abanico** (F2, tecla 2 del cinturón): manteniendo el clic izquierdo apuntando a la parrilla aviva las brasas de ese punto que se van apagando, a cambio de gastar el carbón más rápido.
 - **Brasas vivas** (F2): el carbón se gasta, el fuego baja a un reposo si no se aviva, se pasa a las celdas vecinas con carbón, el carbón crudo enfría las brasas y al acabarse se apaga.
 
 ## Parrilla
@@ -32,7 +32,11 @@ Lista de mecánicas, sacada de la [[Demo jardín con parrilla]]. Cada una se pue
   - → [[2026-11-23 Minijuego de dar la vuelta]] · [[2026-11-23 Coger con clic mantenido]]
 - Mover con las pinzas: la comida va al punto al que apuntas (hasta 1,8 m) y se queda ahí al soltar → [[2026-11-23 Las pinzas colocan la comida donde apuntas]]
 - Comida caída al suelo (hecho en la F1): queda **sucia** y hay que tirarla al **cubo de basura**. Si ha pasado por la parrilla encendida, deja en el suelo una **mancha de grasa resbaladiza** ([[2026-11-23 Solo mancha la comida que ha pasado por la parrilla]]) que no desaparece hasta que se limpia manteniendo F con el **trapo viejo**, 4 s por mancha ([[2026-11-23 Trapo viejo como utensilio de limpieza]]) → [[2026-11-23 Comida caída al suelo sucia, mancha y basura]] · [[2026-11-23 Limpiar manchas manteniendo F]] · [[2026-11-23 Resbalar bajando el agarre de Cogito]]
+- Texto de la comida (F2, en `dev` sin commit): solo al mirarla o llevarla con las pinzas; enseña el término y cómo están las dos caras, sin temperaturas ni números (los números, solo con F3) → [[2026-11-27 Texto de la comida solo al mirarla y sin números]]
 - Servir a la mesa.
+
+## Cinturón de utensilios
+- F2, en `dev` sin commit: 4 huecos, 1 pinzas · 2 abanico · 3 trapo · 4 chimenea de encendido. Las teclas 1–4 sacan el utensilio a la mano; pulsar la del que llevas lo guarda (manos libres para coger con E); la rueda pasa al siguiente. Se empieza con las pinzas. Las manchas solo se limpian con el trapo en la mano → [[2026-11-27 Cinturón de utensilios con 4 huecos]]
 
 ## Ambiente
 - Hora del día: día / atardecer / noche.
@@ -41,6 +45,8 @@ Lista de mecánicas, sacada de la [[Demo jardín con parrilla]]. Cada una se pue
 
 ## Controles (primera persona)
 Ratón mirar · WASD caminar · Mayús correr · Clic o E usar · 1–5 cambiar módulo · R/F manivela · P pala · Esc menú.
+
+> [!note] Desde el 27-11-2026 las teclas 1–4 y la rueda del ratón son del cinturón de utensilios ([[2026-11-27 Cinturón de utensilios con 4 huecos]]), así que "1–5 cambiar módulo" de la demo tendrá que ir a otras teclas.
 
 ## Del core loop y la arquitectura (tablero)
 - Combustibles: carbón, leña, gas. Zonas de calor directa (fuerte) e indirecta (suave).

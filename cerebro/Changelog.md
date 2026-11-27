@@ -8,6 +8,12 @@ actualizado: 2026-11-24 00:18
 Registro de todo lo que cambia en el proyecto, de lo más reciente a lo más antiguo. Lo escribe **el Documentador**, el agente de Claude definido en `.claude/agents/documentador.md`. Cada decisión tiene además su nota en `Decisiones/`.
 
 ## 2026-11-27
+- **21:58** · Documentación · Roadmap, Mecánicas y Arquitectura al día con el primer playtest del encendido; ajustes anotados en las decisiones del encendido, el trapo y la depuración → [[Roadmap]] · [[Mecánicas]] · [[Arquitectura]]
+- **21:58** · Técnico · Rama `dev` (sin commit, pendiente de que el usuario lo pruebe): cinturón `Cinturon` con barra en pantalla, base `UtensilioMano`, chimenea y abanico con clic izquierdo en `escenas/utensilios/`, trapo solo en la mano, texto de la comida sin números; `test_cinturon` (29) nueva y `test_fuego` (30) reescrita, pasan las 10 pruebas → [[2026-11-27 Cinturón de utensilios con 4 huecos]]
+- **21:58** · Decisión · La chimenea y el abanico son utensilios del cinturón que se usan con el clic izquierdo, como las pinzas; la chimenea vuelca donde apuntas. Sustituye a [[2026-11-25 Chimenea y abanico leen F mientras se llevan]] → [[2026-11-27 Los utensilios de la mano se usan con el clic izquierdo]]
+- **21:58** · Decisión · Cinturón de 4 huecos (pinzas, abanico, trapo, chimenea) con teclas 1–4 y rueda; las manchas solo se limpian con el trapo en la mano; ajusta a [[2026-11-23 Trapo viejo como utensilio de limpieza]] → [[2026-11-27 Cinturón de utensilios con 4 huecos]]
+- **21:58** · Decisión · El texto de la comida solo sale al mirarla o llevarla, con el término y las caras y sin números; ajusta a [[2026-11-22 Depuración visible en desarrollo]] → [[2026-11-27 Texto de la comida solo al mirarla y sin números]]
+- **21:58** · Producción · Primer playtest del usuario del encendido: nada en contra del encendido; pide texto de la carne sin números y un cinturón de 4 utensilios. El bloque sigue sin marcar como hecho → [[2026-11-27]] · [[Roadmap]]
 - **21:23** · Técnico · Subido a `origin/dev` el commit `cba34da` del encendido de carbón (`7893a8f..cba34da`), a petición del usuario; el bloque sigue sin marcar como hecho hasta su playtest → [[2026-11-25 Encendido con chimenea y abanico]] · [[Roadmap]]
 
 ## 2026-11-25
