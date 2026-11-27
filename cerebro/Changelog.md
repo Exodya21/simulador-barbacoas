@@ -7,6 +7,9 @@ actualizado: 2026-11-24 00:18
 
 Registro de todo lo que cambia en el proyecto, de lo más reciente a lo más antiguo. Lo escribe **el Documentador**, el agente de Claude definido en `.claude/agents/documentador.md`. Cada decisión tiene además su nota en `Decisiones/`.
 
+## 2026-11-27
+- **21:23** · Técnico · Subido a `origin/dev` el commit `cba34da` del encendido de carbón (`7893a8f..cba34da`), a petición del usuario; el bloque sigue sin marcar como hecho hasta su playtest → [[2026-11-25 Encendido con chimenea y abanico]] · [[Roadmap]]
+
 ## 2026-11-25
 - **22:31** · Técnico · `test_pinzas` falla 1 de cada 20 pasadas en "con mal acaba en el suelo" también en `7893a8f`, sin el carbón: es un fallo que ya existía (dirección de lanzamiento aleatoria); queda pendiente aparte, sin arreglar → [[2026-11-25]] · [[2026-11-23 Minijuego de dar la vuelta]]
 - **22:31** · Documentación · Completado el motivo de descartar un utensilio fijo en la mano para la chimenea y el abanico → [[2026-11-25 Chimenea y abanico leen F mientras se llevan]]

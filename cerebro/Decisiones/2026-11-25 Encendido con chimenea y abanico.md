@@ -14,7 +14,7 @@ area: Diseño
 
 Las brasas pasan a estar **vivas** en la `RejillaCalor`: cada celda tiene carbón (se gasta al arder) y fuego; sin avivar, el fuego baja a un reposo; pasa a las celdas vecinas con carbón; el carbón crudo echado encima las enfría; y al acabarse el carbón se apaga. El patio de prueba empieza frío y sin carbón.
 
-Hecho en la rama `dev` (copia aparte `BARBACOA-dev`): commit `cba34da`, "F2: encendido de carbón con chimenea, saco y abanico, y brasas vivas". El usuario pidió hacer el commit sin probarlo antes. **Pendiente:** el playtest del usuario en el editor y subir el commit a `origin/dev`.
+Hecho en la rama `dev` (copia aparte `BARBACOA-dev`): commit `cba34da`, "F2: encendido de carbón con chimenea, saco y abanico, y brasas vivas". El usuario pidió hacer el commit sin probarlo antes. El 27-11-2026 se subió a `origin/dev` (`7893a8f..cba34da`), también a petición del usuario. **Pendiente:** el playtest del usuario en el editor, que dirá qué hay que acabar y mejorar.
 
 **Motivo:** la chimenea es como se hace en la vida real y deja al jugador decidir dónde va el calor; el abanico da algo que hacer cuando las brasas bajan.
 
