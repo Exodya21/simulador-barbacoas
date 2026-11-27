@@ -34,3 +34,9 @@ extends Resource
 @export var punto_al_punto := 60.0
 @export var punto_hecho := 70.0
 @export var punto_pasado := 77.0
+
+@export_group("Venta (pesos)")
+## Lo que se cobra por una pieza perfecta en la bandeja de venta.
+@export var precio_venta := 1500
+## Lo que cuesta sacar una pieza cruda de la conservadora.
+@export var coste_compra := 400

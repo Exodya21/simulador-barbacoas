@@ -1,0 +1,20 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/estancia/conservadora.gd" id="1_conservadora"]
+[ext_resource type="PackedScene" uid="uid://l61jtpfxu5x5" path="res://addons/cogito/Components/Interactions/BasicInteraction.tscn" id="2_basica"]
+
+[sub_resource type="BoxShape3D" id="Forma_conservadora"]
+size = Vector3(0.78, 0.55, 0.49)
+
+[node name="Conservadora" type="StaticBody3D"]
+collision_layer = 3
+script = ExtResource("1_conservadora")
+cogito_name = "conservadora"
+display_name = "CONSERVADORA"
+
+[node name="Colision" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.275, 0)
+shape = SubResource("Forma_conservadora")
+
+[node name="Comprar" parent="." instance=ExtResource("2_basica")]
+interaction_text = "INTERACT_comprar"

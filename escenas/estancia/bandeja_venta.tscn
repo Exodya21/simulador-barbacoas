@@ -1,0 +1,26 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/estancia/bandeja_venta.gd" id="1_bandeja"]
+
+[sub_resource type="BoxShape3D" id="Forma_zona"]
+size = Vector3(0.66, 0.42, 0.46)
+
+[node name="BandejaVenta" type="Node3D"]
+script = ExtResource("1_bandeja")
+
+[node name="Zona" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 3
+
+[node name="Forma" type="CollisionShape3D" parent="Zona"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.09, 0)
+shape = SubResource("Forma_zona")
+
+[node name="Aviso" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0)
+billboard = 1
+no_depth_test = true
+fixed_size = true
+pixel_size = 0.001
+font_size = 40
+outline_size = 10

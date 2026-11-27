@@ -1,0 +1,150 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" uid="uid://c2kkj7vhsd1oi" path="res://addons/cogito/SceneManagement/cogito_scene.gd" id="1_escena"]
+[ext_resource type="PackedScene" uid="uid://otv80grtivvc" path="res://addons/cogito/PackedScenes/cogito_player_advanced.tscn" id="2_jugador"]
+[ext_resource type="Script" path="res://scripts/estancia/estancia.gd" id="3_estancia"]
+[ext_resource type="Script" uid="uid://q14qhvmsp4nv" path="res://scripts/fuego/rejilla_calor.gd" id="4_rejilla"]
+[ext_resource type="Script" uid="uid://di15gqemrkk0x" path="res://addons/cogito/InventoryPD/CustomResources/InventorySlotPD.gd" id="5_ranura"]
+[ext_resource type="PackedScene" path="res://escenas/alimentos/hamburguesa.tscn" id="5_hamburguesa"]
+[ext_resource type="Script" uid="uid://btnha2whsheir" path="res://addons/cogito/InventoryPD/cogito_inventory.gd" id="6_inventario"]
+[ext_resource type="PackedScene" path="res://escenas/utensilios/pinzas.tscn" id="6_pinzas"]
+[ext_resource type="PackedScene" path="res://escenas/limpieza/basura.tscn" id="7_basura"]
+[ext_resource type="PackedScene" path="res://escenas/utensilios/chimenea_encendido.tscn" id="8_chimenea"]
+[ext_resource type="PackedScene" path="res://escenas/fuego/saco_carbon.tscn" id="9_saco"]
+[ext_resource type="PackedScene" path="res://escenas/utensilios/abanico.tscn" id="10_abanico"]
+[ext_resource type="PackedScene" path="res://escenas/utensilios/trapo.tscn" id="11_trapo"]
+[ext_resource type="PackedScene" path="res://escenas/interfaz/cinturon_hud.tscn" id="12_cinturon"]
+[ext_resource type="PackedScene" path="res://escenas/estancia/conservadora.tscn" id="13_conservadora"]
+[ext_resource type="PackedScene" path="res://escenas/estancia/bandeja_venta.tscn" id="14_bandeja"]
+[ext_resource type="Script" path="res://scripts/estancia/hud_estancia.gd" id="15_hud"]
+
+[sub_resource type="ProceduralSkyMaterial" id="Cielo_mat"]
+sky_top_color = Color(0.33, 0.38, 0.6, 1)
+sky_horizon_color = Color(0.98, 0.62, 0.45, 1)
+sky_curve = 0.12
+ground_bottom_color = Color(0.2, 0.22, 0.16, 1)
+ground_horizon_color = Color(0.9, 0.6, 0.45, 1)
+sun_angle_max = 20.0
+sun_curve = 0.08
+
+[sub_resource type="Sky" id="Cielo"]
+sky_material = SubResource("Cielo_mat")
+
+[sub_resource type="Environment" id="Entorno"]
+background_mode = 2
+sky = SubResource("Cielo")
+ambient_light_source = 3
+ambient_light_energy = 0.8
+tonemap_mode = 2
+tonemap_exposure = 1.05
+ssao_enabled = true
+glow_enabled = true
+glow_intensity = 0.6
+glow_bloom = 0.08
+fog_enabled = true
+fog_light_color = Color(0.93, 0.68, 0.52, 1)
+fog_sun_scatter = 0.25
+fog_density = 0.004
+fog_aerial_perspective = 0.4
+adjustment_enabled = true
+adjustment_saturation = 1.08
+
+[sub_resource type="BoxMesh" id="Malla_obra"]
+size = Vector3(2, 0.8, 1)
+
+[sub_resource type="StandardMaterial3D" id="Mat_ladrillo"]
+albedo_color = Color(0.5412, 0.2902, 0.2275, 1)
+
+[sub_resource type="BoxShape3D" id="Forma_obra"]
+size = Vector3(2, 0.8, 1)
+
+[sub_resource type="BoxShape3D" id="Forma_rejilla"]
+size = Vector3(1.6, 0.04, 0.8)
+
+[sub_resource type="Resource" id="Inventario"]
+resource_local_to_scene = true
+script = ExtResource("6_inventario")
+grid = true
+inventory_size = Vector2i(6, 3)
+inventory_slots = Array[ExtResource("5_ranura")]([null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null])
+
+[node name="EstanciaAbuelo" type="Node3D"]
+script = ExtResource("1_escena")
+
+[node name="Sol" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.6508, 0.2206, -0.7265, 0, 0.9568, 0.2906, 0.7593, -0.1891, 0.6227, 0, 20, 0)
+light_color = Color(1, 0.8, 0.6, 1)
+light_energy = 1.4
+shadow_enabled = true
+directional_shadow_max_distance = 90.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Entorno")
+
+[node name="Estancia" type="Node3D" parent="."]
+script = ExtResource("3_estancia")
+
+[node name="Parrilla" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0.4, -17.6)
+
+[node name="Obra" type="MeshInstance3D" parent="Parrilla"]
+mesh = SubResource("Malla_obra")
+surface_material_override/0 = SubResource("Mat_ladrillo")
+
+[node name="Colision" type="CollisionShape3D" parent="Parrilla"]
+shape = SubResource("Forma_obra")
+
+[node name="LuzBrasas" type="OmniLight3D" parent="Parrilla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7, 0)
+light_color = Color(0.9098, 0.4667, 0.1804, 1)
+light_energy = 0.0
+omni_range = 3.0
+
+[node name="ColisionRejilla" type="CollisionShape3D" parent="Parrilla"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0)
+shape = SubResource("Forma_rejilla")
+
+[node name="RejillaCalor" type="Node3D" parent="Parrilla" node_paths=PackedStringArray("luz")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.62, 0)
+script = ExtResource("4_rejilla")
+empezar_encendida = false
+luz = NodePath("../LuzBrasas")
+crear_barras = true
+
+[node name="Hamburguesa1" parent="." instance=ExtResource("5_hamburguesa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.1, 0.92, -17.6)
+
+[node name="Hamburguesa2" parent="." instance=ExtResource("5_hamburguesa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.6, 0.92, -17.75)
+
+[node name="Hamburguesa3" parent="." instance=ExtResource("5_hamburguesa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.1, 0.92, -17.6)
+
+[node name="Conservadora" parent="." instance=ExtResource("13_conservadora")]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 15.2, 0.15, -15.6)
+
+[node name="BandejaVenta" parent="." instance=ExtResource("14_bandeja")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 1.14, -10.8)
+
+[node name="SacoCarbon" parent="." instance=ExtResource("9_saco")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.2, 0.15, -17.4)
+
+[node name="Basura" parent="." instance=ExtResource("7_basura")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.3, 0.15, -13.4)
+
+[node name="Jugador" parent="." instance=ExtResource("2_jugador")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 46)
+inventory_data = SubResource("Inventario")
+
+[node name="Pinzas" parent="." instance=ExtResource("6_pinzas")]
+
+[node name="ChimeneaEncendido" parent="." instance=ExtResource("8_chimenea")]
+
+[node name="Abanico" parent="." instance=ExtResource("10_abanico")]
+
+[node name="Trapo" parent="." instance=ExtResource("11_trapo")]
+
+[node name="CinturonHud" parent="." instance=ExtResource("12_cinturon")]
+
+[node name="HudEstancia" type="CanvasLayer" parent="."]
+script = ExtResource("15_hud")

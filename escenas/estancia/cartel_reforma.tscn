@@ -1,0 +1,21 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/estancia/cartel_reforma.gd" id="1_cartel"]
+[ext_resource type="PackedScene" path="res://addons/cogito/Components/Interactions/HoldInteraction.tscn" id="2_mantener"]
+
+[sub_resource type="BoxShape3D" id="Forma_cartel"]
+size = Vector3(1.4, 1.8, 0.25)
+
+[node name="CartelReforma" type="StaticBody3D"]
+collision_layer = 3
+script = ExtResource("1_cartel")
+cogito_name = "cartel_reforma"
+display_name = "CARTEL_obra"
+
+[node name="Colision" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.35, 0)
+shape = SubResource("Forma_cartel")
+
+[node name="Pagar" parent="." instance=ExtResource("2_mantener")]
+interaction_text = "INTERACT_reformar"
+hold_time = 1.5

@@ -140,3 +140,74 @@ msgstr "Rag"
 
 msgid "CINTURON_chimenea"
 msgstr "Starter"
+
+# Estancia del abuelo: reformas, venta y carta.
+
+msgid "REFORMA_desbroce"
+msgstr "Clear the overgrowth"
+
+msgid "REFORMA_tranquera"
+msgstr "Gate and sign"
+
+msgid "REFORMA_quincho"
+msgstr "Grill shelter"
+
+msgid "REFORMA_mesa"
+msgstr "Table for 30"
+
+msgid "REFORMA_aljibe"
+msgstr "Old well"
+
+msgid "REFORMA_jardin"
+msgstr "Garden, paths and lamps"
+
+msgid "REFORMA_bodegon"
+msgstr "Wine cellar"
+
+msgid "REFORMA_casa"
+msgstr "Farmhouse"
+
+msgid "CARTEL_obra"
+msgstr "TO RENOVATE"
+
+msgid "CARTEL_antes"
+msgstr "First: %s"
+
+msgid "INTERACT_reformar"
+msgstr "Pay for the renovation"
+
+msgid "AVISO_antes"
+msgstr "You need to do this first: %s"
+
+msgid "AVISO_falta_dinero"
+msgstr "You need %s more"
+
+msgid "AVISO_reforma_hecha"
+msgstr "Renovation done: %s!"
+
+msgid "AVISO_depuracion"
+msgstr "debug"
+
+msgid "AVISO_sin_dinero_carne"
+msgstr "Not enough money for the meat"
+
+msgid "CONSERVADORA"
+msgstr "Cooler"
+
+msgid "INTERACT_comprar"
+msgstr "Buy %s (%s)"
+
+msgid "VENTA_pizarra"
+msgstr "For sale"
+
+msgid "VENTA_cruda"
+msgstr "It's raw! Nobody wants it like that"
+
+msgid "VENTA_sucia"
+msgstr "It's dirty! You can't sell it"
+
+msgid "CARTA_texto"
+msgstr "To my grandchild, with love:\n\nIf you're reading this, the ranch is yours now. You'll find it in a sorry state: the years are unforgiving and I no longer had the strength to look after it. But the grill is still standing, and a good grill can fix anything.\n\nI'm leaving you my savings, two thousand pesos, and my secret: low heat, patience and never pierce the meat. Sell your barbecue, fix up the grill shelter, the table, the old well… and make El fogón de los sueños full of people again.\n\nYour grandpa"
+
+msgid "CARTA_cerrar"
+msgstr "Press F to start"

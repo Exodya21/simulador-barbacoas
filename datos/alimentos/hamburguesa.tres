@@ -17,3 +17,5 @@ punto_poco_hecho = 52.0
 punto_al_punto = 60.0
 punto_hecho = 70.0
 punto_pasado = 77.0
+precio_venta = 1500
+coste_compra = 400

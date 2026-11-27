@@ -140,3 +140,74 @@ msgstr "Lappen"
 
 msgid "CINTURON_chimenea"
 msgstr "Kamin"
+
+# Estancia del abuelo: reformas, venta y carta.
+
+msgid "REFORMA_desbroce"
+msgstr "Gelände roden"
+
+msgid "REFORMA_tranquera"
+msgstr "Tor und Schild"
+
+msgid "REFORMA_quincho"
+msgstr "Grillhütte"
+
+msgid "REFORMA_mesa"
+msgstr "Tisch für 30"
+
+msgid "REFORMA_aljibe"
+msgstr "Brunnen"
+
+msgid "REFORMA_jardin"
+msgstr "Garten, Wege und Laternen"
+
+msgid "REFORMA_bodegon"
+msgstr "Weinkeller"
+
+msgid "REFORMA_casa"
+msgstr "Landhaus"
+
+msgid "CARTEL_obra"
+msgstr "WIRD RENOVIERT"
+
+msgid "CARTEL_antes"
+msgstr "Zuerst: %s"
+
+msgid "INTERACT_reformar"
+msgstr "Renovierung bezahlen"
+
+msgid "AVISO_antes"
+msgstr "Zuerst nötig: %s"
+
+msgid "AVISO_falta_dinero"
+msgstr "Dir fehlen %s"
+
+msgid "AVISO_reforma_hecha"
+msgstr "Renovierung fertig: %s!"
+
+msgid "AVISO_depuracion"
+msgstr "Debug"
+
+msgid "AVISO_sin_dinero_carne"
+msgstr "Das Geld reicht nicht für das Fleisch"
+
+msgid "CONSERVADORA"
+msgstr "Kühlbox"
+
+msgid "INTERACT_comprar"
+msgstr "%s kaufen (%s)"
+
+msgid "VENTA_pizarra"
+msgstr "Verkauf"
+
+msgid "VENTA_cruda"
+msgstr "Noch roh! So will es keiner"
+
+msgid "VENTA_sucia"
+msgstr "Schmutzig! Unverkäuflich"
+
+msgid "CARTA_texto"
+msgstr "An mein Enkelkind, in Liebe:\n\nWenn du das liest, gehört die Estancia dir. Du wirst sie in einem traurigen Zustand vorfinden: Die Jahre sind gnadenlos, und mir fehlte die Kraft, mich um sie zu kümmern. Aber der Grill steht noch, und ein guter Grill bringt alles wieder in Ordnung.\n\nIch hinterlasse dir meine Ersparnisse, zweitausend Pesos, und mein Geheimnis: wenig Hitze, Geduld und niemals ins Fleisch stechen. Verkaufe Gegrilltes, richte die Grillhütte, den Tisch und den Brunnen her… und mach El fogón de los sueños wieder zu einem Ort voller Leute.\n\nDein Opa"
+
+msgid "CARTA_cerrar"
+msgstr "Drücke F, um zu beginnen"

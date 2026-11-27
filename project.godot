@@ -13,7 +13,7 @@ config_version=5
 config/name="Simulador de Barbacoas"
 config/version="0.0.1"
 config/tags=PackedStringArray("barbacoa", "cogito")
-run/main_scene="res://escenas/patio_prueba.tscn"
+run/main_scene="res://escenas/estancia/estancia.tscn"
 config/features=PackedStringArray("4.7", "Forward Plus")
 run/max_fps=1000
 boot_splash/stretch_mode=0
@@ -35,6 +35,7 @@ Idioma="*res://scripts/idioma.gd"
 Depuracion="*res://scripts/depuracion.gd"
 Equipo="*res://scripts/equipo.gd"
 Cinturon="*res://scripts/utensilios/cinturon.gd"
+Herencia="*res://scripts/estancia/herencia.gd"
 
 [display]
 

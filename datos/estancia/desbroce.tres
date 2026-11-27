@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Reforma" format=3]
+
+[ext_resource type="Script" path="res://scripts/estancia/reforma.gd" id="1_reforma"]
+
+[resource]
+script = ExtResource("1_reforma")
+id = &"desbroce"
+nombre = "REFORMA_desbroce"
+coste = 3000
+requiere = Array[StringName]([])

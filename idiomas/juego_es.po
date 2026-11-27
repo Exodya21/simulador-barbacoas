@@ -140,3 +140,74 @@ msgstr "Trapo"
 
 msgid "CINTURON_chimenea"
 msgstr "Chimenea"
+
+# Estancia del abuelo: reformas, venta y carta.
+
+msgid "REFORMA_desbroce"
+msgstr "Desbrozar el terreno"
+
+msgid "REFORMA_tranquera"
+msgstr "Tranquera y cartel"
+
+msgid "REFORMA_quincho"
+msgstr "Quincho y parrilla"
+
+msgid "REFORMA_mesa"
+msgstr "Mesa para 30"
+
+msgid "REFORMA_aljibe"
+msgstr "Aljibe"
+
+msgid "REFORMA_jardin"
+msgstr "Jardín, caminos y farolas"
+
+msgid "REFORMA_bodegon"
+msgstr "Bodegón"
+
+msgid "REFORMA_casa"
+msgstr "Casa criolla"
+
+msgid "CARTEL_obra"
+msgstr "SE REFORMA"
+
+msgid "CARTEL_antes"
+msgstr "Antes: %s"
+
+msgid "INTERACT_reformar"
+msgstr "Pagar la reforma"
+
+msgid "AVISO_antes"
+msgstr "Antes hay que hacer: %s"
+
+msgid "AVISO_falta_dinero"
+msgstr "Te faltan %s"
+
+msgid "AVISO_reforma_hecha"
+msgstr "¡Reforma hecha: %s!"
+
+msgid "AVISO_depuracion"
+msgstr "depuración"
+
+msgid "AVISO_sin_dinero_carne"
+msgstr "No te llega para la carne"
+
+msgid "CONSERVADORA"
+msgstr "Conservadora"
+
+msgid "INTERACT_comprar"
+msgstr "Comprar %s (%s)"
+
+msgid "VENTA_pizarra"
+msgstr "Venta"
+
+msgid "VENTA_cruda"
+msgstr "¡Está cruda! Así no la quiere nadie"
+
+msgid "VENTA_sucia"
+msgstr "¡Está sucia! No se puede vender"
+
+msgid "CARTA_texto"
+msgstr "A mi nieto o nieta, con cariño:\n\nSi estás leyendo esto, la estancia ya es tuya. Te la vas a encontrar hecha un desastre: los años no perdonan y yo ya no tenía fuerzas para cuidarla. Pero la parrilla sigue en pie, y con una buena parrilla se arregla todo.\n\nTe dejo mis ahorros, dos mil pesos, y mi secreto: fuego lento, paciencia y no pinchar nunca la carne. Vendé asados, arreglá el quincho, la mesa, el aljibe… y hacé que El fogón de los sueños vuelva a llenarse de gente.\n\nTu abuelo"
+
+msgid "CARTA_cerrar"
+msgstr "Pulsa F para empezar"
