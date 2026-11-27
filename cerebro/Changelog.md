@@ -8,6 +8,7 @@ actualizado: 2026-11-27 22:33
 Registro de todo lo que cambia en el proyecto, de lo más reciente a lo más antiguo. Lo escribe **el Documentador**, el agente de Claude definido en `.claude/agents/documentador.md`. Cada decisión tiene además su nota en `Decisiones/`.
 
 ## 2026-11-28
+- **00:26** · Técnico · Subido a `origin/dev` el commit `63bf953` («F2: manos, soltar y colocar utensilios, pala de mano y magiclick», `69fdde1..63bf953`), a petición del usuario; el editor está abierto para que lo pruebe y el bloque del encendido sigue sin marcar como hecho → [[2026-11-28]] · [[Roadmap]]
 - **00:24** · Documentación · Roadmap, Mecánicas y Arquitectura al día con el segundo playtest; ajustes anotados en las decisiones del cinturón, el clic izquierdo, el encendido y el texto de la comida → [[Roadmap]] · [[Mecánicas]] · [[Arquitectura]]
 - **00:24** · Técnico · Prueba de humo arreglada: fallaba desde `69fdde1` porque buscaba la `CajaComida` en la estancia; ahora la busca en el patio de prueba → [[2026-11-28]]
 - **00:24** · Técnico · Rama `dev` (sin commit, el usuario no lo ha pedido): manos, depuración apagada, soltar y recoger con G/F/Mayús + 1–4, rueda leída directamente, pala de mano, magiclick, textos es/en/de; `test_cinturon` (49) y `test_fuego` (47), pasan las 11 pruebas; herramienta `captura_manos.gd` → [[2026-11-28]]
