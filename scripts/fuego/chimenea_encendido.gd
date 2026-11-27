@@ -1,29 +1,23 @@
 class_name ChimeneaEncendido
-extends CogitoObject
+extends UtensilioMano
 ## Chimenea de encendido: un cilindro de chapa para prender el carbón.
-## Va en el nodo raíz (RigidBody3D) de escenas/fuego/chimenea_encendido.tscn.
+## Va en el cinturón (escenas/utensilios/chimenea_encendido.tscn).
 ##
-## Uso (E la coge y la suelta, como cualquier objeto de Cogito; F hace la
-## acción, tanto mirándola como llevándola en la mano):
-## 1. **Vacía** → F junto al saco de carbón: se llena.
-## 2. **Llena** → F: se enciende.
-## 3. **Prendiendo** → hay que esperar a que el carbón se ponga al rojo.
-## 4. **Lista** → llevarla sobre la parrilla y F: vuelca las brasas donde
-##    está, y vuelve a quedar vacía.
+## Con la chimenea en la mano, el **clic izquierdo** hace la acción:
+## 1. **Vacía** → junto al saco de carbón, se llena (también con F en el saco).
+## 2. **Llena** → se enciende.
+## 3. **Prendiendo** → hay que esperar a que el carbón se ponga al rojo. Sigue
+##    prendiendo aunque la guardes en el cinturón.
+## 4. **Lista** → apuntando a la parrilla, vuelca las brasas donde apuntas y
+##    vuelve a quedar vacía.
 
-signal object_state_updated(texto: String)
 signal estado_cambiado(estado: Estado)
 signal volcada(rejilla: RejillaCalor, carbon: float)
 
 enum Estado { VACIA, LLENA, PRENDIENDO, LISTA }
 
-const GRUPO := "chimenea_encendido"
-const TEXTOS := {
-	Estado.VACIA: "CHIMENEA_llenar",
-	Estado.LLENA: "CHIMENEA_encender",
-	Estado.PRENDIENDO: "CHIMENEA_esperar",
-	Estado.LISTA: "CHIMENEA_volcar",
-}
+const GRUPO_CHIMENEA := "chimenea_encendido"
+const CAPAS := (1 << 0) | (1 << 1)
 
 ## Carbón que cabe, en celdas llenas de la rejilla.
 @export var capacidad := 7.0
@@ -31,30 +25,42 @@ const TEXTOS := {
 @export var segundos_prender := 45.0
 ## Radio (m) en el que se reparten las brasas al volcar.
 @export var radio_volcado := 0.4
-## Distancia máxima (m) al saco de carbón para llenarla.
-@export var distancia_saco := 1.3
-## Altura máxima (m) sobre la rejilla para poder volcar.
-@export var altura_volcado := 1.2
+## Distancia máxima (m) del jugador al saco de carbón para llenarla.
+@export var distancia_saco := 2.0
+## Distancia máxima (m) desde la cámara para volcar.
+@export var alcance := 2.2
 
 var estado := Estado.VACIA
 ## De 0 a 1 mientras prende; 1 cuando está lista.
 var progreso := 0.0
 
 var _material_carbon: StandardMaterial3D
-var _pic: Node
 
-@onready var _carbon: MeshInstance3D = $Carbon
-@onready var _luz: OmniLight3D = $Luz
-@onready var _llevar: Node = $CarryableComponent
+@onready var _carbon: MeshInstance3D = $Modelo/Carbon
+@onready var _luz: OmniLight3D = $Modelo/Luz
+@onready var _modelo: Node3D = $Modelo
 
 
 func _ready() -> void:
-	super()
-	add_to_group(GRUPO)
+	if id == &"":
+		id = &"chimenea"
+	add_to_group(GRUPO_CHIMENEA)
 	_material_carbon = (_carbon.mesh.surface_get_material(0) as StandardMaterial3D).duplicate()
 	_carbon.material_override = _material_carbon
-	_llevar.carry_state_changed.connect(_al_coger)
-	_poner_estado(estado)
+	super()
+	_pintar()
+
+
+func al_cambiar_mano(en_mano: bool) -> void:
+	if not en_mano:
+		return
+	match estado:
+		Estado.VACIA:
+			avisar("CHIMENEA_ayuda_llenar")
+		Estado.LLENA:
+			avisar("CHIMENEA_ayuda_encender")
+		Estado.LISTA:
+			avisar("CHIMENEA_lleva_parrilla")
 
 
 func _physics_process(delta: float) -> void:
@@ -62,38 +68,33 @@ func _physics_process(delta: float) -> void:
 		progreso = minf(1.0, progreso + delta / maxf(segundos_prender, 0.01))
 		if progreso >= 1.0:
 			_poner_estado(Estado.LISTA)
-			_avisar("CHIMENEA_lista")
+			avisar("CHIMENEA_lista")
 		_pintar()
-	# Llevándola en la mano, Cogito no pasa la F a la chimenea: la leemos aquí.
-	if _llevar.is_being_carried and Input.is_action_just_pressed("interact"):
-		usar(_llevar.player_interaction_component)
+	if activo and not jugador_lleva_algo() and Input.is_action_just_pressed("action_primary"):
+		usar()
 
 
-## Llamado por la BasicInteraction (F) al mirarla.
-func interact(player_interaction_component = null) -> void:
-	usar(player_interaction_component)
-
-
-## La acción de F según el estado.
-func usar(player_interaction_component = null) -> void:
-	if player_interaction_component:
-		_pic = player_interaction_component
+## La acción del clic según el estado. `punto` es donde apuntas (si no se da,
+## se lanza el rayo desde la cámara).
+func usar(punto := Vector3.INF) -> void:
 	match estado:
 		Estado.VACIA:
 			if saco_cercano() == null:
-				_avisar("CHIMENEA_falta_saco")
+				avisar("CHIMENEA_falta_saco")
 			else:
 				llenar()
 		Estado.LLENA:
 			encender()
 		Estado.PRENDIENDO:
-			_avisar("CHIMENEA_prendiendo")
+			avisar("CHIMENEA_prendiendo")
 		Estado.LISTA:
-			var rejilla := rejilla_debajo()
+			if not punto.is_finite():
+				punto = rayo_mira(alcance, CAPAS).get("position", Vector3.INF)
+			var rejilla := rejilla_en(punto) if punto.is_finite() else null
 			if rejilla == null:
-				_avisar("CHIMENEA_lleva_parrilla")
+				avisar("CHIMENEA_lleva_parrilla")
 			else:
-				volcar(rejilla)
+				volcar(rejilla, punto)
 
 
 func llenar() -> bool:
@@ -101,6 +102,7 @@ func llenar() -> bool:
 		return false
 	progreso = 0.0
 	_poner_estado(Estado.LLENA)
+	avisar("CHIMENEA_llena")
 	return true
 
 
@@ -109,71 +111,52 @@ func encender() -> bool:
 		return false
 	progreso = 0.0
 	_poner_estado(Estado.PRENDIENDO)
-	_avisar("CHIMENEA_encendida")
+	avisar("CHIMENEA_encendida")
 	return true
 
 
-## Vuelca las brasas sobre la rejilla, centradas bajo la chimenea.
-func volcar(rejilla: RejillaCalor) -> float:
+## Vuelca las brasas sobre la rejilla, centradas en `punto`.
+func volcar(rejilla: RejillaCalor, punto: Vector3) -> float:
 	if estado != Estado.LISTA or rejilla == null:
 		return 0.0
-	var cabido := rejilla.echar_carbon(global_position, capacidad, 1.0, radio_volcado)
+	var cabido := rejilla.echar_carbon(punto, capacidad, 1.0, radio_volcado)
 	progreso = 0.0
 	_poner_estado(Estado.VACIA)
 	volcada.emit(rejilla, cabido)
-	_avisar("CHIMENEA_volcada")
+	avisar("CHIMENEA_volcada")
+	_animar_volcado()
 	return cabido
 
 
-## Saco de carbón a menos de `distancia_saco`, o null.
+## Saco de carbón a menos de `distancia_saco` del jugador, o null.
 func saco_cercano() -> Node3D:
+	var camara := _camara_actual()
+	var desde := camara.global_position if camara else global_position
 	for nodo in get_tree().get_nodes_in_group(SacoCarbon.GRUPO):
 		var saco := nodo as Node3D
-		if saco and saco.global_position.distance_to(global_position) <= distancia_saco:
+		if saco and saco.global_position.distance_to(desde) <= distancia_saco:
 			return saco
-	return null
-
-
-## Rejilla que hay justo debajo de la chimenea, o null.
-func rejilla_debajo() -> RejillaCalor:
-	for nodo in get_tree().get_nodes_in_group(RejillaCalor.GRUPO):
-		var rejilla := nodo as RejillaCalor
-		if rejilla == null or rejilla.celda_en(global_position).x < 0:
-			continue
-		var altura := rejilla.to_local(global_position).y
-		if altura > -0.05 and altura < altura_volcado:
-			return rejilla
 	return null
 
 
 func _poner_estado(nuevo: Estado) -> void:
 	estado = nuevo
 	_pintar()
-	object_state_updated.emit(TEXTOS[estado])
 	estado_cambiado.emit(estado)
 
 
 func _pintar() -> void:
+	if _carbon == null:
+		return
 	_carbon.visible = estado != Estado.VACIA
 	var brillo := progreso if estado == Estado.PRENDIENDO else (1.0 if estado == Estado.LISTA else 0.0)
 	_material_carbon.emission_energy_multiplier = 3.0 * brillo * brillo
-	_luz.light_energy = 1.2 * brillo
+	_luz.light_energy = 0.6 * brillo
 	_luz.visible = brillo > 0.02
 
 
-func _al_coger(cogida: bool) -> void:
-	if cogida:
-		_pic = _llevar.player_interaction_component
-		match estado:
-			Estado.VACIA:
-				_avisar("CHIMENEA_ayuda_llenar")
-			Estado.LISTA:
-				_avisar("CHIMENEA_lleva_parrilla")
-
-
-func _avisar(clave: String) -> void:
-	if _pic == null or not is_instance_valid(_pic):
-		var jugador := get_tree().get_first_node_in_group("Player")
-		_pic = jugador.get("player_interaction_component") if jugador else null
-	if _pic and _pic.has_method("send_hint"):
-		_pic.send_hint(null, tr(clave))
+## Inclina la chimenea hacia delante y vuelve, como al vaciarla.
+func _animar_volcado() -> void:
+	var tween := create_tween()
+	tween.tween_property(_modelo, "rotation:x", -1.6, 0.18)
+	tween.tween_property(_modelo, "rotation:x", 0.0, 0.3).set_delay(0.15)

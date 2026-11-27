@@ -34,6 +34,7 @@ InputRouter="*uid://byboexsy6hrjq"
 Idioma="*res://scripts/idioma.gd"
 Depuracion="*res://scripts/depuracion.gd"
 Equipo="*res://scripts/equipo.gd"
+Cinturon="*res://scripts/utensilios/cinturon.gd"
 
 [display]
 

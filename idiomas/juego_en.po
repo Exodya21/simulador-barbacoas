@@ -45,23 +45,11 @@ msgstr "Old rag"
 msgid "CHIMENEA_nombre"
 msgstr "Chimney starter"
 
-msgid "CHIMENEA_llenar"
-msgstr "Fill with charcoal"
-
-msgid "CHIMENEA_encender"
-msgstr "Light"
-
-msgid "CHIMENEA_esperar"
-msgstr "Catching…"
-
-msgid "CHIMENEA_volcar"
-msgstr "Pour onto the grill"
-
 msgid "CHIMENEA_falta_saco"
-msgstr "Bring it next to the charcoal bag to fill it"
+msgstr "Go to the charcoal bag to fill it"
 
 msgid "CHIMENEA_ayuda_llenar"
-msgstr "Take it to the charcoal bag and press F to fill it"
+msgstr "Empty starter: go to the charcoal bag and click to fill it"
 
 msgid "CHIMENEA_encendida"
 msgstr "Starter lit: wait until the charcoal glows red"
@@ -70,10 +58,10 @@ msgid "CHIMENEA_prendiendo"
 msgstr "It's not glowing yet, wait a little"
 
 msgid "CHIMENEA_lista"
-msgstr "Charcoal is glowing! Take it to the grill and pour it with F"
+msgstr "Charcoal is glowing! Take out the starter (4), aim at the grill and click"
 
 msgid "CHIMENEA_lleva_parrilla"
-msgstr "Hold it over the grill and press F to pour the embers"
+msgstr "Aim at the grill and click to pour the embers"
 
 msgid "CHIMENEA_volcada"
 msgstr "Embers on the grill!"
@@ -84,11 +72,71 @@ msgstr "Charcoal bag"
 msgid "SACO_llenar"
 msgstr "Fill the starter"
 
-msgid "SACO_trae_chimenea"
-msgstr "Bring the empty starter here to fill it"
-
 msgid "ABANICO_nombre"
 msgstr "Fan"
 
 msgid "ABANICO_ayuda"
-msgstr "Hold F over the embers to fan them"
+msgstr "Hold left click aimed at the embers to fan them"
+
+msgid "PUNTO_crudo"
+msgstr "raw"
+
+msgid "PUNTO_poco_hecho"
+msgstr "rare"
+
+msgid "PUNTO_al_punto"
+msgstr "medium"
+
+msgid "PUNTO_hecho"
+msgstr "well done"
+
+msgid "PUNTO_muy_hecho"
+msgstr "overdone"
+
+msgid "PUNTO_sellado"
+msgstr "seared"
+
+msgid "PUNTO_dorado"
+msgstr "browned"
+
+msgid "PUNTO_pasado"
+msgstr "overcooked"
+
+msgid "PUNTO_quemado"
+msgstr "burnt"
+
+msgid "CARA_arriba"
+msgstr "top"
+
+msgid "CARA_abajo"
+msgstr "bottom"
+
+msgid "UTENSILIO_pinzas"
+msgstr "Tongs"
+
+msgid "CHIMENEA_llena"
+msgstr "Starter full: click to light it"
+
+msgid "CHIMENEA_ayuda_encender"
+msgstr "Starter full: click to light it"
+
+msgid "SACO_sin_chimenea"
+msgstr "You have no chimney starter"
+
+msgid "SACO_chimenea_no_vacia"
+msgstr "The starter already has charcoal"
+
+msgid "MANCHA_grasa_sin_trapo"
+msgstr "Grease stain · take out the rag (3)"
+
+msgid "CINTURON_pinzas"
+msgstr "Tongs"
+
+msgid "CINTURON_abanico"
+msgstr "Fan"
+
+msgid "CINTURON_trapo"
+msgstr "Rag"
+
+msgid "CINTURON_chimenea"
+msgstr "Starter"

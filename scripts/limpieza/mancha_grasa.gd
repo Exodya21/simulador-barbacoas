@@ -50,6 +50,23 @@ func _ready() -> void:
 	if equipo:
 		equipo.limpieza_cambiada.connect(poner_utensilio)
 		poner_utensilio(equipo.limpieza)
+	var cinturon := get_node_or_null("/root/Cinturon")
+	if cinturon:
+		cinturon.cambiado.connect(func(_i: int) -> void: _actualizar_trapo())
+	_actualizar_trapo()
+
+
+## Solo se limpia con el trapo en la mano (cinturón, tecla 3). Sin él, la
+## mancha lo dice en su nombre y no ofrece limpiar.
+func _actualizar_trapo() -> void:
+	var cinturon := get_node_or_null("/root/Cinturon")
+	var con_trapo: bool = cinturon == null or cinturon.tiene_en_mano(&"trapo")
+	_limpiar.is_disabled = not con_trapo
+	display_name = "MANCHA_grasa" if con_trapo else "MANCHA_grasa_sin_trapo"
+	var jugador := get_tree().get_first_node_in_group("Player")
+	var pic = jugador.get("player_interaction_component") if jugador else null
+	if pic and pic.get("interactable") == self and pic.has_method("_rebuild_interaction_prompts"):
+		pic._rebuild_interaction_prompts()
 
 
 func poner_utensilio(nuevo: UtensilioLimpieza) -> void:
@@ -74,6 +91,7 @@ func interact(_player_interaction_component = null) -> void:
 
 
 func limpiar() -> void:
+	_trapo_en_mano(true)
 	for cuerpo in _zona.get_overlapping_bodies():
 		_al_salir(cuerpo)
 	limpiada.emit()
@@ -87,6 +105,7 @@ func _al_frotar(tiempo_restante: float, delta: float) -> void:
 	_desde_ultimo_frote = 0.0
 	var total := maxf(_limpiar.hold_time, 0.01)
 	_material.albedo_color.a = clampf(tiempo_restante / total, 0.15, 1.0)
+	_trapo_en_mano(false)
 	if _modelo_utensilio:
 		_modelo_utensilio.visible = true
 		_angulo += delta * TAU * VUELTAS_POR_SEGUNDO
@@ -106,6 +125,7 @@ func _process(delta: float) -> void:
 ## Soltó la tecla antes de acabar: la mancha vuelve entera.
 func _dejar_de_frotar() -> void:
 	frotando = false
+	_trapo_en_mano(true)
 	_material.albedo_color.a = 1.0
 	if _modelo_utensilio:
 		_modelo_utensilio.visible = false
@@ -119,3 +139,10 @@ func _al_entrar(cuerpo: Node3D) -> void:
 func _al_salir(cuerpo: Node3D) -> void:
 	if cuerpo.is_in_group("Player"):
 		Resbalar.salir(cuerpo)
+
+
+## Mientras frota, el trapo de la mano se esconde (es el mismo que frota).
+func _trapo_en_mano(visible_en_mano: bool) -> void:
+	for nodo in get_tree().get_nodes_in_group(UtensilioMano.GRUPO_UTENSILIOS):
+		if nodo.get("id") == &"trapo" and nodo.get("activo"):
+			nodo.visible = visible_en_mano

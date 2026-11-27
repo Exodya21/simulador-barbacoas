@@ -4,8 +4,10 @@ extends Node3D
 ##
 ## Cada paso de física mira si el alimento está apoyado en una RejillaCalor,
 ## qué cara toca la rejilla y a qué temperatura, y avanza su EstadoCoccion.
-## Pasa el grado de cada cara al shader de cocción y, en depuración, enseña
-## un termómetro con los valores encima del alimento.
+## Pasa el grado de cada cara al shader de cocción y, cuando el jugador mira
+## el alimento (o lo lleva con las pinzas), enseña encima su término y cómo
+## están las dos caras, sin números. Con la depuración (F3) enseña además las
+## temperaturas y los grados.
 
 @export var tipo: TipoAlimento
 ## Malla con el shader shaders/coccion.gdshader.
@@ -45,8 +47,9 @@ func _physics_process(delta: float) -> void:
 		temperatura_contacto = temperatura_ambiente
 	estado.avanzar(delta, cara_apoyada, temperatura_contacto, temperatura_ambiente)
 	_actualizar_malla()
+	_etiqueta.visible = _mirado()
 	if _etiqueta.visible:
-		_etiqueta.text = texto_depuracion()
+		_etiqueta.text = texto_depuracion() if _depuracion_activa() else texto_jugador()
 
 
 ## Cara del alimento que mira hacia el suelo.
@@ -67,6 +70,43 @@ func cara_hacia_abajo() -> int:
 func grado_interior() -> float:
 	var t := inverse_lerp(tipo.temperatura_inicial, tipo.punto_hecho, estado.temperatura_interna)
 	return clampf(t, 0.0, 1.2) * 2.0
+
+
+## Lo que ve el jugador: el término y cómo están las caras, sin números.
+func texto_jugador() -> String:
+	var lineas := PackedStringArray()
+	var termino := nombre_punto(estado.punto_interior())
+	lineas.append(termino.left(1).to_upper() + termino.substr(1))
+	lineas.append("%s %s · %s %s" % [
+		tr("CARA_arriba"), nombre_punto(estado.estado_cara(EstadoCoccion.Cara.ARRIBA)),
+		tr("CARA_abajo"), nombre_punto(estado.estado_cara(EstadoCoccion.Cara.ABAJO))])
+	var suciedad := _cuerpo.get_node_or_null("Suciedad")
+	if suciedad and suciedad.sucia:
+		lineas.append(tr("COMIDA_sucia"))
+	return "
+".join(lineas)
+
+
+## Nombre traducido de un punto o estado de cocción ("muy hecho" → PUNTO_muy_hecho).
+func nombre_punto(punto: String) -> String:
+	return tr("PUNTO_" + punto.replace(" ", "_"))
+
+
+## True si el jugador mira este alimento o lo lleva con las pinzas.
+func _mirado() -> bool:
+	var jugador := get_tree().get_first_node_in_group("Player")
+	var pic = jugador.get("player_interaction_component") if jugador else null
+	if pic and is_instance_valid(pic) and pic.get("interactable") == _cuerpo:
+		return true
+	for pinzas in get_tree().get_nodes_in_group("pinzas"):
+		if pinzas.get("sostenido") == _cuerpo:
+			return true
+	return false
+
+
+func _depuracion_activa() -> bool:
+	var dep := get_node_or_null("/root/Depuracion")
+	return dep != null and dep.activa
 
 
 func texto_depuracion() -> String:
@@ -111,10 +151,7 @@ func _crear_etiqueta() -> void:
 	_etiqueta.outline_size = 8
 	_etiqueta.top_level = true
 	add_child(_etiqueta)
-	var dep := get_node_or_null("/root/Depuracion")
-	_etiqueta.visible = dep.activa if dep else false
-	if dep:
-		dep.cambiado.connect(func(activa: bool) -> void: _etiqueta.visible = activa)
+	_etiqueta.visible = false
 
 
 func _process(_delta: float) -> void:

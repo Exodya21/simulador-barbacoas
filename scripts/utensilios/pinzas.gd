@@ -1,5 +1,5 @@
 class_name Pinzas
-extends Node3D
+extends UtensilioMano
 ## Pinzas de barbacoa en la mano del jugador.
 ##
 ## - Apuntas a una comida y **mantienes el clic izquierdo**: las pinzas la
@@ -14,8 +14,9 @@ extends Node3D
 ##   - BIEN: se escurre; cae del lado bueno o no (más probable cuanto más
 ##     cerca del perfecto).
 ##   - MAL: sale despedida y cae al suelo.
-## Al empezar se cuelgan de la cámara del jugador. No hacen nada mientras el
-## jugador lleva algo en la mano con E (Cogito usa el clic para lanzarlo).
+## Van en el cinturón (UtensilioMano): solo funcionan cuando están en la mano.
+## No hacen nada mientras el jugador lleva algo cogido con E (Cogito usa el
+## clic para lanzarlo). Al guardarlas sueltan lo que llevaran.
 
 signal cogido(cuerpo: RigidBody3D)
 signal soltado(cuerpo: RigidBody3D)
@@ -34,9 +35,6 @@ const RADIO_PILA := 0.1
 @export var alcance := 1.8
 ## Altura (m) del centro de la comida sobre la superficie a la que apuntas.
 @export var altura_sobre_superficie := 0.03
-## Posición de las pinzas respecto a la cámara (abajo a la derecha).
-@export var posicion_en_camara := Vector3(0.14, -0.16, -0.10)
-@export var giro_en_camara := Vector3(10.0, 6.0, 0.0)
 ## Rapidez con la que la pieza cogida sigue al punto de colocación (1/s).
 @export var seguimiento := 18.0
 ## Ángulo (grados) de cada brazo abierto y cerrado.
@@ -55,7 +53,6 @@ var rng := RandomNumberGenerator.new()
 ## Cuerpos que están dando la vuelta en el aire (animación en curso).
 var en_el_aire: Array[RigidBody3D] = []
 
-var _camara: Camera3D
 
 @onready var _punta: Marker3D = $Punta
 @onready var _brazo_arriba: Node3D = $Modelo/Pinzas/BrazoArriba
@@ -64,19 +61,17 @@ var _camara: Camera3D
 
 
 func _ready() -> void:
+	if id == &"":
+		id = &"pinzas"
 	add_to_group(GRUPO)
 	rng.randomize()
 	_poner_apertura(apertura_abierta)
-	_montar_en_camara.call_deferred()
+	super()
 
 
-func _montar_en_camara() -> void:
-	_camara = get_viewport().get_camera_3d()
-	if _camara == null:
-		return
-	reparent(_camara, false)
-	position = posicion_en_camara
-	rotation_degrees = giro_en_camara
+func al_cambiar_mano(en_mano: bool) -> void:
+	if not en_mano and sostenido:
+		soltar()
 
 
 func _physics_process(delta: float) -> void:
@@ -84,7 +79,9 @@ func _physics_process(delta: float) -> void:
 		sostenido = null
 		_cerrar_minijuego()
 		_poner_apertura(apertura_abierta)
-	if not _jugador_lleva_algo():
+	if not activo:
+		return
+	if not jugador_lleva_algo():
 		_leer_controles()
 	if minijuego:
 		minijuego.avanzar(delta)
@@ -104,10 +101,6 @@ func _leer_controles() -> void:
 			terminar_minijuego()
 		else:
 			soltar()
-
-
-func _camara_actual() -> Camera3D:
-	return _camara if _camara else get_viewport().get_camera_3d()
 
 
 ## Alimento (cuerpo con cocción) bajo la mira, o null.
@@ -313,12 +306,3 @@ func _poner_apertura(grados: float) -> void:
 	tween.tween_property(_brazo_arriba, "rotation:x", radianes, 0.08)
 	tween.tween_property(_brazo_abajo, "rotation:x", -radianes, 0.08)
 
-
-func _jugador_lleva_algo() -> bool:
-	if _camara == null:
-		return false
-	for nodo in get_tree().get_nodes_in_group("Player"):
-		var componente := nodo.find_child("PlayerInteractionComponent", true, false)
-		if componente and componente.get("is_carrying"):
-			return true
-	return false

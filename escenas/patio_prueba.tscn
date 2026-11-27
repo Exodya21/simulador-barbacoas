@@ -1,15 +1,19 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://bg36m5x6j6kvb"]
 
-[ext_resource type="Script" path="res://addons/cogito/SceneManagement/cogito_scene.gd" id="1_escena"]
-[ext_resource type="PackedScene" path="res://addons/cogito/PackedScenes/cogito_player_advanced.tscn" id="2_jugador"]
-[ext_resource type="PackedScene" path="res://addons/cogito/PackedScenes/carriable_box.tscn" id="3_caja"]
-[ext_resource type="Script" path="res://scripts/fuego/rejilla_calor.gd" id="4_rejilla"]
+[ext_resource type="Script" uid="uid://c2kkj7vhsd1oi" path="res://addons/cogito/SceneManagement/cogito_scene.gd" id="1_escena"]
+[ext_resource type="PackedScene" uid="uid://otv80grtivvc" path="res://addons/cogito/PackedScenes/cogito_player_advanced.tscn" id="2_jugador"]
+[ext_resource type="PackedScene" uid="uid://d3m4ni301eso7" path="res://addons/cogito/PackedScenes/carriable_box.tscn" id="3_caja"]
+[ext_resource type="Script" uid="uid://q14qhvmsp4nv" path="res://scripts/fuego/rejilla_calor.gd" id="4_rejilla"]
+[ext_resource type="Script" uid="uid://di15gqemrkk0x" path="res://addons/cogito/InventoryPD/CustomResources/InventorySlotPD.gd" id="5_7nnlf"]
 [ext_resource type="PackedScene" path="res://escenas/alimentos/hamburguesa.tscn" id="5_hamburguesa"]
+[ext_resource type="Script" uid="uid://btnha2whsheir" path="res://addons/cogito/InventoryPD/cogito_inventory.gd" id="6_k4cjx"]
 [ext_resource type="PackedScene" path="res://escenas/utensilios/pinzas.tscn" id="6_pinzas"]
 [ext_resource type="PackedScene" path="res://escenas/limpieza/basura.tscn" id="7_basura"]
-[ext_resource type="PackedScene" path="res://escenas/fuego/chimenea_encendido.tscn" id="8_chimenea"]
+[ext_resource type="PackedScene" path="res://escenas/utensilios/chimenea_encendido.tscn" id="8_chimenea"]
 [ext_resource type="PackedScene" path="res://escenas/fuego/saco_carbon.tscn" id="9_saco"]
-[ext_resource type="PackedScene" path="res://escenas/fuego/abanico.tscn" id="10_abanico"]
+[ext_resource type="PackedScene" path="res://escenas/utensilios/abanico.tscn" id="10_abanico"]
+[ext_resource type="PackedScene" path="res://escenas/utensilios/trapo.tscn" id="11_trapo"]
+[ext_resource type="PackedScene" path="res://escenas/interfaz/cinturon_hud.tscn" id="12_cinturon"]
 
 [sub_resource type="ProceduralSkyMaterial" id="Cielo_mat"]
 sky_top_color = Color(0.4235, 0.6078, 0.8235, 1)
@@ -30,17 +34,6 @@ ssao_enabled = true
 [sub_resource type="StandardMaterial3D" id="Mat_cesped"]
 albedo_color = Color(0.4353, 0.6392, 0.2941, 1)
 
-[sub_resource type="StandardMaterial3D" id="Mat_ladrillo"]
-albedo_color = Color(0.7098, 0.3255, 0.2353, 1)
-
-[sub_resource type="StandardMaterial3D" id="Mat_metal"]
-albedo_color = Color(0.3529, 0.3725, 0.4, 1)
-metallic = 0.6
-roughness = 0.5
-
-[sub_resource type="StandardMaterial3D" id="Mat_madera"]
-albedo_color = Color(0.5412, 0.3529, 0.2314, 1)
-
 [sub_resource type="BoxMesh" id="Malla_suelo"]
 material = SubResource("Mat_cesped")
 size = Vector3(30, 0.2, 30)
@@ -48,15 +41,21 @@ size = Vector3(30, 0.2, 30)
 [sub_resource type="BoxShape3D" id="Forma_suelo"]
 size = Vector3(30, 0.2, 30)
 
+[sub_resource type="StandardMaterial3D" id="Mat_ladrillo"]
+albedo_color = Color(0.7098, 0.3255, 0.2353, 1)
+
 [sub_resource type="BoxMesh" id="Malla_obra"]
 material = SubResource("Mat_ladrillo")
+size = Vector3(2, 0.8, 1)
+
+[sub_resource type="BoxShape3D" id="Forma_obra"]
 size = Vector3(2, 0.8, 1)
 
 [sub_resource type="BoxShape3D" id="Forma_rejilla"]
 size = Vector3(1.6, 0.04, 0.8)
 
-[sub_resource type="BoxShape3D" id="Forma_obra"]
-size = Vector3(2, 0.8, 1)
+[sub_resource type="StandardMaterial3D" id="Mat_madera"]
+albedo_color = Color(0.5412, 0.3529, 0.2314, 1)
 
 [sub_resource type="BoxMesh" id="Malla_mesa"]
 material = SubResource("Mat_madera")
@@ -65,93 +64,103 @@ size = Vector3(1.8, 0.08, 0.9)
 [sub_resource type="BoxShape3D" id="Forma_mesa"]
 size = Vector3(1.8, 0.79, 0.9)
 
-[node name="PatioPrueba" type="Node3D"]
+[sub_resource type="Resource" id="Resource_b8ny1"]
+resource_local_to_scene = true
+script = ExtResource("6_k4cjx")
+grid = true
+inventory_size = Vector2i(6, 3)
+inventory_slots = Array[ExtResource("5_7nnlf")]([null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null])
+
+[node name="PatioPrueba" type="Node3D" unique_id=249035339]
 script = ExtResource("1_escena")
 
-[node name="Sol" type="DirectionalLight3D" parent="."]
+[node name="Sol" type="DirectionalLight3D" parent="." unique_id=2119960807]
 transform = Transform3D(0.5, -0.224144, 0.836516, 0, 0.965926, 0.258819, -0.866025, -0.12941, 0.482963, 0, 5, 0)
 light_color = Color(1, 0.9, 0.75, 1)
 shadow_enabled = true
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1162407257]
 environment = SubResource("Entorno")
 
-[node name="Suelo" type="StaticBody3D" parent="." groups=["suelo"]]
+[node name="Suelo" type="StaticBody3D" parent="." unique_id=247848349 groups=["suelo"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
 
-[node name="Malla" type="MeshInstance3D" parent="Suelo"]
+[node name="Malla" type="MeshInstance3D" parent="Suelo" unique_id=1290716827]
 mesh = SubResource("Malla_suelo")
 
-[node name="Colision" type="CollisionShape3D" parent="Suelo"]
+[node name="Colision" type="CollisionShape3D" parent="Suelo" unique_id=339984971]
 shape = SubResource("Forma_suelo")
 
-[node name="Parrilla" type="StaticBody3D" parent="."]
+[node name="Parrilla" type="StaticBody3D" parent="." unique_id=670660482]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4, -3)
 
-[node name="Obra" type="MeshInstance3D" parent="Parrilla"]
+[node name="Obra" type="MeshInstance3D" parent="Parrilla" unique_id=1280111704]
 mesh = SubResource("Malla_obra")
 
-[node name="Colision" type="CollisionShape3D" parent="Parrilla"]
+[node name="Colision" type="CollisionShape3D" parent="Parrilla" unique_id=864411591]
 shape = SubResource("Forma_obra")
 
-[node name="LuzBrasas" type="OmniLight3D" parent="Parrilla"]
+[node name="LuzBrasas" type="OmniLight3D" parent="Parrilla" unique_id=2112315214]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7, 0)
 light_color = Color(0.9098, 0.4667, 0.1804, 1)
 light_energy = 0.0
 omni_range = 3.0
 
-[node name="ColisionRejilla" type="CollisionShape3D" parent="Parrilla"]
+[node name="ColisionRejilla" type="CollisionShape3D" parent="Parrilla" unique_id=1559459102]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0)
 shape = SubResource("Forma_rejilla")
 
-[node name="RejillaCalor" type="Node3D" parent="Parrilla" node_paths=PackedStringArray("luz")]
+[node name="RejillaCalor" type="Node3D" parent="Parrilla" unique_id=330986365 node_paths=PackedStringArray("luz")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.62, 0)
 script = ExtResource("4_rejilla")
 empezar_encendida = false
 luz = NodePath("../LuzBrasas")
 crear_barras = true
 
-[node name="Mesa" type="StaticBody3D" parent="."]
+[node name="Mesa" type="StaticBody3D" parent="." unique_id=1096364632]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -2)
 
-[node name="Tablero" type="MeshInstance3D" parent="Mesa"]
+[node name="Tablero" type="MeshInstance3D" parent="Mesa" unique_id=1139609383]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0)
 mesh = SubResource("Malla_mesa")
 
-[node name="Colision" type="CollisionShape3D" parent="Mesa"]
+[node name="Colision" type="CollisionShape3D" parent="Mesa" unique_id=2044778487]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.395, 0)
 shape = SubResource("Forma_mesa")
 
-[node name="CajaComida" parent="." instance=ExtResource("3_caja")]
+[node name="CajaComida" parent="." unique_id=1099316704 instance=ExtResource("3_caja")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.5, 0)
 
-[node name="Jugador" parent="." instance=ExtResource("2_jugador")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 2)
+[node name="CarryableComponent" parent="CajaComida" index="0" unique_id=2074361310]
+attribute_check = 0
 
-[node name="Hamburguesa1" parent="." instance=ExtResource("5_hamburguesa")]
+[node name="Jugador" parent="." unique_id=367901806 instance=ExtResource("2_jugador")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 2)
+inventory_data = SubResource("Resource_b8ny1")
+
+[node name="Hamburguesa1" parent="." unique_id=175985196 instance=ExtResource("5_hamburguesa")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6, 0.81, -2)
 
-[node name="Hamburguesa2" parent="." instance=ExtResource("5_hamburguesa")]
+[node name="Hamburguesa2" parent="." unique_id=260154815 instance=ExtResource("5_hamburguesa")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.81, -2.25)
 
-[node name="Hamburguesa3" parent="." instance=ExtResource("5_hamburguesa")]
+[node name="Hamburguesa3" parent="." unique_id=1243360205 instance=ExtResource("5_hamburguesa")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.4, 0.81, -2)
 
-[node name="Pinzas" parent="." instance=ExtResource("6_pinzas")]
+[node name="Pinzas" parent="." unique_id=1660456264 instance=ExtResource("6_pinzas")]
 
-[node name="Basura" parent="." instance=ExtResource("7_basura")]
+[node name="Basura" parent="." unique_id=329449296 instance=ExtResource("7_basura")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4, 0, -2.6)
 
-[node name="SacoCarbon" parent="." instance=ExtResource("9_saco")]
+[node name="SacoCarbon" parent="." unique_id=1894850352 instance=ExtResource("9_saco")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6, 0, -2.4)
 
-[node name="ChimeneaEncendido" parent="." instance=ExtResource("8_chimenea")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6, 0.01, -1.8)
+[node name="ChimeneaEncendido" parent="." unique_id=139735577 instance=ExtResource("8_chimenea")]
 
-[node name="Abanico" parent="." instance=ExtResource("10_abanico")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3, 0.82, -1.75)
+[node name="Abanico" parent="." unique_id=1120451937 instance=ExtResource("10_abanico")]
 
-[node name="CarryableComponent" parent="CajaComida"]
-attribute_check = 0
+[node name="Trapo" parent="." instance=ExtResource("11_trapo")]
+
+[node name="CinturonHud" parent="." instance=ExtResource("12_cinturon")]
 
 [editable path="CajaComida"]

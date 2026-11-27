@@ -45,23 +45,11 @@ msgstr "Trapo viejo"
 msgid "CHIMENEA_nombre"
 msgstr "Chimenea de encendido"
 
-msgid "CHIMENEA_llenar"
-msgstr "Llenar de carbón"
-
-msgid "CHIMENEA_encender"
-msgstr "Encender"
-
-msgid "CHIMENEA_esperar"
-msgstr "Prendiendo…"
-
-msgid "CHIMENEA_volcar"
-msgstr "Volcar en la parrilla"
-
 msgid "CHIMENEA_falta_saco"
-msgstr "Acércala al saco de carbón para llenarla"
+msgstr "Acércate al saco de carbón para llenarla"
 
 msgid "CHIMENEA_ayuda_llenar"
-msgstr "Llévala al saco de carbón y pulsa F para llenarla"
+msgstr "Chimenea vacía: ve al saco de carbón y haz clic para llenarla"
 
 msgid "CHIMENEA_encendida"
 msgstr "Chimenea encendida: espera a que el carbón esté al rojo"
@@ -70,10 +58,10 @@ msgid "CHIMENEA_prendiendo"
 msgstr "Todavía no está al rojo, espera un poco"
 
 msgid "CHIMENEA_lista"
-msgstr "¡Carbón al rojo! Llévala a la parrilla y vuélcalo con F"
+msgstr "¡Carbón al rojo! Saca la chimenea (4), apunta a la parrilla y haz clic"
 
 msgid "CHIMENEA_lleva_parrilla"
-msgstr "Ponla sobre la parrilla y pulsa F para volcar las brasas"
+msgstr "Apunta a la parrilla y haz clic para volcar las brasas"
 
 msgid "CHIMENEA_volcada"
 msgstr "¡Brasas en la parrilla!"
@@ -84,11 +72,71 @@ msgstr "Saco de carbón"
 msgid "SACO_llenar"
 msgstr "Llenar la chimenea"
 
-msgid "SACO_trae_chimenea"
-msgstr "Trae aquí la chimenea vacía para llenarla"
-
 msgid "ABANICO_nombre"
 msgstr "Abanico"
 
 msgid "ABANICO_ayuda"
-msgstr "Mantén F sobre las brasas para avivarlas"
+msgstr "Mantén el clic izquierdo apuntando a las brasas para avivarlas"
+
+msgid "PUNTO_crudo"
+msgstr "crudo"
+
+msgid "PUNTO_poco_hecho"
+msgstr "poco hecho"
+
+msgid "PUNTO_al_punto"
+msgstr "al punto"
+
+msgid "PUNTO_hecho"
+msgstr "hecho"
+
+msgid "PUNTO_muy_hecho"
+msgstr "muy hecho"
+
+msgid "PUNTO_sellado"
+msgstr "sellado"
+
+msgid "PUNTO_dorado"
+msgstr "dorado"
+
+msgid "PUNTO_pasado"
+msgstr "pasado"
+
+msgid "PUNTO_quemado"
+msgstr "quemado"
+
+msgid "CARA_arriba"
+msgstr "arriba"
+
+msgid "CARA_abajo"
+msgstr "abajo"
+
+msgid "UTENSILIO_pinzas"
+msgstr "Pinzas"
+
+msgid "CHIMENEA_llena"
+msgstr "Chimenea llena: haz clic para encenderla"
+
+msgid "CHIMENEA_ayuda_encender"
+msgstr "Chimenea llena: haz clic para encenderla"
+
+msgid "SACO_sin_chimenea"
+msgstr "No tienes chimenea de encendido"
+
+msgid "SACO_chimenea_no_vacia"
+msgstr "La chimenea ya tiene carbón"
+
+msgid "MANCHA_grasa_sin_trapo"
+msgstr "Mancha de grasa · saca el trapo (3)"
+
+msgid "CINTURON_pinzas"
+msgstr "Pinzas"
+
+msgid "CINTURON_abanico"
+msgstr "Abanico"
+
+msgid "CINTURON_trapo"
+msgstr "Trapo"
+
+msgid "CINTURON_chimenea"
+msgstr "Chimenea"

@@ -105,48 +105,50 @@ func _patio_chimenea_y_abanico() -> void:
 	await process_frame
 	await process_frame
 	# Sin tipos propios: Cogito aún no ha cargado sus autoloads al compilar esto.
+	var cinturon: Node = root.get_node("Cinturon")
+	cinturon.reiniciar()
 	var rejilla: Node3D = current_scene.get_node("Parrilla/RejillaCalor")
-	var chimenea := current_scene.get_node("ChimeneaEncendido") as RigidBody3D
+	var chimenea: Node3D = get_first_node_in_group("chimenea_encendido")
 	var saco: Node3D = current_scene.get_node("SacoCarbon")
-	var abanico := current_scene.get_node("Abanico") as RigidBody3D
+	var abanico: Node3D = null
+	for u in get_nodes_in_group("utensilio_mano"):
+		if u.id == &"abanico":
+			abanico = u
+	comprobar(chimenea != null and abanico != null, "la chimenea y el abanico van en el cinturón")
 	comprobar(rejilla.carbon_total() == 0.0, "el patio empieza con la parrilla fría y sin carbón")
 	comprobar(chimenea.estado == 0, "la chimenea empieza vacía")
 
-	chimenea.usar()
-	comprobar(chimenea.estado == 1, "F en la chimenea junto al saco la llena")
+	saco.interact(null)
+	comprobar(chimenea.estado == 1, "F en el saco llena la chimenea del cinturón")
 	chimenea.segundos_prender = 0.5
 	chimenea.usar()
-	comprobar(chimenea.estado == 2, "F en la chimenea llena la enciende")
+	comprobar(chimenea.estado == 2, "clic con la chimenea llena la enciende")
+	cinturon.sacar(&"pinzas")
 	await _esperar_fisica(1.0)
-	comprobar(chimenea.estado == 3, "al rato el carbón está al rojo")
+	comprobar(chimenea.estado == 3, "sigue prendiendo guardada en el cinturón y se pone al rojo")
 
-	chimenea.usar()
-	comprobar(chimenea.estado == 3 and rejilla.carbon_total() == 0.0, "lejos de la parrilla no vuelca")
-
-	chimenea.freeze = true
-	var punto: Vector3 = rejilla.to_global(Vector3(-0.4, 0.3, 0))
-	chimenea.global_position = punto
-	chimenea.usar()
-	comprobar(chimenea.estado == 0, "sobre la parrilla vuelca y queda vacía")
+	chimenea.usar(Vector3(0, 0.3, 4))
+	comprobar(chimenea.estado == 3 and rejilla.carbon_total() == 0.0, "apuntando fuera de la parrilla no vuelca")
+	var punto: Vector3 = rejilla.to_global(Vector3(-0.4, 0, 0))
+	chimenea.usar(punto)
+	comprobar(chimenea.estado == 0, "apuntando a la parrilla vuelca y queda vacía")
 	comprobar(rejilla.carbon_total() > 5.0, "las brasas caen en la rejilla (%.1f)" % rejilla.carbon_total())
 	await _esperar_fisica(12.0)
 	var t: float = rejilla.temperatura_en(punto)
 	comprobar(t > 150.0, "la rejilla se calienta donde se volcó (%.0f °C)" % t)
 	comprobar(rejilla.temperatura_en(rejilla.to_global(Vector3(0.75, 0, 0.35))) < 60.0, "la otra punta sigue fría: zona indirecta")
 
-	chimenea.global_position = saco.global_position + Vector3(0.5, 0, 0)
-	saco.interact(null)
-	comprobar(chimenea.estado == 1, "F en el saco llena la chimenea vacía de al lado")
+	# Lejos del saco, la chimenea vacía no se llena con el clic.
+	chimenea.usar()
+	comprobar(chimenea.estado == 0, "lejos del saco el clic no la llena")
 
-	# Abanico: las brasas en reposo suben al abanicarlas.
+	# Abanico: las brasas en reposo suben al abanicarlas donde apuntas.
 	var c: Vector2i = rejilla.celda_en(punto)
 	rejilla.poner_brasas(c.x, c.y, 1.0, 0.7)
-	abanico.freeze = true
-	abanico.global_position = punto
 	for i in 20:
-		abanico.abanicar(0.1)
+		abanico.abanicar(0.1, punto)
 	var fuego: float = rejilla.fuego[c.y * 8 + c.x]
-	comprobar(fuego > 0.9, "abanicar sobre la parrilla aviva las brasas (%.2f)" % fuego)
+	comprobar(fuego > 0.9, "abanicar apuntando a la parrilla aviva las brasas (%.2f)" % fuego)
 
 
 func _esperar_fisica(segundos: float) -> void:

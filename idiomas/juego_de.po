@@ -45,23 +45,11 @@ msgstr "Alter Lappen"
 msgid "CHIMENEA_nombre"
 msgstr "Anzündkamin"
 
-msgid "CHIMENEA_llenar"
-msgstr "Mit Holzkohle füllen"
-
-msgid "CHIMENEA_encender"
-msgstr "Anzünden"
-
-msgid "CHIMENEA_esperar"
-msgstr "Glüht an…"
-
-msgid "CHIMENEA_volcar"
-msgstr "Auf den Grill schütten"
-
 msgid "CHIMENEA_falta_saco"
-msgstr "Stell ihn neben den Kohlesack, um ihn zu füllen"
+msgstr "Geh zum Kohlesack, um ihn zu füllen"
 
 msgid "CHIMENEA_ayuda_llenar"
-msgstr "Bring ihn zum Kohlesack und drück F zum Füllen"
+msgstr "Leerer Kamin: geh zum Kohlesack und klick zum Füllen"
 
 msgid "CHIMENEA_encendida"
 msgstr "Kamin brennt: warte, bis die Kohle glüht"
@@ -70,10 +58,10 @@ msgid "CHIMENEA_prendiendo"
 msgstr "Glüht noch nicht, warte noch etwas"
 
 msgid "CHIMENEA_lista"
-msgstr "Die Kohle glüht! Bring sie zum Grill und schütte sie mit F aus"
+msgstr "Die Kohle glüht! Nimm den Kamin (4), ziel auf den Grill und klick"
 
 msgid "CHIMENEA_lleva_parrilla"
-msgstr "Halte ihn über den Grill und drück F, um die Glut auszuschütten"
+msgstr "Ziel auf den Grill und klick, um die Glut auszuschütten"
 
 msgid "CHIMENEA_volcada"
 msgstr "Glut auf dem Grill!"
@@ -84,11 +72,71 @@ msgstr "Holzkohlesack"
 msgid "SACO_llenar"
 msgstr "Kamin füllen"
 
-msgid "SACO_trae_chimenea"
-msgstr "Bring den leeren Kamin hierher, um ihn zu füllen"
-
 msgid "ABANICO_nombre"
 msgstr "Fächer"
 
 msgid "ABANICO_ayuda"
-msgstr "Halte F über der Glut, um sie anzufachen"
+msgstr "Halte die linke Maustaste auf die Glut, um sie anzufachen"
+
+msgid "PUNTO_crudo"
+msgstr "roh"
+
+msgid "PUNTO_poco_hecho"
+msgstr "englisch"
+
+msgid "PUNTO_al_punto"
+msgstr "medium"
+
+msgid "PUNTO_hecho"
+msgstr "durch"
+
+msgid "PUNTO_muy_hecho"
+msgstr "zu durch"
+
+msgid "PUNTO_sellado"
+msgstr "angebraten"
+
+msgid "PUNTO_dorado"
+msgstr "goldbraun"
+
+msgid "PUNTO_pasado"
+msgstr "zu dunkel"
+
+msgid "PUNTO_quemado"
+msgstr "verbrannt"
+
+msgid "CARA_arriba"
+msgstr "oben"
+
+msgid "CARA_abajo"
+msgstr "unten"
+
+msgid "UTENSILIO_pinzas"
+msgstr "Grillzange"
+
+msgid "CHIMENEA_llena"
+msgstr "Kamin voll: klick zum Anzünden"
+
+msgid "CHIMENEA_ayuda_encender"
+msgstr "Kamin voll: klick zum Anzünden"
+
+msgid "SACO_sin_chimenea"
+msgstr "Du hast keinen Anzündkamin"
+
+msgid "SACO_chimenea_no_vacia"
+msgstr "Der Kamin hat schon Kohle"
+
+msgid "MANCHA_grasa_sin_trapo"
+msgstr "Fettfleck · nimm den Lappen (3)"
+
+msgid "CINTURON_pinzas"
+msgstr "Zange"
+
+msgid "CINTURON_abanico"
+msgstr "Fächer"
+
+msgid "CINTURON_trapo"
+msgstr "Lappen"
+
+msgid "CINTURON_chimenea"
+msgstr "Kamin"
