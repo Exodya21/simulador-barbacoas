@@ -1,7 +1,7 @@
 ---
 tipo: diseño
 estado: borrador
-actualizado: 2026-11-23 23:49
+actualizado: 2026-11-27 22:33
 ---
 
 # Mecánicas
@@ -68,5 +68,18 @@ Ratón mirar · WASD caminar · Mayús correr · Clic o E usar · 1–5 cambiar 
 - [x] Trapo para limpiar las manchas → hecho: [[2026-11-23 Trapo viejo como utensilio de limpieza]]
 - [ ] Comprar cepillo y mocho con balde, cada uno más rápido (para el futuro) → [[Ruta de mejora de la limpieza]]
 - [ ] Cubo de basura realista que necesita bolsa, y sacar la bolsa llena al contenedor de la calle (para más adelante) → [[Cubo de basura realista con bolsa]]
+- [ ] Cortar una pieza para comprobar el punto → [[Referencias visuales]]
+- [ ] Marcas de parrilla en la cara que ha tocado las varillas → [[Referencias visuales]]
+- [ ] Bandeja para llevar varias piezas a la mesa (pedido para compartir frente a plato individual) → [[Referencias visuales]]
+- [ ] Guarniciones: patatas, ensalada, pimientos asados en la parrilla → [[Referencias visuales]]
+- [ ] Mesa de acompañamientos y salsas en el patio, que el jugador repone (sencilla: el GDD deja fuera la gestión de restaurante) → [[Referencias visuales]]
+- [ ] Servir en la mesa con las pinzas, pieza a pieza, con reacción del invitado → [[Referencias visuales]]
+- [ ] Servir por tandas: la carne recién salida de la parrilla puntúa más → [[Referencias visuales]]
+- [ ] Embutidos (chorizo, morcilla) que sueltan grasa y provocan llamaradas; la morcilla revienta si se pasa → [[Referencias visuales]]
+- [ ] Pieza de cocción larga en el kamado o el ahumador (pernil a baja temperatura) que se vigila durante la partida → [[Referencias visuales]]
+- [ ] La comida hecha se enfría si no se sirve; una zona templada o una lámpara de calor la mantiene → [[Referencias visuales]]
+- [ ] Entrantes (patatas, aros de cebolla, pan, pizza a la parrilla) mientras se espera la carne → [[Referencias visuales]]
+- [ ] El plato del invitado se llena pieza a pieza: pide "una más" o dice "ya basta" → [[Referencias visuales]]
+- [ ] Escenario o DLC gratuito de parrilla argentina con fútbol en la tele e invitados que reaccionan al partido; sin jugadores, escudos ni marcas reales → [[Referencias visuales]]
 
 Relacionado: [[Core loop]]

@@ -2,7 +2,7 @@
 tipo: produccion
 estado: definido
 fuente: Tablero FigJam, sección 7
-actualizado: 2026-11-23 22:13
+actualizado: 2026-11-27 22:33
 ---
 
 # ¿Qué podemos usar legalmente para vender en Steam?
@@ -40,6 +40,7 @@ Comprobado en noviembre de 2026 en los repositorios y páginas oficiales. **No e
 | Womp "BBQ Grill" | Es CC0, pero no se puede descargar (solo en el navegador con Womp Pro). |
 | Cualquier asset sin licencia clara | Música de YouTube, assets "NC" o marcas reales (logos de Weber, Coca-Cola…). |
 | [[Referencias visuales]] de esta bóveda | Imágenes de terceros: solo referencia interna. |
+| Personas, equipos y marcas reales | Nada de caras ni nombres de personas reales, escudos de equipos ni logos de marcas (derechos de imagen y de marca) → [[Referencias visuales]] |
 
 ## 📋 Checklist para publicar en Steam
 - [ ] 1. `CREDITS.md` con cada asset, autor, URL y licencia

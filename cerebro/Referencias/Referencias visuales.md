@@ -1,5 +1,6 @@
 ---
 tipo: referencia
+actualizado: 2026-11-27 22:33
 ---
 
 # Referencias visuales
@@ -29,4 +30,74 @@ Parrilla exterior independiente: brasero lateral, ahumador con termómetro y bar
 Módulos intercambiables: soporte para disco/wok, parrilla de varillas, espetos con mango de madera, plancha y placa con sartenes.
 ![[modulos-parrilla.webp]]
 
-Relacionado: [[Modelos 3D]], [[Mecánicas]]
+## Cocinar en cantidad
+Parrilla grande de restaurante: a la izquierda, cortes de lomo crudos recién puestos; arriba, piezas ya hechas con las **marcas de la parrilla**. Se cocina por tandas y por zonas, con pinzas.
+![[parrilla-grande-crudo-y-hecho.webp]]
+- 💡 **Muchas piezas a la vez:** la dificultad sube con la cantidad. Hay que recordar qué se puso antes y moverlo por zonas de calor.
+- 💡 **Marcas de parrilla** que aparecen en la cara que toca las varillas: dicen de un vistazo si una pieza ya se ha girado.
+- 🎨 Color real del crudo (rojo rosado con vetas de grasa blanca) para comparar con `Crudo` de la [[GDD#Paleta (aprobada)|paleta]].
+
+## El punto de la carne
+Corte de carne al punto: costra marrón por fuera, interior rosado y jugo en la tabla.
+![[corte-carne-al-punto.png]]
+- 💡 **Cortar para comprobar el punto:** abrir una pieza con cuchillo y tenedor para ver el interior. Encaja con el pilar *Leer la comida* del [[GDD]].
+- 🎨 Referencia para el **shader de cocción**: degradado del borde marrón al centro rosado. Sirve para cuando se haga el shader (crudo → hecho → quemado, pendiente en el [[Roadmap]]).
+
+## Servir y emplatar
+Bandeja de metal con carnes variadas (ternera y pollo) lista para la mesa. El jugo se queda en la bandeja.
+![[bandeja-carnes-servidas.png]]
+- 💡 **Bandeja para servir:** el jugador junta varias piezas en una bandeja y la lleva a la mesa de los invitados. Es el paso "servir" del [[Core loop]].
+- 💡 Pedidos de **"bandeja para la mesa"** (variado para compartir) frente a **platos individuales**.
+
+Plato completo: carne a la parrilla, patatas fritas, zanahoria rallada y pimiento del piquillo.
+![[plato-carne-guarniciones.png]]
+- 💡 **Guarniciones:** patatas, ensalada o pimientos asados en la parrilla completan el plato y suben la puntuación del pedido.
+- 💡 El pimiento entero se puede **asar en la propia parrilla** como un alimento más.
+
+El parrillero lleva la bandeja sobre una tabla de madera a la mesa y sirve con pinzas en el plato del comensal, que la recibe con un "perfecto, muchas gracias".
+![[servir-en-mesa-tabla.png]]
+- 💡 **Servir en la mesa:** el jugador va hasta el invitado y le pone las piezas en el plato con las pinzas.
+- 💡 **Reacción del invitado** al recibir la comida (frase, gesto o puntuación) según el punto y lo que había pedido. Es el *feedback* del paso "servir y puntuar".
+
+Bandeja de carnes que se reparte **poco a poco**: el parrillero vuelve a la mesa con cada tanda recién hecha.
+![[bandeja-servir-poco-a-poco.png]]
+- 💡 **Servir por tandas:** los invitados prefieren la carne recién salida. Llevar tandas pequeñas puntúa mejor que servirlo todo al final, ya frío.
+- 💡 Así el jugador está siempre yendo y viniendo entre la parrilla y la mesa, en un ritmo de ida y vuelta.
+
+De cerca: las pinzas pasan un trozo de la bandeja (sobre su tabla de madera) al plato blanco del comensal, donde ya hay varios cortes con las marcas de la parrilla.
+![[servir-pinzas-en-plato.png]]
+- 💡 **Plano en primera persona del gesto de servir:** pinzas en primer plano, bandeja detrás y plato delante. Es justo la cámara del juego y sirve de referencia para la animación y el encuadre.
+- 💡 El plato **se va llenando** pieza a pieza: el invitado puede pedir "una más" o decir "ya basta".
+
+## Embutidos
+Bandejas de **morcilla** y **chorizo** a la parrilla.
+![[bandejas-morcilla-chorizo.webp]]
+- 💡 **Embutidos como alimentos propios:** se hacen rápido y sueltan grasa, lo que provoca **llamaradas** si caen sobre las brasas. La morcilla puede **reventarse** si se pasa.
+- 💡 Buenos para empezar la barbacoa: es lo que sale primero mientras se hace la carne grande.
+
+## Cocción lenta
+**Pernil asado 6 horas a baja temperatura** en cazuela de barro, con zanahoria, pimiento rojo y romero.
+![[pernil-baja-temperatura.png]]
+- 💡 **Pieza de cocción larga** para el **kamado/ahumador** del GDD: dura toda la partida y hay que vigilar la temperatura de vez en cuando mientras se hace lo demás.
+- 💡 Una cazuela o bandeja de horno como **módulo** del ahumador, con verduras debajo.
+
+## Salsas y acompañamientos
+Barra de salsas y ensaladas de un restaurante de Barcelona: salsas en cuencos, ensaladas, encurtidos, guindillas y aceitunas.
+![[buffet-salsas-y-ensaladas.webp]]
+- 💡 **Mesa de acompañamientos** en el patio, donde los invitados se sirven solos. El jugador la repone entre tandas.
+- 💡 Las **salsas** del contenido de la 1.0 ([[GDD#Contenido de la 1.0]]) podrían prepararse aquí.
+- ⚠️ Montar una barra tipo restaurante choca con *Restaurante o gestión de local*, que está fuera de alcance en el GDD. En la 1.0, mejor como mesa de patio sencilla.
+
+Mesa de entrantes con **lámparas de calor** encima: patatas fritas, aros de cebolla, croquetas, pizza al corte y carne ya hecha.
+![[buffet-entrantes-lamparas-calor.png]]
+- 💡 **La comida se enfría:** lo ya hecho pierde calidad si no se sirve. Una zona templada de la parrilla (lejos de las brasas), o una lámpara o bandeja tapada, lo mantiene caliente.
+- 💡 **Entrantes** (patatas, aros de cebolla, pan, pizza a la parrilla) para tener a los invitados contentos mientras esperan la carne.
+
+## Ambiente y decoración
+Pared de un asador de carnes argentinas decorada con figuras de cartón a tamaño real de futbolistas de la selección argentina.
+![[decoracion-futbol-argentino.png]]
+- 💡 **Decoración temática** de un escenario o de un DLC gratuito: un patio "parrilla argentina" con camisetas, banderines, bufandas y una tele con el partido de fondo.
+- 💡 Encaja con el ambiente: la barbacoa del domingo con el fútbol puesto, y los invitados que celebran o se quejan según el resultado.
+- ⚠️ **Nada de personas, equipos ni marcas reales.** Las caras y nombres de jugadores reales, los escudos oficiales y los logos de marcas deportivas tienen derechos de imagen y de marca: no pueden aparecer en el juego ni en Steam. Usar jugadores inventados, camisetas genéricas (rayas celestes y blancas sin escudo ni marca) y un número 10 sin nombre. Ver [[Licencias y Steam]].
+
+Relacionado: [[Modelos 3D]], [[Mecánicas]], [[Referencias de parrilla y juegos]]

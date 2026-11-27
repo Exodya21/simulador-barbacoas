@@ -1,6 +1,6 @@
 ---
 tipo: changelog
-actualizado: 2026-11-24 00:18
+actualizado: 2026-11-27 22:33
 ---
 
 # 📜 Changelog
@@ -8,6 +8,9 @@ actualizado: 2026-11-24 00:18
 Registro de todo lo que cambia en el proyecto, de lo más reciente a lo más antiguo. Lo escribe **el Documentador**, el agente de Claude definido en `.claude/agents/documentador.md`. Cada decisión tiene además su nota en `Decisiones/`.
 
 ## 2026-11-27
+- **22:33** · Diseño · 2 fotos más de referencia (servir con pinzas en el plato y decoración futbolera de asador argentino), con ideas → [[Referencias visuales]]
+- **22:32** · Diseño · 5 fotos más de referencia (servir en mesa y por tandas, embutidos, cocción lenta, entrantes con lámparas de calor), con ideas; 6 ideas nuevas en [[Mecánicas]] → [[Referencias visuales]]
+- **22:29** · Diseño · 5 fotos de referencia de comida, emplatado y salsas, con ideas para el juego; 5 ideas nuevas en [[Mecánicas]] → [[Referencias visuales]]
 - **21:58** · Documentación · Roadmap, Mecánicas y Arquitectura al día con el primer playtest del encendido; ajustes anotados en las decisiones del encendido, el trapo y la depuración → [[Roadmap]] · [[Mecánicas]] · [[Arquitectura]]
 - **21:58** · Técnico · Rama `dev` (sin commit, pendiente de que el usuario lo pruebe): cinturón `Cinturon` con barra en pantalla, base `UtensilioMano`, chimenea y abanico con clic izquierdo en `escenas/utensilios/`, trapo solo en la mano, texto de la comida sin números; `test_cinturon` (29) nueva y `test_fuego` (30) reescrita, pasan las 10 pruebas → [[2026-11-27 Cinturón de utensilios con 4 huecos]]
 - **21:58** · Decisión · La chimenea y el abanico son utensilios del cinturón que se usan con el clic izquierdo, como las pinzas; la chimenea vuelca donde apuntas. Sustituye a [[2026-11-25 Chimenea y abanico leen F mientras se llevan]] → [[2026-11-27 Los utensilios de la mano se usan con el clic izquierdo]]
