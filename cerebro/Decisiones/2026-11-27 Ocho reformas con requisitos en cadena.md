@@ -29,4 +29,6 @@ Los precios son **orientativos**: **pendiente de balancear en playtest**.
 
 **Alternativas descartadas:** (pendiente de confirmar)
 
+Hecho en `dev`: commit `69fdde1`, subido a `origin/dev` (`d172f22..69fdde1`) el 27-11-2026. **Pendiente:** el playtest del usuario.
+
 Relacionado: [[2026-11-27 Historia de la estancia heredada del abuelo]] · [[2026-11-27 Pagar reformas manteniendo F en un cartel de obra]] · [[Mecánicas]] · [[2026-11-27]]

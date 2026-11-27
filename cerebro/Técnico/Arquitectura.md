@@ -53,7 +53,7 @@ flowchart TD
 - Nota por punto, tiempo y presentación
 - Dinero → nuevas parrillas, utensilios, recetas (idea: [[Ruta de mejora de la limpieza]], trapo → cepillo → mocho)
 - Modo carrera + modo libre (sandbox)
-- Estancia (en `dev`, sin commit): autoload `Herencia` (`scripts/estancia/herencia.gd`) con el dinero, las reformas hechas y la carta leída, guardado en `user://estancia.cfg`; con F3 activa, F4 da 10.000 $. Reformas como Resources `Reforma` en `datos/estancia/*.tres`; cartel de obra, conservadora y bandeja de venta en `escenas/estancia/`; HUD `scripts/estancia/hud_estancia.gd`. `TipoAlimento` gana `precio_venta` y `coste_compra` → [[2026-11-27 Ocho reformas con requisitos en cadena]] · [[2026-11-27 Vender en bandeja y comprar en conservadora]]
+- Estancia (commit `69fdde1` en `dev`): autoload `Herencia` (`scripts/estancia/herencia.gd`) con el dinero, las reformas hechas y la carta leída, guardado en `user://estancia.cfg`; con F3 activa, F4 da 10.000 $. Reformas como Resources `Reforma` en `datos/estancia/*.tres`; cartel de obra, conservadora y bandeja de venta en `escenas/estancia/`; HUD `scripts/estancia/hud_estancia.gd`. `TipoAlimento` gana `precio_venta` y `coste_compra` → [[2026-11-27 Ocho reformas con requisitos en cadena]] · [[2026-11-27 Vender en bandeja y comprar en conservadora]]
 - Escenario: `Estancia` (`scripts/estancia/estancia.gd`, @tool) y `Geo` (`scripts/estancia/geo.gd`) lo levantan desde código; escena principal `escenas/estancia/estancia.tscn` → [[2026-11-27 Escenario construido desde código con primitivas]] · [[2026-11-27 La estancia es la escena principal]]
 
 ### ✨ Presentación

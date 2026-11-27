@@ -14,4 +14,6 @@ area: Diseño
 
 **Alternativas descartadas:** (pendiente de confirmar)
 
+Hecho en `dev`: commit `69fdde1`, subido a `origin/dev` (`d172f22..69fdde1`) el 27-11-2026. **Pendiente:** el playtest del usuario.
+
 Relacionado: [[2026-11-27 Ocho reformas con requisitos en cadena]] · [[2026-11-27 Vender en bandeja y comprar en conservadora]] · [[2026-11-22 Rejilla de calor por celdas]] · [[2026-11-27 Cinturón de utensilios con 4 huecos]] · [[2026-11-27]]

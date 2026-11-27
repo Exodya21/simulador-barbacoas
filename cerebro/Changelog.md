@@ -8,6 +8,7 @@ actualizado: 2026-11-27 22:33
 Registro de todo lo que cambia en el proyecto, de lo más reciente a lo más antiguo. Lo escribe **el Documentador**, el agente de Claude definido en `.claude/agents/documentador.md`. Cada decisión tiene además su nota en `Decisiones/`.
 
 ## 2026-11-27
+- **22:54** · Técnico · Subido a `origin/dev` el commit `69fdde1` de la estancia del abuelo (`d172f22..69fdde1`); sigue pendiente el playtest del usuario. Roadmap, 00 Inicio, Arquitectura, Modelos 3D, la sesión y las 7 decisiones de hoy ya dicen el commit → [[2026-11-27 Historia de la estancia heredada del abuelo]] · [[Roadmap]]
 - **22:46** · Documentación · Roadmap, 00 Inicio, GDD (cambios pendientes de aprobar), Modelos 3D y Arquitectura al día con la estancia → [[Roadmap]] · [[GDD]] · [[Modelos 3D]] · [[Arquitectura]]
 - **22:46** · Técnico · Rama `dev` (sin commit, pendiente del playtest del usuario): escena `estancia.tscn` levantada desde código (`Estancia`, `Geo`, shader `pasto.gdshader`), 8 reformas `.tres`, autoload `Herencia` con guardado en `user://estancia.cfg`, cartel de obra, conservadora, bandeja de venta, carta del abuelo y HUD de dinero; textos es/en/de; prueba nueva `test_estancia` (52), pasan las 11 pruebas; herramienta `captura_estancia.gd` → [[2026-11-27 Historia de la estancia heredada del abuelo]]
 - **22:46** · Decisión · La estancia pasa a ser la escena principal; `patio_prueba` se queda para las pruebas → [[2026-11-27 La estancia es la escena principal]]

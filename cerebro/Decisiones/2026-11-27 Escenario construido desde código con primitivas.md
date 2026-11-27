@@ -20,4 +20,6 @@ area: Arte
 - Modelar en Blender: más lento para un escenario entero. Se puede hacer luego pieza a pieza.
 - Packs CC0 de Kenney o Quaternius: no tienen casas criollas, quinchos ni aljibes y no encajan en el estilo.
 
+Hecho en `dev`: commit `69fdde1`, subido a `origin/dev` (`d172f22..69fdde1`) el 27-11-2026. **Pendiente:** el playtest del usuario.
+
 Relacionado: [[Modelos 3D]] · [[2026-11-23 Modelos propios con scripts de Blender]] · [[2026-11-27 Historia de la estancia heredada del abuelo]] · [[2026-11-27]]

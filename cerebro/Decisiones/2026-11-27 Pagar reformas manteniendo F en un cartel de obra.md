@@ -15,4 +15,6 @@ area: Diseño
 
 **Alternativas descartadas:** un menú o tienda de reformas: más interfaz y menos diegético.
 
+Hecho en `dev`: commit `69fdde1`, subido a `origin/dev` (`d172f22..69fdde1`) el 27-11-2026. **Pendiente:** el playtest del usuario.
+
 Relacionado: [[2026-11-27 Ocho reformas con requisitos en cadena]] · [[2026-11-23 Limpiar manchas manteniendo F]] · [[Mecánicas]] · [[2026-11-27]]

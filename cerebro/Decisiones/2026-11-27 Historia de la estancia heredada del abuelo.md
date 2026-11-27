@@ -23,4 +23,6 @@ area: Diseño
 - Modo Carrera y negocio de desbloqueos → ahora el dinero paga reformas de la estancia.
 - **Pendiente:** que el usuario apruebe estos cambios del GDD (anotados allí como pendientes).
 
+Hecho en `dev`: commit `69fdde1`, subido a `origin/dev` (`d172f22..69fdde1`) el 27-11-2026. **Pendiente:** el playtest del usuario.
+
 Relacionado: [[GDD]] · [[Roadmap]] · [[Core loop]] · [[2026-11-27 Ocho reformas con requisitos en cadena]] · [[2026-11-27 La estancia es la escena principal]] · [[2026-11-27]]
