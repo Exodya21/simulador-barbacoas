@@ -9,6 +9,9 @@ actualizado: 2026-11-22 21:43
 > [!success] GDD aprobado (22-11-2026)
 > Las cinco preguntas abiertas (público, plataforma, cooperativo, estilo visual y negocio) se cerraron el 22-11-2026 → [[2026-11-22 GDD aprobado]]. Con esto se cumple el hito de la F0 **"GDD aprobado"**.
 
+> [!warning] Cambios pendientes de aprobar (27-11-2026)
+> La historia de **la estancia heredada del abuelo** cambia el modo Carrera, los escenarios y los desbloqueos. Están marcados abajo con ⏳ y **falta que el usuario los apruebe** → [[2026-11-27 Historia de la estancia heredada del abuelo]]
+
 ## En una frase
 Un simulador de barbacoa en **primera persona** y **low-poly**: enciendes el fuego, controlas las brasas y sacas cada pieza en su punto para que tus invitados se vayan contentos.
 
@@ -35,7 +38,7 @@ Un simulador de barbacoa en **primera persona** y **low-poly**: enciendes el fue
 ## Modos
 | Modo | Qué es | Fase |
 |---|---|---|
-| **Carrera** | Días de barbacoa con invitados, pedidos y puntuación. El dinero desbloquea parrillas, utensilios, recetas y escenarios. | F3 |
+| **Carrera** | Días de barbacoa con invitados, pedidos y puntuación. El dinero desbloquea parrillas, utensilios, recetas y escenarios. ⏳ *Propuesto:* el abuelo te hereda una estancia en ruinas en Argentina y el dinero (pesos) de vender comida paga sus reformas ([[2026-11-27 Ocho reformas con requisitos en cadena]]). | F3 (primer paso en la F2) |
 | **Libre (sandbox)** | Todo desbloqueado, sin pedidos ni reloj. Para experimentar y para streamers. | F3 |
 | Tutorial | Primera barbacoa guiada dentro del modo carrera. | F4 |
 | Cooperativo local u online | **Después de la 1.0**, como actualización. No entra en la 1.0. | Post-1.0 |
@@ -73,7 +76,7 @@ Está en el código del juego como `scripts/paleta.gd` (rama `dev`). Decisión: 
 ## Contenido de la 1.0
 - 15–20 alimentos y recetas (marinados, salsas).
 - 3 parrillas: carbón/leña, gas, kamado/ahumador.
-- 3 escenarios: patio, playa, camping.
+- 3 escenarios: patio, playa, camping. ⏳ *Propuesto:* la estancia pasa a ser el escenario principal; playa y camping quedan por decidir.
 - Utensilios: pinzas, espátula, salero, tapa, pala de brasas.
 
 ## Controles
@@ -82,13 +85,14 @@ Ratón para mirar · WASD caminar · Mayús correr · Clic o E usar · 1–5 mó
 ## Negocio
 - Precio orientativo: **9,99–14,99 €**.
 - **DLC gratuitos** tras el lanzamiento: escenarios, parrillas, recetas…
+- ⏳ *Propuesto:* dentro del juego, los desbloqueos del modo Carrera son las reformas de la estancia, pagadas con el dinero ganado (no con dinero real) → [[2026-11-27 Pagar reformas manteniendo F en un cartel de obra]]
 - **Microtransacciones en el futuro**, después del lanzamiento. Qué se vende y cuándo está por definir. Hay que tenerlas en cuenta desde ya:
   - En Steam van por el sistema de compras de Steamworks, y la tienda marca el juego con *compras dentro del juego*.
   - Suman el descriptor *Compras dentro del juego* a la clasificación por edades → [[#Público]].
   - El guardado y el inventario deben poder registrar compras y contenido desbloqueado.
 
 ## Fuera de alcance (1.0)
-Multijugador (llega después de la 1.0) · Restaurante o gestión de local · Comida fotorrealista · Historia con diálogos.
+Multijugador (llega después de la 1.0) · Restaurante o gestión de local · Comida fotorrealista · Historia con diálogos (la historia de la estancia se cuenta solo con una carta del abuelo, sin diálogos).
 
 ## Riesgos
 | Riesgo | Plan |

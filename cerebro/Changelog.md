@@ -8,6 +8,15 @@ actualizado: 2026-11-27 22:33
 Registro de todo lo que cambia en el proyecto, de lo más reciente a lo más antiguo. Lo escribe **el Documentador**, el agente de Claude definido en `.claude/agents/documentador.md`. Cada decisión tiene además su nota en `Decisiones/`.
 
 ## 2026-11-27
+- **22:46** · Documentación · Roadmap, 00 Inicio, GDD (cambios pendientes de aprobar), Modelos 3D y Arquitectura al día con la estancia → [[Roadmap]] · [[GDD]] · [[Modelos 3D]] · [[Arquitectura]]
+- **22:46** · Técnico · Rama `dev` (sin commit, pendiente del playtest del usuario): escena `estancia.tscn` levantada desde código (`Estancia`, `Geo`, shader `pasto.gdshader`), 8 reformas `.tres`, autoload `Herencia` con guardado en `user://estancia.cfg`, cartel de obra, conservadora, bandeja de venta, carta del abuelo y HUD de dinero; textos es/en/de; prueba nueva `test_estancia` (52), pasan las 11 pruebas; herramienta `captura_estancia.gd` → [[2026-11-27 Historia de la estancia heredada del abuelo]]
+- **22:46** · Decisión · La estancia pasa a ser la escena principal; `patio_prueba` se queda para las pruebas → [[2026-11-27 La estancia es la escena principal]]
+- **22:46** · Decisión · La parrilla del abuelo funciona desde el principio aunque el quincho esté en ruinas → [[2026-11-27 La parrilla del abuelo funciona desde el principio]]
+- **22:46** · Decisión · Se compra carne en una conservadora y se vende en una bandeja, con precio según el punto y las caras; cruda o sucia no se vende → [[2026-11-27 Vender en bandeja y comprar en conservadora]]
+- **22:46** · Decisión · Las reformas se pagan manteniendo F 1,5 s en un cartel de obra, no en un menú → [[2026-11-27 Pagar reformas manteniendo F en un cartel de obra]]
+- **22:46** · Decisión · 8 reformas con requisitos en cadena, de 3.000 a 50.000 $, pendientes de balancear → [[2026-11-27 Ocho reformas con requisitos en cadena]]
+- **22:46** · Decisión · El escenario se construye desde código con primitivas low-poly, sin Blender ni packs → [[2026-11-27 Escenario construido desde código con primitivas]]
+- **22:46** · Decisión · Historia: el abuelo te hereda una estancia en ruinas en Argentina y el modo carrera es reformarla vendiendo comida; choca con el GDD (escenarios y modo carrera), pendiente de que lo apruebe el usuario → [[2026-11-27 Historia de la estancia heredada del abuelo]]
 - **22:04** · Técnico · Subido a `origin/dev` el commit `d172f22` (`cba34da..d172f22`), "F2: cinturón de utensilios y texto de la comida solo al mirarla", a petición del usuario para probarlo; el bloque del encendido sigue sin marcar como hecho hasta su prueba → [[2026-11-27 Cinturón de utensilios con 4 huecos]] · [[Roadmap]]
 - **22:33** · Diseño · 2 fotos más de referencia (servir con pinzas en el plato y decoración futbolera de asador argentino), con ideas → [[Referencias visuales]]
 - **22:32** · Diseño · 5 fotos más de referencia (servir en mesa y por tandas, embutidos, cocción lenta, entrantes con lámparas de calor), con ideas; 6 ideas nuevas en [[Mecánicas]] → [[Referencias visuales]]

@@ -51,6 +51,8 @@ Arrastrado de la F0 (no bloquea el hito) → [[2026-11-22 F0 cerrada]]:
 👉 **En curso**, empezada el 25-11-2026 por el encendido de carbón → [[2026-11-25 F2 empieza por el encendido de carbón]]
 - [ ] Encendido de carbón y brasas → **hecho en `dev` (commit `cba34da`, subido a `origin/dev` el 27-11-2026), a falta del playtest del usuario**, que dirá qué hay que acabar y mejorar: brasas vivas en la `RejillaCalor`, chimenea de encendido, saco de carbón y abanico; prueba nueva `test_fuego` (29 comprobaciones) → [[2026-11-25 Encendido con chimenea y abanico]]
   - Primer playtest del usuario (27-11-2026): nada en contra del encendido. Hechos sus comentarios en `dev` (commit `d172f22`, subido a `origin/dev` el 27-11-2026), **pendientes de que los pruebe**: cinturón de 4 utensilios (pinzas, abanico, trapo, chimenea) que se usan con el clic izquierdo y texto de la comida solo al mirarla y sin números; 10 pruebas en verde → [[2026-11-27 Cinturón de utensilios con 4 huecos]] · [[2026-11-27 Los utensilios de la mano se usan con el clic izquierdo]] · [[2026-11-27 Texto de la comida solo al mirarla y sin números]]
+- [ ] Nivel: la estancia heredada del abuelo → **hecho en `dev` (sin commit), a falta del playtest del usuario**: escena principal `escenas/estancia/estancia.tscn` levantada desde código con primitivas low-poly, 8 reformas con cartel de obra (mantener F), conservadora para comprar carne, bandeja de venta con precio según el punto, autoload `Herencia` (dinero y guardado), carta del abuelo y HUD de dinero; prueba nueva `test_estancia` (52), 11 pruebas en verde → [[2026-11-27 Historia de la estancia heredada del abuelo]] · [[2026-11-27 Escenario construido desde código con primitivas]] · [[2026-11-27 Ocho reformas con requisitos en cadena]] · [[2026-11-27 Pagar reformas manteniendo F en un cartel de obra]] · [[2026-11-27 Vender en bandeja y comprar en conservadora]] · [[2026-11-27 La parrilla del abuelo funciona desde el principio]] · [[2026-11-27 La estancia es la escena principal]]
+  - Pendiente: balancear los precios de las reformas y la venta en playtest, y que el usuario apruebe los cambios del [[GDD]].
 - [ ] 5 alimentos (filete, chorizo, pollo, maíz, pimiento)
 - [ ] Shader crudo → hecho → quemado
 - [ ] Humo, llamas, chispas + audio
@@ -65,9 +67,9 @@ Arrastrado de la F0 y la F1 (no bloquea el hito) → [[2026-11-24 F1 cerrada]]:
 ## F3 · Producción de contenido — semanas 13–20
 - [ ] 15–20 alimentos y recetas (marinados, salsas)
 - [ ] 3 parrillas: carbón, gas, kamado/ahumador
-- [ ] 3 escenarios (patio, playa, camping)
-- [ ] Modo carrera + modo libre
-- [ ] Tienda de mejoras y desbloqueos (idea: [[Ruta de mejora de la limpieza]])
+- [ ] 3 escenarios (patio, playa, camping) → la estancia pasa a ser el escenario principal; playa y camping quedan por decidir ([[2026-11-27 Historia de la estancia heredada del abuelo]], pendiente de aprobar)
+- [ ] Modo carrera + modo libre → carrera = reformar la estancia con el dinero de vender comida (primer paso ya en la F2)
+- [ ] Tienda de mejoras y desbloqueos (idea: [[Ruta de mejora de la limpieza]]) → las reformas ya se pagan en carteles de obra ([[2026-11-27 Pagar reformas manteniendo F en un cartel de obra]])
 
 🏁 **Hito:** Alpha con todo el contenido
 
