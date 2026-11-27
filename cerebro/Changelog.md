@@ -1,6 +1,6 @@
 ---
 tipo: changelog
-actualizado: 2026-11-24 00:18
+actualizado: 2026-11-27 22:29
 ---
 
 # 📜 Changelog
@@ -8,6 +8,7 @@ actualizado: 2026-11-24 00:18
 Registro de todo lo que cambia en el proyecto, de lo más reciente a lo más antiguo. Lo escribe **el Documentador**, el agente de Claude definido en `.claude/agents/documentador.md`. Cada decisión tiene además su nota en `Decisiones/`.
 
 ## 2026-11-27
+- **22:29** · Diseño · 5 fotos de referencia de comida, emplatado y salsas, con ideas para el juego; 5 ideas nuevas en [[Mecánicas]] → [[Referencias visuales]]
 - **21:23** · Técnico · Subido a `origin/dev` el commit `cba34da` del encendido de carbón (`7893a8f..cba34da`), a petición del usuario; el bloque sigue sin marcar como hecho hasta su playtest → [[2026-11-25 Encendido con chimenea y abanico]] · [[Roadmap]]
 
 ## 2026-11-25
