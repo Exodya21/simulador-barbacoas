@@ -18,6 +18,8 @@ area: Diseño
 
 Técnico: autoload nuevo `Cinturon` (`scripts/utensilios/cinturon.gd`), barra `scripts/interfaz/cinturon_hud.gd` y base nueva `UtensilioMano` (`scripts/utensilios/utensilio_mano.gd`): los cuatro utensilios cuelgan de la cámara y solo funcionan en la mano. Las pinzas heredan de ella. Prueba nueva `test_cinturon` (29 comprobaciones). Hecho en `dev`: commit `d172f22` ("F2: cinturón de utensilios y texto de la comida solo al mirarla"), subido a `origin/dev` el 27-11-2026 a petición del usuario para probarlo. **Pendiente:** su prueba en el editor.
 
+**Ajustada el 28-11-2026 (segundo playtest, en `dev` sin commit):** la rueda funciona en las dos direcciones ([[2026-11-28 El cinturón lee la rueda del ratón directamente]]); G suelta el utensilio, F lo recoge y Mayús + 1–4 lo cambia de hueco ([[2026-11-28 Soltar y recoger utensilios con G y F]]); sigue con 4 huecos y la pala y el magiclick empiezan sueltos ([[2026-11-28 Pala y magiclick empiezan sueltos]]).
+
 **Motivo:** lo pidió el usuario en el primer playtest del encendido: "Que el personaje tenga un cinturón y que la pinza y el abanico los pueda guardar en ese cinturón, que de manera inicial tengamos una interfaz con 4 espacios y que inicialmente tengamos el abanico, la pinza, el trapo y la chimenea de encendido."
 
 **Alternativas descartadas:** usar el inventario y los objetos de mano (wieldables) de Cogito: es más pesado y está pensado para armas. El cinturón propio es más simple y controlado.

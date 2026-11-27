@@ -20,4 +20,6 @@ Hecho en `dev`: commit `d172f22`, subido a `origin/dev` el 27-11-2026. **Pendien
 
 **Alternativas descartadas:** dejarlo como estaba, con texto sobre todas las piezas y con números.
 
+**Ajustada el 28-11-2026:** la depuración ya no empieza encendida en desarrollo, así que los números solo salen al pulsar F3 → [[2026-11-28 La depuración empieza apagada]]
+
 Relacionado: [[2026-11-22 Depuración visible en desarrollo]] · [[2026-11-22 Cocción por caras con superficie e interior]] · [[Mecánicas]] · [[2026-11-27]]

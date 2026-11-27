@@ -18,6 +18,8 @@ area: Diseño
 
 Hecho en `dev`: commit `d172f22`, subido a `origin/dev` el 27-11-2026. **Pendiente:** la prueba del usuario en el editor. Decidido por Claude al hacer el cinturón que pidió el usuario.
 
+**Ajustada el 28-11-2026:** la chimenea llena ya no se enciende con su propio clic; hay que soltarla (G) y prenderla con el magiclick → [[2026-11-28 Magiclick obligatorio para prender la chimenea]]
+
 **Motivo:** así todo lo que va en la mano se usa igual.
 
 **Alternativas descartadas:** seguir cogiéndolos con E y usándolos con F, como en [[2026-11-25 Chimenea y abanico leen F mientras se llevan]].

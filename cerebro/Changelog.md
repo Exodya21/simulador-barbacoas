@@ -7,6 +7,19 @@ actualizado: 2026-11-27 22:33
 
 Registro de todo lo que cambia en el proyecto, de lo más reciente a lo más antiguo. Lo escribe **el Documentador**, el agente de Claude definido en `.claude/agents/documentador.md`. Cada decisión tiene además su nota en `Decisiones/`.
 
+## 2026-11-28
+- **00:24** · Documentación · Roadmap, Mecánicas y Arquitectura al día con el segundo playtest; ajustes anotados en las decisiones del cinturón, el clic izquierdo, el encendido y el texto de la comida → [[Roadmap]] · [[Mecánicas]] · [[Arquitectura]]
+- **00:24** · Técnico · Prueba de humo arreglada: fallaba desde `69fdde1` porque buscaba la `CajaComida` en la estancia; ahora la busca en el patio de prueba → [[2026-11-28]]
+- **00:24** · Técnico · Rama `dev` (sin commit, el usuario no lo ha pedido): manos, depuración apagada, soltar y recoger con G/F/Mayús + 1–4, rueda leída directamente, pala de mano, magiclick, textos es/en/de; `test_cinturon` (49) y `test_fuego` (47), pasan las 11 pruebas; herramienta `captura_manos.gd` → [[2026-11-28]]
+- **00:24** · Decisión · El cinturón sigue con 4 huecos y la pala y el magiclick empiezan sueltos; propuesta de Claude, pendiente de confirmar → [[2026-11-28 Pala y magiclick empiezan sueltos]]
+- **00:24** · Decisión · Magiclick obligatorio para prender la chimenea llena, suelta en el suelo o en la mesa; ajusta a [[2026-11-27 Los utensilios de la mano se usan con el clic izquierdo]] → [[2026-11-28 Magiclick obligatorio para prender la chimenea]]
+- **00:24** · Decisión · Pala de mano para coger brasas o carbón crudo y echarlo donde apuntas en la parrilla → [[2026-11-28 Pala de mano para mover el carbón]]
+- **00:24** · Decisión · El cinturón lee la rueda del ratón directamente (arriba anterior, abajo siguiente) → [[2026-11-28 El cinturón lee la rueda del ratón directamente]]
+- **00:24** · Decisión · G suelta el utensilio de la mano, F lo recoge y Mayús + 1–4 lo cambia de hueco → [[2026-11-28 Soltar y recoger utensilios con G y F]]
+- **00:24** · Decisión · La depuración empieza siempre apagada; los números de la carne solo con F3. Sustituye a [[2026-11-22 Depuración visible en desarrollo]] → [[2026-11-28 La depuración empieza apagada]]
+- **00:24** · Decisión · Manos low-poly: la derecha para los utensilios y la izquierda para el futuro vaso de fernet → [[2026-11-28 Mano derecha para los utensilios e izquierda para el fernet]]
+- **00:24** · Producción · Segundo playtest del usuario del encendido (tras `d172f22`): pide manos, números solo con F3, soltar y colocar utensilios, rueda en las dos direcciones, pala de mano y magiclick obligatorio → [[2026-11-28]] · [[Roadmap]]
+
 ## 2026-11-27
 - **22:54** · Técnico · Subido a `origin/dev` el commit `69fdde1` de la estancia del abuelo (`d172f22..69fdde1`); sigue pendiente el playtest del usuario. Roadmap, 00 Inicio, Arquitectura, Modelos 3D, la sesión y las 7 decisiones de hoy ya dicen el commit → [[2026-11-27 Historia de la estancia heredada del abuelo]] · [[Roadmap]]
 - **22:46** · Documentación · Roadmap, 00 Inicio, GDD (cambios pendientes de aprobar), Modelos 3D y Arquitectura al día con la estancia → [[Roadmap]] · [[GDD]] · [[Modelos 3D]] · [[Arquitectura]]

@@ -16,6 +16,8 @@ Lista de mecánicas, sacada de la [[Demo jardín con parrilla]]. Cada una se pue
 - **Calor en la parrilla** según brasas y altura.
 - **Encendido con chimenea** (F2): llenar la chimenea junto al saco de carbón, encenderla, esperar 45 s a que esté al rojo y volcar las brasas donde apuntas en la parrilla. Desde el 27-11-2026 es un utensilio del cinturón (tecla 4) que se usa con el clic izquierdo; sigue prendiendo aunque se guarde (antes se cogía con E y se usaba con F) → [[2026-11-25 Encendido con chimenea y abanico]] · [[2026-11-27 Los utensilios de la mano se usan con el clic izquierdo]]
 - **Abanico** (F2, tecla 2 del cinturón): manteniendo el clic izquierdo apuntando a la parrilla aviva las brasas de ese punto que se van apagando, a cambio de gastar el carbón más rápido.
+- **Magiclick** (F2, en `dev` sin commit): obligatorio para prender la chimenea. Hay que soltar la chimenea llena (G) en el suelo o en la mesa y hacer clic en ella con el magiclick; mientras se mantiene el clic sale una llama con luz → [[2026-11-28 Magiclick obligatorio para prender la chimenea]]
+- **Pala de mano** (F2, en `dev` sin commit): vacía, un clic en la parrilla coge brasas de ese sitio con su fuego (hasta 1,2 celdas en 0,18 m) o un clic en el saco coge carbón crudo; cargada, un clic en la parrilla lo echa donde apuntas. Las brasas de la pala se apagan en 90 s → [[2026-11-28 Pala de mano para mover el carbón]]
 - **Brasas vivas** (F2): el carbón se gasta, el fuego baja a un reposo si no se aviva, se pasa a las celdas vecinas con carbón, el carbón crudo enfría las brasas y al acabarse se apaga.
 
 ## Parrilla
@@ -37,6 +39,8 @@ Lista de mecánicas, sacada de la [[Demo jardín con parrilla]]. Cada una se pue
 
 ## Cinturón de utensilios
 - F2, commit `d172f22` en `dev`, a falta de la prueba del usuario: 4 huecos, 1 pinzas · 2 abanico · 3 trapo · 4 chimenea de encendido. Las teclas 1–4 sacan el utensilio a la mano; pulsar la del que llevas lo guarda (manos libres para coger con E); la rueda pasa al siguiente. Se empieza con las pinzas. Las manchas solo se limpian con el trapo en la mano → [[2026-11-27 Cinturón de utensilios con 4 huecos]]
+- Segundo playtest (28-11-2026, en `dev` sin commit): la rueda va en las dos direcciones (arriba anterior, abajo siguiente) → [[2026-11-28 El cinturón lee la rueda del ratón directamente]]. **G** suelta el utensilio de la mano (cae delante y su hueco queda libre), **F** lo recoge al hueco seleccionado o al primero libre, y **Mayús + 1–4** lo cambia de hueco → [[2026-11-28 Soltar y recoger utensilios con G y F]]. La pala y el magiclick empiezan sueltos; para usarlos hay que soltar algo (pendiente de confirmar) → [[2026-11-28 Pala y magiclick empiezan sueltos]]
+- Manos: la derecha lleva el utensilio y hace todas las interacciones; la izquierda queda para el futuro vaso de fernet → [[2026-11-28 Mano derecha para los utensilios e izquierda para el fernet]]
 
 ## Ambiente
 - Hora del día: día / atardecer / noche.

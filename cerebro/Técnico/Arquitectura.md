@@ -28,6 +28,14 @@ flowchart TD
 - Brasas vivas (F2, commit `cba34da` en `dev`): cada celda tiene `carbon` y `fuego`; calor = fuego × min(1, carbón × 2). Funciones `echar_carbon`, `avivar`, `encender_dos_zonas`, `carbon_total` y `calor_medio`; export `empezar_encendida`. Brasas visibles con un MultiMesh y el shader `shaders/brasas.gdshader`; la rejilla se dibuja con barras (`crear_barras`) → [[2026-11-25 Encendido con chimenea y abanico]]
 - Objetos de encendido: `chimenea_encendido`, `saco_carbon` y `abanico`. Primero (commit `cba34da`) eran objetos de Cogito en `escenas/fuego/` que leían F ellos mismos ([[2026-11-25 Chimenea y abanico leen F mientras se llevan]], sustituida). Desde el 27-11-2026 (commit `d172f22` en `dev`) la chimenea y el abanico son utensilios de mano en `escenas/utensilios/` que se usan con el clic izquierdo → [[2026-11-27 Los utensilios de la mano se usan con el clic izquierdo]]
 - Cinturón (commit `d172f22` en `dev`): autoload `Cinturon` (`scripts/utensilios/cinturon.gd`) con 4 huecos, barra `scripts/interfaz/cinturon_hud.gd` y base `UtensilioMano` (`scripts/utensilios/utensilio_mano.gd`) de la que heredan los cuatro utensilios; se esconden los huecos rápidos de Cogito → [[2026-11-27 Cinturón de utensilios con 4 huecos]]
+- Segundo playtest (28-11-2026, en `dev` sin commit):
+  - Manos: `scripts/jugador/manos.gd` y `escenas/jugador/manos.tscn` (cajas y cilindros desde código). `UtensilioMano` gana los exports `punto_agarre`, `eje_agarre` y `brazo_agarre` y la función `transform_mano()`; la mano izquierda tiene un `Marker3D` «Sujecion» → [[2026-11-28 Mano derecha para los utensilios e izquierda para el fernet]]
+  - `Depuracion` empieza siempre apagado → [[2026-11-28 La depuración empieza apagada]]
+  - Utensilio suelto: `RigidBody3D` con `scripts/utensilios/utensilio_suelto.gd`, caja de colisión calculada del modelo y `BasicInteraction` «Guardar en el cinturón». Acción nueva `soltar_utensilio` (G). `Cinturon` gana `quitar`, `guardar` y `mover` → [[2026-11-28 Soltar y recoger utensilios con G y F]]
+  - El cinturón lee la rueda directamente, sin las acciones (un botón de Cogito las dejó las dos en la rueda abajo, también en el `options.cfg` del usuario) → [[2026-11-28 El cinturón lee la rueda del ratón directamente]]
+  - Pala: `scripts/fuego/pala_mano.gd`, `escenas/utensilios/pala_mano.tscn` y `RejillaCalor.sacar_carbon` → [[2026-11-28 Pala de mano para mover el carbón]]
+  - Magiclick: `scripts/fuego/magiclick.gd`, `escenas/utensilios/magiclick.tscn` → [[2026-11-28 Magiclick obligatorio para prender la chimenea]]
+  - La prueba de humo (`pruebas/humo.gd`) busca la `CajaComida` en el patio de prueba, no en la escena principal (fallaba desde `69fdde1`). Herramienta nueva `herramientas/captura_manos.gd`.
 - Encendido, apagado, viento
 - Llamaradas cuando gotea grasa
 

@@ -2,12 +2,14 @@
 tipo: decision
 fecha: 2026-11-22
 hora: 22:24
-estado: aceptada
+estado: sustituida
 area: Herramientas
 actualizado: 2026-11-22 22:25
 ---
 
 # Depuración visible por defecto en las versiones de desarrollo
+
+**Sustituida por:** [[2026-11-28 La depuración empieza apagada]]
 
 **Decisión:** en las versiones de desarrollo la depuración se ve por defecto, y F3 la muestra u oculta. La hace el autoload `Depuracion`: colorea la rejilla según el calor y pone un termómetro sobre cada pieza. El termómetro como utensilio del juego queda para más adelante. Commit `0a44ab6` en `dev`.
 
